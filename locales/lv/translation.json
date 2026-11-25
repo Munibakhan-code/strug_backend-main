@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} nav atrasts",
+    "fetchFailed": "Neizdevās izgūt {{resource}}",
+    "createFailed": "Neizdevās izveidot {{resource}}",
+    "updateFailed": "Neizdevās atjaunināt {{resource}}",
+    "deleteFailed": "Neizdevās izdzēst {{resource}}",
+    "invalidId": "{{field}} ir jābūt skaitlim",
+    "alreadyExists": "{{field}} jau pastāv",
+    "invalidFormat": "Nederīgs {{field}} formāts",
+    "internalServer": "Iekšējā servera kļūda",
+    "accessDenied": "Piekļuve liegta",
+    "invalidToken": "Nederīgs marķieris",
+    "adminRequired": "Nepieciešama administratora piekļuve",
+    "forbidden": "Jums nav atļaujas veikt šo darbību"
+  },
+  "food": {
+    "filterError": "Filtra kļūda",
+    "orderAlreadyTaken": "Šo pasūtījumu jau ir pieņēmis cits autovadītājs.",
+    "orderAccepted": "Pasūtījums pieņemts piegādei",
+    "orderDeclined": "Pasūtījums noraidīts.",
+    "orderRejected": "Pasūtījums noraidīts."
+  },
+  "user": {
+    "notFound": "Lietotājs nav atrasts",
+    "deleted": "Lietotājs veiksmīgi izdzēsts",
+    "labelStreetRequired": "Nepieciešama etiķete un iela",
+    "addressNotFound": "Adrese nav atrasta",
+    "savedAddressRequired": "Nepieciešama piegādes adrese",
+    "cannotModifyOther": "Nevar mainīt cita lietotāja kontu",
+    "emailExists": "E-pasts vai ieteikuma kods jau pastāv"
+  },
+  "auth": {
+    "invalidLoginFormat": "Nederīgs pieteikšanās formāts",
+    "userNotFound": "Lietotājs nav atrasts",
+    "renewSubscription": "Lūdzu, atjaunojiet abonementu",
+    "verifyBefore": "Lūdzu, pārbaudiet savu {{method}} pirms pieteikšanās.",
+    "noPassword": "Šim kontam nav paroles. Izmēģiniet Google pieteikšanos.",
+    "invalidPassword": "Nederīga parole",
+    "teamMemberNotFound": "Komandas dalībnieks nav atrasts",
+    "loginSuccessful": "Pieteikšanās veiksmīga",
+    "invalidCredentials": "Nederīgi akreditācijas dati",
+    "noRefreshToken": "Nav nodrošināta atsvaidzināšanas pilnvara",
+    "invalidRefreshToken": "Nederīga atsvaidzināšanas pilnvara vai beidzies derīguma termiņš",
+    "invalidRefreshTokenPayload": "Nederīga atsvaidzināšanas pilnvaras lietderīgā slodze",
+    "teamMembershipNotFound": "Dalība komandā nav atrasta",
+    "accessTokenRefreshed": "Piekļuves pilnvara ir atsvaidzināta",
+    "refreshTokenDeleted": "Atsvaidzināšanas pilnvara ir izdzēsta",
+    "emailRequired": "Nepieciešams e-pasts",
+    "passwordAccountExists": "Šis e-pasts ir reģistrēts, izmantojot paroli. Lūdzu, piesakieties manuāli.",
+    "emailRequiredFacebook": "E-pasts ir nepieciešams, bet to nenodrošina Facebook. Lūdzu, pārliecinieties, ka jūsu Facebook kontā ir verificēts e-pasts.",
+    "authCodeRequired": "Ir nepieciešams autentifikācijas kods",
+    "validEmailRequired": "Nepieciešams derīgs e-pasts.",
+    "accountEmailExists": "Konts ar šo e-pasta adresi jau pastāv.",
+    "usernameTaken": "Šis lietotājvārds jau ir aizņemts.",
+    "tooManyOtpRequests": "Pārāk daudz koda pieprasījumu. Vēlāk mēģiniet vēlreiz.",
+    "failedSendCode": "Neizdevās nosūtīt kodu.",
+    "registerFieldsRequired": "ir nepieciešams e-pasts, vārds, parole un otp.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Parolē jāiekļauj: {{requirements}}.",
+    "noVerificationCode": "Verifikācijas kods netika atrasts. Lūdzu, pieprasiet jaunu.",
+    "verificationExpired": "Verifikācijas koda derīguma termiņš ir beidzies. Lūdzu, pieprasiet jaunu.",
+    "tooManyOtpAttempts": "Pārāk daudz nepareizu mēģinājumu. Lūdzu, pieprasiet jaunu verifikācijas kodu.",
+    "invalidVerificationCode": "Nederīgs verifikācijas kods.",
+    "verificationFailed": "Verifikācija neizdevās.",
+    "tooManyRequests": "Pārāk daudz pieprasījumu. Lūdzu, vēlāk mēģiniet vēlreiz.",
+    "resetFieldsRequired": "ir nepieciešams e-pasts, newPassword un marķieris.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Nederīga atiestatīšanas saite vai tās derīguma termiņš ir beidzies.",
+    "accountLocked": "Konts īslaicīgi bloķēts. Vēlāk mēģiniet vēlreiz.",
+    "verificationCodeRequired": "Nepieciešams verifikācijas kods.",
+    "invalidSession": "Nederīga sesija",
+    "passwordFieldsRequired": "Jānorāda currentPassword un newPassword"
+  },
+  "success": {
+    "deleted": "{{resource}} veiksmīgi izdzēsts",
+    "created": "{{resource}} ir veiksmīgi izveidots",
+    "updated": "{{resource}} veiksmīgi atjaunināts"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Reklāmas: brīdinājums par reklāmu konta zemu atlikumu",
+      "spend_alert_subject": "Strug Reklāmu brīdinājums: Kampaņai #{{campaign_id}} sasniegts {{percentage}}% dienas budžets",
+      "low_balance": {
+        "tag": "REKLĀMU KONTA BRĪDINĀJUMS",
+        "title": "Brīdinājums par zemu līdzsvaru",
+        "instruction": "Labdien, {{name}}! Jūsu Ads Wallet atlikums beidzas. Lai aktīvās kampaņas netiktu automātiski apturētas, lūdzu, papildiniet sava konta atlikumu.",
+        "balance_label": "Pašreizējais atlikums:",
+        "button": "Papildiniet reklāmu maku"
+      },
+      "spend_alert": {
+        "tag": "BUDŽETA PĀRSKATS SASNIKTS",
+        "title": "{{percentage}}% iztērēts dienas budžets",
+        "instruction": "Labdien, {{name}}! Šis ir automātisks statusa atjauninājums jūsu aktīvajai reklāmu kopai. Jūsu kampaņa ir sasniegusi dienas tēriņu slieksni.",
+        "campaign_label": "Kampaņas ID:",
+        "button": "Pārvaldīt kampaņu"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verifikācija: jūsu kods ir šeit",
+      "welcome": "Laipni lūdzam Strug ģimenē!",
+      "password_reset": "Strug: atiestatiet savu paroli",
+      "login_alert": "Strug Drošības brīdinājums: konstatēta jauna pieteikšanās",
+      "ride_receipt": "Strug Ride kopsavilkums: Paldies, ka braucāt!"
+    },
+    "otp": {
+      "tag": "DROŠĪBAS PĀRBAUDE",
+      "title": "Verificēt kontu",
+      "instruction": "Izmantojiet tālāk norādīto drošo kodu, lai pabeigtu reģistrāciju. Derīgs 10 minūtes.",
+      "ignore": "Ja jūs to nepieprasījāt, lūdzu, ignorējiet šo e-pasta ziņojumu."
+    },
+    "common": {
+      "tagline": "Jūsu darbs • Jūsu laiks • Jūsu nauda",
+      "rights_reserved": "Visas tiesības aizsargātas",
+      "need_help": "Nepieciešama palīdzība? Atbildiet uz šo e-pasta ziņojumu vai apmeklējiet mūsu atbalsta centru."
+    },
+    "welcome": {
+      "tag": "Laipni lūdzam STRUG",
+      "title": "Sveiki, {{name}}!",
+      "instruction": "Jūsu konts ir verificēts. Tagad jūs esat daļa no platformas, kas izveidota, lai vienkāršotu jūsu darbu, laiku un naudu.",
+      "button": "Izpētiet informācijas paneli"
+    },
+    "password_reset": {
+      "tag": "DROŠĪBA",
+      "title": "Atiestatīt paroli",
+      "instruction": "Tika iesniegts pieprasījums atiestatīt jūsu Strug konta paroli. Noklikšķiniet uz tālāk esošās pogas, lai izvēlētos jaunu.",
+      "button": "Atiestatīt manu paroli",
+      "ignore": "Ja jūs to nepieprasījāt, varat droši ignorēt šo e-pasta ziņojumu. Saite beidzas pēc 1 stundas."
+    },
+    "login_alert": {
+      "tag": "DROŠĪBAS BRĪDINĀJUMS",
+      "title": "Konstatēta jauna pieteikšanās",
+      "instruction": "Mēs pamanījām jaunu pieteikšanos jūsu Strug kontā. Ja tas bijāt jūs, varat ignorēt šo e-pasta ziņojumu.",
+      "device": "Ierīce",
+      "time": "Laiks",
+      "not_you": "Ja tas nebijāt jūs, lūdzu, nekavējoties aizsargājiet savu kontu, nomainot paroli."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Brauciena kopsavilkums",
+      "tag": "CEĻOJUMS PABEIGTS",
+      "total_fare": "Kopējā maksa",
+      "distance": "Attālums",
+      "duration": "Ilgums",
+      "pickup": "Pikaps",
+      "drop": "Izlaišana",
+      "driver": "Šoferis",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Paldies, ka braucāt ar Strugu!",
+      "support": "Ja jums ir problēmas ar šo braucienu, sazinieties ar atbalsta dienestu."
+    },
+    "carpool_booking": {
+      "subject": "Carpool apstiprināts: jūsu brauciens ir rezervēts!",
+      "title": "Rezervācija apstiprināta",
+      "tag": "REZERVĒTA KARPUNA",
+      "from": "No",
+      "to": "Uz",
+      "seats": "Vietas rezervētas",
+      "total_cost": "Kopējās izmaksas",
+      "status": "Statuss",
+      "thanks": "Paldies par koplietošanu ar Strugu!",
+      "details_msg": "Jūsu vieta ir veiksmīgi rezervēta. Lūdzam laicīgi ierasties savākšanas punktā."
+    },
+    "ghost_driver": {
+      "subject": "Brauciena atjauninājums: mēs jums piešķiram jaunu draiveri",
+      "title": "Jauna vadītāja atrašana",
+      "tag": "BRAUKŠANAS ATJAUNINĀJUMS",
+      "instruction": "Jūsu iepriekšējais draiveris nav pieejams vai nereaģē. Neuztraucieties, mēs automātiski meklējam jaunu vadītāju, kas jūs sagaidīs.",
+      "status": "Pašreizējais statuss: atkārtoti tiek meklēti draiveri...",
+      "hang_tight": "Lūdzu pagaidiet! Mēs jūs informēsim, tiklīdz jauns draiveris pieņems jūsu pieprasījumu."
+    },
+    "password_changed": {
+      "subject": "Strug Drošības brīdinājums: jūsu parole tika mainīta",
+      "title": "Parole atjaunināta",
+      "tag": "DROŠĪBAS ATJAUNINĀJUMS",
+      "instruction": "Jūsu Strug konta parole nesen tika mainīta. Ja veicāt šīs izmaiņas, varat droši ignorēt šo e-pasta ziņojumu.",
+      "warning": "Ja NEMAINĪJĀT savu paroli, jūsu konts var tikt apdraudēts. Lūdzu, nekavējoties aizsargājiet savu kontu.",
+      "button": "Aizsargājiet manu kontu",
+      "footer": "Strug platformas drošības komanda"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: pasūtījums apstiprināts! #{{order_id}}",
+        "new_order_vendor": "Nepieciešama darbība: saņemts jauns pasūtījums! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Pasūtījuma kvīts",
+        "tag": "PASŪTĪJUMS VEIKSMES",
+        "vendor_tag": "NEPIECIEŠAMS RĪCĪBA",
+        "order_id": "Pasūtījuma ID",
+        "item": "Vienums",
+        "qty": "Daudzums",
+        "price": "Cena",
+        "subtotal": "Starpsumma",
+        "delivery_fee": "Piegādes maksa",
+        "service_tax": "Pakalpojuma nodoklis",
+        "platform_fee": "Platformas maksa",
+        "grand_total": "KOPĀ SUMMA",
+        "total": "Kopējā summa",
+        "delivery_address": "Piegādes adrese",
+        "thanks": "Ceru, ka jums patiks maltīte!",
+        "vendor_title": "Jauns pasūtījums jums",
+        "vendor_msg": "Jūs esat saņēmis jaunu pasūtījumu. Lūdzu, nekavējoties sāciet to sagatavot."
+      }
+    },
+    "food_status": {
+      "tag": "PASŪTĪJUMA ATJAUNINĀJUMS",
+      "subjects": {
+        "preparing": "Strug Food: jūsu pasūtījums tiek gatavots! 🍳",
+        "dispatched": "Lieliskas ziņas! Jūsu pasūtījums ir ceļā 🛵",
+        "delivered": "Izbaudi maltīti! Pasūtījums veiksmīgi piegādāts ✅",
+        "cancelled": "Strug Paziņojums: jūsu pasūtījums ir atcelts ❌"
+      },
+      "messages": {
+        "preparing": "Restorāns ir sācis gatavot jūsu gardo maltīti. Mēs jūs informēsim, kad tas būs pieejams piegādei.",
+        "dispatched": "Jūsu pasūtījums ir paņemts, un mūsu piegādes partneris ir ceļā uz jūsu atrašanās vietu.",
+        "delivered": "Jūsu pasūtījums ir nodots. Paldies, ka izvēlējāties Strug!",
+        "cancelled": "Ar nožēlu paziņojam, ka jūsu pasūtījums ir atcelts. Ja esat jau samaksājis, drīzumā tiks uzsākta atmaksa."
+      },
+      "labels": {
+        "order_id": "Pasūtījuma ID",
+        "current_status": "Pašreizējais statuss"
+      }
+    },
+    "digital": {
+      "subject": "Jūsu Strug digitālais saturs ir gatavs!",
+      "title": "Lejupielādējiet savu produktu",
+      "instruction": "Paldies par pirkumu! Tagad varat piekļūt savam digitālajam saturam un to lejupielādēt, izmantojot tālāk esošo pogu.",
+      "button": "Lejupielādēt tūlīt"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: jūsu šī mēneša algas lapa ir gatava 📄",
+      "title": "Mēneša algas lapa",
+      "tag": "ALGU KOPSAVILKUMS",
+      "net_salary": "Neto alga",
+      "epf": "EPF (darbinieks)",
+      "etf": "algas etf — ETF",
+      "ot": "algas ot — OT Pay",
+      "bonus": "Bonuss",
+      "status": "Maksājuma statuss",
+      "thanks": "Ja jums ir kādi jautājumi par algu, lūdzu, sazinieties ar HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: jūsu atvaļinājuma pieprasījums ir apstiprināts ✅",
+      "subject_rejected": "Strug HR: jaunums par jūsu atvaļinājuma pieprasījumu ❌",
+      "title_approved": "Atstāt apstiprinātu!",
+      "title_rejected": "Atstājiet atjauninājumu",
+      "tag": "ATSTĀT PIEPRASĪJUMU",
+      "status_approved": "Jūsu atvaļinājuma pieprasījums nākamajam periodam ir veiksmīgi apstiprināts.",
+      "status_rejected": "Ar nožēlu paziņojam, ka jūsu atvaļinājuma pieprasījums par nākamo periodu ir noraidīts.",
+      "from_date": "No datuma",
+      "to_date": "Līdz datumam",
+      "reason": "Noraidījuma iemesls",
+      "thanks": "Ja rodas papildu jautājumi, lūdzu, sazinieties ar savu personāla nodaļu."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: saņemts jauns pieteikums {{job_title}} 💼",
+      "title": "Pieteikts jauns kandidāts",
+      "tag": "DARBA PIETEIKUMS",
+      "instruction": "Jauns kandidāts ir pieteicies kādam no jūsu darba piedāvājumiem. Šeit ir īsa informācija:",
+      "job_title": "Darba loma",
+      "candidate": "Kandidāta vārds",
+      "view_button": "Skatīt lietojumprogrammu",
+      "thanks": "Lūdzu, piesakieties savā aģenta portālā, lai skatītu visu informāciju un CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: jūsu darba maiņa ir atjaunināta 🕒",
+      "title": "Shift atjaunināts",
+      "tag": "GRAFIKS ATJAUNINĀJUMS",
+      "instruction": "Personāla nodaļa nesen ir atjauninājusi jūsu darba grafiku. Lūdzu, pārbaudiet savus jaunos maiņas laikus zemāk.",
+      "start_time": "Sākas maiņa",
+      "end_time": "Maiņa beidzas",
+      "thanks": "Lūdzu, pārliecinieties, ka esat klāt saskaņā ar jauno grafiku. Sazinieties ar HR, ja rodas jebkādas bažas."
+    },
+    "services": {
+      "tag": "PAKALPOJUMA ATJAUNINĀJUMS",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Jūsu tikšanās ir apstiprināta! ✅",
+        "new_alert_provider": "Jauna tikšanās: Jums ir jauna rezervācija! 📅",
+        "reminder": "Atgādinājums: jūsu tikšanās notiks pēc dažām stundām ⏳",
+        "rental_expiry": "Nepieciešama darbība: jūsu nomas termiņš drīz beigsies! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Serviss",
+        "provider": "Pakalpojumu sniedzējs",
+        "customer": "Klients",
+        "date": "Datums",
+        "time": "Laiks",
+        "location": "Atrašanās vieta",
+        "expiry": "Derīguma termiņš"
+      },
+      "messages": {
+        "confirmed": "Jūsu tikšanās ir veiksmīgi ieplānota. Lūdzu, esiet laicīgi.",
+        "provider_alert": "Jauns klients ir rezervējis jūsu pakalpojumu. Šeit ir sīkāka informācija.",
+        "reminder": "Šis ir draudzīgs atgādinājums par jūsu gaidāmo tikšanos ar Strugu.",
+        "rental_expiry": "Jūsu nomas periods drīz beigsies. Lūdzu, atgrieziet preci vai pagariniet termiņu, lai izvairītos no soda sankcijām.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "STEIDZAMS: DERĪGUMA TERMIŅA PAZIŅOJUMS",
+        "item_name": "Vienuma nosaukums",
+        "due_date": "Izpildes datums",
+        "order_id": "Pasūtījuma ID",
+        "button": "Pagarināt vai atgriezt preci",
+        "footer": "Izvairieties no kavējuma maksām, atgriežot preci pirms noteiktā termiņa.",
+        "thanks": "Paldies, ka izmantojat Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Paldies par jūsu dāsno ziedojumu! ❤️",
+        "loan_reminder": "Atgādinājums par maksājumu: Jūsu aizdevuma iemaksa ir jāveic 💳"
+      },
+      "donation": {
+        "title": "Ziedojums saņemts",
+        "tag": "ATDOŠANA",
+        "msg": "Jūsu atbalstam ir liela nozīme! Esam veiksmīgi saņēmuši jūsu ieguldījumu projektā.",
+        "amount": "Ziedotā summa",
+        "project": "Projekts"
+      },
+      "loan": {
+        "title": "Kredīta atmaksa",
+        "tag": "MAKSĀJUMS",
+        "msg": "Šis ir atgādinājums, ka tuvojas aizdevuma atmaksas datums. Lūdzu, pārliecinieties, ka ir pieejami pietiekami līdzekļi.",
+        "due_date": "Izpildes datums",
+        "amount": "Iemaksas summa"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: pasūtījums apstiprināts #{{order_id}}",
+        "new_order_seller": "Strug Shop: saņemts jauns pasūtījums #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "PASŪTĪJUMS APSTIPRINĀTS",
+        "vendor_tag": "JAUNS PASŪTĪJUMS",
+        "title": "Jūsu pasūtījums ir apstiprināts",
+        "vendor_title": "Jums ir jauns pasūtījums",
+        "order_id": "Pasūtiet",
+        "product": "Produkts",
+        "qty": "Daudzums",
+        "total": "Kopā",
+        "thanks": "Paldies, ka iepirkāties Strug!",
+        "vendor_msg": "Lūdzu, sagatavojiet un nosūtiet šo pasūtījumu pēc iespējas ātrāk."
+      },
+      "status": {
+        "tag": "PASŪTĪJUMA ATJAUNINĀJUMS",
+        "order_id": "Pasūtījuma ID",
+        "tracking": "Izsekošanas numurs",
+        "track_button": "Skatīt pasūtījumu",
+        "subjects": {
+          "confirmed": "Strug Shop: Jūsu pasūtījums ir apstiprināts",
+          "shipped": "Strug Shop: jūsu pasūtījums ir nosūtīts",
+          "fulfilled": "Strug Shop: Jūsu pasūtījums tika piegādāts"
+        },
+        "messages": {
+          "confirmed": "Pārdevējs apstiprināja jūsu pasūtījumu un gatavo to nosūtīšanai.",
+          "shipped": "Jūsu paka ir ceļā. Izsekošana: {{tracking_number}}",
+          "fulfilled": "Jūsu pasūtījums ir piegādāts. Mēs ceram, ka jums patiks pirkums!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: jūsu iknedēļas mācību progress ir šeit 📚",
+        "unread_chat": "Strug: jūsu iesūtnē ir nelasīti ziņojumi 💬"
+      },
+      "lms": {
+        "title": "Mācību progress",
+        "tag": "PALIET GUDRS",
+        "msg": "Tev iet lieliski! Šeit ir kopsavilkums par jūsu šīs nedēļas zibatmiņas darbībām.",
+        "cards_reviewed": "Kartes pārskatītas",
+        "new_decks": "Pievienoti jauni klāji"
+      },
+      "chat": {
+        "title": "Jaunas ziņas",
+        "tag": "KOPIENA",
+        "msg": "Jūs kādu laiku esat bijis prom. Jūsu draugi un komandas locekļi cenšas ar jums sazināties.",
+        "button": "Skatīt tērzēšanu"
+      }
+    }
+  }
+}

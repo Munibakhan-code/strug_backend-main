@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} nem található",
+    "fetchFailed": "Nem sikerült lekérni a {{resource}}",
+    "createFailed": "Nem sikerült létrehozni a {{resource}}",
+    "updateFailed": "Nem sikerült frissíteni a {{resource}}",
+    "deleteFailed": "Nem sikerült törölni {{resource}}",
+    "invalidId": "A {{field}} számnak kell lennie",
+    "alreadyExists": "{{field}} már létezik",
+    "invalidFormat": "Érvénytelen {{field}} formátum",
+    "internalServer": "Belső szerver hiba",
+    "accessDenied": "Hozzáférés megtagadva",
+    "invalidToken": "Érvénytelen token",
+    "adminRequired": "Adminisztrátori hozzáférés szükséges",
+    "forbidden": "Nincs engedélye ennek a műveletnek a végrehajtására"
+  },
+  "food": {
+    "filterError": "Szűrő hiba",
+    "orderAlreadyTaken": "Ezt a megrendelést egy másik sofőr már felvette.",
+    "orderAccepted": "Megrendelés átvételre",
+    "orderDeclined": "Megrendelés elutasítva.",
+    "orderRejected": "Megrendelés elutasítva."
+  },
+  "user": {
+    "notFound": "Felhasználó nem található",
+    "deleted": "A felhasználó sikeresen törölve",
+    "labelStreetRequired": "A címke és az utca kötelező",
+    "addressNotFound": "A cím nem található",
+    "savedAddressRequired": "Szállítási cím megadása kötelező",
+    "cannotModifyOther": "Más felhasználó fiókja nem módosítható",
+    "emailExists": "Már létezik e-mail cím vagy ajánlókód"
+  },
+  "auth": {
+    "invalidLoginFormat": "Érvénytelen bejelentkezési formátum",
+    "userNotFound": "Felhasználó nem található",
+    "renewSubscription": "Kérjük, újítsa meg előfizetését",
+    "verifyBefore": "Kérjük, ellenőrizze {{method}}-ját a bejelentkezés előtt.",
+    "noPassword": "Ehhez a fiókhoz nincs jelszó. Próbáld ki a Google bejelentkezését.",
+    "invalidPassword": "Érvénytelen jelszó",
+    "teamMemberNotFound": "A csapattag nem található",
+    "loginSuccessful": "Sikeres bejelentkezés",
+    "invalidCredentials": "Érvénytelen hitelesítő adatok",
+    "noRefreshToken": "Nincs frissítési token",
+    "invalidRefreshToken": "Érvénytelen vagy lejárt frissítési token",
+    "invalidRefreshTokenPayload": "Érvénytelen frissítési token hasznos terhelés",
+    "teamMembershipNotFound": "Csapattagság nem található",
+    "accessTokenRefreshed": "A hozzáférési token frissítve",
+    "refreshTokenDeleted": "Frissítési token törölve",
+    "emailRequired": "E-mail megadása kötelező",
+    "passwordAccountExists": "Ez az e-mail jelszóval van regisztrálva. Kérjük, jelentkezzen be manuálisan.",
+    "emailRequiredFacebook": "Az e-mail megadása kötelező, de a Facebook nem adja meg. Kérjük, győződjön meg róla, hogy Facebook-fiókjában van egy ellenőrzött e-mail.",
+    "authCodeRequired": "Auth kód szükséges",
+    "validEmailRequired": "Érvényes e-mail-cím szükséges.",
+    "accountEmailExists": "Már létezik fiók ezzel az e-mail címmel.",
+    "usernameTaken": "Ez a felhasználónév már foglalt.",
+    "tooManyOtpRequests": "Túl sok kódkérés. Próbálja újra később.",
+    "failedSendCode": "Nem sikerült elküldeni a kódot.",
+    "registerFieldsRequired": "email, név, jelszó és otp megadása kötelező.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "A jelszónak tartalmaznia kell: {{requirements}}.",
+    "noVerificationCode": "Nem található ellenőrző kód. Kérjen újat.",
+    "verificationExpired": "Az ellenőrző kód lejárt. Kérjen újat.",
+    "tooManyOtpAttempts": "Túl sok helytelen próbálkozás. Kérjen új ellenőrző kódot.",
+    "invalidVerificationCode": "Érvénytelen ellenőrző kód.",
+    "verificationFailed": "Az ellenőrzés sikertelen.",
+    "tooManyRequests": "Túl sok kérés. Kérjük, próbálja újra később.",
+    "resetFieldsRequired": "email, newPassword és token szükséges.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Érvénytelen vagy lejárt visszaállítási hivatkozás.",
+    "accountLocked": "Fiók ideiglenesen zárolva. Próbálja újra később.",
+    "verificationCodeRequired": "Ellenőrző kód szükséges.",
+    "invalidSession": "Érvénytelen munkamenet",
+    "passwordFieldsRequired": "A currentPassword és a newPassword megadása kötelező"
+  },
+  "success": {
+    "deleted": "{{resource}} sikeresen törölve",
+    "created": "{{resource}} sikeresen létrehozva",
+    "updated": "{{resource}} sikeresen frissítve"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Hirdetések: Figyelmeztetés a hirdetési fiók alacsony egyenlegére",
+      "spend_alert_subject": "Strug Hirdetési figyelmeztetés: {{percentage}}% elérte a napi költségkeretet a #{{campaign_id}} kampányhoz",
+      "low_balance": {
+        "tag": "ADS FIÓK FIGYELMEZTETÉSE",
+        "title": "Alacsony egyenleg figyelmeztetés",
+        "instruction": "Kedves {{name}}! Ads Wallet egyenlege kimerülőben van. Az aktív kampányok automatikus szüneteltetésének megakadályozása érdekében kérjük, töltse fel fiókegyenlegét.",
+        "balance_label": "Aktuális egyenleg:",
+        "button": "Hirdetési pénztárca feltöltése"
+      },
+      "spend_alert": {
+        "tag": "A KÖLTSÉGVETÉS MÉRFÖLDKÖVET ELÉRTE",
+        "title": "{{percentage}}% elköltött napi költségkeret",
+        "instruction": "Kedves {{name}}! Ez az Ön aktív hirdetéskészletének automatikus állapotfrissítése. Kampánya elérte a napi költési küszöböt.",
+        "campaign_label": "Kampányazonosító:",
+        "button": "Kampány kezelése"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Ellenőrzés: A kód itt van",
+      "welcome": "Üdvözöljük a Strug családban!",
+      "password_reset": "Strug: Állítsa vissza jelszavát",
+      "login_alert": "Strug Biztonsági figyelmeztetés: Új bejelentkezés észlelve",
+      "ride_receipt": "Strug Ride összefoglaló: Köszönjük, hogy lovagoltál!"
+    },
+    "otp": {
+      "tag": "BIZTONSÁGI ELLENŐRZÉS",
+      "title": "Fiók ellenőrzése",
+      "instruction": "Használja az alábbi biztonságos kódot a regisztráció befejezéséhez. 10 percig érvényes.",
+      "ignore": "Ha nem Ön kérte ezt, kérjük, hagyja figyelmen kívül ezt az e-mailt."
+    },
+    "common": {
+      "tagline": "Az Ön munkája • Az Ön ideje • A Pénze",
+      "rights_reserved": "Minden jog fenntartva",
+      "need_help": "Segítségre van szüksége? Válaszoljon erre az e-mailre, vagy keresse fel ügyfélszolgálatunkat."
+    },
+    "welcome": {
+      "tag": "ÜDVÖZÖLJÜK A STRUG",
+      "title": "Szia, {{name}}!",
+      "instruction": "Fiókja ellenőrzése megtörtént. Ön most egy olyan platform része, amelyet úgy alakítottak ki, hogy egyszerűsítse munkáját, idejét és pénzét.",
+      "button": "Fedezze fel az Irányítópultot"
+    },
+    "password_reset": {
+      "tag": "BIZTONSÁG",
+      "title": "Jelszó visszaállítása",
+      "instruction": "Kérés érkezett a Strug-fiók jelszavának visszaállítására. Kattintson az alábbi gombra egy új kiválasztásához.",
+      "button": "Jelszó visszaállítása",
+      "ignore": "Ha nem Ön kérte ezt, nyugodtan figyelmen kívül hagyhatja ezt az e-mailt. A link 1 óra múlva lejár."
+    },
+    "login_alert": {
+      "tag": "BIZTONSÁGI FIGYELMEZTETÉS",
+      "title": "Új bejelentkezés észlelve",
+      "instruction": "Új bejelentkezést észleltünk Strug-fiókjában. Ha Ön volt az, figyelmen kívül hagyhatja ezt az e-mailt.",
+      "device": "Eszköz",
+      "time": "Idő",
+      "not_you": "Ha NEM Ön volt az, kérjük, azonnal biztosítsa fiókját jelszava megváltoztatásával."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Utazás összegzése",
+      "tag": "UTAZÁS KÉSZÜLT",
+      "total_fare": "Teljes viteldíj",
+      "distance": "Távolság",
+      "duration": "Időtartam",
+      "pickup": "Felvétel",
+      "drop": "Leadás",
+      "driver": "Driver",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Köszönjük, hogy Struggal lovagoltál!",
+      "support": "Ha bármilyen problémája van ezzel az utazással, forduljon az ügyfélszolgálathoz."
+    },
+    "carpool_booking": {
+      "subject": "Telekocsi megerősítve: Az utazása le van foglalva!",
+      "title": "Foglalás megerősítve",
+      "tag": "PÁLYÁZAT FENNTARTVA",
+      "from": "-tól",
+      "to": "carpool_booking ide — To",
+      "seats": "Helyek lefoglalva",
+      "total_cost": "Teljes költség",
+      "status": "Állapot",
+      "thanks": "Köszönjük, hogy Struggal együtt telekocsikáztál!",
+      "details_msg": "Helyét sikeresen lefoglaltuk. Kérjük, hogy időben érkezzen az átvételi pontra."
+    },
+    "ghost_driver": {
+      "subject": "Utazás frissítése: Új illesztőprogramot rendelünk hozzád",
+      "title": "Új sofőr keresése",
+      "tag": "RIDE FRISSÍTÉS",
+      "instruction": "Az előző illesztőprogram nem érhető el, vagy nem válaszol. Ne aggódjon, automatikusan új sofőrt keresünk, aki felveszi Önt.",
+      "status": "Jelenlegi állapot: Illesztőprogramok újrakeresése...",
+      "hang_tight": "Kérlek tarts ki! Értesítjük, amint egy új sofőr elfogadja kérését."
+    },
+    "password_changed": {
+      "subject": "Strug Biztonsági figyelmeztetés: Jelszava megváltozott",
+      "title": "Jelszó frissítve",
+      "tag": "BIZTONSÁGI FRISSÍTÉS",
+      "instruction": "A Strug-fiók jelszava nemrég megváltozott. Ha Ön hajtotta végre ezt a módosítást, nyugodtan figyelmen kívül hagyhatja ezt az e-mailt.",
+      "warning": "Ha NEM változtatta meg jelszavát, előfordulhat, hogy fiókját feltörték. Kérjük, azonnal biztosítsa fiókját.",
+      "button": "Fiókom védelme",
+      "footer": "Strug Platform biztonsági csapat"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Megrendelés megerősítve! #{{order_id}}",
+        "new_order_vendor": "Beavatkozás szükséges: Új megrendelés érkezett! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Megrendelés nyugta",
+        "tag": "RENDELÉSI SIKER",
+        "vendor_tag": "TEENDŐ SZÜKSÉGES",
+        "order_id": "Rendelési azonosító",
+        "item": "Tétel",
+        "qty": "Menny",
+        "price": "Ár",
+        "subtotal": "Részösszeg",
+        "delivery_fee": "Szállítási díj",
+        "service_tax": "Szolgáltatási adó",
+        "platform_fee": "Platformdíj",
+        "grand_total": "ÖSSZESEN",
+        "total": "Teljes összeg",
+        "delivery_address": "Szállítási cím",
+        "thanks": "Remélem ízleni fog az étkezés!",
+        "vendor_title": "Új rendelés Önnek",
+        "vendor_msg": "Új rendelés érkezett. Kérjük, azonnal kezdje el az elkészítését."
+      }
+    },
+    "food_status": {
+      "tag": "RENDELÉS FRISSÍTÉSE",
+      "subjects": {
+        "preparing": "Strug Food: Rendelésed előkészítés alatt áll! 🍳",
+        "dispatched": "Remek hír! Rendelésed úton van 🛵",
+        "delivered": "Élvezze az étkezést! A rendelést sikeresen kézbesítettük ✅",
+        "cancelled": "Strug Megjegyzés: Megrendelését töröltük ❌"
+      },
+      "messages": {
+        "preparing": "Az étterem megkezdte az ízletes étel elkészítését. Értesítjük, ha kiszállítják.",
+        "dispatched": "Megrendelését felvették, és szállító partnerünk úton van az Ön helyszínére.",
+        "delivered": "Megrendelését átadtuk. Köszönjük, hogy Strugot választotta!",
+        "cancelled": "Sajnálattal értesítjük, hogy megrendelését töröltük. Ha már fizetett, a visszatérítés hamarosan megtörténik."
+      },
+      "labels": {
+        "order_id": "Rendelési azonosító",
+        "current_status": "Jelenlegi állapot"
+      }
+    },
+    "digital": {
+      "subject": "A Strug digitális tartalma készen áll!",
+      "title": "Töltse le termékét",
+      "instruction": "Köszönjük a vásárlást! Az alábbi gombbal elérheti és letöltheti digitális tartalmait.",
+      "button": "Töltse le most"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Elkészült az e havi fizetési lapja 📄",
+      "title": "Havi fizetési számla",
+      "tag": "BÉRSZÁMÍTÁSI ÖSSZEFOGLALÓ",
+      "net_salary": "Nettó fizetés",
+      "epf": "EPF (alkalmazott)",
+      "etf": "bérszámfejtés etf — ETF",
+      "ot": "bérszámfejtés ot — OT Pay",
+      "bonus": "Bónusz",
+      "status": "Fizetési állapot",
+      "thanks": "Ha bármilyen kérdése van a fizetésével kapcsolatban, forduljon a HR-hez."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Távozási kérelmét jóváhagytuk ✅",
+      "subject_rejected": "Strug HR: Frissítés a távozási kérelméről ❌",
+      "title_approved": "Hagyja jóváhagyva!",
+      "title_rejected": "Hagyja el a Frissítést",
+      "tag": "HAGYÁSI KÉRÉS",
+      "status_approved": "A következő időszakra vonatkozó szabadságigényét sikeresen jóváhagytuk.",
+      "status_rejected": "Sajnálattal értesítjük, hogy a következő időszakra vonatkozó szabadságigényét elutasították.",
+      "from_date": "Dátumtól",
+      "to_date": "A dátumig",
+      "reason": "Elutasítás oka",
+      "thanks": "További kérdéseivel forduljon a HR osztályhoz."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Új jelentkezés érkezett a következőhöz: {{job_title}} 💼",
+      "title": "Új jelölt jelentkezett",
+      "tag": "ÁLLÁSPÁLYÁZAT",
+      "instruction": "Új jelölt jelentkezett az egyik álláshirdetésére. Íme a rövid részletek:",
+      "job_title": "Munkakör",
+      "candidate": "A jelölt neve",
+      "view_button": "Alkalmazás megtekintése",
+      "thanks": "Kérjük, jelentkezzen be ügynöki portáljára, hogy megtekinthesse a részleteket és az önéletrajzot."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: A műszakot frissítettük 🕒",
+      "title": "Shift frissítve",
+      "tag": "MENETREND FRISSÍTÉS",
+      "instruction": "Munkarendjét a közelmúltban frissítette a HR osztály. Kérjük, ellenőrizze alább az új műszakok időpontjait.",
+      "start_time": "A Shift elindul",
+      "end_time": "A műszak véget ér",
+      "thanks": "Kérjük, hogy az új menetrend szerint jelenjenek meg. Bármilyen problémával forduljon a HR-hez."
+    },
+    "services": {
+      "tag": "SZOLGÁLTATÁS FRISSÍTÉSE",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Kinevezését megerősítettük! ✅",
+        "new_alert_provider": "Új időpont: Új foglalásod van! 📅",
+        "reminder": "Emlékeztető: Az Ön találkozója néhány órán belül ⏳",
+        "rental_expiry": "Beavatkozás szükséges: A kölcsönzés hamarosan lejár! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Szolgáltatás",
+        "provider": "Szolgáltató",
+        "customer": "Ügyfél",
+        "date": "Dátum",
+        "time": "Idő",
+        "location": "Helyszín",
+        "expiry": "Lejárati dátum"
+      },
+      "messages": {
+        "confirmed": "Találkozóját sikeresen ütemeztük. Kérlek érkezz időben.",
+        "provider_alert": "Egy új ügyfél foglalta le szolgáltatását. Itt vannak a részletek.",
+        "reminder": "Ez barátságos emlékeztető a Struggal való közelgő találkozójára.",
+        "rental_expiry": "A bérleti időszak hamarosan lejár. Kérjük, küldje vissza a terméket, vagy hosszabbítsa meg a határidőt a büntetések elkerülése érdekében.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "SÜRGŐS: LEJÁRATI ÉRTESÍTÉS",
+        "item_name": "Elem neve",
+        "due_date": "Esedékesség dátuma",
+        "order_id": "Rendelési azonosító",
+        "button": "Tétel meghosszabbítása vagy visszaküldése",
+        "footer": "Kerülje el a késedelmi díjat, ha az árut a határidő előtt visszaküldi.",
+        "thanks": "Köszönjük, hogy a Strug Rentals szolgáltatást használja."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Köszönjük nagylelkű adományát! ❤️",
+        "loan_reminder": "Fizetési emlékeztető: A kölcsön törlesztőrészlete esedékes 💳"
+      },
+      "donation": {
+        "title": "Adomány érkezett",
+        "tag": "VISSZAADÁS",
+        "msg": "Az Ön támogatása óriási változást jelent! Sikeresen megkaptuk hozzájárulását a projekthez.",
+        "amount": "Adományozott összeg",
+        "project": "Projekt"
+      },
+      "loan": {
+        "title": "Kölcsön törlesztése",
+        "tag": "FIZETÉS ESEDÉSE",
+        "msg": "Ez egy emlékeztető arra, hogy közeledik a hitel törlesztési dátuma. Győződjön meg arról, hogy elegendő forrás áll rendelkezésre.",
+        "due_date": "Esedékesség dátuma",
+        "amount": "Törlesztőrészlet"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Megrendelés visszaigazolva #{{order_id}}",
+        "new_order_seller": "Strug Shop: Új rendelés érkezett #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "MEGRENDELÉS MEGERŐSÍVE",
+        "vendor_tag": "ÚJ RENDELÉS",
+        "title": "Megrendelését visszaigazoltuk",
+        "vendor_title": "Új rendelésed van",
+        "order_id": "Rendeljen",
+        "product": "Termék",
+        "qty": "Mennyiség",
+        "total": "Összesen",
+        "thanks": "Köszönjük, hogy a Strug-on vásárolt!",
+        "vendor_msg": "Kérjük, a lehető leghamarabb készítse elő és küldje el ezt a megrendelést."
+      },
+      "status": {
+        "tag": "RENDELÉS FRISSÍTÉSE",
+        "order_id": "Rendelési azonosító",
+        "tracking": "Nyomon követési szám",
+        "track_button": "Megrendelés megtekintése",
+        "subjects": {
+          "confirmed": "Strug Shop: Megrendelését visszaigazoltuk",
+          "shipped": "Strug Shop: Megrendelését kiszállították",
+          "fulfilled": "Strug Shop: Megrendelését kézbesítettük"
+        },
+        "messages": {
+          "confirmed": "Az eladó visszaigazolta a megrendelését, és előkészíti a szállításra.",
+          "shipped": "Úton van a csomagod. Követés: {{tracking_number}}",
+          "fulfilled": "Megrendelését kézbesítettük. Reméljük, hogy élvezni fogja a vásárlást!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Megérkezett a heti tanulási folyamatod 📚",
+        "unread_chat": "Strug: Olvasatlan üzenetei vannak a postaládájában 💬"
+      },
+      "lms": {
+        "title": "Tanulási folyamat",
+        "tag": "MARADJ OKOS",
+        "msg": "Remekül csinálod! Íme egy összefoglaló a heti kártyás tevékenységeidről.",
+        "cards_reviewed": "Áttekintett kártyák",
+        "new_decks": "Új paklik csatlakoztak"
+      },
+      "chat": {
+        "title": "Új üzenetek",
+        "tag": "KÖZÖSSÉG",
+        "msg": "Egy ideje távol voltál. Barátai és csapattagjai megpróbálják elérni Önt.",
+        "button": "Chat megtekintése"
+      }
+    }
+  }
+}

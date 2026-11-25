@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} tidak ditemui",
+    "fetchFailed": "Gagal mengambil {{resource}}",
+    "createFailed": "Gagal membuat {{resource}}",
+    "updateFailed": "Gagal mengemas kini {{resource}}",
+    "deleteFailed": "Gagal memadamkan {{resource}}",
+    "invalidId": "{{field}} mestilah nombor",
+    "alreadyExists": "{{field}} sudah wujud",
+    "invalidFormat": "Format {{field}} tidak sah",
+    "internalServer": "Ralat pelayan dalaman",
+    "accessDenied": "Akses ditolak",
+    "invalidToken": "Token tidak sah",
+    "adminRequired": "Akses pentadbir diperlukan",
+    "forbidden": "Anda tidak mempunyai kebenaran untuk melakukan tindakan ini"
+  },
+  "food": {
+    "filterError": "Ralat penapis",
+    "orderAlreadyTaken": "Pesanan ini telah pun diambil oleh pemandu lain.",
+    "orderAccepted": "Tempahan diterima untuk penghantaran",
+    "orderDeclined": "Pesanan ditolak.",
+    "orderRejected": "Pesanan ditolak."
+  },
+  "user": {
+    "notFound": "Pengguna tidak ditemui",
+    "deleted": "Pengguna berjaya dipadamkan",
+    "labelStreetRequired": "Label dan jalan diperlukan",
+    "addressNotFound": "Alamat tidak ditemui",
+    "savedAddressRequired": "Alamat penghantaran diperlukan",
+    "cannotModifyOther": "Tidak boleh mengubah suai akaun pengguna lain",
+    "emailExists": "E-mel atau kod rujukan sudah wujud"
+  },
+  "auth": {
+    "invalidLoginFormat": "Format log masuk tidak sah",
+    "userNotFound": "Pengguna tidak ditemui",
+    "renewSubscription": "Sila perbaharui langganan anda",
+    "verifyBefore": "Sila sahkan {{method}} anda sebelum log masuk.",
+    "noPassword": "Akaun ini tidak mempunyai kata laluan. Cuba log masuk Google.",
+    "invalidPassword": "Kata laluan tidak sah",
+    "teamMemberNotFound": "Ahli pasukan tidak ditemui",
+    "loginSuccessful": "Log masuk berjaya",
+    "invalidCredentials": "Bukti kelayakan tidak sah",
+    "noRefreshToken": "Tiada token muat semula disediakan",
+    "invalidRefreshToken": "Token muat semula tidak sah atau tamat tempoh",
+    "invalidRefreshTokenPayload": "Muatan token muat semula tidak sah",
+    "teamMembershipNotFound": "Keahlian pasukan tidak ditemui",
+    "accessTokenRefreshed": "Token akses dimuat semula",
+    "refreshTokenDeleted": "Token muat semula dipadamkan",
+    "emailRequired": "E-mel diperlukan",
+    "passwordAccountExists": "E-mel ini didaftarkan menggunakan kata laluan. Sila log masuk secara manual.",
+    "emailRequiredFacebook": "E-mel diperlukan tetapi tidak disediakan oleh Facebook. Sila pastikan akaun Facebook anda mempunyai e-mel yang disahkan.",
+    "authCodeRequired": "Kod pengesahan diperlukan",
+    "validEmailRequired": "E-mel yang sah diperlukan.",
+    "accountEmailExists": "Akaun dengan e-mel ini sudah wujud.",
+    "usernameTaken": "Nama pengguna itu sudah diambil.",
+    "tooManyOtpRequests": "Terlalu banyak permintaan kod. Cuba lagi nanti.",
+    "failedSendCode": "Gagal menghantar kod.",
+    "registerFieldsRequired": "e-mel, nama, kata laluan dan otp semuanya diperlukan.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Kata laluan mesti mengandungi: {{requirements}}.",
+    "noVerificationCode": "Tiada kod pengesahan ditemui. Sila minta yang baharu.",
+    "verificationExpired": "Kod pengesahan telah tamat tempoh. Sila minta yang baharu.",
+    "tooManyOtpAttempts": "Terlalu banyak percubaan yang tidak betul. Sila minta kod pengesahan baharu.",
+    "invalidVerificationCode": "Kod pengesahan tidak sah.",
+    "verificationFailed": "Pengesahan gagal.",
+    "tooManyRequests": "Terlalu banyak permintaan. Sila cuba lagi kemudian.",
+    "resetFieldsRequired": "e-mel, newPassword dan token diperlukan.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Pautan tetapan semula tidak sah atau tamat tempoh.",
+    "accountLocked": "Akaun dikunci buat sementara waktu. Cuba lagi nanti.",
+    "verificationCodeRequired": "Kod pengesahan diperlukan.",
+    "invalidSession": "Sesi tidak sah",
+    "passwordFieldsRequired": "currentPassword dan newPassword diperlukan"
+  },
+  "success": {
+    "deleted": "{{resource}} berjaya dipadamkan",
+    "created": "{{resource}} berjaya dibuat",
+    "updated": "{{resource}} berjaya dikemas kini"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Iklan Strug: Amaran Baki Rendah Akaun Iklan",
+      "spend_alert_subject": "Makluman Iklan Strug: {{percentage}}% Belanjawan Harian Dicapai untuk Kempen #{{campaign_id}}",
+      "low_balance": {
+        "tag": "MAKLUM AKAUN IKLAN",
+        "title": "Amaran Imbangan Rendah",
+        "instruction": "Helo {{name}}, baki Wallet Iklan anda semakin berkurangan. Untuk mengelakkan kempen aktif daripada dijeda secara automatik, sila tambah nilai baki akaun anda.",
+        "balance_label": "Baki Semasa:",
+        "button": "Tambah Nilai Dompet Iklan"
+      },
+      "spend_alert": {
+        "tag": "MILESTONE BAJET MENCAPAI",
+        "title": "{{percentage}}% Belanjawan Harian Dibelanjakan",
+        "instruction": "Helo {{name}}, ini ialah kemas kini status automatik untuk set iklan aktif anda. Kempen anda telah mencapai ambang perbelanjaan harian.",
+        "campaign_label": "ID Kempen:",
+        "button": "Urus Kempen"
+      }
+    },
+    "subjects": {
+      "otp": "Pengesahan Strug: Kod anda ada di sini",
+      "welcome": "Selamat datang ke Keluarga Strug!",
+      "password_reset": "Strug: Tetapkan semula kata laluan anda",
+      "login_alert": "Makluman Keselamatan Strug: Log masuk baharu dikesan",
+      "ride_receipt": "Strug Ride Ringkasan: Terima kasih kerana menunggang!"
+    },
+    "otp": {
+      "tag": "SEMAK KESELAMATAN",
+      "title": "Sahkan Akaun",
+      "instruction": "Gunakan kod selamat di bawah untuk melengkapkan pendaftaran anda. Sah selama 10 minit.",
+      "ignore": "Jika anda tidak meminta ini, sila abaikan e-mel ini."
+    },
+    "common": {
+      "tagline": "Kerja Anda • Masa Anda • Wang Anda",
+      "rights_reserved": "Hak Cipta Terpelihara",
+      "need_help": "Perlukan bantuan? Balas e-mel ini atau lawati pusat sokongan kami."
+    },
+    "welcome": {
+      "tag": "SELAMAT DATANG KE STRUG",
+      "title": "Helo, {{name}}!",
+      "instruction": "Akaun anda telah disahkan. Anda kini sebahagian daripada platform yang dibina untuk memudahkan kerja, masa dan wang anda.",
+      "button": "Terokai Papan Pemuka"
+    },
+    "password_reset": {
+      "tag": "KESELAMATAN",
+      "title": "Tetapkan Semula Kata Laluan",
+      "instruction": "Permintaan telah dibuat untuk menetapkan semula kata laluan akaun Strug anda. Klik butang di bawah untuk memilih yang baharu.",
+      "button": "Tetapkan Semula Kata Laluan Saya",
+      "ignore": "Jika anda tidak meminta ini, anda boleh mengabaikan e-mel ini dengan selamat. Pautan tamat tempoh dalam masa 1 jam."
+    },
+    "login_alert": {
+      "tag": "MAKLUM KESELAMATAN",
+      "title": "Log Masuk Baharu Dikesan",
+      "instruction": "Kami melihat log masuk baharu ke akaun Strug anda. Jika ini anda, anda boleh mengabaikan e-mel ini.",
+      "device": "Peranti",
+      "time": "Masa",
+      "not_you": "Jika ini BUKAN anda, sila selamatkan akaun anda dengan segera dengan menukar kata laluan anda."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Ringkasan Perjalanan",
+      "tag": "PERJALANAN SELESAI",
+      "total_fare": "Jumlah Tambang",
+      "distance": "Jarak",
+      "duration": "Tempoh",
+      "pickup": "— Pickup",
+      "drop": "— Drop-off",
+      "driver": "Pemandu",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Terima kasih kerana menunggang dengan Strug!",
+      "support": "Jika anda mempunyai sebarang masalah dengan perjalanan ini, hubungi sokongan."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Disahkan: Perjalanan anda telah ditempah!",
+      "title": "Tempahan Disahkan",
+      "tag": "CARPOOL TERPELIHARA",
+      "from": "daripada",
+      "to": "Kepada",
+      "seats": "Tempat Duduk Tempah",
+      "total_cost": "Jumlah Kos",
+      "status": "status carpool_booking — Status",
+      "thanks": "Terima kasih kerana berkongsi kereta dengan Strug!",
+      "details_msg": "Tempat duduk anda telah berjaya ditempah. Sila berada di tempat pengambilan tepat pada masanya."
+    },
+    "ghost_driver": {
+      "subject": "Kemas Kini Menunggang: Kami menugaskan semula pemandu baharu untuk anda",
+      "title": "Mencari Pemandu Baharu",
+      "tag": "KEMASKINI RIDE",
+      "instruction": "Pemandu terdahulu anda tidak tersedia atau tidak bertindak balas. Jangan risau, kami secara automatik mencari pemandu baharu untuk menjemput anda.",
+      "status": "Status Semasa: Mencari semula pemandu...",
+      "hang_tight": "Tolong tahan! Kami akan memberitahu anda sebaik sahaja pemandu baharu menerima permintaan anda."
+    },
+    "password_changed": {
+      "subject": "Makluman Keselamatan Strug: Kata laluan anda telah ditukar",
+      "title": "Kata Laluan Dikemaskini",
+      "tag": "KEMASKINI KESELAMATAN",
+      "instruction": "Kata laluan akaun Strug anda telah ditukar baru-baru ini. Jika anda membuat perubahan ini, anda boleh mengabaikan e-mel ini dengan selamat.",
+      "warning": "Jika anda TIDAK menukar kata laluan anda, akaun anda mungkin terjejas. Sila selamatkan akaun anda dengan segera.",
+      "button": "Lindungi Akaun Saya",
+      "footer": "Pasukan Keselamatan Platform Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Makanan Strug: Pesanan Disahkan! #{{order_id}}",
+        "new_order_vendor": "Tindakan Diperlukan: Pesanan Baharu Diterima! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Resit Pesanan",
+        "tag": "BERJAYA PESANAN",
+        "vendor_tag": "TINDAKAN DIPERLUKAN",
+        "order_id": "ID Pesanan",
+        "item": "item",
+        "qty": "Kuantiti",
+        "price": "harga",
+        "subtotal": "Jumlah kecil",
+        "delivery_fee": "Yuran Penghantaran",
+        "service_tax": "Cukai Perkhidmatan",
+        "platform_fee": "Yuran Platform",
+        "grand_total": "JUMLAH JUMLAH",
+        "total": "Jumlah Jumlah",
+        "delivery_address": "Alamat Penghantaran",
+        "thanks": "Semoga anda menikmati hidangan anda!",
+        "vendor_title": "Pesanan Baru untuk Anda",
+        "vendor_msg": "Anda telah menerima pesanan baharu. Sila mula menyediakannya dengan segera."
+      }
+    },
+    "food_status": {
+      "tag": "KEMASKINI PESANAN",
+      "subjects": {
+        "preparing": "Makanan Strug: Pesanan anda sedang disediakan! 🍳",
+        "dispatched": "Berita baik! Pesanan anda sedang dalam perjalanan 🛵",
+        "delivered": "Selamat menjamu selera! Pesanan berjaya dihantar ✅",
+        "cancelled": "Notis Strug: Pesanan anda telah dibatalkan ❌"
+      },
+      "messages": {
+        "preparing": "Restoran telah mula menyediakan hidangan lazat anda. Kami akan memberitahu anda apabila ia akan dihantar.",
+        "dispatched": "Pesanan anda telah diambil dan rakan kongsi penghantaran kami sedang dalam perjalanan ke lokasi anda.",
+        "delivered": "Pesanan anda telah diserahkan. Terima kasih kerana memilih Strug!",
+        "cancelled": "Dukacita dimaklumkan bahawa pesanan anda telah dibatalkan. Jika anda telah membayar, bayaran balik akan dimulakan sebentar lagi."
+      },
+      "labels": {
+        "order_id": "ID Pesanan",
+        "current_status": "Status Semasa"
+      }
+    },
+    "digital": {
+      "subject": "Kandungan Digital Strug Anda Sedia!",
+      "title": "Muat turun Produk Anda",
+      "instruction": "Terima kasih atas pembelian anda! Anda kini boleh mengakses dan memuat turun kandungan digital anda menggunakan butang di bawah.",
+      "button": "Muat turun Sekarang"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Penyata Gaji anda untuk bulan ini sudah sedia 📄",
+      "title": "Slip Gaji Bulanan",
+      "tag": "RINGKASAN GAJI",
+      "net_salary": "Gaji Bersih",
+      "epf": "KWSP (Pekerja)",
+      "etf": "etf gaji — ETF",
+      "ot": "gaji ot — OT Pay",
+      "bonus": "bonus gaji - Bonus",
+      "status": "Status Pembayaran",
+      "thanks": "Jika anda mempunyai sebarang pertanyaan mengenai gaji anda, sila hubungi HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Permintaan Cuti Anda Telah Diluluskan ✅",
+      "subject_rejected": "Strug HR: Kemas kini pada Permintaan Cuti anda ❌",
+      "title_approved": "Cuti Diluluskan!",
+      "title_rejected": "Kemas Kini Tinggalkan",
+      "tag": "PERMINTAAN TINGGALKAN",
+      "status_approved": "Permintaan cuti anda untuk tempoh berikut telah berjaya diluluskan.",
+      "status_rejected": "Dukacita dimaklumkan bahawa permintaan cuti anda untuk tempoh berikut telah ditolak.",
+      "from_date": "Dari Tarikh",
+      "to_date": "Sehingga Kini",
+      "reason": "Sebab Penolakan",
+      "thanks": "Untuk sebarang pertanyaan lanjut, sila hubungi jabatan HR anda."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Permohonan Baru Diterima untuk {{job_title}} 💼",
+      "title": "Calon Baru Dipohon",
+      "tag": "PERMOHONAN KERJA",
+      "instruction": "Calon baharu telah memohon untuk salah satu penyenaraian kerja anda. Berikut adalah butiran ringkas:",
+      "job_title": "Peranan Kerja",
+      "candidate": "Nama Calon",
+      "view_button": "Lihat Aplikasi",
+      "thanks": "Sila log masuk ke portal ejen anda untuk menyemak butiran penuh dan CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Anjakan Kerja anda telah dikemas kini 🕒",
+      "title": "Shift Dikemas Kini",
+      "tag": "KEMASKINI JADUAL",
+      "instruction": "Jadual kerja anda telah dikemas kini baru-baru ini oleh jabatan HR. Sila semak masa syif baharu anda di bawah.",
+      "start_time": "Shift Bermula",
+      "end_time": "Shift Tamat",
+      "thanks": "Sila pastikan anda hadir mengikut jadual baru. Hubungi HR untuk sebarang kebimbangan."
+    },
+    "services": {
+      "tag": "KEMASKINI PERKHIDMATAN",
+      "subjects": {
+        "confirmed_customer": "Perkhidmatan Strug: Pelantikan anda telah disahkan! ✅",
+        "new_alert_provider": "Pelantikan Baru: Anda mempunyai tempahan baharu! 📅",
+        "reminder": "Peringatan: Janji temu anda dalam beberapa jam ⏳",
+        "rental_expiry": "Tindakan Diperlukan: Sewaan anda akan tamat tempoh tidak lama lagi! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Perkhidmatan",
+        "provider": "Pembekal",
+        "customer": "Pelanggan",
+        "date": "tarikh",
+        "time": "Masa",
+        "location": "Lokasi",
+        "expiry": "Tarikh Luput"
+      },
+      "messages": {
+        "confirmed": "Temu janji anda telah berjaya dijadualkan. Harap tepat pada masanya.",
+        "provider_alert": "Pelanggan baharu telah menempah perkhidmatan anda. Berikut adalah butirannya.",
+        "reminder": "Ini adalah peringatan mesra tentang janji temu anda yang akan datang dengan Strug.",
+        "rental_expiry": "Tempoh sewaan anda hampir tamat. Sila pulangkan item atau lanjutkan tempoh untuk mengelakkan penalti.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "SEGERA: NOTIS TAMAT TEMPOH",
+        "item_name": "Nama Item",
+        "due_date": "Tarikh Akhir",
+        "order_id": "ID Pesanan",
+        "button": "Panjangkan atau Kembalikan Item",
+        "footer": "Elakkan bayaran lewat dengan memulangkan barang sebelum masa yang ditetapkan.",
+        "thanks": "Terima kasih kerana menggunakan Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Terima kasih atas sumbangan murah hati anda! ❤️",
+        "loan_reminder": "Peringatan Pembayaran: Ansuran pinjaman anda perlu dibayar 💳"
+      },
+      "donation": {
+        "title": "Sumbangan Diterima",
+        "tag": "MEMBERI BALIK",
+        "msg": "Sokongan anda membuat perbezaan yang besar! Kami telah berjaya menerima sumbangan anda untuk projek tersebut.",
+        "amount": "Jumlah yang Didermakan",
+        "project": "Projek"
+      },
+      "loan": {
+        "title": "Bayaran Balik Pinjaman",
+        "tag": "BAYARAN DIBAYAR",
+        "msg": "Ini adalah peringatan bahawa tarikh pembayaran balik pinjaman anda semakin hampir. Sila pastikan dana mencukupi.",
+        "due_date": "Tarikh Akhir",
+        "amount": "Jumlah Ansuran"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Pesanan disahkan #{{order_id}}",
+        "new_order_seller": "Strug Shop: Pesanan baharu diterima #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ORDER DISAHKAN",
+        "vendor_tag": "PESANAN BARU",
+        "title": "Pesanan anda disahkan",
+        "vendor_title": "Anda mempunyai pesanan baharu",
+        "order_id": "Pesanan",
+        "product": "produk",
+        "qty": "Kuantiti",
+        "total": "Jumlah",
+        "thanks": "Terima kasih kerana membeli-belah di Strug!",
+        "vendor_msg": "Sila sediakan dan hantar pesanan ini secepat mungkin."
+      },
+      "status": {
+        "tag": "KEMASKINI PESANAN",
+        "order_id": "ID Pesanan",
+        "tracking": "Nombor penjejakan",
+        "track_button": "Lihat pesanan",
+        "subjects": {
+          "confirmed": "Strug Shop: Pesanan anda disahkan",
+          "shipped": "Strug Shop: Pesanan anda telah dihantar",
+          "fulfilled": "Strug Shop: Pesanan anda telah dihantar"
+        },
+        "messages": {
+          "confirmed": "Penjual mengesahkan pesanan anda dan sedang menyediakannya untuk penghantaran.",
+          "shipped": "Pakej anda sedang dalam perjalanan. Penjejakan: {{tracking_number}}",
+          "fulfilled": "Pesanan anda telah dihantar. Kami harap anda menikmati pembelian anda!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Pendidikan Strug: Kemajuan pembelajaran mingguan anda ada di sini 📚",
+        "unread_chat": "Strug: Anda mempunyai mesej yang belum dibaca dalam peti masuk anda 💬"
+      },
+      "lms": {
+        "title": "Kemajuan Pembelajaran",
+        "tag": "KEKAL PANDAI",
+        "msg": "Anda hebat! Berikut ialah ringkasan aktiviti kad imbas anda minggu ini.",
+        "cards_reviewed": "Kad Disemak",
+        "new_decks": "Dek Baharu Disertakan"
+      },
+      "chat": {
+        "title": "Mesej Baharu",
+        "tag": "KOMUNITI",
+        "msg": "Anda telah pergi untuk seketika. Rakan dan ahli pasukan anda cuba menghubungi anda.",
+        "button": "Lihat Sembang"
+      }
+    }
+  }
+}

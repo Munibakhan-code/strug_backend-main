@@ -1,0 +1,18 @@
+[
+  {
+    "ad_id": 1,
+    "company_revenue_30": "0",
+    "escrow_pool_70": "0",
+    "payout_per_view": "0",
+    "remaining_escrow_70": "0",
+    "total_budget": "0"
+  },
+  {
+    "ad_id": 2,
+    "company_revenue_30": "300",
+    "escrow_pool_70": "700",
+    "payout_per_view": "7",
+    "remaining_escrow_70": "700",
+    "total_budget": "1000"
+  }
+]

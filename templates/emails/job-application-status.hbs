@@ -1,0 +1,50 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.job_status.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">
+                {{#if is_hired}}{{t 'emails.job_status.title_hired'}}{{else if is_rejected}}{{t 'emails.job_status.title_closed'}}{{else}}{{t 'emails.job_status.title_update'}}{{/if}}
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 30px; background-color: #0b1120;">
+            <p style="margin: 0; color: #94a3b8; font-size: 16px; line-height: 1.6;">
+                {{t 'emails.job_status.greeting'}} {{candidate_name}},<br/>
+                {{#if is_hired}}{{t 'emails.job_status.body_hired'}}{{else if is_rejected}}{{t 'emails.job_status.body_rejected'}}{{else}}{{t 'emails.job_status.body_update'}}{{/if}}
+            </p>
+        </td>
+    </tr>
+
+    <!-- Application Details Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 20px; border: 1px solid #1e293b;">
+                <tr>
+                    <td style="padding: 20px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-bottom: 5px;">{{t 'emails.job_status.role'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold; padding-bottom: 5px;">{{job_title}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-top: 5px;">{{t 'emails.job_status.current_status'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold; padding-top: 5px;">{{status_label}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <p style="margin: 0; font-size: 13px; color: #475569;">{{t 'emails.job_status.thanks'}}</p>
+        </td>
+    </tr>
+</table>

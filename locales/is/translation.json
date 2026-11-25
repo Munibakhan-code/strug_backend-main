@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} fannst ekki",
+    "fetchFailed": "Mistókst að sækja {{resource}}",
+    "createFailed": "Mistókst að búa til {{resource}}",
+    "updateFailed": "Mistókst að uppfæra {{resource}}",
+    "deleteFailed": "Mistókst að eyða {{resource}}",
+    "invalidId": "{{field}} verður að vera tala",
+    "alreadyExists": "{{field}} er þegar til",
+    "invalidFormat": "Ógilt {{field}} snið",
+    "internalServer": "Innri netþjónsvilla",
+    "accessDenied": "Aðgangi hafnað",
+    "invalidToken": "Ógilt tákn",
+    "adminRequired": "Aðgangur stjórnanda krafist",
+    "forbidden": "Þú hefur ekki leyfi til að framkvæma þessa aðgerð"
+  },
+  "food": {
+    "filterError": "Síuvilla",
+    "orderAlreadyTaken": "Þessi pöntun var þegar tekin af öðrum bílstjóra.",
+    "orderAccepted": "Pöntun samþykkt til afhendingar",
+    "orderDeclined": "Pöntun hafnað.",
+    "orderRejected": "Pöntun hafnað."
+  },
+  "user": {
+    "notFound": "Notandi fannst ekki",
+    "deleted": "Notanda var eytt",
+    "labelStreetRequired": "Merki og götu er krafist",
+    "addressNotFound": "Heimilisfang fannst ekki",
+    "savedAddressRequired": "Heimilisfang er krafist",
+    "cannotModifyOther": "Ekki er hægt að breyta reikningi annars notanda",
+    "emailExists": "Tölvupóstur eða tilvísunarkóði er þegar til"
+  },
+  "auth": {
+    "invalidLoginFormat": "Ógilt innskráningarsnið",
+    "userNotFound": "Notandi fannst ekki",
+    "renewSubscription": "Endurnýjaðu áskriftina þína",
+    "verifyBefore": "Vinsamlegast staðfestu {{method}} áður en þú skráir þig inn.",
+    "noPassword": "Þessi reikningur hefur ekkert lykilorð. Prófaðu Google innskráningu.",
+    "invalidPassword": "Ógilt lykilorð",
+    "teamMemberNotFound": "Liðsmaður fannst ekki",
+    "loginSuccessful": "Innskráning tókst",
+    "invalidCredentials": "Ógild skilríki",
+    "noRefreshToken": "Enginn endurnýjunarlykill veittur",
+    "invalidRefreshToken": "Ógilt eða útrunnið endurnýjunartákn",
+    "invalidRefreshTokenPayload": "Ógilt endurnýjunartákn hleðsla",
+    "teamMembershipNotFound": "Liðsaðild fannst ekki",
+    "accessTokenRefreshed": "Aðgangslykill uppfærður",
+    "refreshTokenDeleted": "Endurnýjunartákni eytt",
+    "emailRequired": "Tölvupóstur er nauðsynlegur",
+    "passwordAccountExists": "Þetta netfang er skráð með lykilorði. Vinsamlegast skráðu þig inn handvirkt.",
+    "emailRequiredFacebook": "Tölvupóstur er nauðsynlegur en ekki veittur af Facebook. Gakktu úr skugga um að Facebook reikningurinn þinn sé með staðfestan tölvupóst.",
+    "authCodeRequired": "Auth code er krafist",
+    "validEmailRequired": "Áskilið er gilt netfang.",
+    "accountEmailExists": "Reikningur með þessum tölvupósti er þegar til.",
+    "usernameTaken": "Það notendanafn er þegar tekið.",
+    "tooManyOtpRequests": "Of margar kóðabeiðnir. Reyndu aftur síðar.",
+    "failedSendCode": "Mistókst að senda kóða.",
+    "registerFieldsRequired": "netfang, nafn, lykilorð og otp eru öll nauðsynleg.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Lykilorðið verður að innihalda: {{requirements}}.",
+    "noVerificationCode": "Enginn staðfestingarkóði fannst. Vinsamlegast óskið eftir nýjum.",
+    "verificationExpired": "Staðfestingarkóði er útrunninn. Vinsamlegast óskið eftir nýjum.",
+    "tooManyOtpAttempts": "Of margar rangar tilraunir. Vinsamlegast biðjið um nýjan staðfestingarkóða.",
+    "invalidVerificationCode": "Ógildur staðfestingarkóði.",
+    "verificationFailed": "Staðfesting mistókst.",
+    "tooManyRequests": "Of margar beiðnir. Vinsamlegast reyndu aftur síðar.",
+    "resetFieldsRequired": "netfang, nýtt lykilorð og auðkenni eru nauðsynleg.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Ógildur eða útrunninn endurstillingartengill.",
+    "accountLocked": "Reikningurinn læstur tímabundið. Reyndu aftur síðar.",
+    "verificationCodeRequired": "Staðfestingarkóði er nauðsynlegur.",
+    "invalidSession": "Ógild fundur",
+    "passwordFieldsRequired": "núverandiPassword og newPassword eru nauðsynleg"
+  },
+  "success": {
+    "deleted": "{{resource}} eytt",
+    "created": "{{resource}} búið til",
+    "updated": "{{resource}} uppfært"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Viðvörun um lágt jafnvægi auglýsingareiknings",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% daglegu kostnaðarhámarki náð fyrir herferð #{{campaign_id}}",
+      "low_balance": {
+        "tag": "AUGLÝSINGARREIKNINGARVÖRUN",
+        "title": "Viðvörun um lágt jafnvægi",
+        "instruction": "Halló {{name}}, Ads Wallet staða þín er að verða lítil. Til að koma í veg fyrir að virkar herferðir verði sjálfkrafa settar í bið skaltu fylla á reikninginn þinn.",
+        "balance_label": "Núverandi staða:",
+        "button": "Fylltu upp auglýsingaveski"
+      },
+      "spend_alert": {
+        "tag": "ÁFRAMMÁLUM FJÁRMÁLAVERÐA NÁÐI",
+        "title": "{{percentage}}% daglega kostnaðarhámarki varið",
+        "instruction": "Halló {{name}}, þetta er sjálfvirk stöðuuppfærsla fyrir virka auglýsingasettið þitt. Herferðin þín hefur náð daglegum eyðsluþröskuldi.",
+        "campaign_label": "Auðkenni herferðar:",
+        "button": "Stjórna herferð"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Staðfesting: Kóðinn þinn er hér",
+      "welcome": "Velkomin í Strug fjölskylduna!",
+      "password_reset": "Strug: Endurstilltu lykilorðið þitt",
+      "login_alert": "Strug Security Alert: Ný innskráning fannst",
+      "ride_receipt": "Strug Ride Samantekt: Þakka þér fyrir að hjóla!"
+    },
+    "otp": {
+      "tag": "ÖRYGGISTJÓN",
+      "title": "Staðfestu reikning",
+      "instruction": "Notaðu öryggiskóðann hér að neðan til að ljúka við skráningu þína. Gildir í 10 mínútur.",
+      "ignore": "Ef þú baðst ekki um þetta skaltu hunsa þennan tölvupóst."
+    },
+    "common": {
+      "tagline": "Vinnan þín • Tíminn þinn • Peningar þínir",
+      "rights_reserved": "Allur réttur áskilinn",
+      "need_help": "Þarftu aðstoð? Svaraðu þessum tölvupósti eða farðu í þjónustuver okkar."
+    },
+    "welcome": {
+      "tag": "VELKOMIN Í STRUG",
+      "title": "Halló, {{name}}!",
+      "instruction": "Reikningurinn þinn er staðfestur. Þú ert nú hluti af vettvangi sem er smíðaður til að einfalda vinnu þína, tíma og peninga.",
+      "button": "Skoða mælaborð"
+    },
+    "password_reset": {
+      "tag": "ÖRYGGI",
+      "title": "Endurstilla lykilorð",
+      "instruction": "Beiðni var gerð um að endurstilla Strug reikningslykilorðið þitt. Smelltu á hnappinn hér að neðan til að velja nýjan.",
+      "button": "Endurstilla lykilorðið mitt",
+      "ignore": "Ef þú baðst ekki um þetta geturðu örugglega hunsað þennan tölvupóst. Tengill rennur út eftir 1 klukkustund."
+    },
+    "login_alert": {
+      "tag": "ÖRYGGI VIÐVÖRUN",
+      "title": "Ný innskráning fannst",
+      "instruction": "Við tókum eftir nýrri innskráningu á Strug reikninginn þinn. Ef þetta varst þú getur þú hunsað þennan tölvupóst.",
+      "device": "Tæki",
+      "time": "Tími",
+      "not_you": "Ef þetta varst EKKI þú, vinsamlegast tryggðu reikninginn þinn strax með því að breyta lykilorðinu þínu."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Yfirlit yfir akstur",
+      "tag": "FERÐ LOKIÐ",
+      "total_fare": "Heildarfargjald",
+      "distance": "Fjarlægð",
+      "duration": "Lengd",
+      "pickup": "Afhending",
+      "drop": "Brottför",
+      "driver": "Bílstjóri",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Þakka þér fyrir að hjóla með Strug!",
+      "support": "Ef þú átt í vandræðum með þessa ferð, hafðu samband við þjónustudeild."
+    },
+    "carpool_booking": {
+      "subject": "Samferðabíll staðfest: Farið er bókað!",
+      "title": "Bókun staðfest",
+      "tag": "BÆLIÐ FYRIRT",
+      "from": "Frá",
+      "to": "Til",
+      "seats": "Sæti bókuð",
+      "total_cost": "Heildarkostnaður",
+      "status": "Staða",
+      "thanks": "Þakka þér fyrir samveruna með Strug!",
+      "details_msg": "Sæti þitt hefur verið frátekið. Vinsamlegast mætið tímanlega á afhendingarstað."
+    },
+    "ghost_driver": {
+      "subject": "Ride Update: Við erum að endurúthluta nýjum bílstjóra fyrir þig",
+      "title": "Að finna nýjan bílstjóri",
+      "tag": "RIDE UPPFÆRSLA",
+      "instruction": "Fyrri bílstjórinn þinn er ekki tiltækur eða svarar ekki. Ekki hafa áhyggjur, við erum sjálfkrafa að leita að nýjum bílstjóra til að sækja þig.",
+      "status": "Núverandi staða: Leitar aftur að ökumönnum...",
+      "hang_tight": "Vinsamlegast haltu fast! Við munum láta þig vita um leið og nýr bílstjóri samþykkir beiðni þína."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Lykilorðinu þínu var breytt",
+      "title": "Lykilorð uppfært",
+      "tag": "ÖRYGGISUPPFÆRSLA",
+      "instruction": "Lykilorðinu þínu fyrir Strug reikninginn var nýlega breytt. Ef þú gerðir þessa breytingu geturðu örugglega hunsað þennan tölvupóst.",
+      "warning": "Ef þú Breyttir EKKI lykilorðinu þínu gæti reikningurinn þinn verið í hættu. Vinsamlegast tryggðu reikninginn þinn strax.",
+      "button": "Tryggðu reikninginn minn",
+      "footer": "Strug Platform öryggisteymi"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Pöntun staðfest! #{{order_id}}",
+        "new_order_vendor": "Aðgerða krafist: Ný pöntun móttekin! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Pöntunarkvittun",
+        "tag": "TEKST PÖNTUN",
+        "vendor_tag": "AÐGERÐA ÞARF",
+        "order_id": "Auðkenni pöntunar",
+        "item": "Atriði",
+        "qty": "Magn",
+        "price": "Verð",
+        "subtotal": "Samtala",
+        "delivery_fee": "Sendingargjald",
+        "service_tax": "Þjónustuskattur",
+        "platform_fee": "Pallsgjald",
+        "grand_total": "HEILDARUPPHÆÐ",
+        "total": "Heildarupphæð",
+        "delivery_address": "Heimilisfang afhendingar",
+        "thanks": "Vona að þú njótir máltíðarinnar!",
+        "vendor_title": "Ný pöntun fyrir þig",
+        "vendor_msg": "Þú hefur fengið nýja pöntun. Vinsamlegast byrjaðu að undirbúa það strax."
+      }
+    },
+    "food_status": {
+      "tag": "UPPFÆRSLA PANTA",
+      "subjects": {
+        "preparing": "Strug Food: Verið er að undirbúa pöntunina þína! 🍳",
+        "dispatched": "Frábærar fréttir! Pöntun þín er á leiðinni 🛵",
+        "delivered": "Njóttu máltíðarinnar! Pöntun afgreidd með góðum árangri ✅",
+        "cancelled": "Strug Tilkynning: Hætt hefur verið við pöntunina þína ❌"
+      },
+      "messages": {
+        "preparing": "Veitingastaðurinn er byrjaður að undirbúa dýrindis máltíðina þína. Við látum þig vita þegar það er til afhendingar.",
+        "dispatched": "Pöntunin þín hefur verið sótt og afhendingaraðili okkar er á leiðinni á þinn stað.",
+        "delivered": "Pöntun þín hefur verið afhent. Þakka þér fyrir að velja Strug!",
+        "cancelled": "Okkur þykir leitt að tilkynna þér að pöntunin þín hefur verið hætt. Ef þú hefur þegar greitt mun endurgreiðsla hefjast fljótlega."
+      },
+      "labels": {
+        "order_id": "Auðkenni pöntunar",
+        "current_status": "Núverandi staða"
+      }
+    },
+    "digital": {
+      "subject": "Stafræna efnið þitt í Strug er tilbúið!",
+      "title": "Sæktu vöruna þína",
+      "instruction": "Þakka þér fyrir kaupin! Þú getur nú nálgast og hlaðið niður stafrænu efninu þínu með því að nota hnappinn hér að neðan.",
+      "button": "Sækja núna"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Launaseðillinn þinn fyrir þennan mánuð er tilbúinn 📄",
+      "title": "Mánaðarlegur launaseðill",
+      "tag": "SAMANTEKT KUNNA",
+      "net_salary": "Nettó laun",
+      "epf": "EPF (starfsmaður)",
+      "etf": "launaskrá etf — ETF",
+      "ot": "OT borga",
+      "bonus": "Bónus",
+      "status": "Greiðslustaða",
+      "thanks": "Ef þú hefur einhverjar spurningar varðandi laun þín, vinsamlegast hafðu samband við HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Orlofsbeiðni þín hefur verið samþykkt ✅",
+      "subject_rejected": "Strug HR: Uppfærsla á leyfisbeiðni þinni ❌",
+      "title_approved": "Leyfi samþykkt!",
+      "title_rejected": "Skildu uppfærslu",
+      "tag": "LEGA BEIÐI",
+      "status_approved": "Orlofsbeiðni þín fyrir næsta tímabil hefur verið samþykkt.",
+      "status_rejected": "Okkur þykir leitt að tilkynna þér að beiðni þinni um leyfi fyrir næsta tímabil hefur verið hafnað.",
+      "from_date": "Frá Dagsetningu",
+      "to_date": "Hingað til",
+      "reason": "Ástæða höfnunar",
+      "thanks": "Fyrir frekari spurningar, vinsamlegast hafðu samband við HR deildina þína."
+    },
+    "job_alert": {
+      "subject": "Strug störf: Ný umsókn móttekin fyrir {{job_title}} 💼",
+      "title": "Nýr frambjóðandi sótti um",
+      "tag": "UMSÓKN um STARF",
+      "instruction": "Nýr umsækjandi hefur sótt um eina af starfsskráningunum þínum. Hér eru stuttar upplýsingar:",
+      "job_title": "Starf hlutverk",
+      "candidate": "Nafn frambjóðanda",
+      "view_button": "Skoða umsókn",
+      "thanks": "Vinsamlegast skráðu þig inn á umboðsgáttina þína til að skoða allar upplýsingar og ferilskrá."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Vinnuvaktin þín hefur verið uppfærð 🕒",
+      "title": "Shift uppfært",
+      "tag": "UPPFÆRSLA UPPFÆRSLA",
+      "instruction": "Vinnuáætlunin þín hefur nýlega verið uppfærð af mannauðsdeildinni. Vinsamlega athugaðu nýju vakttímana þína hér að neðan.",
+      "start_time": "Shift byrjar",
+      "end_time": "Vakti lýkur",
+      "thanks": "Gakktu úr skugga um að þú sért viðstaddur samkvæmt nýju dagskránni. Hafðu samband við HR fyrir allar áhyggjur."
+    },
+    "services": {
+      "tag": "ÞJÓNUSTUUPPFÆRSLA",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Skipun þín er staðfest! ✅",
+        "new_alert_provider": "Nýr fundur: Þú ert með nýja bókun! 📅",
+        "reminder": "Áminning: tíminn þinn er eftir nokkrar klukkustundir ⏳",
+        "rental_expiry": "Aðgerða krafist: Leigan þín rennur út fljótlega! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Þjónusta",
+        "provider": "Veitandi",
+        "customer": "Viðskiptavinur",
+        "date": "Dagsetning",
+        "time": "Tími",
+        "location": "Staðsetning",
+        "expiry": "Fyrningardagsetning"
+      },
+      "messages": {
+        "confirmed": "Fundurinn þinn hefur verið ákveðinn. Vinsamlegast mætið tímanlega.",
+        "provider_alert": "Nýr viðskiptavinur hefur bókað þjónustu þína. Hér eru smáatriðin.",
+        "reminder": "Þetta er vinaleg áminning um væntanlegt stefnumót þitt með Strug.",
+        "rental_expiry": "Leigutíminn þinn er að ljúka. Vinsamlegast skilaðu hlutnum eða lengdu frestinn til að forðast viðurlög.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "Brýnt: FYRNINGASKYNNING",
+        "item_name": "Nafn vöru",
+        "due_date": "Gjalddagi",
+        "order_id": "Auðkenni pöntunar",
+        "button": "Framlengja eða skila hlut",
+        "footer": "Forðastu seingjöld með því að skila vörunni fyrir tilskilinn tíma.",
+        "thanks": "Þakka þér fyrir að nota Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Þakka þér fyrir rausnarlegt framlag þitt! ❤️",
+        "loan_reminder": "Greiðsluáminning: Lánið þitt er á gjalddaga 💳"
+      },
+      "donation": {
+        "title": "Framlag móttekið",
+        "tag": "AÐ GEFJA AFTUR",
+        "msg": "Stuðningur þinn skiptir miklu máli! Við höfum tekið á móti framlagi þínu til verkefnisins.",
+        "amount": "Upphæð gefið",
+        "project": "Verkefni"
+      },
+      "loan": {
+        "title": "Endurgreiðsla láns",
+        "tag": "GREIÐSLA Á GANGI",
+        "msg": "Þetta er áminning um að endurgreiðsludagur láns þíns er að nálgast. Gakktu úr skugga um að nægt fjármagn sé til staðar.",
+        "due_date": "Gjalddagi",
+        "amount": "Upphæð afborgunar"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Pöntun staðfest #{{order_id}}",
+        "new_order_seller": "Strug Shop: Ný pöntun móttekin #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "PÖNNUN STAÐFEST",
+        "vendor_tag": "NÝ PÖNNUN",
+        "title": "Pöntun þín er staðfest",
+        "vendor_title": "Þú ert með nýja pöntun",
+        "order_id": "Panta",
+        "product": "Vara",
+        "qty": "Magn",
+        "total": "Samtals",
+        "thanks": "Þakka þér fyrir að versla á Strug!",
+        "vendor_msg": "Vinsamlega undirbúið og sendið þessa pöntun eins fljótt og auðið er."
+      },
+      "status": {
+        "tag": "UPPFÆRSLA PANTA",
+        "order_id": "Auðkenni pöntunar",
+        "tracking": "Rakningarnúmer",
+        "track_button": "Skoða pöntun",
+        "subjects": {
+          "confirmed": "Strug Shop: Pöntun þín er staðfest",
+          "shipped": "Strug Shop: Pöntunin þín hefur verið send",
+          "fulfilled": "Strug Shop: Pöntunin þín var afhent"
+        },
+        "messages": {
+          "confirmed": "Seljandinn staðfesti pöntunina þína og er að undirbúa hana fyrir sendingu.",
+          "shipped": "Pakkinn þinn er á leiðinni. Rekja: {{tracking_number}}",
+          "fulfilled": "Pöntun þín hefur verið afhent. Við vonum að þú njótir kaupanna!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Vikuleg námsframvinda þín er hér 📚",
+        "unread_chat": "Strug: Þú ert með ólesin skilaboð í pósthólfinu þínu 💬"
+      },
+      "lms": {
+        "title": "Námsframfarir",
+        "tag": "VERTU SMART",
+        "msg": "Þú stendur þig frábærlega! Hér er yfirlit yfir virkni flashcards þíns þessa vikuna.",
+        "cards_reviewed": "Spil skoðuð",
+        "new_decks": "Nýir þilfar sameinaðir"
+      },
+      "chat": {
+        "title": "Ný skilaboð",
+        "tag": "SAMFÉLAG",
+        "msg": "Þú hefur verið í burtu um stund. Vinir þínir og liðsmenn eru að reyna að ná til þín.",
+        "button": "Skoða spjall"
+      }
+    }
+  }
+}

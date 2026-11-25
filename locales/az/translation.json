@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} tapılmadı",
+    "fetchFailed": "{{resource}} əldə etmək alınmadı",
+    "createFailed": "{{resource}} yaratmaq alınmadı",
+    "updateFailed": "{{resource}} yeniləmək alınmadı",
+    "deleteFailed": "{{resource}} silmək alınmadı",
+    "invalidId": "{{field}} rəqəm olmalıdır",
+    "alreadyExists": "{{field}} artıq mövcuddur",
+    "invalidFormat": "Yanlış {{field}} formatı",
+    "internalServer": "Daxili server xətası",
+    "accessDenied": "Giriş rədd edildi",
+    "invalidToken": "Yanlış nişan",
+    "adminRequired": "Admin girişi tələb olunur",
+    "forbidden": "Bu əməliyyatı yerinə yetirmək üçün icazəniz yoxdur"
+  },
+  "food": {
+    "filterError": "Filtr xətası",
+    "orderAlreadyTaken": "Bu sifariş artıq başqa sürücü tərəfindən alınıb.",
+    "orderAccepted": "Sifariş çatdırılma üçün qəbul olunur",
+    "orderDeclined": "Sifariş rədd edildi.",
+    "orderRejected": "Sifariş rədd edildi."
+  },
+  "user": {
+    "notFound": "İstifadəçi tapılmadı",
+    "deleted": "İstifadəçi uğurla silindi",
+    "labelStreetRequired": "Etiket və küçə tələb olunur",
+    "addressNotFound": "Ünvan tapılmadı",
+    "savedAddressRequired": "Çatdırılma ünvanı tələb olunur",
+    "cannotModifyOther": "Başqa istifadəçinin hesabını dəyişdirmək mümkün deyil",
+    "emailExists": "E-poçt və ya referal kodu artıq mövcuddur"
+  },
+  "auth": {
+    "invalidLoginFormat": "Yanlış giriş formatı",
+    "userNotFound": "İstifadəçi tapılmadı",
+    "renewSubscription": "Zəhmət olmasa abunəliyinizi yeniləyin",
+    "verifyBefore": "Zəhmət olmasa, daxil olmamışdan əvvəl {{method}} nömrənizi yoxlayın.",
+    "noPassword": "Bu hesabın parolu yoxdur. Google girişini sınayın.",
+    "invalidPassword": "Yanlış parol",
+    "teamMemberNotFound": "Komanda üzvü tapılmadı",
+    "loginSuccessful": "Giriş uğurlu oldu",
+    "invalidCredentials": "Etibarsız etimadnamələr",
+    "noRefreshToken": "Yeniləmə nişanı təqdim edilməyib",
+    "invalidRefreshToken": "Yanlış və ya vaxtı keçmiş yeniləmə nişanı",
+    "invalidRefreshTokenPayload": "Yanlış yeniləmə nişanı yükü",
+    "teamMembershipNotFound": "Komanda üzvlüyü tapılmadı",
+    "accessTokenRefreshed": "Giriş nişanı yeniləndi",
+    "refreshTokenDeleted": "Yeniləmə nişanı silindi",
+    "emailRequired": "E-poçt tələb olunur",
+    "passwordAccountExists": "Bu e-poçt paroldan istifadə etməklə qeydə alınıb. Zəhmət olmasa əl ilə daxil olun.",
+    "emailRequiredFacebook": "E-poçt tələb olunur, lakin Facebook tərəfindən təmin edilmir. Facebook hesabınızın təsdiqlənmiş e-poçt ünvanına malik olduğundan əmin olun.",
+    "authCodeRequired": "Doğrulama kodu tələb olunur",
+    "validEmailRequired": "Etibarlı e-poçt tələb olunur.",
+    "accountEmailExists": "Bu e-poçt ilə hesab artıq mövcuddur.",
+    "usernameTaken": "Həmin istifadəçi adı artıq götürülüb.",
+    "tooManyOtpRequests": "Həddindən artıq kod sorğusu. Daha sonra yenidən cəhd edin.",
+    "failedSendCode": "Kodu göndərmək alınmadı.",
+    "registerFieldsRequired": "e-poçt, ad, parol və otp tələb olunur.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Parola daxil olmalıdır: {{requirements}}.",
+    "noVerificationCode": "Doğrulama kodu tapılmadı. Zəhmət olmasa yenisini tələb edin.",
+    "verificationExpired": "Doğrulama kodunun vaxtı keçib. Zəhmət olmasa yenisini tələb edin.",
+    "tooManyOtpAttempts": "Həddindən artıq yanlış cəhdlər. Yeni doğrulama kodu tələb edin.",
+    "invalidVerificationCode": "Yanlış doğrulama kodu.",
+    "verificationFailed": "Doğrulama alınmadı.",
+    "tooManyRequests": "Həddindən artıq sorğu. Daha sonra yenidən cəhd edin.",
+    "resetFieldsRequired": "e-poçt, newPassword və token tələb olunur.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Yanlış və ya vaxtı keçmiş sıfırlama linki.",
+    "accountLocked": "Hesab müvəqqəti olaraq kilidlənib. Daha sonra yenidən cəhd edin.",
+    "verificationCodeRequired": "Doğrulama kodu tələb olunur.",
+    "invalidSession": "Yanlış sessiya",
+    "passwordFieldsRequired": "currentPassword və newPassword tələb olunur"
+  },
+  "success": {
+    "deleted": "{{resource}} uğurla silindi",
+    "created": "{{resource}} uğurla yaradıldı",
+    "updated": "{{resource}} uğurla yeniləndi"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Elanlar: Elan Hesabı Aşağı Balans Xəbərdarlığı",
+      "spend_alert_subject": "Strug Reklam Xəbərdarlığı: {{percentage}}% Kampaniya #{{campaign_id}} üçün gündəlik büdcəyə çatıldı",
+      "low_balance": {
+        "tag": "REKLAM HESABININ XƏBƏRDARLIĞI",
+        "title": "Aşağı Balans Xəbərdarlığı",
+        "instruction": "Salam {{name}}, Reklam Pulqabı balansınız tükənmək üzrədir. Aktiv kampaniyaların avtomatik dayandırılmasının qarşısını almaq üçün hesabınızın balansını doldurun.",
+        "balance_label": "Cari balans:",
+        "button": "Reklam cüzdanını doldurun"
+      },
+      "spend_alert": {
+        "tag": "BÜDCƏ DAŞINA HATILDI",
+        "title": "{{percentage}}% Gündəlik Büdcə Xərclənib",
+        "instruction": "Salam {{name}}, bu aktiv reklam dəstiniz üçün avtomatik status yeniləməsidir. Kampaniyanız gündəlik xərcləmə həddinə çatıb.",
+        "campaign_label": "Kampaniya ID:",
+        "button": "Kampaniyanı idarə et"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Doğrulama: Kodunuz buradadır",
+      "welcome": "Strug Ailəsinə xoş gəlmisiniz!",
+      "password_reset": "Strug: Parolunuzu sıfırlayın",
+      "login_alert": "Strug Security Xəbərdarlığı: Yeni giriş aşkarlandı",
+      "ride_receipt": "Strug Ride Xülasə: Sürdüyünüz üçün təşəkkür edirik!"
+    },
+    "otp": {
+      "tag": "TƏHLÜKƏSİZLİK YOXLANIŞI",
+      "title": "Hesabı Doğrulayın",
+      "instruction": "Qeydiyyatınızı tamamlamaq üçün aşağıdakı təhlükəsiz kodu istifadə edin. 10 dəqiqə etibarlıdır.",
+      "ignore": "Əgər bunu tələb etməmisinizsə, lütfən, bu e-poçta məhəl qoymayın."
+    },
+    "common": {
+      "tagline": "İşiniz • Vaxtınız • Pulunuz",
+      "rights_reserved": "Bütün hüquqlar qorunur",
+      "need_help": "Kömək lazımdır? Bu e-poçta cavab verin və ya dəstək mərkəzimizə baş çəkin."
+    },
+    "welcome": {
+      "tag": "STRUG-A XOŞ GƏLİRSİNİZ",
+      "title": "Salam, {{name}}!",
+      "instruction": "Hesabınız təsdiqləndi. Siz indi işinizi, vaxtınızı və pulunuzu sadələşdirmək üçün qurulmuş platformanın bir hissəsisiniz.",
+      "button": "İdarə Panelini araşdırın"
+    },
+    "password_reset": {
+      "tag": "TƏHLÜKƏSİZLİK",
+      "title": "Parolu sıfırlayın",
+      "instruction": "Strug hesabınızın parolunu sıfırlamaq üçün sorğu göndərildi. Yenisini seçmək üçün aşağıdakı düyməyə klikləyin.",
+      "button": "Parolumu Sıfırlayın",
+      "ignore": "Bunu tələb etməmisinizsə, bu e-məktubu güvənlə iqnor edə bilərsiniz. Linkin müddəti 1 saat ərzində bitir."
+    },
+    "login_alert": {
+      "tag": "TƏHLÜKƏSİZLİK XƏBƏRDARLIĞI",
+      "title": "Yeni Giriş Aşkarlandı",
+      "instruction": "Strug hesabınıza yeni giriş gördük. Əgər bu siz idinizsə, bu e-məktubu iqnor edə bilərsiniz.",
+      "device": "Cihaz",
+      "time": "Vaxt",
+      "not_you": "Əgər bu SİZ deyilsinizsə, lütfən, parolunuzu dəyişdirərək hesabınızı dərhal qoruyun."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Gəzinti Xülasəsi",
+      "tag": "SƏYAHƏT TAMAMLANDI",
+      "total_fare": "Ümumi tarif",
+      "distance": "Məsafə",
+      "duration": "Müddət",
+      "pickup": "Götürmə",
+      "drop": "Düşmə",
+      "driver": "Sürücü",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Strug ilə sürdüyünüz üçün təşəkkür edirik!",
+      "support": "Bu gedişlə bağlı hər hansı probleminiz varsa, dəstək xidməti ilə əlaqə saxlayın."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Təsdiq edildi: Gəzintiniz bron edildi!",
+      "title": "Rezervasyon Təsdiqləndi",
+      "tag": "MAŞIN PARÇASI QORUNMUŞDUR",
+      "from": "Kimdən",
+      "to": "Kimə",
+      "seats": "Oturacaqlar rezerv edilib",
+      "total_cost": "Ümumi Xərc",
+      "status": "Vəziyyət",
+      "thanks": "Strug ilə avtomobil paylaşdığınız üçün təşəkkür edirik!",
+      "details_msg": "Oturacağınız yer uğurla rezerv edildi. Zəhmət olmasa vaxtında qəbul nöqtəsində olun."
+    },
+    "ghost_driver": {
+      "subject": "Sürüş yeniləməsi: Sizin üçün yeni sürücü təyin edirik",
+      "title": "Yeni Sürücü tapmaq",
+      "tag": "RIDE YENİLƏMƏSİ",
+      "instruction": "Əvvəlki sürücünüz əlçatan deyil və ya cavab vermir. Narahat olmayın, sizi götürmək üçün avtomatik olaraq yeni sürücü axtarırıq.",
+      "status": "Cari Vəziyyət: Sürücülər yenidən axtarılır...",
+      "hang_tight": "Zəhmət olmasa möhkəm asın! Yeni sürücü sorğunuzu qəbul edən kimi sizə xəbər verəcəyik."
+    },
+    "password_changed": {
+      "subject": "Strug Security Xəbərdarlığı: Parolunuz dəyişdirildi",
+      "title": "Parol Yenilənib",
+      "tag": "TƏHLÜKƏSİZLİK YENİLƏNMƏSİ",
+      "instruction": "Strug hesabınızın parolu bu yaxınlarda dəyişdirilib. Bu dəyişikliyi etmisinizsə, bu e-məktubu etibarsızlıqla yox edə bilərsiniz.",
+      "warning": "Əgər parolunuzu DƏYİŞMƏMƏSƏSİNİZ, hesabınıza təhlükə yarana bilər. Zəhmət olmasa hesabınızı dərhal qoruyun.",
+      "button": "Hesabımı Təhlükəsiz Edin",
+      "footer": "Strug Platformasının Təhlükəsizlik Qrupu"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Sifariş Təsdiq edildi! #{{order_id}}",
+        "new_order_vendor": "Tələb olunan hərəkət: Yeni Sifariş Alındı! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Sifariş qəbzi",
+        "tag": "SİFARİŞ Uğurlu",
+        "vendor_tag": "FƏALİYYƏT TƏLƏB EDİLİR",
+        "order_id": "Sifariş ID",
+        "item": "Maddə",
+        "qty": "Miqdar",
+        "price": "Qiymət",
+        "subtotal": "Ara cəmi",
+        "delivery_fee": "Çatdırılma haqqı",
+        "service_tax": "Xidmət Vergisi",
+        "platform_fee": "Platforma haqqı",
+        "grand_total": "ÜMUMİ MƏBLƏK",
+        "total": "Ümumi məbləğ",
+        "delivery_address": "Çatdırılma Ünvanı",
+        "thanks": "Ümid edirik ki, yeməkdən zövq alacaqsınız!",
+        "vendor_title": "Sizin üçün Yeni Sifariş",
+        "vendor_msg": "Yeni sifariş aldınız. Zəhmət olmasa dərhal hazırlamağa başlayın."
+      }
+    },
+    "food_status": {
+      "tag": "SİFARİŞ YENİLƏNMƏSİ",
+      "subjects": {
+        "preparing": "Strug Food: Sifarişiniz hazırlanır! 🍳",
+        "dispatched": "Əla xəbər! Sifarişiniz yoldadır 🛵",
+        "delivered": "Yeməkdən zövq alın! Sifariş uğurla çatdırıldı✅",
+        "cancelled": "Strug Qeyd: Sifarişiniz ləğv edilib ❌"
+      },
+      "messages": {
+        "preparing": "Restoran dadlı yeməklərinizi hazırlamağa başlayıb. Çatdırılma üçün çıxdıqda sizə xəbər verəcəyik.",
+        "dispatched": "Sifarişiniz götürüldü və çatdırılma partnyorumuz yerinizə çatmaq üzrədir.",
+        "delivered": "Sifarişiniz təhvil verildi. Strugu seçdiyiniz üçün təşəkkür edirik!",
+        "cancelled": "Sifarişinizin ləğv edildiyini təəssüflə bildiririk. Əgər siz artıq ödəniş etmisinizsə, tezliklə geri qaytarılacaq."
+      },
+      "labels": {
+        "order_id": "Sifariş ID",
+        "current_status": "Cari Vəziyyət"
+      }
+    },
+    "digital": {
+      "subject": "Strug Rəqəmsal Məzmununuz Hazırdır!",
+      "title": "Məhsulunuzu Yükləyin",
+      "instruction": "Satın aldığınız üçün təşəkkür edirik! İndi aşağıdakı düymədən istifadə edərək rəqəmsal məzmununuza daxil ola və yükləyə bilərsiniz.",
+      "button": "İndi yükləyin"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Bu ay üçün maaş kartınız hazırdır 📄",
+      "title": "Aylıq maaş kartı",
+      "tag": "ƏMƏK HAQQININ XÜLASƏSİ",
+      "net_salary": "Xalis Əmək haqqı",
+      "epf": "EPF (İşçi)",
+      "etf": "əmək haqqı etf - ETF",
+      "ot": "OT Ödənişi",
+      "bonus": "əmək haqqı bonusu — Bonus",
+      "status": "Ödəniş Status",
+      "thanks": "Maaşınızla bağlı hər hansı sualınız olarsa, HR ilə əlaqə saxlayın."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Məzuniyyət sorğunuz təsdiqləndi ✅",
+      "subject_rejected": "Strug HR: Məzuniyyət sorğunuzu yeniləyin ❌",
+      "title_approved": "Təsdiqlənmiş buraxın!",
+      "title_rejected": "Yeniləməni tərk edin",
+      "tag": "SORĞU TƏRK EDİN",
+      "status_approved": "Növbəti dövr üçün məzuniyyət sorğunuz uğurla təsdiqləndi.",
+      "status_rejected": "Təəssüflə bildiririk ki, növbəti dövr üçün məzuniyyət sorğunuz rədd edilib.",
+      "from_date": "Tarixdən",
+      "to_date": "Bu günə qədər",
+      "reason": "Rədd etmə səbəbi",
+      "thanks": "Əlavə suallarınız üçün HR departamentinizlə əlaqə saxlayın."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: {{job_title}} üçün Yeni Müraciət Qəbul Edildi 💼",
+      "title": "Yeni Namizəd Müraciət Edildi",
+      "tag": "İŞ MÜRACİƏTİ",
+      "instruction": "Yeni namizəd iş siyahılarınızdan birinə müraciət edib. Qısa təfərrüatları təqdim edirik:",
+      "job_title": "İş Rolu",
+      "candidate": "Namizədin adı",
+      "view_button": "Tətbiqə baxın",
+      "thanks": "Tam təfərrüatlar və CV ilə tanış olmaq üçün agent portalınıza daxil olun."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: İş Növbəniz Yenilənib 🕒",
+      "title": "Shift Yenilənib",
+      "tag": "CƏDVƏLİ YENİLƏNİB",
+      "instruction": "İş qrafikiniz bu yaxınlarda HR departamenti tərəfindən yeniləndi. Aşağıdakı yeni növbə vaxtlarınızı yoxlayın.",
+      "start_time": "Shift başlayır",
+      "end_time": "Shift bitir",
+      "thanks": "Zəhmət olmasa, yeni cədvələ uyğun olaraq iştirak etdiyinizə əmin olun. Hər hansı bir narahatlıq üçün HR ilə əlaqə saxlayın."
+    },
+    "services": {
+      "tag": "XİDMƏT YENİLƏNMƏSİ",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Görüşünüz təsdiqləndi! ✅",
+        "new_alert_provider": "Yeni görüş: Yeni rezervasiyanız var! 📅",
+        "reminder": "Xatırlatma: Görüşünüz bir neçə saat sonra olacaq ⏳",
+        "rental_expiry": "Tələb olunan əməliyyat: İcarənin müddəti tezliklə bitir! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Xidmət",
+        "provider": "Provayder",
+        "customer": "Müştəri",
+        "date": "Tarix",
+        "time": "Vaxt",
+        "location": "Məkan",
+        "expiry": "İstifadə müddəti"
+      },
+      "messages": {
+        "confirmed": "Görüşünüz uğurla təyin edildi. Zəhmət olmasa vaxtında olun.",
+        "provider_alert": "Yeni müştəri xidmətinizi sifariş edib. Budur təfərrüatlar.",
+        "reminder": "Bu, Strug ilə qarşıdan gələn görüşünüzün dostcasına xatırlatmasıdır.",
+        "rental_expiry": "İcarəyə götürmə müddətiniz bitmək üzrədir. Lütfən, cərimələrdən qaçmaq üçün əşyanı qaytarın və ya müddəti uzadın.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "TƏCİLİ: MÜDDƏT BİLDİRİMİ",
+        "item_name": "Element Adı",
+        "due_date": "Son tarix",
+        "order_id": "Sifariş ID",
+        "button": "Elementi uzadın və ya qaytarın",
+        "footer": "Məhsulu vaxtından əvvəl qaytarmaqla gecikmə ödənişlərindən qaçın.",
+        "thanks": "Strug Rentals-dan istifadə etdiyiniz üçün təşəkkür edirik."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Səxavətli ianə üçün təşəkkür edirik! ❤️",
+        "loan_reminder": "Ödəniş haqqında xatırlatma: Kredit taksitinizin vaxtı çatmışdır 💳"
+      },
+      "donation": {
+        "title": "İanə Qəbul Edildi",
+        "tag": "GERİ VERMƏK",
+        "msg": "Sizin dəstəyiniz böyük fərq yaradır! Layihə üçün töhfənizi uğurla aldıq.",
+        "amount": "Hədiyyə edilən məbləğ",
+        "project": "Layihə"
+      },
+      "loan": {
+        "title": "Kreditin qaytarılması",
+        "tag": "ÖDƏNİŞ VERİLMİŞDİR",
+        "msg": "Bu, kreditin qaytarılma tarixinizin yaxınlaşdığını xatırladır. Zəhmət olmasa kifayət qədər vəsaitin mövcud olduğundan əmin olun.",
+        "due_date": "Son tarix",
+        "amount": "Taksit məbləği"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Sifariş təsdiqləndi #{{order_id}}",
+        "new_order_seller": "Strug Shop: Yeni sifariş qəbul edildi #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "SİFARİŞ TƏSDİQ EDİLDİ",
+        "vendor_tag": "YENİ SİFARİŞ",
+        "title": "Sifarişiniz təsdiqləndi",
+        "vendor_title": "Yeni sifarişiniz var",
+        "order_id": "Sifariş verin",
+        "product": "Məhsul",
+        "qty": "Kəmiyyət",
+        "total": "Cəmi",
+        "thanks": "Strug-da alış-veriş etdiyiniz üçün təşəkkür edirik!",
+        "vendor_msg": "Zəhmət olmasa bu sifarişi mümkün qədər tez hazırlayın və göndərin."
+      },
+      "status": {
+        "tag": "SİFARİŞ YENİLƏNMƏSİ",
+        "order_id": "Sifariş ID",
+        "tracking": "İzləmə nömrəsi",
+        "track_button": "Sifarişə baxın",
+        "subjects": {
+          "confirmed": "Strug Shop: Sifarişiniz təsdiqləndi",
+          "shipped": "Strug Shop: Sifarişiniz göndərildi",
+          "fulfilled": "Strug Shop: Sifarişiniz çatdırıldı"
+        },
+        "messages": {
+          "confirmed": "Satıcı sifarişinizi təsdiqlədi və onu göndərməyə hazırlayır.",
+          "shipped": "Paketiniz yoldadır. İzləmə: {{tracking_number}}",
+          "fulfilled": "Sifarişiniz çatdırıldı. Ümid edirik ki, alışdan zövq alacaqsınız!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Sizin həftəlik öyrənmə tərəqqiniz burada 📚",
+        "unread_chat": "Strug: Gələnlər qutunuzda oxunmamış mesajlarınız var 💬"
+      },
+      "lms": {
+        "title": "Öyrənmə Tərəqqi",
+        "tag": "AĞILLI QALIN",
+        "msg": "Əla edirsiniz! Bu həftə flash kart fəaliyyətinizin xülasəsi.",
+        "cards_reviewed": "Kartlar nəzərdən keçirildi",
+        "new_decks": "Yeni göyərtələr qoşuldu"
+      },
+      "chat": {
+        "title": "Yeni Mesajlar",
+        "tag": "İCMA",
+        "msg": "Bir müddətdir ki, uzaqlardasınız. Dostlarınız və komanda üzvləriniz sizə çatmağa çalışır.",
+        "button": "Söhbətə baxın"
+      }
+    }
+  }
+}

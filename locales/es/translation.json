@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} no encontrado",
+    "fetchFailed": "Error al obtener {{resource}}",
+    "createFailed": "Error al crear {{resource}}",
+    "updateFailed": "Error al actualizar {{resource}}",
+    "deleteFailed": "Error al eliminar {{resource}}",
+    "invalidId": "{{field}} debe ser un número",
+    "alreadyExists": "{{field}} ya existe",
+    "invalidFormat": "Formato de {{field}} no válido",
+    "internalServer": "Error interno del servidor",
+    "accessDenied": "Acceso denegado",
+    "invalidToken": "Token no válido",
+    "adminRequired": "Se requiere acceso de administrador",
+    "forbidden": "No tienes permiso para realizar esta acción"
+  },
+  "food": {
+    "filterError": "Error de filtro",
+    "orderAlreadyTaken": "Esta orden ya fue tomada por otro conductor.",
+    "orderAccepted": "Pedido aceptado para entrega",
+    "orderDeclined": "Pedido rechazado.",
+    "orderRejected": "Pedido rechazado."
+  },
+  "user": {
+    "notFound": "Usuario no encontrado",
+    "deleted": "Usuario eliminado exitosamente",
+    "labelStreetRequired": "Se requiere etiqueta y calle.",
+    "addressNotFound": "Dirección no encontrada",
+    "savedAddressRequired": "Se requiere dirección de entrega",
+    "cannotModifyOther": "No se puede modificar la cuenta de otro usuario",
+    "emailExists": "El correo electrónico o el código de referencia ya existe"
+  },
+  "auth": {
+    "invalidLoginFormat": "Formato de inicio de sesión no válido",
+    "userNotFound": "Usuario no encontrado",
+    "renewSubscription": "Por favor, renueve su suscripción",
+    "verifyBefore": "Por favor, verifique su {{method}} antes de iniciar sesión.",
+    "noPassword": "Esta cuenta no tiene contraseña. Intente iniciar sesión con Google.",
+    "invalidPassword": "Contraseña incorrecta",
+    "teamMemberNotFound": "Miembro del equipo no encontrado",
+    "loginSuccessful": "Inicio de sesión exitoso",
+    "invalidCredentials": "Credenciales no válidas",
+    "noRefreshToken": "No se proporcionó token de actualización",
+    "invalidRefreshToken": "Token de actualización no válido o caducado",
+    "invalidRefreshTokenPayload": "Carga útil del token de actualización no válida",
+    "teamMembershipNotFound": "Membresía del equipo no encontrada",
+    "accessTokenRefreshed": "Token de acceso actualizado",
+    "refreshTokenDeleted": "Token de actualización eliminado",
+    "emailRequired": "El correo electrónico es obligatorio",
+    "passwordAccountExists": "Este correo está registrado con una contraseña. Inicie sesión manualmente.",
+    "emailRequiredFacebook": "El correo electrónico es obligatorio pero Facebook no lo proporcionó.",
+    "authCodeRequired": "El código de autenticación es obligatorio",
+    "validEmailRequired": "Se requiere un correo electrónico válido.",
+    "accountEmailExists": "Ya existe una cuenta con este correo electrónico.",
+    "usernameTaken": "Ese nombre de usuario ya está en uso.",
+    "tooManyOtpRequests": "Demasiadas solicitudes de código. Vuelve a intentarlo más tarde.",
+    "failedSendCode": "No se pudo enviar el código.",
+    "registerFieldsRequired": "Se requieren correo electrónico, nombre, contraseña y OTP.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "La contraseña debe incluir: {{requirements}}.",
+    "noVerificationCode": "No se encontró ningún código de verificación. Por favor solicite uno nuevo.",
+    "verificationExpired": "El código de verificación ha caducado. Por favor solicite uno nuevo.",
+    "tooManyOtpAttempts": "Demasiados intentos incorrectos. Solicite un nuevo código de verificación.",
+    "invalidVerificationCode": "Código de verificación no válido.",
+    "verificationFailed": "La verificación falló.",
+    "tooManyRequests": "Demasiadas solicitudes. Inténtelo de nuevo más tarde.",
+    "resetFieldsRequired": "Se requieren correo electrónico, nueva contraseña y token.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Enlace de restablecimiento no válido o caducado.",
+    "accountLocked": "Cuenta bloqueada temporalmente. Vuelve a intentarlo más tarde.",
+    "verificationCodeRequired": "Se requiere código de verificación.",
+    "invalidSession": "Sesión no válida",
+    "passwordFieldsRequired": "Se requieren contraseña actual y nueva contraseña."
+  },
+  "success": {
+    "deleted": "{{resource}} eliminado con éxito",
+    "created": "{{resource}} creado con éxito",
+    "updated": "{{resource}} actualizado con éxito"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Advertencia de saldo bajo de cuenta publicitaria",
+      "spend_alert_subject": "Alerta de Strug Ads: {{percentage}}% del presupuesto diario alcanzado para la campaña n.º {{campaign_id}}",
+      "low_balance": {
+        "tag": "ALERTA DE CUENTA DE ANUNCIOS",
+        "title": "Advertencia de saldo bajo",
+        "instruction": "Hola {{name}}, tu saldo de Ads Wallet se está agotando. Para evitar que las campañas activas se suspendan automáticamente, recargue el saldo de su cuenta.",
+        "balance_label": "Saldo actual:",
+        "button": "Recargar billetera publicitaria"
+      },
+      "spend_alert": {
+        "tag": "HITO PRESUPUESTARIO ALCANZADO",
+        "title": "{{percentage}}% Presupuesto diario gastado",
+        "instruction": "Hola {{name}}, esta es una actualización de estado automática para su conjunto de anuncios activo. Su campaña ha alcanzado un umbral de gasto diario.",
+        "campaign_label": "ID de campaña:",
+        "button": "Administrar campaña"
+      }
+    },
+    "subjects": {
+      "otp": "Verificación de Strug: Su código está aquí",
+      "welcome": "¡Bienvenido a la familia Strug!",
+      "password_reset": "Strug: Restablecer su contraseña",
+      "login_alert": "Alerta de seguridad de Strug: Nuevo inicio de sesión detectado",
+      "ride_receipt": "Resumen de viaje de Strug: ¡Gracias por viajar con nosotros!"
+    },
+    "otp": {
+      "tag": "CONTROL DE SEGURIDAD",
+      "title": "Verificar cuenta",
+      "instruction": "Use el código seguro a continuación para completar su registro. Válido por 10 minutos.",
+      "ignore": "Si no solicitó esto, ignore este correo electrónico."
+    },
+    "common": {
+      "tagline": "Su Trabajo • Su Tiempo • Su Dinero",
+      "rights_reserved": "Todos los derechos reservados",
+      "need_help": "¿Necesitas ayuda? Responda a este correo electrónico o visite nuestro centro de soporte."
+    },
+    "welcome": {
+      "tag": "BIENVENIDOS A STRUG",
+      "title": "Hola, {{name}}!",
+      "instruction": "Su cuenta está verificada. Ahora eres parte de una plataforma creada para simplificar tu trabajo, tiempo y dinero.",
+      "button": "Explorar el panel"
+    },
+    "password_reset": {
+      "tag": "SEGURIDAD",
+      "title": "Restablecer contraseña",
+      "instruction": "Se realizó una solicitud para restablecer la contraseña de su cuenta de Strug. Haga clic en el botón a continuación para elegir una nueva.",
+      "button": "Restablecer mi contraseña",
+      "ignore": "Si no solicitó esto, puede ignorar este correo de forma segura. El enlace caduca en 1 hora."
+    },
+    "login_alert": {
+      "tag": "ALERTA DE SEGURIDAD",
+      "title": "Nuevo inicio de sesión detectado",
+      "instruction": "Notamos un nuevo inicio de sesión en su cuenta de Strug. Si fue usted, puede ignorar este correo.",
+      "device": "Dispositivo",
+      "time": "Hora",
+      "not_you": "Si NO fue usted, proteja su cuenta inmediatamente cambiando su contraseña."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Resumen del viaje",
+      "tag": "VIAJE COMPLETADO",
+      "total_fare": "Tarifa Total",
+      "distance": "Distancia",
+      "duration": "Duración",
+      "pickup": "Punto de recogida",
+      "drop": "Punto de destino",
+      "driver": "Conductor",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "¡Gracias por viajar con Strug!",
+      "support": "Si tiene algún problema con este viaje, comuníquese con soporte."
+    },
+    "carpool_booking": {
+      "subject": "Carpool confirmado: ¡Su viaje está reservado!",
+      "title": "Reserva confirmada",
+      "tag": "CARPOOL RESERVADO",
+      "from": "De",
+      "to": "A",
+      "seats": "Asientos reservados",
+      "total_cost": "Costo total",
+      "status": "Estado",
+      "thanks": "¡Gracias por compartir viaje con Strug!",
+      "details_msg": "Su asiento ha sido reservado con éxito. Por favor, llegue a tiempo al punto de recogida."
+    },
+    "ghost_driver": {
+      "subject": "Actualización del viaje: Estamos buscando un nuevo conductor",
+      "title": "Buscando un nuevo conductor",
+      "tag": "ACTUALIZACIÓN DE VIAJE",
+      "instruction": "Su conductor anterior no está disponible. No se preocupe, estamos buscando automáticamente un nuevo conductor para recogerlo.",
+      "status": "Estado actual: Buscando conductores...",
+      "hang_tight": "¡Por favor, espere! Le notificaremos tan pronto como un nuevo conductor acepte su solicitud."
+    },
+    "password_changed": {
+      "subject": "Alerta de seguridad de Strug: Su contraseña fue cambiada",
+      "title": "Contraseña actualizada",
+      "tag": "ACTUALIZACIÓN DE SEGURIDAD",
+      "instruction": "La contraseña de su cuenta de Strug se cambió recientemente. Si realizó este cambio, puede ignorar este correo.",
+      "warning": "Si NO cambió su contraseña, su cuenta puede estar en riesgo. Por favor, asegure su cuenta inmediatamente.",
+      "button": "Proteger mi cuenta",
+      "footer": "Equipo de seguridad de la plataforma Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: ¡Pedido confirmado! #{{order_id}}",
+        "new_order_vendor": "Acción requerida: ¡Nuevo pedido recibido! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Recibo del pedido",
+        "tag": "PEDIDO EXITOSO",
+        "vendor_tag": "ACCIÓN REQUERIDA",
+        "order_id": "ID de pedido",
+        "item": "Artículo",
+        "qty": "Cant.",
+        "price": "Precio",
+        "subtotal": "subtotal del recibo — Subtotal",
+        "delivery_fee": "Tarifa de entrega",
+        "service_tax": "Impuesto de servicio",
+        "platform_fee": "Tarifa de plataforma",
+        "grand_total": "IMPORTE TOTAL",
+        "total": "Monto Total",
+        "delivery_address": "Dirección de entrega",
+        "thanks": "¡Esperamos que disfrute su comida!",
+        "vendor_title": "Nuevo pedido para usted",
+        "vendor_msg": "Ha recibido un nuevo pedido. Por favor, comience a prepararlo inmediatamente."
+      }
+    },
+    "food_status": {
+      "tag": "ACTUALIZACIÓN DEL PEDIDO",
+      "subjects": {
+        "preparing": "Strug Food: ¡Su pedido se está preparando! 🍳",
+        "dispatched": "¡Buenas noticias! Su pedido está en camino 🛵",
+        "delivered": "¡Buen provecho! Pedido entregado con éxito ✅",
+        "cancelled": "Aviso de Strug: Su pedido ha sido cancelado ❌"
+      },
+      "messages": {
+        "preparing": "El restaurante ha comenzado a preparar su deliciosa comida. Le avisaremos cuando esté en camino.",
+        "dispatched": "Su pedido ha sido recogido y nuestro socio de entrega está en camino a su ubicación.",
+        "delivered": "Su pedido ha sido entregado. ¡Gracias por elegir Strug!",
+        "cancelled": "Lamentamos informarle que su pedido ha sido cancelado. Si ya ha pagado, se iniciará un reembolso en breve."
+      },
+      "labels": {
+        "order_id": "ID del pedido",
+        "current_status": "Estado actual"
+      }
+    },
+    "digital": {
+      "subject": "¡Su contenido digital de Strug está listo!",
+      "title": "Descargue su producto",
+      "instruction": "¡Gracias por su compra! Ahora puede acceder y descargar su contenido digital utilizando el botón a continuación.",
+      "button": "Descargar Ahora"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Su recibo de sueldo de este mes está listo 📄",
+      "title": "Recibo de sueldo mensual",
+      "tag": "RESUMEN DE NÓMINA",
+      "net_salary": "Salario Neto",
+      "epf": "EPF",
+      "etf": "etf de nómina - ETF",
+      "ot": "Horas extras",
+      "bonus": "Bono",
+      "status": "Estado de pago",
+      "thanks": "Si tiene alguna pregunta sobre su salario, comuníquese con Recursos Humanos."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Su solicitud de licencia ha sido aprobada ✅",
+      "subject_rejected": "Strug HR: Actualización sobre su solicitud de licencia ❌",
+      "title_approved": "¡Licencia Aprobada!",
+      "title_rejected": "Actualización de Licencia",
+      "tag": "SOLICITUD DE LICENCIA",
+      "status_approved": "Su solicitud de licencia para el siguiente período ha sido aprobada con éxito.",
+      "status_rejected": "Lamentamos informarle que su solicitud de licencia para el siguiente período ha sido denegada.",
+      "from_date": "Fecha de inicio",
+      "to_date": "Fecha de fin",
+      "reason": "Razón del rechazo",
+      "thanks": "Para cualquier otra pregunta, comuníquese con Recursos Humanos."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Nueva solicitud recibida para {{job_title}} 💼",
+      "title": "Nuevo candidato postuló",
+      "tag": "SOLICITUD DE EMPLEO",
+      "instruction": "Un nuevo candidato ha postulado para uno de sus anuncios de trabajo. Aquí están los detalles breves:",
+      "job_title": "Puesto",
+      "candidate": "Nombre del candidato",
+      "view_button": "Ver Solicitud",
+      "thanks": "Inicie sesión en su portal de agente para revisar los detalles completos y el CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Su turno de trabajo ha sido actualizado 🕒",
+      "title": "Turno Actualizado",
+      "tag": "ACTUALIZACIÓN DE HORARIO",
+      "instruction": "Su horario de trabajo ha sido actualizado recientemente por Recursos Humanos. Verifique sus nuevos horarios a continuación.",
+      "start_time": "Inicio del turno",
+      "end_time": "Fin del turno",
+      "thanks": "Asegúrese de estar presente según el nuevo horario."
+    },
+    "services": {
+      "tag": "ACTUALIZACIÓN DEL SERVICIO",
+      "subjects": {
+        "confirmed_customer": "Strug Services: ¡Su cita está confirmada! ✅",
+        "new_alert_provider": "Nueva Cita: ¡Tiene una nueva reserva! 📅",
+        "reminder": "Recordatorio: Su cita es en unas horas ⏳",
+        "rental_expiry": "Acción requerida: ¡Su alquiler vence pronto! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Servicio",
+        "provider": "Proveedor",
+        "customer": "Cliente",
+        "date": "Fecha",
+        "time": "Hora",
+        "location": "Ubicación",
+        "expiry": "Fecha de vencimiento"
+      },
+      "messages": {
+        "confirmed": "Su cita se ha programado con éxito. Por favor, llegue a tiempo.",
+        "provider_alert": "Un nuevo cliente ha reservado su servicio. Aquí están los detalles.",
+        "reminder": "Este es un recordatorio amistoso de su próxima cita con Strug.",
+        "rental_expiry": "Su período de alquiler está a punto de terminar. Devuelva el artículo o extienda el período para evitar sanciones.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "URGENTE: AVISO DE CADUCIDAD",
+        "item_name": "Nombre del artículo",
+        "due_date": "Fecha de vencimiento",
+        "order_id": "ID de pedido",
+        "button": "Ampliar o devolver artículo",
+        "footer": "Evite cargos por pagos atrasados devolviendo el artículo antes de la fecha límite.",
+        "thanks": "Gracias por utilizar Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: ¡Gracias por su generosa donación! ❤️",
+        "loan_reminder": "Recordatorio de pago: Su cuota de préstamo está vencida 💳"
+      },
+      "donation": {
+        "title": "Donación Recibida",
+        "tag": "DEVOLVIENDO",
+        "msg": "¡Su apoyo hace una gran diferencia! Hemos recibido con éxito su contribución para el proyecto.",
+        "amount": "Monto Donado",
+        "project": "Proyecto"
+      },
+      "loan": {
+        "title": "Pago de Préstamo",
+        "tag": "PAGO VENCIDO",
+        "msg": "Este es un recordatorio de que se acerca la fecha de pago de su préstamo.",
+        "due_date": "Fecha de vencimiento",
+        "amount": "Monto de la cuota"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Tienda Strug: Pedido confirmado #{{order_id}}",
+        "new_order_seller": "Strug Shop: Nuevo pedido recibido #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "PEDIDO CONFIRMADO",
+        "vendor_tag": "NUEVO ORDEN",
+        "title": "Tu pedido está confirmado",
+        "vendor_title": "Tienes un nuevo pedido",
+        "order_id": "Orden",
+        "product": "Producto",
+        "qty": "Cantidad",
+        "total": "totales",
+        "thanks": "¡Gracias por comprar en Strug!",
+        "vendor_msg": "Prepare y envíe este pedido lo antes posible."
+      },
+      "status": {
+        "tag": "ACTUALIZACIÓN DEL PEDIDO",
+        "order_id": "ID de pedido",
+        "tracking": "Número de seguimiento",
+        "track_button": "Ver pedido",
+        "subjects": {
+          "confirmed": "Strug Shop: Su pedido está confirmado",
+          "shipped": "Strug Shop: Su pedido ha sido enviado",
+          "fulfilled": "Strug Shop: Su pedido fue entregado"
+        },
+        "messages": {
+          "confirmed": "El vendedor confirmó su pedido y lo está preparando para su envío.",
+          "shipped": "Tu paquete está en camino. Seguimiento: {{tracking_number}}",
+          "fulfilled": "Su pedido ha sido entregado. ¡Esperamos que disfrutes de tu compra!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Su progreso de aprendizaje semanal está aquí 📚",
+        "unread_chat": "Strug: Tiene mensajes no leídos en su bandeja de entrada 💬"
+      },
+      "lms": {
+        "title": "Progreso de Aprendizaje",
+        "tag": "MANTENTE INTELIGENTE",
+        "msg": "¡Lo estás haciendo genial! Aquí tienes un resumen de tu actividad esta semana.",
+        "cards_reviewed": "Tarjetas revisadas",
+        "new_decks": "Nuevos mazos unidos"
+      },
+      "chat": {
+        "title": "Nuevos Mensajes",
+        "tag": "COMUNIDAD",
+        "msg": "Has estado ausente por un tiempo. Tus amigos intentan comunicarse contigo.",
+        "button": "Ver Chat"
+      }
+    }
+  }
+}

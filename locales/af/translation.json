@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} nie gevind nie",
+    "fetchFailed": "Kon nie {{resource}} gaan haal nie",
+    "createFailed": "Kon nie {{resource}} skep nie",
+    "updateFailed": "Kon nie {{resource}} opdateer nie",
+    "deleteFailed": "Kon nie {{resource}} uitvee nie",
+    "invalidId": "{{field}} moet 'n nommer wees",
+    "alreadyExists": "{{field}} bestaan reeds",
+    "invalidFormat": "Ongeldige {{field}}-formaat",
+    "internalServer": "Interne bedienerfout",
+    "accessDenied": "Toegang geweier",
+    "invalidToken": "Ongeldige teken",
+    "adminRequired": "Admin toegang vereis",
+    "forbidden": "Jy het nie toestemming om hierdie handeling uit te voer nie"
+  },
+  "food": {
+    "filterError": "Filterfout",
+    "orderAlreadyTaken": "Hierdie bestelling is reeds deur 'n ander bestuurder geneem.",
+    "orderAccepted": "Bestelling aanvaar vir aflewering",
+    "orderDeclined": "Bestelling is afgekeur.",
+    "orderRejected": "Bestelling afgekeur."
+  },
+  "user": {
+    "notFound": "Gebruiker nie gevind nie",
+    "deleted": "Gebruiker is suksesvol uitgevee",
+    "labelStreetRequired": "Etiket en straat word vereis",
+    "addressNotFound": "Adres nie gevind nie",
+    "savedAddressRequired": "Afleweringsadres word vereis",
+    "cannotModifyOther": "Kan nie 'n ander gebruiker se rekening wysig nie",
+    "emailExists": "E-pos of verwysingskode bestaan reeds"
+  },
+  "auth": {
+    "invalidLoginFormat": "Ongeldige aanmeldformaat",
+    "userNotFound": "Gebruiker nie gevind nie",
+    "renewSubscription": "Hernu asseblief jou intekening",
+    "verifyBefore": "Verifieer asseblief jou {{method}} voordat jy aanmeld.",
+    "noPassword": "Hierdie rekening het geen wagwoord nie. Probeer Google-aanmelding.",
+    "invalidPassword": "Ongeldige wagwoord",
+    "teamMemberNotFound": "Spanlid nie gevind nie",
+    "loginSuccessful": "Aanmelding suksesvol",
+    "invalidCredentials": "Ongeldige eiebewyse",
+    "noRefreshToken": "Geen herlaaitoken verskaf nie",
+    "invalidRefreshToken": "Ongeldige of verval herlaaitoken",
+    "invalidRefreshTokenPayload": "Ongeldige herlaaitoken-loonvrag",
+    "teamMembershipNotFound": "Spanlidmaatskap nie gevind nie",
+    "accessTokenRefreshed": "Toegangtoken is verfris",
+    "refreshTokenDeleted": "Herlaai-token is uitgevee",
+    "emailRequired": "E-pos word vereis",
+    "passwordAccountExists": "Hierdie e-pos is met wagwoord geregistreer. Meld asseblief handmatig aan.",
+    "emailRequiredFacebook": "E-pos word vereis, maar word nie deur Facebook verskaf nie. Maak asseblief seker dat jou Facebook-rekening 'n geverifieerde e-pos het.",
+    "authCodeRequired": "Auth-kode word vereis",
+    "validEmailRequired": "'n Geldige e-pos word vereis.",
+    "accountEmailExists": "'n Rekening met hierdie e-posadres bestaan reeds.",
+    "usernameTaken": "Daardie gebruikersnaam is reeds geneem.",
+    "tooManyOtpRequests": "Te veel kodeversoeke. Probeer later weer.",
+    "failedSendCode": "Kon nie kode stuur nie.",
+    "registerFieldsRequired": "e-pos, naam, wagwoord en otp word alles vereis.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Wagwoord moet die volgende insluit: {{requirements}}.",
+    "noVerificationCode": "Geen verifikasiekode gevind nie. Versoek asseblief 'n nuwe een.",
+    "verificationExpired": "Verifikasiekode het verval. Versoek asseblief 'n nuwe een.",
+    "tooManyOtpAttempts": "Te veel verkeerde pogings. Versoek asseblief 'n nuwe verifikasiekode.",
+    "invalidVerificationCode": "Ongeldige verifikasiekode.",
+    "verificationFailed": "Verifikasie het misluk.",
+    "tooManyRequests": "Te veel versoeke. Probeer asseblief later weer.",
+    "resetFieldsRequired": "e-pos, nuwe wagwoord en teken word vereis.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Ongeldige of het verval terugstelskakel.",
+    "accountLocked": "Rekening tydelik gesluit. Probeer later weer.",
+    "verificationCodeRequired": "Verifikasiekode word vereis.",
+    "invalidSession": "Ongeldige sessie",
+    "passwordFieldsRequired": "huidigeWagwoord en nuweWagwoord word vereis"
+  },
+  "success": {
+    "deleted": "{{resource}} is suksesvol uitgevee",
+    "created": "{{resource}} suksesvol geskep",
+    "updated": "{{resource}} suksesvol opgedateer"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug-advertensies: Waarskuwing vir lae saldo van advertensierekening",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% daaglikse begroting bereik vir veldtog #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ADVERTENSIE REKENING WAARSKUWING",
+        "title": "Lae balans waarskuwing",
+        "instruction": "Hallo {{name}}, jou Ads Wallet-saldo raak min. Om te verhoed dat aktiewe veldtogte outomaties onderbreek word, vul asseblief jou rekeningsaldo aan.",
+        "balance_label": "Huidige saldo:",
+        "button": "Vul advertensiebeursie aan"
+      },
+      "spend_alert": {
+        "tag": "BEGROTINGSMYLPAL BEREIK",
+        "title": "{{percentage}}% Daaglikse begroting bestee",
+        "instruction": "Hallo {{name}}, hierdie is 'n outomatiese statusopdatering vir jou aktiewe advertensiestel. Jou veldtog het 'n daaglikse bestedingdrempel bereik.",
+        "campaign_label": "Veldtog-ID:",
+        "button": "Bestuur veldtog"
+      }
+    },
+    "subjects": {
+      "otp": "Strug-verifikasie: Jou kode is hier",
+      "welcome": "Welkom by die Strug Familie!",
+      "password_reset": "Strug: Stel jou wagwoord terug",
+      "login_alert": "Strug-sekuriteitwaarskuwing: Nuwe aanmelding bespeur",
+      "ride_receipt": "Strug Ride Opsomming: Dankie dat jy gery het!"
+    },
+    "otp": {
+      "tag": "SEKURITEITSCONTROLE",
+      "title": "Verifieer rekening",
+      "instruction": "Gebruik die veilige kode hieronder om jou registrasie te voltooi. Geldig vir 10 minute.",
+      "ignore": "As jy dit nie versoek het nie, ignoreer asseblief hierdie e-pos."
+    },
+    "common": {
+      "tagline": "Jou Werk • Jou Tyd • Jou Geld",
+      "rights_reserved": "Alle regte voorbehou",
+      "need_help": "Het jy hulp nodig? Antwoord op hierdie e-pos of besoek ons ​​ondersteuningsentrum."
+    },
+    "welcome": {
+      "tag": "WELKOM BY STRUG",
+      "title": "Hallo, {{name}}!",
+      "instruction": "Jou rekening is geverifieer. Jy is nou deel van 'n platform wat gebou is om jou werk, tyd en geld te vereenvoudig.",
+      "button": "Verken Dashboard"
+    },
+    "password_reset": {
+      "tag": "SEKURITEIT",
+      "title": "Stel wagwoord terug",
+      "instruction": "'n Versoek is gerig om jou Strug-rekeningwagwoord terug te stel. Klik op die knoppie hieronder om 'n nuwe een te kies.",
+      "button": "Stel my wagwoord terug",
+      "ignore": "As jy dit nie versoek het nie, kan jy gerus hierdie e-pos ignoreer. Skakel verval oor 1 uur."
+    },
+    "login_alert": {
+      "tag": "SEKURITEITSWAARSKUWING",
+      "title": "Nuwe aanmelding bespeur",
+      "instruction": "Ons het 'n nuwe aanmelding by jou Strug-rekening opgemerk. As dit jy was, kan jy hierdie e-pos ignoreer.",
+      "device": "Toestel",
+      "time": "Tyd",
+      "not_you": "As dit NIE jy was nie, beveilig asseblief jou rekening onmiddellik deur jou wagwoord te verander."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Rit Opsomming",
+      "tag": "REIS VOLTOOI",
+      "total_fare": "Totale tarief",
+      "distance": "Afstand",
+      "duration": "Duur",
+      "pickup": "Bakkie",
+      "drop": "Aflaai",
+      "driver": "Bestuurder",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Dankie dat jy saam met Strug gery het!",
+      "support": "Kontak ondersteuning as jy enige probleme met hierdie rit het."
+    },
+    "carpool_booking": {
+      "subject": "Saamry bevestig: Jou rit is bespreek!",
+      "title": "Bespreking Bevestig",
+      "tag": "CARPOOL GERESERVEERD",
+      "from": "Van",
+      "to": "Om",
+      "seats": "Sitplekke bespreek",
+      "total_cost": "Totale koste",
+      "status": "saamrybesprekingstatus — Status",
+      "thanks": "Dankie dat jy saam met Strug saamry!",
+      "details_msg": "Jou sitplek is suksesvol bespreek. Wees asseblief betyds by die afhaalpunt."
+    },
+    "ghost_driver": {
+      "subject": "Ritopdatering: Ons ken 'n nuwe bestuurder vir jou toe",
+      "title": "Soek 'n nuwe bestuurder",
+      "tag": "RIT OPDATERING",
+      "instruction": "Jou vorige bestuurder is nie beskikbaar nie of reageer nie. Moenie bekommerd wees nie, ons soek outomaties 'n nuwe bestuurder om jou op te laai.",
+      "status": "Huidige status: Soek weer vir bestuurders...",
+      "hang_tight": "Hou asseblief vas! Ons sal jou in kennis stel sodra 'n nuwe bestuurder jou versoek aanvaar."
+    },
+    "password_changed": {
+      "subject": "Strug-sekuriteitwaarskuwing: Jou wagwoord is verander",
+      "title": "Wagwoord opgedateer",
+      "tag": "SEKURITEITSOPDATERING",
+      "instruction": "Jou Strug-rekeningwagwoord is onlangs verander. As jy hierdie verandering gemaak het, kan jy veilig hierdie e-pos ignoreer.",
+      "warning": "As jy NIE jou wagwoord verander HET nie, kan jou rekening gekompromitteer word. Beveilig asseblief jou rekening onmiddellik.",
+      "button": "Beveilig my rekening",
+      "footer": "Strug Platform Sekuriteitspan"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Bestelling bevestig! #{{order_id}}",
+        "new_order_vendor": "Aksie vereis: Nuwe bestelling ontvang! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Bestellingskwitansie",
+        "tag": "BESTEL SUKSES",
+        "vendor_tag": "AKSIE BENODIG",
+        "order_id": "Bestel ID",
+        "item": "kwitansie item — Item",
+        "qty": "Aantal",
+        "price": "Prys",
+        "subtotal": "Subtotaal",
+        "delivery_fee": "Afleweringsfooi",
+        "service_tax": "Diensbelasting",
+        "platform_fee": "Platformfooi",
+        "grand_total": "TOTALE BEDRAG",
+        "total": "Totale bedrag",
+        "delivery_address": "Afleweringsadres",
+        "thanks": "Hoop jy geniet jou ete!",
+        "vendor_title": "Nuwe bestelling vir jou",
+        "vendor_msg": "Jy het 'n nuwe bestelling ontvang. Begin asseblief dadelik om dit voor te berei."
+      }
+    },
+    "food_status": {
+      "tag": "BESTEL OPDATERING",
+      "subjects": {
+        "preparing": "Strug Food: Jou bestelling word voorberei! 🍳",
+        "dispatched": "Goeie nuus! Jou bestelling is op pad 🛵",
+        "delivered": "Geniet jou ete! Bestelling suksesvol afgelewer ✅",
+        "cancelled": "Strug Kennisgewing: Jou bestelling is gekanselleer ❌"
+      },
+      "messages": {
+        "preparing": "Die restaurant het begin om jou heerlike ete voor te berei. Ons sal jou laat weet wanneer dit uit is vir aflewering.",
+        "dispatched": "Jou bestelling is opgetel en ons afleweringsvennoot is op pad na jou ligging.",
+        "delivered": "Jou bestelling is oorhandig. Dankie dat jy Strug gekies het!",
+        "cancelled": "Dit is jammer om u in kennis te stel dat u bestelling gekanselleer is. As jy reeds betaal het, sal 'n terugbetaling binnekort begin word."
+      },
+      "labels": {
+        "order_id": "Bestel ID",
+        "current_status": "Huidige Status"
+      }
+    },
+    "digital": {
+      "subject": "Jou Strug digitale inhoud is gereed!",
+      "title": "Laai jou produk af",
+      "instruction": "Dankie vir jou aankoop! Jy kan nou toegang tot jou digitale inhoud kry en dit aflaai deur die knoppie hieronder te gebruik.",
+      "button": "Laai nou af"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Jou betaalstrokie vir hierdie maand is gereed 📄",
+      "title": "Maandelikse betaalstrokie",
+      "tag": "BETALINGSOPSOMMING",
+      "net_salary": "Netto salaris",
+      "epf": "EPF (werknemer)",
+      "etf": "ETF",
+      "ot": "OT betaal",
+      "bonus": "betaalstaatbonus — Bonus",
+      "status": "Betaling Status",
+      "thanks": "As jy enige vrae het oor jou salaris, kontak asseblief HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Jou verlofversoek is goedgekeur ✅",
+      "subject_rejected": "Strug HR: Werk op jou verlofversoek ❌",
+      "title_approved": "Verlof Goedgekeur!",
+      "title_rejected": "Los Update",
+      "tag": "LAAT VERSOEK",
+      "status_approved": "Jou verlofversoek vir die volgende tydperk is suksesvol goedgekeur.",
+      "status_rejected": "Dit is jammer om u in kennis te stel dat u verlofversoek vir die volgende tydperk geweier is.",
+      "from_date": "Vanaf Datum",
+      "to_date": "Tot op datum",
+      "reason": "Rede vir Verwerping",
+      "thanks": "Vir enige verdere vrae, kontak asseblief jou HR-afdeling."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Nuwe aansoek ontvang vir {{job_title}} 💼",
+      "title": "Nuwe kandidaat het aansoek gedoen",
+      "tag": "POS AANSOEK",
+      "instruction": "'n Nuwe kandidaat het aansoek gedoen vir een van jou poslys. Hier is die kort besonderhede:",
+      "job_title": "Werksrol",
+      "candidate": "Kandidaat Naam",
+      "view_button": "Bekyk aansoek",
+      "thanks": "Meld asseblief aan by jou agentportaal om die volledige besonderhede en CV na te gaan."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Jou werkskof is opgedateer 🕒",
+      "title": "Shift opgedateer",
+      "tag": "BYLAE OPDATERING",
+      "instruction": "Jou werkskedule is onlangs deur die HR-afdeling opgedateer. Gaan asseblief jou nuwe skoftydberekeninge hieronder na.",
+      "start_time": "Shift begin",
+      "end_time": "Skof eindig",
+      "thanks": "Maak asseblief seker dat jy teenwoordig is volgens die nuwe skedule. Kontak HR vir enige bekommernisse."
+    },
+    "services": {
+      "tag": "DIENSOPDATERING",
+      "subjects": {
+        "confirmed_customer": "Strug Dienste: Jou afspraak is bevestig! ✅",
+        "new_alert_provider": "Nuwe afspraak: Jy het 'n nuwe bespreking! 📅",
+        "reminder": "Onthou: Jou afspraak is oor 'n paar uur ⏳",
+        "rental_expiry": "Optrede vereis: Jou huur verval binnekort! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Diens",
+        "provider": "Verskaffer",
+        "customer": "Kliënt",
+        "date": "Datum",
+        "time": "Tyd",
+        "location": "Ligging",
+        "expiry": "Vervaldatum"
+      },
+      "messages": {
+        "confirmed": "Jou afspraak is suksesvol geskeduleer. Wees asseblief betyds.",
+        "provider_alert": "'n Nuwe kliënt het jou diens bespreek. Hier is die besonderhede.",
+        "reminder": "Dit is 'n vriendelike herinnering aan jou komende afspraak met Strug.",
+        "rental_expiry": "Jou huurtydperk is op die punt om te eindig. Stuur asseblief die item terug of verleng die tydperk om boetes te vermy.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "DRINGEND: VERVALKENNISGEWING",
+        "item_name": "Item Naam",
+        "due_date": "Sperdatum",
+        "order_id": "Bestel ID",
+        "button": "Verleng of stuur item terug",
+        "footer": "Vermy laat fooie deur die item voor die regte tyd terug te stuur.",
+        "thanks": "Dankie dat jy Strug Rentals gebruik."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Dankie vir jou ruim skenking! ❤️",
+        "loan_reminder": "Betalingsherinnering: Jou leningpaaiement is verskuldig 💳"
+      },
+      "donation": {
+        "title": "Skenking ontvang",
+        "tag": "TERUGGEE",
+        "msg": "Jou ondersteuning maak 'n groot verskil! Ons het u bydrae vir die projek suksesvol ontvang.",
+        "amount": "Bedrag geskenk",
+        "project": "Projek"
+      },
+      "loan": {
+        "title": "Terugbetaling van lening",
+        "tag": "BETALING VERskuldig",
+        "msg": "Dit is 'n herinnering dat jou leningterugbetalingsdatum nader kom. Maak asseblief seker dat voldoende fondse beskikbaar is.",
+        "due_date": "Sperdatum",
+        "amount": "Afbetalingsbedrag"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Winkel: Bestelling bevestig #{{order_id}}",
+        "new_order_seller": "Strug Shop: Nuwe bestelling ontvang #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "BESTELLING BEVESTIG",
+        "vendor_tag": "NUWE BESTELLING",
+        "title": "Jou bestelling is bevestig",
+        "vendor_title": "Jy het 'n nuwe bestelling",
+        "order_id": "Bestel",
+        "product": "Produk",
+        "qty": "Hoeveelheid",
+        "total": "Totaal",
+        "thanks": "Dankie dat jy op Strug inkopies gedoen het!",
+        "vendor_msg": "Berei asseblief hierdie bestelling voor en stuur so gou as moontlik."
+      },
+      "status": {
+        "tag": "BESTEL OPDATERING",
+        "order_id": "Bestel ID",
+        "tracking": "Spoornommer",
+        "track_button": "Bekyk bestelling",
+        "subjects": {
+          "confirmed": "Strug Shop: Jou bestelling is bevestig",
+          "shipped": "Strug Shop: Jou bestelling is gestuur",
+          "fulfilled": "Strug Shop: Jou bestelling is afgelewer"
+        },
+        "messages": {
+          "confirmed": "Die verkoper het jou bestelling bevestig en berei dit voor vir versending.",
+          "shipped": "Jou pakkie is op pad. Nasporing: {{tracking_number}}",
+          "fulfilled": "Jou bestelling is afgelewer. Ons hoop jy geniet jou aankoop!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Jou weeklikse leervordering is hier 📚",
+        "unread_chat": "Strug: Jy het ongeleesde boodskappe in jou inkassie 💬"
+      },
+      "lms": {
+        "title": "Leervordering",
+        "tag": "BLY SLIM",
+        "msg": "Dit gaan goed met jou! Hier is 'n opsomming van jou flitskaartaktiwiteit hierdie week.",
+        "cards_reviewed": "Kaarte nagegaan",
+        "new_decks": "Nuwe dekke aangesluit"
+      },
+      "chat": {
+        "title": "Nuwe Boodskappe",
+        "tag": "GEMEENSKAP",
+        "msg": "Jy was 'n rukkie weg. Jou vriende en spanlede probeer om jou te bereik.",
+        "button": "Bekyk Chat"
+      }
+    }
+  }
+}

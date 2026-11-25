@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} nerasta",
+    "fetchFailed": "Nepavyko gauti {{resource}}",
+    "createFailed": "Nepavyko sukurti {{resource}}",
+    "updateFailed": "Nepavyko atnaujinti {{resource}}",
+    "deleteFailed": "Nepavyko ištrinti {{resource}}",
+    "invalidId": "{{field}} turi būti skaičius",
+    "alreadyExists": "{{field}} jau yra",
+    "invalidFormat": "Neteisingas {{field}} formatas",
+    "internalServer": "Vidinė serverio klaida",
+    "accessDenied": "Prieiga uždrausta",
+    "invalidToken": "Neteisingas prieigos raktas",
+    "adminRequired": "Reikalinga administratoriaus prieiga",
+    "forbidden": "Neturite leidimo atlikti šio veiksmo"
+  },
+  "food": {
+    "filterError": "Filtro klaida",
+    "orderAlreadyTaken": "Šį užsakymą jau priėmė kitas vairuotojas.",
+    "orderAccepted": "Užsakymas priimtas pristatymui",
+    "orderDeclined": "Užsakymas atmestas.",
+    "orderRejected": "Užsakymas atmestas."
+  },
+  "user": {
+    "notFound": "Vartotojas nerastas",
+    "deleted": "Vartotojas sėkmingai ištrintas",
+    "labelStreetRequired": "Būtina etiketė ir gatvė",
+    "addressNotFound": "Adresas nerastas",
+    "savedAddressRequired": "Pristatymo adresas būtinas",
+    "cannotModifyOther": "Negalima keisti kito vartotojo paskyros",
+    "emailExists": "El. pašto adresas arba persiuntimo kodas jau yra"
+  },
+  "auth": {
+    "invalidLoginFormat": "Neteisingas prisijungimo formatas",
+    "userNotFound": "Vartotojas nerastas",
+    "renewSubscription": "Prašom atnaujinti prenumeratą",
+    "verifyBefore": "Prieš prisijungdami patvirtinkite savo {{method}}.",
+    "noPassword": "Ši paskyra neturi slaptažodžio. Pabandykite prisijungti prie Google.",
+    "invalidPassword": "Neteisingas slaptažodis",
+    "teamMemberNotFound": "Komandos narys nerastas",
+    "loginSuccessful": "Prisijungimas sėkmingas",
+    "invalidCredentials": "Netinkami kredencialai",
+    "noRefreshToken": "Nepateiktas atnaujinimo prieigos raktas",
+    "invalidRefreshToken": "Neteisingas arba pasibaigęs atnaujinimo prieigos raktas",
+    "invalidRefreshTokenPayload": "Netinkama atnaujinimo prieigos rakto naudingoji apkrova",
+    "teamMembershipNotFound": "Komandos narystė nerasta",
+    "accessTokenRefreshed": "Prieigos prieigos raktas atnaujintas",
+    "refreshTokenDeleted": "Atnaujinimo prieigos raktas ištrintas",
+    "emailRequired": "Būtinas el",
+    "passwordAccountExists": "Šis el. paštas užregistruotas naudojant slaptažodį. Prašome prisijungti rankiniu būdu.",
+    "emailRequiredFacebook": "El. pašto adresas būtinas, bet jo nepateikia „Facebook“. Įsitikinkite, kad jūsų „Facebook“ paskyroje yra patvirtintas el.",
+    "authCodeRequired": "Reikalingas autentifikavimo kodas",
+    "validEmailRequired": "Būtinas galiojantis el.",
+    "accountEmailExists": "Paskyra su šiuo el. pašto adresu jau yra.",
+    "usernameTaken": "Šis vartotojo vardas jau užimtas.",
+    "tooManyOtpRequests": "Per daug kodo užklausų. Vėliau bandykite dar kartą.",
+    "failedSendCode": "Nepavyko išsiųsti kodo.",
+    "registerFieldsRequired": "pašto adresas, vardas, slaptažodis ir otp – visi reikalingi.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Slaptažodyje turi būti: {{requirements}}.",
+    "noVerificationCode": "Patvirtinimo kodas nerastas. Prašykite naujo.",
+    "verificationExpired": "Patvirtinimo kodo galiojimo laikas baigėsi. Prašykite naujo.",
+    "tooManyOtpAttempts": "Per daug neteisingų bandymų. Prašykite naujo patvirtinimo kodo.",
+    "invalidVerificationCode": "Neteisingas patvirtinimo kodas.",
+    "verificationFailed": "Patvirtinimas nepavyko.",
+    "tooManyRequests": "Per daug prašymų. Bandykite dar kartą vėliau.",
+    "resetFieldsRequired": "paštas, naujas slaptažodis ir prieigos raktas.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Neteisinga arba pasibaigusio nustatymo iš naujo nuoroda.",
+    "accountLocked": "Paskyra laikinai užrakinta. Vėliau bandykite dar kartą.",
+    "verificationCodeRequired": "Būtinas patvirtinimo kodas.",
+    "invalidSession": "Netinkama sesija",
+    "passwordFieldsRequired": "Reikalingi currentPassword ir newPassword"
+  },
+  "success": {
+    "deleted": "{{resource}} sėkmingai ištrinta",
+    "created": "{{resource}} sėkmingai sukurtas",
+    "updated": "{{resource}} sėkmingai atnaujintas"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Skelbimai: įspėjimas apie mažą skelbimų paskyros likutį",
+      "spend_alert_subject": "Strug Skelbimų įspėjimas: {{percentage}}% pasiektas kampanijos Nr. {{campaign_id}} dienos biudžetas",
+      "low_balance": {
+        "tag": "SKELBIMŲ PASKYROS ĮSPĖJIMAS",
+        "title": "Perspėjimas apie žemą balansą",
+        "instruction": "Sveiki, {{name}}, jūsų Ads Piniginės balansas senka. Kad aktyvios reklamos kampanijos nebūtų automatiškai pristabdytos, papildykite paskyros balansą.",
+        "balance_label": "Dabartinis likutis:",
+        "button": "Papildyti skelbimų piniginę"
+      },
+      "spend_alert": {
+        "tag": "BIUDŽETO TARPAS PASIEKTAS",
+        "title": "{{percentage}}% išleistas dienos biudžetas",
+        "instruction": "Sveiki, {{name}}, tai automatinis aktyvaus skelbimų rinkinio būsenos atnaujinimas. Jūsų kampanija pasiekė dienos išlaidų slenkstį.",
+        "campaign_label": "Kampanijos ID:",
+        "button": "Tvarkyti kampaniją"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Patvirtinimas: jūsų kodas yra čia",
+      "welcome": "Sveiki atvykę į Strugų šeimą!",
+      "password_reset": "Strug: iš naujo nustatykite slaptažodį",
+      "login_alert": "Strug Saugos įspėjimas: aptiktas naujas prisijungimas",
+      "ride_receipt": "Strug Ride santrauka: Dėkojame, kad jojote!"
+    },
+    "otp": {
+      "tag": "SAUGOS PATIKRINIMAS",
+      "title": "Patvirtinkite paskyrą",
+      "instruction": "Norėdami užbaigti registraciją, naudokite toliau pateiktą saugų kodą. Galioja 10 minučių.",
+      "ignore": "Jei to neprašėte, nekreipkite dėmesio į šį el. laišką."
+    },
+    "common": {
+      "tagline": "Jūsų darbas • Jūsų laikas • Jūsų pinigai",
+      "rights_reserved": "Visos teisės saugomos",
+      "need_help": "Reikia pagalbos? Atsakykite į šį el. laišką arba apsilankykite mūsų pagalbos centre."
+    },
+    "welcome": {
+      "tag": "SVEIKI Į STRUG",
+      "title": "Sveiki, {{name}}!",
+      "instruction": "Jūsų paskyra patvirtinta. Dabar esate dalis platformos, sukurtos siekiant supaprastinti jūsų darbą, laiką ir pinigus.",
+      "button": "Naršykite informacijos suvestinę"
+    },
+    "password_reset": {
+      "tag": "SAUGUMAS",
+      "title": "Iš naujo nustatyti slaptažodį",
+      "instruction": "Buvo pateikta užklausa iš naujo nustatyti jūsų Strug paskyros slaptažodį. Spustelėkite toliau esantį mygtuką, kad pasirinktumėte naują.",
+      "button": "Iš naujo nustatyti mano slaptažodį",
+      "ignore": "Jei to neprašėte, galite nepaisyti šio el. laiško. Nuorodos galiojimo laikas baigiasi po 1 valandos."
+    },
+    "login_alert": {
+      "tag": "SAUGOS ĮSPĖJIMAS",
+      "title": "Aptiktas naujas prisijungimas",
+      "instruction": "Pastebėjome naują prisijungimą prie jūsų Strug paskyros. Jei tai buvote jūs, galite nepaisyti šio el. laiško.",
+      "device": "Įrenginys",
+      "time": "Laikas",
+      "not_you": "Jei tai NE JŪS, nedelsdami apsaugokite savo paskyrą pakeisdami slaptažodį."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Važiavimo santrauka",
+      "tag": "KELIONĖ BAIGTA",
+      "total_fare": "Bendra kaina",
+      "distance": "Atstumas",
+      "duration": "Trukmė",
+      "pickup": "Paėmimas",
+      "drop": "Nusileidimas",
+      "driver": "Vairuotojas",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Dėkojame, kad važiuojate su Strug!",
+      "support": "Jei kyla problemų dėl šio važiavimo, susisiekite su palaikymo tarnyba."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Patvirtinta: Jūsų kelionė užsakyta!",
+      "title": "Užsakymas patvirtintas",
+      "tag": "REZERVUOTA KOPŪNA",
+      "from": "Nuo",
+      "to": "Į",
+      "seats": "Rezervuotos vietos",
+      "total_cost": "Bendra kaina",
+      "status": "Būsena",
+      "thanks": "Dėkojame, kad bendraujate su Strug!",
+      "details_msg": "Jūsų vieta sėkmingai rezervuota. Prašome laiku atvykti į atsiėmimo vietą."
+    },
+    "ghost_driver": {
+      "subject": "Važiavimo atnaujinimas: mes iš naujo priskiriame jums naują tvarkyklę",
+      "title": "Naujo vairuotojo paieška",
+      "tag": "RIDE ATNAUJINIMAS",
+      "instruction": "Ankstesnė tvarkyklė nepasiekiama arba nereaguoja. Nesijaudinkite, mes automatiškai ieškome naujo vairuotojo, kuris jus paimtų.",
+      "status": "Dabartinė būsena: iš naujo ieškoma vairuotojų...",
+      "hang_tight": "Prašau tvirtai laikykis! Mes jums pranešime, kai tik naujas vairuotojas priims jūsų prašymą."
+    },
+    "password_changed": {
+      "subject": "Strug Saugos įspėjimas: Jūsų slaptažodis buvo pakeistas",
+      "title": "Slaptažodis atnaujintas",
+      "tag": "SAUGOS NAUJINIMAS",
+      "instruction": "Jūsų Strug paskyros slaptažodis neseniai buvo pakeistas. Jei atlikote šį pakeitimą, galite nepaisyti šio el. laiško.",
+      "warning": "Jei nepakeitėte slaptažodžio, jūsų paskyra gali būti pažeista. Nedelsdami apsaugokite savo sąskaitą.",
+      "button": "Apsaugokite mano paskyrą",
+      "footer": "Strug platformos saugumo komanda"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: užsakymas patvirtintas! #{{order_id}}",
+        "new_order_vendor": "Būtinas veiksmas: gautas naujas užsakymas! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Užsakymo kvitas",
+        "tag": "UŽSAKYMO SĖKMĖ",
+        "vendor_tag": "BŪTINA VEIKSMŲ",
+        "order_id": "Užsakymo ID",
+        "item": "Prekė",
+        "qty": "Kiekis",
+        "price": "Kaina",
+        "subtotal": "Tarpinė suma",
+        "delivery_fee": "Pristatymo mokestis",
+        "service_tax": "Paslaugų mokestis",
+        "platform_fee": "Platformos mokestis",
+        "grand_total": "IŠ VISO SUMA",
+        "total": "Bendra suma",
+        "delivery_address": "Pristatymo adresas",
+        "thanks": "Tikimės, kad jums patiks maistas!",
+        "vendor_title": "Naujas užsakymas jums",
+        "vendor_msg": "Gavote naują užsakymą. Pradėkite ruošti jį nedelsiant."
+      }
+    },
+    "food_status": {
+      "tag": "UŽSAKYMO ATNAUJINIMAS",
+      "subjects": {
+        "preparing": "Strug Food: Jūsų užsakymas ruošiamas! 🍳",
+        "dispatched": "Puikios naujienos! Jūsų užsakymas yra pakeliui 🛵",
+        "delivered": "Mėgaukitės maistu! Užsakymas sėkmingai pristatytas ✅",
+        "cancelled": "Strug Pastaba: Jūsų užsakymas buvo atšauktas ❌"
+      },
+      "messages": {
+        "preparing": "Restoranas pradėjo ruošti jūsų skanų patiekalą. Mes jums pranešime, kai jis bus pristatytas.",
+        "dispatched": "Jūsų užsakymas buvo paimtas ir mūsų pristatymo partneris yra pakeliui į jūsų vietą.",
+        "delivered": "Jūsų užsakymas perduotas. Dėkojame, kad pasirinkote Strug!",
+        "cancelled": "Apgailestaujame, kad pranešame, kad jūsų užsakymas buvo atšauktas. Jei jau sumokėjote, netrukus bus pradėtas grąžinimas."
+      },
+      "labels": {
+        "order_id": "Užsakymo ID",
+        "current_status": "Dabartinė būsena"
+      }
+    },
+    "digital": {
+      "subject": "Jūsų Strug skaitmeninis turinys paruoštas!",
+      "title": "Atsisiųskite savo produktą",
+      "instruction": "Dėkojame už pirkinį! Dabar galite pasiekti ir atsisiųsti savo skaitmeninį turinį naudodami toliau pateiktą mygtuką.",
+      "button": "Atsisiųskite dabar"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: jūsų šio mėnesio darbo užmokesčio lapelis paruoštas 📄",
+      "title": "Mėnesio atlyginimo lapelis",
+      "tag": "ATMOKESČIO SUVESTINĖ",
+      "net_salary": "Grynasis atlyginimas",
+      "epf": "EPF (darbuotojas)",
+      "etf": "darbo užmokestis etf – ETF",
+      "ot": "darbo užmokestis ot — OT Pay",
+      "bonus": "Premija",
+      "status": "Mokėjimo būsena",
+      "thanks": "Jei turite klausimų dėl atlyginimo, susisiekite su HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Jūsų prašymas išeiti patvirtintas ✅",
+      "subject_rejected": "Strug HR: atnaujinimas apie jūsų prašymą išeiti ❌",
+      "title_approved": "Palikite patvirtintą!",
+      "title_rejected": "Palikite atnaujinimą",
+      "tag": "PALEIKTI PRAŠYMĄ",
+      "status_approved": "Jūsų atostogų prašymas kitam laikotarpiui buvo sėkmingai patvirtintas.",
+      "status_rejected": "Apgailestaujame, kad pranešame, kad jūsų prašymas dėl atostogų kitam laikotarpiui buvo atmestas.",
+      "from_date": "Nuo datos",
+      "to_date": "Iki datos",
+      "reason": "Atmetimo priežastis",
+      "thanks": "Jei turite daugiau klausimų, susisiekite su savo personalo skyriumi."
+    },
+    "job_alert": {
+      "subject": "Strug Darbai: gauta nauja paraiška {{job_title}} 💼",
+      "title": "Pateiktas naujas kandidatas",
+      "tag": "PARAIŠKA DARBO",
+      "instruction": "Naujas kandidatas pateikė paraišką dėl vieno iš jūsų darbo vietų. Štai trumpa informacija:",
+      "job_title": "Darbo vaidmuo",
+      "candidate": "Kandidato vardas",
+      "view_button": "Peržiūrėti programą",
+      "thanks": "Prisijunkite prie savo agento portalo, kad galėtumėte peržiūrėti visą informaciją ir CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Jūsų darbo pamaina atnaujinta 🕒",
+      "title": "Shift Atnaujintas",
+      "tag": "TVARKARAŠIO ATNAUJINIMAS",
+      "instruction": "Personalo skyrius neseniai atnaujino jūsų darbo grafiką. Patikrinkite savo naujus pamainų laikus žemiau.",
+      "start_time": "Pamaina prasideda",
+      "end_time": "Pamaina baigiasi",
+      "thanks": "Įsitikinkite, kad dalyvaujate pagal naują tvarkaraštį. Jei turite klausimų, susisiekite su HR."
+    },
+    "services": {
+      "tag": "PASLAUGOS NAUJINIMAS",
+      "subjects": {
+        "confirmed_customer": "Strug paslaugos: Jūsų paskyrimas patvirtintas! ✅",
+        "new_alert_provider": "Naujas susitikimas: turite naują užsakymą! 📅",
+        "reminder": "Priminimas: Jūsų susitikimas bus po kelių valandų ⏳",
+        "rental_expiry": "Būtinas veiksmas: jūsų nuomos laikas greitai baigsis! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Aptarnavimas",
+        "provider": "Teikėjas",
+        "customer": "Klientas",
+        "date": "Data",
+        "time": "Laikas",
+        "location": "Vieta",
+        "expiry": "Galiojimo pabaigos data"
+      },
+      "messages": {
+        "confirmed": "Jūsų susitikimas buvo sėkmingai suplanuotas. Prašome atvykti laiku.",
+        "provider_alert": "Naujas klientas užsisakė jūsų paslaugą. Čia yra detalės.",
+        "reminder": "Tai draugiškas priminimas apie būsimą susitikimą su Strug.",
+        "rental_expiry": "Jūsų nuomos laikotarpis netrukus baigsis. Prašome grąžinti prekę arba pratęsti laikotarpį, kad išvengtumėte baudų.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "SKUBIAI: PRANEŠIMAS BAIGIASI GALUTI",
+        "item_name": "Prekės pavadinimas",
+        "due_date": "Terminas",
+        "order_id": "Užsakymo ID",
+        "button": "Pratęsti arba grąžinti prekę",
+        "footer": "Išvenkite delspinigių grąžindami prekę anksčiau nustatyto termino.",
+        "thanks": "Dėkojame, kad naudojatės Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Dėkojame už dosnią auką! ❤️",
+        "loan_reminder": "Mokėjimo priminimas: Jūsų paskolos įmoka turi būti sumokėta 💳"
+      },
+      "donation": {
+        "title": "Gauta auka",
+        "tag": "ATVEŽIMAS",
+        "msg": "Jūsų palaikymas daro didžiulį skirtumą! Sėkmingai gavome jūsų indėlį į projektą.",
+        "amount": "Paaukota suma",
+        "project": "Projektas"
+      },
+      "loan": {
+        "title": "Paskolos grąžinimas",
+        "tag": "MOKĖJIMAS",
+        "msg": "Tai priminimas, kad artėja paskolos grąžinimo data. Įsitikinkite, kad yra pakankamai lėšų.",
+        "due_date": "Terminas",
+        "amount": "Įmokos suma"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: užsakymas patvirtintas Nr.{{order_id}}",
+        "new_order_seller": "Strug Shop: gautas naujas užsakymas Nr.{{order_id}}"
+      },
+      "receipt": {
+        "tag": "UŽSAKYMAS PATVIRTINTA",
+        "vendor_tag": "NAUJAS UŽSAKYMAS",
+        "title": "Jūsų užsakymas patvirtintas",
+        "vendor_title": "Turite naują užsakymą",
+        "order_id": "Užsakyti",
+        "product": "Produktas",
+        "qty": "Kiekis",
+        "total": "Iš viso",
+        "thanks": "Dėkojame, kad apsipirkote Strug!",
+        "vendor_msg": "Prašome kuo greičiau paruošti ir išsiųsti šį užsakymą."
+      },
+      "status": {
+        "tag": "UŽSAKYMO ATNAUJINIMAS",
+        "order_id": "Užsakymo ID",
+        "tracking": "Stebėjimo numeris",
+        "track_button": "Žiūrėti užsakymą",
+        "subjects": {
+          "confirmed": "Strug Shop: Jūsų užsakymas patvirtintas",
+          "shipped": "Strug Shop: Jūsų užsakymas išsiųstas",
+          "fulfilled": "Strug Shop: Jūsų užsakymas buvo pristatytas"
+        },
+        "messages": {
+          "confirmed": "Pardavėjas patvirtino jūsų užsakymą ir ruošia jį siuntimui.",
+          "shipped": "Jūsų paketas yra pakeliui. Stebėjimas: {{tracking_number}}",
+          "fulfilled": "Jūsų užsakymas pristatytas. Tikimės, kad pirkinys jums patiks!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: jūsų savaitės mokymosi pažanga jau čia 📚",
+        "unread_chat": "Strug: Jūsų gautuosiuose yra neskaitytų pranešimų 💬"
+      },
+      "lms": {
+        "title": "Mokymosi pažanga",
+        "tag": "BŪKITE PROTINGI",
+        "msg": "Tau puikiai sekasi! Štai jūsų šios savaitės kortelių veiklos suvestinė.",
+        "cards_reviewed": "Peržiūrėtos kortelės",
+        "new_decks": "Prisijungė nauji deniai"
+      },
+      "chat": {
+        "title": "Nauji pranešimai",
+        "tag": "BENDRUOMENĖ",
+        "msg": "Jūs kurį laiką buvote išvykęs. Jūsų draugai ir komandos nariai bando su jumis susisiekti.",
+        "button": "Žiūrėti pokalbį"
+      }
+    }
+  }
+}

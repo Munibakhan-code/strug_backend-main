@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} не найден",
+    "fetchFailed": "Не удалось получить {{resource}}.",
+    "createFailed": "Не удалось создать {{resource}}.",
+    "updateFailed": "Не удалось обновить {{resource}}.",
+    "deleteFailed": "Не удалось удалить {{resource}}.",
+    "invalidId": "{{field}} должен быть числом",
+    "alreadyExists": "{{field}} уже существует",
+    "invalidFormat": "Неверный формат {{field}}",
+    "internalServer": "Внутренняя ошибка сервера",
+    "accessDenied": "Доступ запрещен",
+    "invalidToken": "Неверный токен",
+    "adminRequired": "Требуется доступ администратора",
+    "forbidden": "У вас нет разрешения на выполнение этого действия."
+  },
+  "food": {
+    "filterError": "Ошибка фильтра",
+    "orderAlreadyTaken": "Этот заказ уже принял другой водитель.",
+    "orderAccepted": "Заказ принят к доставке",
+    "orderDeclined": "Заказ отклонен.",
+    "orderRejected": "Заказ отклонен."
+  },
+  "user": {
+    "notFound": "Пользователь не найден",
+    "deleted": "Пользователь успешно удален",
+    "labelStreetRequired": "Укажите название и улицу.",
+    "addressNotFound": "Адрес не найден",
+    "savedAddressRequired": "Требуется адрес доставки",
+    "cannotModifyOther": "Невозможно изменить учетную запись другого пользователя",
+    "emailExists": "Адрес электронной почты или реферальный код уже существует."
+  },
+  "auth": {
+    "invalidLoginFormat": "Неверный формат входа",
+    "userNotFound": "Пользователь не найден",
+    "renewSubscription": "Пожалуйста, продлите подписку",
+    "verifyBefore": "Пожалуйста, подтвердите свой {{method}} перед входом в систему.",
+    "noPassword": "У этой учетной записи нет пароля. Попробуйте войти в Google.",
+    "invalidPassword": "Неверный пароль",
+    "teamMemberNotFound": "Член команды не найден",
+    "loginSuccessful": "Вход успешен",
+    "invalidCredentials": "Неверные учетные данные",
+    "noRefreshToken": "Токен обновления не предоставлен.",
+    "invalidRefreshToken": "Неверный или просроченный токен обновления.",
+    "invalidRefreshTokenPayload": "Недопустимая полезная нагрузка токена обновления.",
+    "teamMembershipNotFound": "Членство в команде не найдено",
+    "accessTokenRefreshed": "Токен доступа обновлен.",
+    "refreshTokenDeleted": "Токен обновления удален.",
+    "emailRequired": "Требуется электронная почта",
+    "passwordAccountExists": "Этот адрес электронной почты зарегистрирован с использованием пароля. Пожалуйста, войдите вручную.",
+    "emailRequiredFacebook": "Электронная почта требуется, но не предоставляется Facebook. Убедитесь, что в вашей учетной записи Facebook указан подтвержденный адрес электронной почты.",
+    "authCodeRequired": "Требуется код авторизации",
+    "validEmailRequired": "Требуется действующий адрес электронной почты.",
+    "accountEmailExists": "Аккаунт с таким адресом электронной почты уже существует.",
+    "usernameTaken": "Это имя пользователя уже занято.",
+    "tooManyOtpRequests": "Слишком много запросов кода. Повторите попытку позже.",
+    "failedSendCode": "Не удалось отправить код.",
+    "registerFieldsRequired": "Требуется электронная почта, имя, пароль и OTP.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Пароль должен содержать: {{requirements}}.",
+    "noVerificationCode": "Код подтверждения не найден. Пожалуйста, запросите новый.",
+    "verificationExpired": "Срок действия кода подтверждения истек. Пожалуйста, запросите новый.",
+    "tooManyOtpAttempts": "Слишком много неверных попыток. Пожалуйста, запросите новый код подтверждения.",
+    "invalidVerificationCode": "Неверный код подтверждения.",
+    "verificationFailed": "Проверка не удалась.",
+    "tooManyRequests": "Слишком много запросов. Пожалуйста, повторите попытку позже.",
+    "resetFieldsRequired": "Требуется электронная почта, newPassword и токен.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Недействительная или устаревшая ссылка для сброса.",
+    "accountLocked": "Аккаунт временно заблокирован. Повторите попытку позже.",
+    "verificationCodeRequired": "Требуется код подтверждения.",
+    "invalidSession": "Неверный сеанс",
+    "passwordFieldsRequired": "CurrentPassword и newPassword являются обязательными."
+  },
+  "success": {
+    "deleted": "{{resource}} успешно удален",
+    "created": "{{resource}} создан успешно",
+    "updated": "{{resource}} успешно обновлено"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: предупреждение о низком балансе рекламного аккаунта",
+      "spend_alert_subject": "Оповещение Strug Ads: для кампании №{{campaign_id}} достигнут дневной бюджет {{percentage}}%",
+      "low_balance": {
+        "tag": "ПРЕДУПРЕЖДЕНИЕ О РЕКЛАМНОМ АККАУНТЕ",
+        "title": "Предупреждение о низком балансе",
+        "instruction": "Здравствуйте, {{name}}! Баланс вашего рекламного кошелька подходит к концу. Чтобы активные кампании не были автоматически приостановлены, пополните баланс своего аккаунта.",
+        "balance_label": "Текущий баланс:",
+        "button": "Пополнение рекламного кошелька"
+      },
+      "spend_alert": {
+        "tag": "БЮДЖЕТ ДОСТИГНУТ",
+        "title": "Израсходовано {{percentage}}% дневного бюджета",
+        "instruction": "Здравствуйте, {{name}}! Это автоматическое обновление статуса вашей активной группы объявлений. Ваша кампания достигла порога ежедневных расходов.",
+        "campaign_label": "Идентификатор кампании:",
+        "button": "Управление кампанией"
+      }
+    },
+    "subjects": {
+      "otp": "Проверка Strug: ваш код здесь",
+      "welcome": "Добро пожаловать в семью Strug!",
+      "password_reset": "Strug: сбросьте пароль",
+      "login_alert": "Предупреждение безопасности Strug: обнаружен новый вход в систему",
+      "ride_receipt": "Краткое описание Strug Ride: Спасибо за поездку!"
+    },
+    "otp": {
+      "tag": "ПРОВЕРКА БЕЗОПАСНОСТИ",
+      "title": "Подтвердить аккаунт",
+      "instruction": "Используйте безопасный код ниже для завершения регистрации. Действует в течение 10 минут.",
+      "ignore": "Если вы этого не запрашивали, проигнорируйте это письмо."
+    },
+    "common": {
+      "tagline": "Ваша работа • Ваше время • Ваши деньги",
+      "rights_reserved": "Все права защищены",
+      "need_help": "Нужна помощь? Ответьте на это письмо или посетите наш центр поддержки."
+    },
+    "welcome": {
+      "tag": "ДОБРО ПОЖАЛОВАТЬ В STRUG",
+      "title": "Привет, {{name}}!",
+      "instruction": "Ваш аккаунт подтвержден. Теперь вы являетесь частью платформы, созданной для упрощения вашей работы, времени и денег.",
+      "button": "Исследуйте панель управления"
+    },
+    "password_reset": {
+      "tag": "БЕЗОПАСНОСТЬ",
+      "title": "Сбросить пароль",
+      "instruction": "Был сделан запрос на сброс пароля вашей учетной записи Strug. Нажмите кнопку ниже, чтобы выбрать новый.",
+      "button": "Сбросить мой пароль",
+      "ignore": "Если вы этого не запрашивали, вы можете смело игнорировать это письмо. Срок действия ссылки истекает через 1 час."
+    },
+    "login_alert": {
+      "tag": "ПРЕДУПРЕЖДЕНИЕ О БЕЗОПАСНОСТИ",
+      "title": "Обнаружен новый вход в систему",
+      "instruction": "Мы заметили новый вход в вашу учетную запись Strug. Если это были вы, можете игнорировать это письмо.",
+      "device": "Устройство",
+      "time": "Время",
+      "not_you": "Если это были НЕ вы, немедленно защитите свою учетную запись, изменив пароль."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Обзор поездки",
+      "tag": "ПОЕЗДКА ЗАВЕРШЕНА",
+      "total_fare": "Общая стоимость проезда",
+      "distance": "Расстояние",
+      "duration": "Продолжительность",
+      "pickup": "Пикап",
+      "drop": "Высадка",
+      "driver": "Водитель",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Спасибо, что поехали с Strug!",
+      "support": "Если у вас возникли проблемы с этой поездкой, обратитесь в службу поддержки."
+    },
+    "carpool_booking": {
+      "subject": "Подтверждено совместное использование автомобиля: ваша поездка забронирована!",
+      "title": "Бронирование подтверждено",
+      "tag": "АВТОМОБИЛЬ ЗАРЕЗЕРВИРОВАН",
+      "from": "От",
+      "to": "Чтобы",
+      "seats": "Забронировано мест",
+      "total_cost": "Общая стоимость",
+      "status": "Статус",
+      "thanks": "Спасибо за поездку с Strug!",
+      "details_msg": "Ваше место успешно зарезервировано. Пожалуйста, будьте в пункте выдачи вовремя."
+    },
+    "ghost_driver": {
+      "subject": "Обновление Ride: мы назначаем для вас нового водителя",
+      "title": "Поиск нового драйвера",
+      "tag": "ОБНОВЛЕНИЕ ПОЕЗДКИ",
+      "instruction": "Ваш предыдущий драйвер недоступен или не отвечает. Не волнуйтесь, мы автоматически ищем нового водителя, который сможет вас забрать.",
+      "status": "Текущий статус: Повторный поиск драйверов...",
+      "hang_tight": "Пожалуйста, держитесь крепче! Мы сообщим вам, как только новый водитель примет ваш запрос."
+    },
+    "password_changed": {
+      "subject": "Предупреждение системы безопасности Strug: ваш пароль был изменен",
+      "title": "Пароль обновлен",
+      "tag": "ОБНОВЛЕНИЕ БЕЗОПАСНОСТИ",
+      "instruction": "Пароль вашей учетной записи Strug был недавно изменен. Если вы внесли это изменение, вы можете смело игнорировать это письмо.",
+      "warning": "Если вы НЕ меняли свой пароль, ваша учетная запись может быть скомпрометирована. Пожалуйста, немедленно защитите свой аккаунт.",
+      "button": "Защитите мою учетную запись",
+      "footer": "Команда безопасности платформы Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Еда: заказ подтвержден! #{{order_id}}",
+        "new_order_vendor": "Требуется действие: получен новый заказ! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Квитанция заказа",
+        "tag": "УСПЕХ ЗАКАЗА",
+        "vendor_tag": "ТРЕБУЕТСЯ ДЕЙСТВИЕ",
+        "order_id": "Идентификатор заказа",
+        "item": "Товар",
+        "qty": "Кол-во",
+        "price": "Цена",
+        "subtotal": "Итого",
+        "delivery_fee": "Стоимость доставки",
+        "service_tax": "Налог на услуги",
+        "platform_fee": "Плата за платформу",
+        "grand_total": "ОБЩАЯ СУММА",
+        "total": "Общая сумма",
+        "delivery_address": "Адрес доставки",
+        "thanks": "Надеюсь, вам понравится еда!",
+        "vendor_title": "Новый заказ для вас",
+        "vendor_msg": "Вы получили новый заказ. Пожалуйста, начните готовить его немедленно."
+      }
+    },
+    "food_status": {
+      "tag": "ЗАКАЗАТЬ ОБНОВЛЕНИЕ",
+      "subjects": {
+        "preparing": "Strug Еда: Ваш заказ готовится! 🍳",
+        "dispatched": "Отличные новости! Ваш заказ уже в пути 🛵",
+        "delivered": "Приятного аппетита! Заказ успешно доставлен ✅",
+        "cancelled": "Уведомление Strug: Ваш заказ отменен ❌"
+      },
+      "messages": {
+        "preparing": "Ресторан начал готовить для вас вкуснейшие блюда. Мы сообщим вам, когда он будет доставлен.",
+        "dispatched": "Ваш заказ забран, и наш партнер по доставке уже на пути к вам.",
+        "delivered": "Ваш заказ передан. Благодарим вас за выбор Strug!",
+        "cancelled": "С сожалением сообщаем Вам, что Ваш заказ был отменен. Если вы уже заплатили, в ближайшее время будет произведен возврат средств."
+      },
+      "labels": {
+        "order_id": "Идентификатор заказа",
+        "current_status": "Текущий статус"
+      }
+    },
+    "digital": {
+      "subject": "Ваш цифровой контент Strug готов!",
+      "title": "Загрузите свой продукт",
+      "instruction": "Спасибо за покупку! Теперь вы можете получить доступ к своему цифровому контенту и загрузить его, используя кнопку ниже.",
+      "button": "Скачать сейчас"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Ваша расчетная ведомость за этот месяц готова 📄",
+      "title": "Ежемесячная расчетная ведомость",
+      "tag": "СВОДКА О ЗАРАБОТНОЙ ПЛАТЕ",
+      "net_salary": "Чистая зарплата",
+      "epf": "ЭПФ (Сотрудник)",
+      "etf": "расчет заработной платы и тф — ETF",
+      "ot": "ОТ Pay",
+      "bonus": "Бонус",
+      "status": "Статус платежа",
+      "thanks": "Если у вас есть какие-либо вопросы относительно вашей зарплаты, пожалуйста, свяжитесь с отделом кадров."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Ваш запрос на отпуск одобрен ✅",
+      "subject_rejected": "Strug HR: обновленная информация о вашем заявлении на отпуск ❌",
+      "title_approved": "Оставьте одобренным!",
+      "title_rejected": "Оставить обновление",
+      "tag": "Оставить заявку",
+      "status_approved": "Ваш запрос на отпуск на следующий период был успешно одобрен.",
+      "status_rejected": "С сожалением сообщаем Вам, что Ваш запрос на отпуск на следующий период был отклонен.",
+      "from_date": "С даты",
+      "to_date": "На сегодняшний день",
+      "reason": "Причина отклонения",
+      "thanks": "По всем дополнительным вопросам обращайтесь в отдел кадров."
+    },
+    "job_alert": {
+      "subject": "Strug Вакансии: получено новое заявление на {{job_title}} 💼",
+      "title": "Подан новый кандидат",
+      "tag": "ЗАЯВЛЕНИЕ О ВАКАНСИИ",
+      "instruction": "Новый кандидат подал заявку на одну из ваших вакансий. Вот краткие подробности:",
+      "job_title": "Должность Роль",
+      "candidate": "Имя кандидата",
+      "view_button": "Посмотреть заявку",
+      "thanks": "Пожалуйста, войдите на портал своего агента, чтобы просмотреть полную информацию и резюме."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: ваша рабочая смена обновлена 🕒",
+      "title": "Смена обновлена",
+      "tag": "ОБНОВЛЕНИЕ РАСПИСАНИЯ",
+      "instruction": "Ваш график работы недавно был обновлен отделом кадров. Пожалуйста, проверьте новое расписание смен ниже.",
+      "start_time": "Начало смены",
+      "end_time": "Конец смены",
+      "thanks": "Пожалуйста, убедитесь, что вы присутствуете в соответствии с новым графиком. По любым вопросам обращайтесь в отдел кадров."
+    },
+    "services": {
+      "tag": "ОБНОВЛЕНИЕ СЕРВИСА",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Ваша запись подтверждена! ✅",
+        "new_alert_provider": "Новая встреча: у вас новое бронирование! 📅",
+        "reminder": "Напоминание: прием через несколько часов ⏳",
+        "rental_expiry": "Требуется действие: Срок аренды скоро истекает! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Сервис",
+        "provider": "Поставщик",
+        "customer": "Клиент",
+        "date": "Дата",
+        "time": "Время",
+        "location": "Расположение",
+        "expiry": "Дата истечения срока действия"
+      },
+      "messages": {
+        "confirmed": "Ваша встреча успешно назначена. Пожалуйста, приходите вовремя.",
+        "provider_alert": "Новый клиент заказал вашу услугу. Вот подробности.",
+        "reminder": "Это дружеское напоминание о вашей предстоящей встрече с Strug.",
+        "rental_expiry": "Срок аренды подходит к концу. Пожалуйста, верните товар или продлите срок, чтобы избежать штрафов.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "СРОЧНО: УВЕДОМЛЕНИЕ О ОКОНЧАНИИ СРОКА СРОКА",
+        "item_name": "Название предмета",
+        "due_date": "Срок сдачи",
+        "order_id": "Идентификатор заказа",
+        "button": "Продлить или вернуть товар",
+        "footer": "Избегайте просроченных платежей, возвращая товар раньше установленного срока.",
+        "thanks": "Благодарим вас за использование Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Спасибо за щедрое пожертвование! ❤️",
+        "loan_reminder": "Напоминание об оплате: срок погашения кредита 💳"
+      },
+      "donation": {
+        "title": "Пожертвование получено",
+        "tag": "ОТДАТЬ",
+        "msg": "Ваша поддержка имеет огромное значение! Мы успешно получили ваш вклад в проект.",
+        "amount": "Сумма пожертвования",
+        "project": "Проект"
+      },
+      "loan": {
+        "title": "Погашение кредита",
+        "tag": "СРОК ОПЛАТЫ",
+        "msg": "Это напоминание о приближении даты погашения кредита. Пожалуйста, убедитесь, что имеется достаточно средств.",
+        "due_date": "Срок сдачи",
+        "amount": "Сумма взноса"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Магазин Strug: Заказ подтвержден #{{order_id}}",
+        "new_order_seller": "Магазин Strug: получен новый заказ #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ЗАКАЗ ПОДТВЕРЖДЕН",
+        "vendor_tag": "НОВЫЙ ЗАКАЗ",
+        "title": "Ваш заказ подтвержден",
+        "vendor_title": "У вас новый заказ",
+        "order_id": "Заказать",
+        "product": "Продукт",
+        "qty": "Количество",
+        "total": "Итого",
+        "thanks": "Благодарим вас за покупки на Strug!",
+        "vendor_msg": "Пожалуйста, подготовьте и отправьте этот заказ как можно скорее."
+      },
+      "status": {
+        "tag": "ЗАКАЗАТЬ ОБНОВЛЕНИЕ",
+        "order_id": "Идентификатор заказа",
+        "tracking": "Номер отслеживания",
+        "track_button": "Посмотреть заказ",
+        "subjects": {
+          "confirmed": "Strug Shop: Ваш заказ подтвержден",
+          "shipped": "Strug Shop: Ваш заказ отправлен.",
+          "fulfilled": "Strug Shop: Ваш заказ доставлен"
+        },
+        "messages": {
+          "confirmed": "Продавец подтвердил ваш заказ и готовит его к отправке.",
+          "shipped": "Ваша посылка уже в пути. Отслеживание: {{tracking_number}}",
+          "fulfilled": "Ваш заказ доставлен. Мы надеемся, что вам понравится ваша покупка!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: ваш еженедельный прогресс в обучении здесь 📚",
+        "unread_chat": "Strug: У вас в папке «Входящие» есть непрочитанные сообщения 💬"
+      },
+      "lms": {
+        "title": "Прогресс обучения",
+        "tag": "ОСТАВАЙТЕСЬ УМНЫМ",
+        "msg": "У тебя все отлично! Вот краткий обзор ваших действий с карточками на этой неделе.",
+        "cards_reviewed": "Карты рассмотрены",
+        "new_decks": "Добавлены новые колоды"
+      },
+      "chat": {
+        "title": "Новые сообщения",
+        "tag": "СООБЩЕСТВО",
+        "msg": "Вы отсутствовали какое-то время. Ваши друзья и члены команды пытаются связаться с вами.",
+        "button": "Посмотреть чат"
+      }
+    }
+  }
+}

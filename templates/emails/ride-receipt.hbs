@@ -1,0 +1,79 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 10px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.ride_receipt.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 32px; font-weight: bold;">{{t 'emails.ride_receipt.title'}}</h1>
+        </td>
+    </tr>
+
+    <!-- Bill Detail Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 24px; border: 1px solid #1e293b;">
+                <tr>
+                    <td style="padding: 25px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <!-- Fare -->
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 14px; padding-bottom: 5px;">{{t 'emails.ride_receipt.total_fare'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 20px; font-weight: bold; padding-bottom: 5px;"> {{currency}} {{total_fare}}</td>
+                            </tr>
+                            <tr><td colspan="2" style="border-bottom: 1px solid #1e293b; padding-top: 10px; margin-bottom: 10px;"></td></tr>
+
+                            <!-- Trip Info -->
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 15px;">{{t 'emails.ride_receipt.ride_id'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 15px;">{{ride_id}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.trip_id'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{trip_id}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.completed_at'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{completed_at}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.distance'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{distance}} km</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.driver'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{driver_name}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.vehicle'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{vehicle_type}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 5px;">{{t 'emails.ride_receipt.payment_method'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 5px;">{{payment_method}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Route Details -->
+    <tr>
+        <td align="left" style="padding: 30px 0 0 0; background-color: #0b1120;">
+            <p style="margin: 0; color: #64748b; font-size: 12px; text-transform: uppercase;">{{t 'emails.ride_receipt.pickup'}}</p>
+            <p style="margin: 5px 0 15px 0; color: #ffffff; font-size: 14px;">{{pickup_address}}</p>
+            
+            <p style="margin: 0; color: #64748b; font-size: 12px; text-transform: uppercase;">{{t 'emails.ride_receipt.drop'}}</p>
+            <p style="margin: 5px 0 0 0; color: #ffffff; font-size: 14px;">{{drop_address}}</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <p style="margin: 0; font-size: 14px; color: #94a3b8;">{{t 'emails.ride_receipt.thanks'}}</p>
+        </td>
+    </tr>
+</table>

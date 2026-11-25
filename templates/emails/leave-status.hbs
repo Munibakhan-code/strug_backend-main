@@ -1,0 +1,57 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.leave_status.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">
+                {{#if isApproved}}{{t 'emails.leave_status.title_approved'}}{{else}}{{t 'emails.leave_status.title_rejected'}}{{/if}}
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 30px; background-color: #0b1120;">
+            <p style="margin: 0; color: #94a3b8; font-size: 16px; line-height: 1.6;">
+                {{#if isApproved}}{{t 'emails.leave_status.status_approved'}}{{else}}{{t 'emails.leave_status.status_rejected'}}{{/if}}
+            </p>
+        </td>
+    </tr>
+
+    <!-- Leave Details Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 20px; border: 1px solid #1e293b;">
+                <tr>
+                    <td style="padding: 20px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-bottom: 5px;">{{t 'emails.leave_status.from_date'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold; padding-bottom: 5px;">{{from_date}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-top: 5px;">{{t 'emails.leave_status.to_date'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold; padding-top: 5px;">{{to_date}}</td>
+                            </tr>
+                            {{#if rejection_reason}}
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid #1e293b; padding-top: 15px;">
+                                    <p style="margin: 0; color: #ff4d4d; font-size: 12px; font-weight: bold;">{{t 'emails.leave_status.reason'}}:</p>
+                                    <p style="margin: 5px 0 0 0; color: #94a3b8; font-size: 13px;">{{rejection_reason}}</p>
+                                </td>
+                            </tr>
+                            {{/if}}
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <p style="margin: 0; font-size: 13px; color: #475569;">{{t 'emails.leave_status.thanks'}}</p>
+        </td>
+    </tr>
+</table>

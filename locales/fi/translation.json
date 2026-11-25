@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ei löydy",
+    "fetchFailed": "{{resource}} nouto epäonnistui",
+    "createFailed": "{{resource}}:n luominen epäonnistui",
+    "updateFailed": "Päivitys epäonnistui {{resource}}",
+    "deleteFailed": "{{resource}}:n poistaminen epäonnistui",
+    "invalidId": "{{field}} on oltava numero",
+    "alreadyExists": "{{field}} on jo olemassa",
+    "invalidFormat": "Virheellinen {{field}}-muoto",
+    "internalServer": "Sisäinen palvelinvirhe",
+    "accessDenied": "Pääsy kielletty",
+    "invalidToken": "Virheellinen tunnus",
+    "adminRequired": "Järjestelmänvalvojan käyttöoikeudet vaaditaan",
+    "forbidden": "Sinulla ei ole lupaa suorittaa tätä toimintoa"
+  },
+  "food": {
+    "filterError": "Suodatinvirhe",
+    "orderAlreadyTaken": "Tämän tilauksen teki jo toinen kuljettaja.",
+    "orderAccepted": "Tilaus hyväksytty toimitettavaksi",
+    "orderDeclined": "Tilaus hylätty.",
+    "orderRejected": "Tilaus hylätty."
+  },
+  "user": {
+    "notFound": "Käyttäjää ei löydy",
+    "deleted": "Käyttäjän poistaminen onnistui",
+    "labelStreetRequired": "Tarra ja katu vaaditaan",
+    "addressNotFound": "Osoitetta ei löydy",
+    "savedAddressRequired": "Toimitusosoite vaaditaan",
+    "cannotModifyOther": "Toisen käyttäjän tiliä ei voi muokata",
+    "emailExists": "Sähköposti tai viittauskoodi on jo olemassa"
+  },
+  "auth": {
+    "invalidLoginFormat": "Virheellinen kirjautumismuoto",
+    "userNotFound": "Käyttäjää ei löydy",
+    "renewSubscription": "Uusi tilauksesi",
+    "verifyBefore": "Vahvista {{method}} ennen kirjautumista.",
+    "noPassword": "Tällä tilillä ei ole salasanaa. Kokeile Google-kirjautumista.",
+    "invalidPassword": "Virheellinen salasana",
+    "teamMemberNotFound": "Ryhmän jäsentä ei löydy",
+    "loginSuccessful": "Kirjautuminen onnistui",
+    "invalidCredentials": "Virheelliset kirjautumistiedot",
+    "noRefreshToken": "Ei päivitystunnusta",
+    "invalidRefreshToken": "Virheellinen tai vanhentunut päivitystunnus",
+    "invalidRefreshTokenPayload": "Virheellinen päivitystunnuksen hyötykuorma",
+    "teamMembershipNotFound": "Joukkueen jäsenyyttä ei löydy",
+    "accessTokenRefreshed": "Käyttöoikeustunnus päivitetty",
+    "refreshTokenDeleted": "Päivitystunnus poistettu",
+    "emailRequired": "Sähköposti vaaditaan",
+    "passwordAccountExists": "Tämä sähköposti on rekisteröity salasanalla. Kirjaudu sisään manuaalisesti.",
+    "emailRequiredFacebook": "Sähköposti vaaditaan, mutta Facebook ei tarjoa sitä. Varmista, että Facebook-tililläsi on vahvistettu sähköpostiosoite.",
+    "authCodeRequired": "Todennuskoodi vaaditaan",
+    "validEmailRequired": "Kelvollinen sähköpostiosoite vaaditaan.",
+    "accountEmailExists": "Tällä sähköpostiosoitteella on jo tili.",
+    "usernameTaken": "Tämä käyttäjätunnus on jo varattu.",
+    "tooManyOtpRequests": "Liian monta koodipyyntöä. Yritä myöhemmin uudelleen.",
+    "failedSendCode": "Koodin lähettäminen epäonnistui.",
+    "registerFieldsRequired": "Sähköposti, nimi, salasana ja otp vaaditaan.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Salasanan tulee sisältää: {{requirements}}.",
+    "noVerificationCode": "Vahvistuskoodia ei löytynyt. Pyydä uusi.",
+    "verificationExpired": "Vahvistuskoodi on vanhentunut. Pyydä uusi.",
+    "tooManyOtpAttempts": "Liian monta väärää yritystä. Pyydä uusi vahvistuskoodi.",
+    "invalidVerificationCode": "Virheellinen vahvistuskoodi.",
+    "verificationFailed": "Vahvistus epäonnistui.",
+    "tooManyRequests": "Liikaa pyyntöjä. Yritä myöhemmin uudelleen.",
+    "resetFieldsRequired": "sähköposti, uusi salasana ja tunnus vaaditaan.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Virheellinen tai vanhentunut palautuslinkki.",
+    "accountLocked": "Tili tilapäisesti lukittu. Yritä myöhemmin uudelleen.",
+    "verificationCodeRequired": "Vahvistuskoodi vaaditaan.",
+    "invalidSession": "Virheellinen istunto",
+    "passwordFieldsRequired": "currentPassword ja newPassword vaaditaan"
+  },
+  "success": {
+    "deleted": "{{resource}} poistettu onnistuneesti",
+    "created": "{{resource}} luotu onnistuneesti",
+    "updated": "{{resource}} päivitetty onnistuneesti"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Mainostilin alhaisen saldon varoitus",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% päiväbudjetti saavutettu kampanjalle #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ADS-TILIVAROITUS",
+        "title": "Alhaisen saldon varoitus",
+        "instruction": "Hei {{name}}, Ads Wallet -saldosi on vähissä. Estä aktiivisten kampanjoiden automaattinen keskeytys lisäämällä tilisi saldoa.",
+        "balance_label": "Nykyinen saldo:",
+        "button": "Täytä mainoslompakko"
+      },
+      "spend_alert": {
+        "tag": "BUDJETTI VIRTAPALVELU SAAVUTETTU",
+        "title": "{{percentage}}% päiväbudjetti käytetty",
+        "instruction": "Hei {{name}}, tämä on automaattinen tilapäivitys aktiiviselle mainosjoukollesi. Kampanjasi on saavuttanut päivittäisen kulutusrajan.",
+        "campaign_label": "Kampanjan tunnus:",
+        "button": "Hallinnoi kampanjaa"
+      }
+    },
+    "subjects": {
+      "otp": "Strug-vahvistus: Koodisi on täällä",
+      "welcome": "Tervetuloa Strug-perheeseen!",
+      "password_reset": "Strug: Palauta salasanasi",
+      "login_alert": "Strug Security Alert: Uusi kirjautuminen havaittu",
+      "ride_receipt": "Strug Ride Yhteenveto: Kiitos ratsastamisesta!"
+    },
+    "otp": {
+      "tag": "TURVALLISUUSTARKISTUS",
+      "title": "Vahvista tili",
+      "instruction": "Viimeistele rekisteröinti käyttämällä alla olevaa suojattua koodia. Voimassa 10 minuuttia.",
+      "ignore": "Jos et pyytänyt tätä, jätä tämä sähköposti huomiotta."
+    },
+    "common": {
+      "tagline": "Työsi • Aikasi • Rahasi",
+      "rights_reserved": "Kaikki oikeudet pidätetään",
+      "need_help": "Tarvitsetko apua? Vastaa tähän sähköpostiin tai käy tukikeskuksessamme."
+    },
+    "welcome": {
+      "tag": "TERVETULOA STRUGIIN",
+      "title": "Hei, {{name}}!",
+      "instruction": "Tilisi on vahvistettu. Olet nyt osa alustaa, joka on suunniteltu yksinkertaistamaan työtäsi, aikaasi ja rahaasi.",
+      "button": "Tutustu hallintapaneeliin"
+    },
+    "password_reset": {
+      "tag": "TURVALLISUUS",
+      "title": "Palauta salasana",
+      "instruction": "Strug-tilisi salasanan vaihtamista pyydettiin. Napsauta alla olevaa painiketta valitaksesi uuden.",
+      "button": "Palauta salasanani",
+      "ignore": "Jos et pyytänyt tätä, voit jättää tämän sähköpostin huomiotta. Linkki vanhenee 1 tunnin kuluttua."
+    },
+    "login_alert": {
+      "tag": "TURVALLISUUSVAROITUS",
+      "title": "Uusi kirjautuminen havaittu",
+      "instruction": "Huomasimme uuden kirjautumisen Strug-tilillesi. Jos tämä olit sinä, voit jättää tämän sähköpostin huomioimatta.",
+      "device": "Laite",
+      "time": "Aika",
+      "not_you": "Jos tämä ET ollut sinä, suojaa tilisi välittömästi vaihtamalla salasanasi."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Ajon yhteenveto",
+      "tag": "MATKA VALMIS",
+      "total_fare": "Kokonaishinta",
+      "distance": "Etäisyys",
+      "duration": "Kesto",
+      "pickup": "Nouto",
+      "drop": "Pudotus",
+      "driver": "Kuljettaja",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Kiitos Strugin kanssa ratsastamisesta!",
+      "support": "Jos sinulla on ongelmia tämän kyydin kanssa, ota yhteyttä tukeen."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Vahvistettu: Kyytisi on varattu!",
+      "title": "Varaus vahvistettu",
+      "tag": "KILPAILU VARATTU",
+      "from": "carpool_booking alkaen – alkaen",
+      "to": "Vastaanottaja",
+      "seats": "Istuimet varattu",
+      "total_cost": "Kokonaiskustannukset",
+      "status": "Tila",
+      "thanks": "Kiitos kimppakyydistä Strugin kanssa!",
+      "details_msg": "Paikkasi on varattu onnistuneesti. Ole ajoissa noutopaikalla."
+    },
+    "ghost_driver": {
+      "subject": "Ajopäivitys: Määritämme sinulle uuden ohjaimen",
+      "title": "Uuden kuljettajan löytäminen",
+      "tag": "AJO-PÄIVITYS",
+      "instruction": "Edellinen ohjain ei ole käytettävissä tai ei vastaa. Älä huoli, etsimme automaattisesti uutta kuljettajaa hakemaan sinut.",
+      "status": "Nykyinen tila: Etsitään uudelleen kuljettajia...",
+      "hang_tight": "Ole hyvä ja pidä kiinni! Ilmoitamme sinulle heti, kun uusi kuljettaja hyväksyy pyyntösi."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Salasanasi on vaihdettu",
+      "title": "Salasana päivitetty",
+      "tag": "TURVALLISUUSPÄIVITYS",
+      "instruction": "Strug-tilisi salasana vaihdettiin äskettäin. Jos teit tämän muutoksen, voit jättää tämän sähköpostin huomiotta.",
+      "warning": "Jos ET vaihtanut salasanaasi, tilisi saattaa olla vaarantunut. Suojaa tilisi välittömästi.",
+      "button": "Suojaa tilini",
+      "footer": "Strug Alustan suojaustiimi"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: tilaus vahvistettu! #{{order_id}}",
+        "new_order_vendor": "Toimenpide vaaditaan: Uusi tilaus vastaanotettu! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Tilauskuitti",
+        "tag": "TILAUKSESSA ONNNISTUS",
+        "vendor_tag": "TOIMENPITEET VAATIVA",
+        "order_id": "Tilaustunnus",
+        "item": "Tuote",
+        "qty": "Määrä",
+        "price": "Hinta",
+        "subtotal": "Välisumma",
+        "delivery_fee": "Toimitusmaksu",
+        "service_tax": "Palveluvero",
+        "platform_fee": "Alustamaksu",
+        "grand_total": "YHTEENSÄ",
+        "total": "Kokonaismäärä",
+        "delivery_address": "Toimitusosoite",
+        "thanks": "Toivottavasti nautit ateriastasi!",
+        "vendor_title": "Uusi tilaus sinulle",
+        "vendor_msg": "Olet saanut uuden tilauksen. Aloita sen valmistelu välittömästi."
+      }
+    },
+    "food_status": {
+      "tag": "TILAUSPÄIVITYS",
+      "subjects": {
+        "preparing": "Strug Food: Tilaustasi valmistellaan! 🍳",
+        "dispatched": "Hienoja uutisia! Tilauksesi on matkalla 🛵",
+        "delivered": "Nauti ateriastasi! Tilaus toimitettu onnistuneesti ✅",
+        "cancelled": "Strug Huomautus: Tilauksesi on peruutettu ❌"
+      },
+      "messages": {
+        "preparing": "Ravintola on alkanut valmistaa herkullista ateriaasi. Ilmoitamme, kun se on toimitettavissa.",
+        "dispatched": "Tilauksesi on noudettu ja toimituskumppanimme on matkalla sijaintiisi.",
+        "delivered": "Tilauksesi on luovutettu. Kiitos, että valitsit Strugin!",
+        "cancelled": "Pahoittelemme, että tilauksesi on peruutettu. Jos olet jo maksanut, hyvitys aloitetaan pian."
+      },
+      "labels": {
+        "order_id": "Tilaustunnus",
+        "current_status": "Nykyinen tila"
+      }
+    },
+    "digital": {
+      "subject": "Strugin digitaalinen sisältösi on valmis!",
+      "title": "Lataa tuotteesi",
+      "instruction": "Kiitos ostoksestasi! Voit nyt käyttää ja ladata digitaalista sisältöäsi alla olevalla painikkeella.",
+      "button": "Lataa nyt"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Tämän kuukauden palkkakuittisi on valmis 📄",
+      "title": "Kuukausipalkkatodistus",
+      "tag": "PALKKIEN YHTEENVETO",
+      "net_salary": "Nettopalkka",
+      "epf": "EPF (työntekijä)",
+      "etf": "palkkalaskenta etf - ETF",
+      "ot": "palkkalaskenta ot — OT Pay",
+      "bonus": "palkkasumma - bonus",
+      "status": "Maksun tila",
+      "thanks": "Jos sinulla on kysyttävää palkastasi, ota yhteyttä HR:ään."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Poistumispyyntösi on hyväksytty ✅",
+      "subject_rejected": "Strug HR: Päivitys poistumispyyntöösi ❌",
+      "title_approved": "Jätä hyväksytty!",
+      "title_rejected": "Jätä Päivitys",
+      "tag": "JÄTÄ PYYNTÖ",
+      "status_approved": "Lomapyyntösi seuraavalle kaudelle on hyväksytty.",
+      "status_rejected": "Valitettavasti joudumme ilmoittamaan, että lomapyyntösi seuraavalle ajanjaksolle on hylätty.",
+      "from_date": "Päivämäärästä alkaen",
+      "to_date": "Päivämäärään",
+      "reason": "Hylkäämisen syy",
+      "thanks": "Jos sinulla on kysyttävää, ota yhteyttä HR-osastoosi."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Uusi hakemus vastaanotettu {{job_title}} 💼",
+      "title": "Uusi ehdokas haettu",
+      "tag": "TYÖHAKEMUS",
+      "instruction": "Uusi hakija on hakenut johonkin työpaikkailmoituksestasi. Tässä lyhyet tiedot:",
+      "job_title": "Työn rooli",
+      "candidate": "Ehdokkaan nimi",
+      "view_button": "Näytä sovellus",
+      "thanks": "Kirjaudu agenttiportaaliisi nähdäksesi täydelliset tiedot ja CV:n."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Työvuorosi on päivitetty 🕒",
+      "title": "Vaihto päivitetty",
+      "tag": "AIKATAULU PÄIVITYS",
+      "instruction": "HR-osasto on äskettäin päivittänyt työaikataulusi. Tarkista uudet työvuorosi alta.",
+      "start_time": "Vaihto alkaa",
+      "end_time": "Vaihto loppuu",
+      "thanks": "Varmista, että olet paikalla uuden aikataulun mukaisesti. Ota yhteyttä HR:ään kaikissa asioissa."
+    },
+    "services": {
+      "tag": "PALVELUPÄIVITYS",
+      "subjects": {
+        "confirmed_customer": "Strug-palvelut: Ajanvarauksesi on vahvistettu! ✅",
+        "new_alert_provider": "Uusi tapaaminen: Sinulla on uusi varaus! 📅",
+        "reminder": "Muistutus: Tapaamisesi on muutaman tunnin kuluttua ⏳",
+        "rental_expiry": "Toimenpide vaaditaan: Vuokra-aikasi päättyy pian! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Palvelu",
+        "provider": "Palveluntarjoaja",
+        "customer": "Asiakas",
+        "date": "Päivämäärä",
+        "time": "Aika",
+        "location": "Sijainti",
+        "expiry": "Viimeinen voimassaolopäivä"
+      },
+      "messages": {
+        "confirmed": "Tapaamisesi on ajoitettu onnistuneesti. Ole ajoissa.",
+        "provider_alert": "Uusi asiakas on varannut palvelusi. Tässä on yksityiskohdat.",
+        "reminder": "Tämä on ystävällinen muistutus tulevasta tapaamisestasi Strugin kanssa.",
+        "rental_expiry": "Vuokra-aikasi on päättymässä. Palauta tuote tai pidennä ajanjaksoa sakkojen välttämiseksi.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "KIIREELLINEN: VOIMENPISTEMINEN",
+        "item_name": "Tuotteen nimi",
+        "due_date": "Eräpäivä",
+        "order_id": "Tilaustunnus",
+        "button": "Pidennä tai palauta tuotetta",
+        "footer": "Vältä myöhästymismaksuja palauttamalla tuote ennen eräpäivää.",
+        "thanks": "Kiitos, että käytät Strug Rentalsia."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Kiitos runsaasta lahjoituksestasi! ❤️",
+        "loan_reminder": "Maksumuistutus: Lainasi lyhennys erääntyy 💳"
+      },
+      "donation": {
+        "title": "Lahjoitus vastaanotettu",
+        "tag": "ANTAA TAKAISIN",
+        "msg": "Tukellasi on suuri merkitys! Olemme saaneet onnistuneesti panoksenne projektiin.",
+        "amount": "Lahjoitettu summa",
+        "project": "Projekti"
+      },
+      "loan": {
+        "title": "Lainan takaisinmaksu",
+        "tag": "MAKSU ERÄLLÄ",
+        "msg": "Tämä on muistutus siitä, että lainasi takaisinmaksupäivä lähestyy. Varmista, että käytettävissä on riittävästi varoja.",
+        "due_date": "Eräpäivä",
+        "amount": "Maksuerä"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: tilaus vahvistettu #{{order_id}}",
+        "new_order_seller": "Strug Shop: Uusi tilaus vastaanotettu #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "TILAUS VAHVISTETTU",
+        "vendor_tag": "UUSI TILAA",
+        "title": "Tilauksesi on vahvistettu",
+        "vendor_title": "Sinulla on uusi tilaus",
+        "order_id": "Tilaa",
+        "product": "Tuote",
+        "qty": "Määrä",
+        "total": "Yhteensä",
+        "thanks": "Kiitos ostoksista Strugissa!",
+        "vendor_msg": "Valmistele ja lähetä tämä tilaus mahdollisimman pian."
+      },
+      "status": {
+        "tag": "TILAUSPÄIVITYS",
+        "order_id": "Tilaustunnus",
+        "tracking": "Seurantanumero",
+        "track_button": "Katso tilaus",
+        "subjects": {
+          "confirmed": "Strug Shop: Tilauksesi on vahvistettu",
+          "shipped": "Strug Shop: Tilauksesi on lähetetty",
+          "fulfilled": "Strug Shop: Tilauksesi on toimitettu"
+        },
+        "messages": {
+          "confirmed": "Myyjä vahvisti tilauksesi ja valmistelee sitä lähetettäväksi.",
+          "shipped": "Pakettisi on matkalla. Seuranta: {{tracking_number}}",
+          "fulfilled": "Tilauksesi on toimitettu. Toivomme, että nautit ostoksestasi!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Viikoittainen oppimisprosessisi on täällä 📚",
+        "unread_chat": "Strug: Sinulla on lukemattomia viestejä postilaatikossasi 💬"
+      },
+      "lms": {
+        "title": "Oppimisen edistyminen",
+        "tag": "PYSY ÄLYKÄSSÄ",
+        "msg": "Voit hyvin! Tässä on yhteenveto korttitoiminnastasi tällä viikolla.",
+        "cards_reviewed": "Kortit tarkistettu",
+        "new_decks": "Uusia dekkejä liittynyt"
+      },
+      "chat": {
+        "title": "Uusia viestejä",
+        "tag": "YHTEISÖ",
+        "msg": "Olet ollut poissa jonkin aikaa. Ystäväsi ja tiimisi jäsenet yrittävät tavoittaa sinut.",
+        "button": "Näytä Chat"
+      }
+    }
+  }
+}

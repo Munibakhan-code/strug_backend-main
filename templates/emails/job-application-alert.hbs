@@ -1,0 +1,49 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.job_alert.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">{{t 'emails.job_alert.title'}}</h1>
+        </td>
+    </tr>
+
+    <!-- Details Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 24px; border: 1px solid #1e293b;">
+                <tr>
+                    <td style="padding: 25px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-bottom: 5px;">{{t 'emails.job_alert.job_title'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold;">{{job_title}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-top: 10px;">{{t 'emails.job_alert.candidate'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; font-weight: bold;">{{candidate_name}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center" bgcolor="#e31e24" style="border-radius: 100px;">
+                        <a href="http://localhost:3000/agent/applications" target="_blank" style="padding: 12px 30px; color: #ffffff; font-size: 13px; font-weight: bold; text-decoration: none; display: inline-block;">
+                            {{t 'emails.job_alert.view_button'}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <p style="margin: 25px 0 0 0; font-size: 13px; color: #475569; line-height: 1.5;">{{t 'emails.job_alert.thanks'}}</p>
+        </td>
+    </tr>
+</table>

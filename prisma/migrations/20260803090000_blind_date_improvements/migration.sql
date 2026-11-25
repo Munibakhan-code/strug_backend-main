@@ -1,0 +1,6 @@
+ALTER TABLE "dating_blind_session"
+  ADD COLUMN IF NOT EXISTS "icebreakers" JSONB,
+  ADD COLUMN IF NOT EXISTS "reveal_policy" JSONB,
+  ADD COLUMN IF NOT EXISTS "ended_by" INTEGER,
+  ADD COLUMN IF NOT EXISTS "ended_reason" VARCHAR(255),
+  ADD COLUMN IF NOT EXISTS "ended_at" TIMESTAMP(6);

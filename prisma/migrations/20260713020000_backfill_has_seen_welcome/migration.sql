@@ -1,0 +1,22 @@
+-- Replay the has_seen_welcome backfill that the 0_init squash dropped (#416).
+--
+-- The original migration (20260724_user_has_seen_welcome, now under
+-- _archived_migrations_pre_0_init/) shipped DDL *plus* a data backfill:
+--
+--   UPDATE "user" SET "has_seen_welcome" = true WHERE "has_seen_welcome" = false;
+--
+-- with the stated intent: "every account that exists at migration time is treated as
+-- already-onboarded (true) so the welcome never pops for them. Only accounts created AFTER
+-- this migration default to false and therefore see it once."
+--
+-- The 0_init baseline was generated from schema.prisma, which encodes structure but not data,
+-- so it carries only the column (`"has_seen_welcome" BOOLEAN NOT NULL DEFAULT false`) and the
+-- UPDATE was lost. Any database provisioned or reset from 0_init therefore has EVERY user at
+-- false — so every account, however old, looks brand new to the welcome gate and gets the
+-- "take a tour" prompt on each new device (the localStorage key only suppresses it on the one
+-- device where it was dismissed).
+--
+-- Same semantics as the original: everything that exists now is onboarded. Idempotent, and a
+-- no-op on databases that were migrated via `resolve --applied 0_init` (they kept their
+-- already-backfilled true values — verified on staging: 93/93 users already true).
+UPDATE "user" SET "has_seen_welcome" = true WHERE "has_seen_welcome" = false;

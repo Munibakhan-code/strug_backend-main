@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ezwami te",
+    "fetchFailed": "Elongi te kozwa {{resource}} .",
+    "createFailed": "Elongi te kosala {{resource}} .",
+    "updateFailed": "Elongi te kosala mise à jour {{resource}} .",
+    "deleteFailed": "Elongi te kosilisa {{resource}} .",
+    "invalidId": "{{field}} esengeli kozala motango",
+    "alreadyExists": "{{field}} ezali déjà",
+    "invalidFormat": "Format {{field}} ezali malamu te",
+    "internalServer": "Erreur ya serveur ya kati",
+    "accessDenied": "Accès eboyamaki",
+    "invalidToken": "Jeton oyo ezali na ntina te",
+    "adminRequired": "Accès ya administrateur esengeli",
+    "forbidden": "Ozali na ndingisa te ya kosala mosala oyo"
+  },
+  "food": {
+    "filterError": "Libunga ya filtre",
+    "orderAlreadyTaken": "Ordre oyo esi ezwamaki na chauffeur mosusu.",
+    "orderAccepted": "Commande endimami pona livraison",
+    "orderDeclined": "Ordre eboyaki.",
+    "orderRejected": "Mobeko moboyamaki."
+  },
+  "user": {
+    "notFound": "Mosaleli azwami te",
+    "deleted": "Mosaleli alongolami na elonga",
+    "labelStreetRequired": "Etiquette na balabala esengeli",
+    "addressNotFound": "Addresse ezwami te",
+    "savedAddressRequired": "Addresse ya livraison esengeli",
+    "cannotModifyOther": "Ekoki te kobongola compte ya mosaleli mosusu",
+    "emailExists": "Code ya email to ya référence ezali déjà"
+  },
+  "auth": {
+    "invalidLoginFormat": "Format ya bokɔti oyo ezali malamu te",
+    "userNotFound": "Mosaleli azwami te",
+    "renewSubscription": "Svp bo renouveler abonnément na bino",
+    "verifyBefore": "Svp verifier {{method}} na yo avant okota.",
+    "noPassword": "Compte oyo eza na mot de passe te. Meká kokɔta na Google.",
+    "invalidPassword": "Mot de passe ya mabe",
+    "teamMemberNotFound": "Membre ya équipe azwami te",
+    "loginSuccessful": "Login elongi",
+    "invalidCredentials": "Ba credentiels oyo ezali na ntina te",
+    "noRefreshToken": "Token ya kozongisa sika epesami te",
+    "invalidRefreshToken": "Token ya kozongisa sika oyo ezali na ntina te to oyo esilaki",
+    "invalidRefreshTokenPayload": "Charge utile ya jeton ya refresh ya mabe",
+    "teamMembershipNotFound": "Membres ya équipe ezwami te",
+    "accessTokenRefreshed": "Jeton ya accès ezongisami sika",
+    "refreshTokenDeleted": "Refresh token elongolami",
+    "emailRequired": "Esengeli kotinda email",
+    "passwordAccountExists": "Email oyo ekomisami na nzela ya mot de passe. Svp bo kota na maboko.",
+    "emailRequiredFacebook": "Email esengeli kasi epesami na Facebook te. Svp sala que compte Facebook na yo ezala na email vérifié.",
+    "authCodeRequired": "Code ya auth esengeli",
+    "validEmailRequired": "Esengeli kozala na email oyo ezali na ntina.",
+    "accountEmailExists": "Compte moko na email oyo ezali déjà.",
+    "usernameTaken": "Nkombo wana ya mosaleli esi ezwami.",
+    "tooManyOtpRequests": "Ba demandes ya code ebele trop. Meká lisusu na nsima.",
+    "failedSendCode": "Elongi te kotinda code.",
+    "registerFieldsRequired": "email, kombo, mot de passe, na otp nionso esengeli.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Mot ya nzela esengeli kozala na: {{requirements}}.",
+    "noVerificationCode": "Code ya vérification ezwami te. Svp bosenga ya sika.",
+    "verificationExpired": "Code ya vérification esili. Svp bosenga ya sika.",
+    "tooManyOtpAttempts": "Ba tentatives ya mabe trop. Svp bosenga code ya sika ya vérification.",
+    "invalidVerificationCode": "Code ya vérification ya mabe.",
+    "verificationFailed": "Vérification elongi te.",
+    "tooManyRequests": "Ba demandes ebele trop. Svp meka lisusu sima.",
+    "resetFieldsRequired": "email, newPassword, mpe token esengeli.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Lien ya réinitialisation ya mabe to oyo esilaki.",
+    "accountLocked": "Compte ekangami mpo na mwa ntango. Meká lisusu na nsima.",
+    "verificationCodeRequired": "Code ya vérification esengeli.",
+    "invalidSession": "Session oyo ezali na ntina te",
+    "passwordFieldsRequired": "currentPassword na newPassword esengeli"
+  },
+  "success": {
+    "deleted": "{{resource}} elongolami na elonga",
+    "created": "{{resource}} esalemi na elonga",
+    "updated": "{{resource}} ebongwani na malonga"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Likebisi ya Compte ya ba publicités ya solde ya nse",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% Budget ya mokolo na mokolo ezwami mpo na campagne #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ALERT YA COMPTE YA BA PUBLICITÉ",
+        "title": "Kebisi ya solde ya nse",
+        "instruction": "Mbote {{name}}, solde na yo ya Portefeuille ya ba Annonces ezali kosila. Mpo na kopekisa ete ba campagnes actives ezala automatiquement pause, tosengi otombola solde ya compte na yo.",
+        "balance_label": "Solde ya lelo:",
+        "button": "Portefeuille ya ba publicités ya Top Up"
+      },
+      "spend_alert": {
+        "tag": "MILESTONE YA BUDGET EKOMI",
+        "title": "{{percentage}}% Budget ya mokolo na mokolo oyo esalemi",
+        "instruction": "Mbote {{name}}, oyo ezali mise à jour ya état automatique pona ensemble ya ba publicités na yo ya active. Campagne na bino ekomi na limite ya dépense ya mokolo na mokolo.",
+        "campaign_label": "ID ya campagne:",
+        "button": "Gérer Campagne"
+      }
+    },
+    "subjects": {
+      "otp": "Verification ya Strug: Code na yo ezali awa",
+      "welcome": "Boyei malamu na Libota ya Strug!",
+      "password_reset": "Strug: Réinitialiser mot de passe na yo",
+      "login_alert": "Alerte ya Sécurité ya Strug: Bokɔti ya sika ezwami",
+      "ride_receipt": "Strug Ride Summary: Matondo mingi mpo na komata!"
+    },
+    "otp": {
+      "tag": "CHECK YA SÉCURITÉ",
+      "title": "Verifier Compte",
+      "instruction": "Salelá code ya libateli oyo ezali awa na nse mpo na kosilisa bokomisi nkombo na yo. Valid na boumeli ya miniti 10.",
+      "ignore": "Soki osengaki likambo oyo te, svp ignorer email oyo."
+    },
+    "common": {
+      "tagline": "Mosala na yo • Tango na yo • Mbongo na yo",
+      "rights_reserved": "Makoki Nyonso mazali ya yo",
+      "need_help": "Ozali na mposa ya lisalisi? Yanola na email oyo to kota na centre na biso ya soutien."
+    },
+    "welcome": {
+      "tag": "BOYEBI NA STRUG .",
+      "title": "Mbote, {{name}}!",
+      "instruction": "Compte na yo e vérifié. Ozali sikoyo na kati ya estrade oyo etongami mpo na kosala ete mosala na yo, ntango na yo mpe mbongo na yo ezala pɛtɛɛ.",
+      "button": "Boluka Dashboard"
+    },
+    "password_reset": {
+      "tag": "LIBATELI",
+      "title": "Réinitialiser Mot de passe",
+      "instruction": "Lisengi esalemaki mpo na kozongisa mot de passe ya compte Strug na yo. Finá na butɔ oyo ezali awa na nse mpo na kopona ya sika.",
+      "button": "Réinitialiser Mot de passe na ngai",
+      "ignore": "Soki osengaki likambo oyo te, okoki ko ignorer email oyo sans danger. Lien ekosila na 1 heure."
+    },
+    "login_alert": {
+      "tag": "ALERT YA SÉCURITÉ",
+      "title": "Bokɔti ya sika ezwami",
+      "instruction": "Tomoni bokɔti ya sika na kɔnti na yo ya Strug. Soki oyo ezalaki yo, okoki ko ignorer email oyo.",
+      "device": "Apareyi",
+      "time": "Ntango",
+      "not_you": "Soki oyo ezalaki yo TE, tosengi yo obatela compte na yo mbala moko na kobongola mot de passe na yo."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Bokuse ya komata",
+      "tag": "VOYAGE ESILI",
+      "total_fare": "Mosolo ya Taloux",
+      "distance": "Ntaka",
+      "duration": "Boumeli",
+      "pickup": "Kozwa",
+      "drop": "Kobwaka biloko",
+      "driver": "Mokumbi motuka",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Matondo mingi mpo na komata na Strug!",
+      "support": "Soki ozali na ba problèmes na ride oyo, contacter soutien."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Confirmé: Motuka na yo ezali réservé!",
+      "title": "Réservation e confirmé",
+      "tag": "CARPOOL EZALI RÉSERVÉ",
+      "from": "Euti na",
+      "to": "Na",
+      "seats": "Ba kiti oyo ba réservé",
+      "total_cost": "Mosolo mobimba",
+      "status": "Statut",
+      "thanks": "Merci pona kosala carpool na Strug!",
+      "details_msg": "Kiti na yo esili kozwama malamu. Svp bozala na point ya pickup na temps."
+    },
+    "ghost_driver": {
+      "subject": "Mikolo oyo ya mobembo: Tozali kozongisa mokumbi motuka ya sika mpo na yo",
+      "title": "Koluka Mokumbi Mokumbi ya Sika",
+      "tag": "MISE À JOUR YA RIDE",
+      "instruction": "Mokumbi motuka na yo ya kala azali te to azali koyanola te. Komitungisa te, tozali koluka automatiquement mokumbi motuka ya sika mpo na kozwa yo.",
+      "status": "Statut actuel: Koluka lisusu ba chauffeurs...",
+      "hang_tight": "Svp bokangama makasi! Tokoyebisa yo noki soki mokumbi motuka ya sika andimi bosenga na yo."
+    },
+    "password_changed": {
+      "subject": "Strug Alerte ya sécurité: Mot de passe na yo ebongwani",
+      "title": "Mot ya nzela ebongwani",
+      "tag": "MISE À JOUR YA SÉCURITÉ",
+      "instruction": "Mot de passe ya compte Strug na yo ebongwani kala mingi te. Soki osali mbongwana oyo, okoki ko ignorer email oyo sans danger.",
+      "warning": "Soki OBONGOLI mot de passe na yo TE, compte na yo ekoki kozala na likama. Svp bo securiser compte na bino mbala moko.",
+      "button": "Bobatela Compte na Ngai",
+      "footer": "Strug Ekipi ya bokengi ya plateforme"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Bilei: Commande e confirmé! #{{order_id}} .",
+        "new_order_vendor": "Esengeli kosala: Commande ya sika ezwami! #{{order_id}} ."
+      },
+      "receipt": {
+        "title": "Récépissé ya commande",
+        "tag": "SUCCES YA ORDRE",
+        "vendor_tag": "ACTION ESENGELI",
+        "order_id": "ID ya commande",
+        "item": "Eloko",
+        "qty": "boyambi qty — Qty",
+        "price": "Ntalo",
+        "subtotal": "Sous-total",
+        "delivery_fee": "Mosolo ya Livraison",
+        "service_tax": "Mpako ya mosala",
+        "platform_fee": "Mosolo ya Plateforme",
+        "grand_total": "MONTAL YA MOBALI",
+        "total": "Mosolo mobimba",
+        "delivery_address": "Addresse ya livraison",
+        "thanks": "Espoir okosepela na bilei na yo!",
+        "vendor_title": "Ordre ya Sika pona Yo",
+        "vendor_msg": "Ozwi komande ya sika. Tosɛngi bino bóbanda kobongisa yango mbala moko."
+      }
+    },
+    "food_status": {
+      "tag": "MISE À JOUR YA COMMANDE",
+      "subjects": {
+        "preparing": "Strug Bilei: Commande na yo ezali kobongisama! 🍳",
+        "dispatched": "Nsango monene! Commande nayo eza na nzela 🛵",
+        "delivered": "Sepelá na bilei na yo! Commande epesameli na malonga ✅",
+        "cancelled": "Strug Liyebisi: Commande na yo elongolami ❌"
+      },
+      "messages": {
+        "preparing": "Restaurant ebandi kolamba bilei na yo ya elengi. Tokoyebisa bino tango ekobima pona livraison.",
+        "dispatched": "Commande na yo ezuami mpe partenaire na biso ya livraison azali na nzela ya esika ozali.",
+        "delivered": "Commande na yo esili kopesama. Matondo mingi mpo na kopona Strug!",
+        "cancelled": "Tozali na mawa ya koyebisa bino ete commande na bino elongolami. Soki ofuti, bakobanda kozongisa mbongo kala mingi te."
+      },
+      "labels": {
+        "order_id": "ID ya commande",
+        "current_status": "Ezalela ya lelo"
+      }
+    },
+    "digital": {
+      "subject": "Contenu Numérique na yo ya Strug ezali Prêt!",
+      "title": "Télécharger Produit Na Yo",
+      "instruction": "Matɔndi mingi mpo na kosomba na yo! Okoki sikoyo kokɔta mpe kozwa makambo na yo ya nimero na lisalisi ya bouton oyo ezali awa na nse.",
+      "button": "Télécharger Sikoyo"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Payslip na yo ya sanza oyo esili 📄",
+      "title": "Mokanda ya lifuti ya sanza na sanza",
+      "tag": "RESUMEN YA LIFUTA",
+      "net_salary": "Lifuta ya Net",
+      "epf": "EPF (Mosali) .",
+      "etf": "lifuti etf — ETF",
+      "ot": "OT Kofuta",
+      "bonus": "Bonus ya kosala",
+      "status": "Ezalela ya kofuta",
+      "thanks": "Soki oza na mituna na oyo etali salaire na yo, benga RH."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Demande na yo ya Conge endimami ✅",
+      "subject_rejected": "Strug HR: Mikolo oyo na Demande na yo ya Conge ❌",
+      "title_approved": "Kotika Endimami!",
+      "title_rejected": "Tika Mikolo oyo",
+      "tag": "SENGELI YA KOBONGISA",
+      "status_approved": "Bosengi na yo ya konje mpo na eleko oyo elandi endimami malamu.",
+      "status_rejected": "Tozali na mawa ya koyebisa yo ete bosengi na yo ya konje mpo na eleko oyo elandi eboyamaki.",
+      "from_date": "Kobanda na Date",
+      "to_date": "Kino Lelo",
+      "reason": "Ntina ya koboya",
+      "thanks": "Mpo na mituna mosusu, benga departema na yo ya RH."
+    },
+    "job_alert": {
+      "subject": "Misala ya Strug: Bazui demande ya sika pona {{job_title}} 💼",
+      "title": "Candidat ya sika asali demande",
+      "tag": "APPLICATION YA MOSALA",
+      "instruction": "Candidat ya sika asengi moko ya ba listes ya misala na yo. Talá makambo ya mokuse:",
+      "job_title": "Role ya Mosala",
+      "candidate": "Kombo ya Mokambi",
+      "view_button": "Tala Application",
+      "thanks": "Svp kota na portail ya agent na yo pona kotala ba détails nionso pe CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Shift na yo ya mosala ebongwani 🕒",
+      "title": "Shift Ebongwani na mikolo",
+      "tag": "MISE À JOUR YA MANÁKA",
+      "instruction": "Programme ya mosala na yo euti kozongisama na mikolo na departema ya RH. Svp tala ba temps ya sika ya changement na yo na se.",
+      "start_time": "Shift Ebandi",
+      "end_time": "Shift Esili",
+      "thanks": "Tosɛngi bino bósala ete bozala wana engebene manaka ya sika. Contactez RH pona ba soucis nionso."
+    },
+    "services": {
+      "tag": "MISE À JOUR YA SERVICE",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Rendez-vous na yo endimami! ✅",
+        "new_alert_provider": "Rendez-vous ya sika: Ozali na réservation ya sika! 📅",
+        "reminder": "Rappel: Rendez-vous na yo ekozala sima ya mwa bangonga ⏳",
+        "rental_expiry": "Action Required: Loyer na yo ekosila kala mingi te! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Mosala",
+        "provider": "Mopesi ya biloko",
+        "customer": "Kiliya",
+        "date": "Dati",
+        "time": "Ntango",
+        "location": "Esika",
+        "expiry": "Mokolo ya kosila"
+      },
+      "messages": {
+        "confirmed": "Rendez-vous na yo esalemi malamu. Svp bozala na ngonga.",
+        "provider_alert": "Client ya sika a réservé service na yo. Tala makambo ya mikemike.",
+        "reminder": "Oyo ezali bokundoli ya boninga ya rendez-vous na yo oyo ekoya na Strug.",
+        "rental_expiry": "Eleko na yo ya kofutela elingi kosila. Tosɛngi yo ozongisa eloko yango to obakisa eleko yango mpo ozwa bitumbu te.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "URGENT: LIYEBISI YA EXPIRE",
+        "item_name": "Kombo ya Eloko",
+        "due_date": "Mokolo oyo esengeli kofutama",
+        "order_id": "ID ya commande",
+        "button": "Bobakisa to Bozongisa Eloko",
+        "footer": "Bokima mbongo ya retard na kozongisa eloko yango liboso ya ngonga oyo esengeli.",
+        "thanks": "Matondo mingi mpo na kosalela Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Matondo mingi mpo na likabo na yo ya motema malamu! ❤️",
+        "loan_reminder": "Rappel ya kofuta: Tranche ya crédit na yo ekoki 💳"
+      },
+      "donation": {
+        "title": "Bazwi makabo",
+        "tag": "KOZONGISA",
+        "msg": "Soutien na bino esalaka différence munene! Tozwi malamu likabo na bino mpo na mosala yango.",
+        "amount": "Mosolo oyo bapesaki",
+        "project": "Mosala"
+      },
+      "loan": {
+        "title": "Kozongisa mbongo ya kodefa",
+        "tag": "KOFUTA ESENGELI",
+        "msg": "Oyo ezali bokundoli ete mokolo ya kofuta mbongo oyo odefi ezali kobɛlɛma. Tosengi na bino bosala ete misolo ekoki ezala.",
+        "due_date": "Mokolo oyo esengeli kofutama",
+        "amount": "Mosolo ya Installation"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Magasin: Commande e confirmé #{{order_id}}",
+        "new_order_seller": "Strug Shop: Commande ya sika ezwami #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ORDRE EZALI CONFIRMÉ",
+        "vendor_tag": "ORDRE YA SIKA",
+        "title": "Commande na yo e confirmé",
+        "vendor_title": "Ozali na commande ya sika",
+        "order_id": "Etinda",
+        "product": "Eloko",
+        "qty": "Mingi",
+        "total": "Mobimba",
+        "thanks": "Matondo mingi mpo na kosomba biloko na Strug!",
+        "vendor_msg": "Svp bo bonga pe bo tinda commande oyo noki."
+      },
+      "status": {
+        "tag": "MISE À JOUR YA COMMANDE",
+        "order_id": "ID ya commande",
+        "tracking": "Numéro ya suivi",
+        "track_button": "Tala ordre",
+        "subjects": {
+          "confirmed": "Strug Shop: Commande na yo endimami",
+          "shipped": "Strug Shop: Commande na yo esili kotindama",
+          "fulfilled": "Strug Shop: Commande na yo epesamaki"
+        },
+        "messages": {
+          "confirmed": "Motɛki a confirmaki commande na yo mpe azali kobongisa yango mpo na envoi.",
+          "shipped": "Forfait na yo ezali na nzela. Bolandi: {{tracking_number}}",
+          "fulfilled": "Commande na yo esili kopesama. Tozali kolikya ete okosepela na kosomba na yo!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Progrès na yo ya apprentissage ya poso na poso ezali awa 📚",
+        "unread_chat": "Strug: Oza na ba messages oyo etangami te na inbox 💬 na yo"
+      },
+      "lms": {
+        "title": "Bokoli ya boyekoli",
+        "tag": "TINDA NA MAYELE",
+        "msg": "Ozali kosala malamu mpenza! Tala bokuse ya mosala na yo ya flashcard na poso oyo.",
+        "cards_reviewed": "Bakarte oyo Batali",
+        "new_decks": "Ba Decks ya Sika Esanganaki"
+      },
+      "chat": {
+        "title": "Ba Messages ya Sika",
+        "tag": "ESIKA BOFANDI",
+        "msg": "Ozali mosika banda mwa ntango. Baninga na yo mpe bato ya ekipi bazali koluka kokutana na yo.",
+        "button": "Tala Chat"
+      }
+    }
+  }
+}

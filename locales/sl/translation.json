@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ni mogoče najti",
+    "fetchFailed": "Ni bilo mogoče pridobiti {{resource}}",
+    "createFailed": "Ni bilo mogoče ustvariti {{resource}}",
+    "updateFailed": "Posodobitev {{resource}} ni uspela",
+    "deleteFailed": "{{resource}} ni bilo mogoče izbrisati",
+    "invalidId": "{{field}} mora biti številka",
+    "alreadyExists": "{{field}} že obstaja",
+    "invalidFormat": "Neveljavna oblika {{field}}",
+    "internalServer": "Notranja napaka strežnika",
+    "accessDenied": "Dostop zavrnjen",
+    "invalidToken": "Neveljaven žeton",
+    "adminRequired": "Potreben je skrbniški dostop",
+    "forbidden": "Nimate dovoljenja za izvedbo tega dejanja"
+  },
+  "food": {
+    "filterError": "Napaka filtra",
+    "orderAlreadyTaken": "To naročilo je že prevzel drug voznik.",
+    "orderAccepted": "Naročilo sprejeto za dostavo",
+    "orderDeclined": "Naročilo zavrnjeno.",
+    "orderRejected": "Naročilo zavrnjeno."
+  },
+  "user": {
+    "notFound": "Uporabnik ni bil najden",
+    "deleted": "Uporabnik uspešno izbrisan",
+    "labelStreetRequired": "Etiketa in ulica sta obvezni",
+    "addressNotFound": "Naslov ni bil najden",
+    "savedAddressRequired": "Potreben je naslov za dostavo",
+    "cannotModifyOther": "Računa drugega uporabnika ni mogoče spremeniti",
+    "emailExists": "E-pošta ali referenčna koda že obstaja"
+  },
+  "auth": {
+    "invalidLoginFormat": "Neveljavna oblika prijave",
+    "userNotFound": "Uporabnik ni bil najden",
+    "renewSubscription": "Prosimo, obnovite naročnino",
+    "verifyBefore": "Preden se prijavite, preverite svoj {{method}}.",
+    "noPassword": "Ta račun nima gesla. Poskusite se prijaviti v Google.",
+    "invalidPassword": "Neveljavno geslo",
+    "teamMemberNotFound": "Član ekipe ni bil najden",
+    "loginSuccessful": "Prijava uspešna",
+    "invalidCredentials": "Neveljavne poverilnice",
+    "noRefreshToken": "Žeton za osvežitev ni na voljo",
+    "invalidRefreshToken": "Neveljaven ali potekel žeton za osvežitev",
+    "invalidRefreshTokenPayload": "Neveljavna vsebina žetona za osvežitev",
+    "teamMembershipNotFound": "Članstvo v ekipi ni bilo najdeno",
+    "accessTokenRefreshed": "Žeton za dostop je osvežen",
+    "refreshTokenDeleted": "Osveži žeton je izbrisan",
+    "emailRequired": "E-pošta je obvezna",
+    "passwordAccountExists": "Ta e-pošta je registrirana z geslom. Prijavite se ročno.",
+    "emailRequiredFacebook": "E-pošta je obvezna, vendar je Facebook ne zagotavlja. Zagotovite, da ima vaš Facebook račun preverjen e-poštni naslov.",
+    "authCodeRequired": "Zahtevana je avtorizacijska koda",
+    "validEmailRequired": "Potreben je veljaven e-poštni naslov.",
+    "accountEmailExists": "Račun s tem e-poštnim naslovom že obstaja.",
+    "usernameTaken": "To uporabniško ime je že zasedeno.",
+    "tooManyOtpRequests": "Preveč zahtev za kodo. Poskusite znova pozneje.",
+    "failedSendCode": "Kode ni bilo mogoče poslati.",
+    "registerFieldsRequired": "zahtevani so e-pošta, ime, geslo in otp.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Geslo mora vsebovati: {{requirements}}.",
+    "noVerificationCode": "Koda za preverjanje ni bila najdena. Zahtevajte novega.",
+    "verificationExpired": "Koda za preverjanje je potekla. Zahtevajte novega.",
+    "tooManyOtpAttempts": "Preveč nepravilnih poskusov. Zahtevajte novo potrditveno kodo.",
+    "invalidVerificationCode": "Neveljavna koda za preverjanje.",
+    "verificationFailed": "Preverjanje ni uspelo.",
+    "tooManyRequests": "Preveč zahtev. Poskusite znova pozneje.",
+    "resetFieldsRequired": "potrebni so e-pošta, novo geslo in žeton.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Neveljavna ali potekla povezava za ponastavitev.",
+    "accountLocked": "Račun začasno zaklenjen. Poskusite znova pozneje.",
+    "verificationCodeRequired": "Zahtevana je potrditvena koda.",
+    "invalidSession": "Neveljavna seja",
+    "passwordFieldsRequired": "Zahtevana sta currentPassword in newPassword"
+  },
+  "success": {
+    "deleted": "{{resource}} uspešno izbrisan",
+    "created": "{{resource}} je bil uspešno ustvarjen",
+    "updated": "{{resource}} je uspešno posodobljen"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Opozorilo o nizkem stanju na računu za oglase",
+      "spend_alert_subject": "Opozorilo Strug Ads: {{percentage}} % dnevnega proračuna je dosežen za akcijo #{{campaign_id}}",
+      "low_balance": {
+        "tag": "OPOZORILO O RAČUNU ADS",
+        "title": "Opozorilo o nizkem stanju",
+        "instruction": "Pozdravljeni {{name}}, dobroimetje v vaši denarnici za oglase je skoraj nizko. Če želite preprečiti samodejno zaustavitev aktivnih akcij, dopolnite stanje na računu.",
+        "balance_label": "Trenutno stanje:",
+        "button": "Napolnite oglasno denarnico"
+      },
+      "spend_alert": {
+        "tag": "PRORAČUNSKI MEJNIK DOSEŽEN",
+        "title": "{{percentage}}% porabljenega dnevnega proračuna",
+        "instruction": "Pozdravljeni {{name}}, to je samodejna posodobitev stanja za vaš aktivni niz oglasov. Vaša akcija je dosegla prag dnevne porabe.",
+        "campaign_label": "ID akcije:",
+        "button": "Upravljanje oglaševalske akcije"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: Vaša koda je tukaj",
+      "welcome": "Dobrodošli v družini Strug!",
+      "password_reset": "Strug: Ponastavite geslo",
+      "login_alert": "Varnostno opozorilo Strug: Zaznana nova prijava",
+      "ride_receipt": "Povzetek Strug Ride: Hvala za vožnjo!"
+    },
+    "otp": {
+      "tag": "VARNOSTNI PREVERJ",
+      "title": "Preveri račun",
+      "instruction": "Za dokončanje registracije uporabite spodnjo varno kodo. Velja 10 minut.",
+      "ignore": "Če tega niste zahtevali, prezrite to e-pošto."
+    },
+    "common": {
+      "tagline": "Vaše delo • Vaš čas • Vaš denar",
+      "rights_reserved": "Vse pravice pridržane",
+      "need_help": "Potrebujete pomoč? Odgovorite na to e-pošto ali obiščite naš center za podporo."
+    },
+    "welcome": {
+      "tag": "DOBRODOŠLI V STRUGU",
+      "title": "Pozdravljeni, {{name}}!",
+      "instruction": "Vaš račun je preverjen. Zdaj ste del platforme, zgrajene za poenostavitev vašega dela, časa in denarja.",
+      "button": "Raziščite nadzorno ploščo"
+    },
+    "password_reset": {
+      "tag": "VARNOST",
+      "title": "Ponastavi geslo",
+      "instruction": "Podana je bila zahteva za ponastavitev gesla za vaš račun Strug. Kliknite spodnji gumb, da izberete novega.",
+      "button": "Ponastavi moje geslo",
+      "ignore": "Če tega niste zahtevali, lahko to e-pošto mirno prezrete. Povezava poteče čez 1 uro."
+    },
+    "login_alert": {
+      "tag": "VARNOSTNO OPOZORILO",
+      "title": "Zaznana nova prijava",
+      "instruction": "Opazili smo novo prijavo v vaš račun Strug. Če ste bili to vi, lahko prezrete to e-pošto.",
+      "device": "Naprava",
+      "time": "Čas",
+      "not_you": "Če to niste bili vi, takoj zaščitite svoj račun s spremembo gesla."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Povzetek vožnje",
+      "tag": "IZLET KONČAN",
+      "total_fare": "Skupna vozovnica",
+      "distance": "Razdalja",
+      "duration": "Trajanje",
+      "pickup": "Prevzem",
+      "drop": "Odstop",
+      "driver": "Voznik",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Hvala za vožnjo s Strugom!",
+      "support": "Če imate težave s to vožnjo, se obrnite na podporo."
+    },
+    "carpool_booking": {
+      "subject": "Skupna vožnja potrjena: vaša vožnja je rezervirana!",
+      "title": "Rezervacija potrjena",
+      "tag": "CARPOOL REZERVIRAN",
+      "from": "Od",
+      "to": "Za",
+      "seats": "Sedeži rezervirani",
+      "total_cost": "Skupni stroški",
+      "status": "Stanje",
+      "thanks": "Hvala za skupno vožnjo s Strugom!",
+      "details_msg": "Vaše mesto je bilo uspešno rezervirano. Prosimo, da ste pravočasno na prevzemnem mestu."
+    },
+    "ghost_driver": {
+      "subject": "Posodobitev vožnje: Predodelimo vam novega voznika",
+      "title": "Iskanje novega gonilnika",
+      "tag": "POSODOBITEV VOŽNJE",
+      "instruction": "Vaš prejšnji gonilnik ni na voljo ali se ne odziva. Ne skrbite, samodejno iščemo novega voznika, ki vas bo pobral.",
+      "status": "Trenutno stanje: Ponovno iskanje gonilnikov ...",
+      "hang_tight": "Prosim, počakajte! Obvestili vas bomo takoj, ko bo nov voznik sprejel vašo zahtevo."
+    },
+    "password_changed": {
+      "subject": "Varnostno opozorilo Strug: Vaše geslo je bilo spremenjeno",
+      "title": "Geslo posodobljeno",
+      "tag": "VARNOSTNA POSODOBITEV",
+      "instruction": "Geslo za vaš račun Strug je bilo nedavno spremenjeno. Če ste naredili to spremembo, lahko mirno prezrete to e-pošto.",
+      "warning": "Če gesla NISTE spremenili, je vaš račun morda ogrožen. Takoj zaščitite svoj račun.",
+      "button": "Zaščiti moj račun",
+      "footer": "Varnostna ekipa Strug Platform"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: naročilo potrjeno! #{{order_id}}",
+        "new_order_vendor": "Zahtevano dejanje: Prejeto novo naročilo! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Potrdilo o naročilu",
+        "tag": "NAROČILO USPEŠNO",
+        "vendor_tag": "POTREBNO JE UKREPANJE",
+        "order_id": "ID naročila",
+        "item": "Postavka",
+        "qty": "Količina",
+        "price": "Cena",
+        "subtotal": "Vmesni seštevek",
+        "delivery_fee": "Pristojbina za dostavo",
+        "service_tax": "Davek na storitve",
+        "platform_fee": "Pristojbina za platformo",
+        "grand_total": "SKUPNI ZNESEK",
+        "total": "Skupni znesek",
+        "delivery_address": "Naslov za dostavo",
+        "thanks": "Upam, da boste uživali v obroku!",
+        "vendor_title": "Novo naročilo za vas",
+        "vendor_msg": "Prejeli ste novo naročilo. Please start preparing it immediately."
+      }
+    },
+    "food_status": {
+      "tag": "POSODOBITEV NAROČILA",
+      "subjects": {
+        "preparing": "Strug Food: Vaše naročilo je v pripravi! 🍳",
+        "dispatched": "Odlična novica! Vaše naročilo je na poti 🛵",
+        "delivered": "Uživajte v obroku! Naročilo uspešno dostavljeno ✅",
+        "cancelled": "Obvestilo Strug: Vaše naročilo je bilo preklicano ❌"
+      },
+      "messages": {
+        "preparing": "Restavracija je začela pripravljati vaš okusen obrok. Obvestili vas bomo, ko bo dostavljeno.",
+        "dispatched": "Vaše naročilo je bilo prevzeto in naš partner za dostavo je na poti na vašo lokacijo.",
+        "delivered": "Vaše naročilo je bilo predano. Hvala, ker ste izbrali Strug!",
+        "cancelled": "Žal vas moramo obvestiti, da je bilo vaše naročilo preklicano. Če ste že plačali, se bo vračilo kmalu začelo."
+      },
+      "labels": {
+        "order_id": "ID naročila",
+        "current_status": "Trenutno stanje"
+      }
+    },
+    "digital": {
+      "subject": "Vaša digitalna vsebina Strug je pripravljena!",
+      "title": "Prenesite svoj izdelek",
+      "instruction": "Hvala za nakup! Zdaj lahko s spodnjim gumbom dostopate in prenašate svojo digitalno vsebino.",
+      "button": "Prenesite zdaj"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Vaša plačilna lista za ta mesec je pripravljena 📄",
+      "title": "Mesečna plačilna lista",
+      "tag": "POVZETEK PLAČ",
+      "net_salary": "Neto plača",
+      "epf": "EPF (zaposleni)",
+      "etf": "ETF",
+      "ot": "OT plačaj",
+      "bonus": "bonus na plačo — Bonus",
+      "status": "Stanje plačila",
+      "thanks": "Če imate kakršna koli vprašanja glede vaše plače, se obrnite na kadrovsko službo."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Vaša zahteva za dopust je bila odobrena ✅",
+      "subject_rejected": "Strug HR: posodobitev vaše prošnje za dopust ❌",
+      "title_approved": "Pusti Odobreno!",
+      "title_rejected": "Zapusti posodobitev",
+      "tag": "PROŠNJA ZA DOPUST",
+      "status_approved": "Vaša zahteva za dopust za naslednje obdobje je bila uspešno odobrena.",
+      "status_rejected": "Žal vas moramo obvestiti, da je bila vaša prošnja za dopust za naslednje obdobje zavrnjena.",
+      "from_date": "Od datuma",
+      "to_date": "Do danes",
+      "reason": "Razlog za zavrnitev",
+      "thanks": "Za vsa dodatna vprašanja se obrnite na svoj kadrovski oddelek."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: prejeta nova prijava za {{job_title}} 💼",
+      "title": "Prijavljen je nov kandidat",
+      "tag": "PROŠNJA ZA DELO",
+      "instruction": "Nov kandidat se je prijavil na enega od vaših seznamov delovnih mest. Tukaj so kratke podrobnosti:",
+      "job_title": "Delovna vloga",
+      "candidate": "Ime kandidata",
+      "view_button": "Ogled aplikacije",
+      "thanks": "Prosimo, prijavite se v portal svojega agenta, da si ogledate vse podrobnosti in življenjepis."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: vaša delovna izmena je bila posodobljena 🕒",
+      "title": "Shift posodobljen",
+      "tag": "POSODOBITEV URNIKA",
+      "instruction": "Vaš delovni urnik je nedavno posodobil kadrovski oddelek. Prosimo, preverite svoje nove termine izmene spodaj.",
+      "start_time": "Shift se začne",
+      "end_time": "Premik se konča",
+      "thanks": "Prosimo, zagotovite svojo prisotnost po novem urniku. Za vse pomisleke se obrnite na kadrovsko službo."
+    },
+    "services": {
+      "tag": "POSODOBITEV STORITVE",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Vaš termin je potrjen! ✅",
+        "new_alert_provider": "Nov termin: imate novo rezervacijo! 📅",
+        "reminder": "Opomnik: Vaš termin je čez nekaj ur ⏳",
+        "rental_expiry": "Potrebno je ukrepanje: vaša najemnina bo kmalu potekla! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Storitev",
+        "provider": "Ponudnik",
+        "customer": "Stranka",
+        "date": "Datum",
+        "time": "Čas",
+        "location": "Lokacija",
+        "expiry": "Datum poteka"
+      },
+      "messages": {
+        "confirmed": "Vaš termin je bil uspešno načrtovan. Prosim, bodi točen.",
+        "provider_alert": "Nova stranka je rezervirala vašo storitev. Tukaj so podrobnosti.",
+        "reminder": "To je prijazen opomnik na vaš prihajajoči sestanek s Strugom.",
+        "rental_expiry": "Vaše obdobje najema se bo kmalu izteklo. Prosimo, vrnite artikel ali podaljšajte rok, da se izognete kaznim.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "NUJNO: OBVESTILO O IZTEKU VELJAVNOSTI",
+        "item_name": "Ime artikla",
+        "due_date": "Datum zapadlosti",
+        "order_id": "ID naročila",
+        "button": "Podaljšaj ali vrni artikel",
+        "footer": "Izognite se zamudnim plačilom tako, da blago vrnete pred rokom.",
+        "thanks": "Hvala, ker uporabljate Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Hvala za vašo velikodušno donacijo! ❤️",
+        "loan_reminder": "Opomnik za plačilo: Vaš obrok posojila zapade 💳"
+      },
+      "donation": {
+        "title": "Donacija prejeta",
+        "tag": "VRAČANJE",
+        "msg": "Vaša podpora je velika razlika! Uspešno smo prejeli vaš prispevek za projekt.",
+        "amount": "Donirani znesek",
+        "project": "Projekt"
+      },
+      "loan": {
+        "title": "Odplačilo posojila",
+        "tag": "ZAPALO PLAČILO",
+        "msg": "To je opomnik, da se bliža datum odplačila vašega posojila. Poskrbite, da bo na voljo dovolj sredstev.",
+        "due_date": "Datum zapadlosti",
+        "amount": "Znesek obroka"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Naročilo potrjeno #{{order_id}}",
+        "new_order_seller": "Strug Shop: Prejeto novo naročilo #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "NAROČILO POTRJENO",
+        "vendor_tag": "NOVO NAROČILO",
+        "title": "Vaše naročilo je potrjeno",
+        "vendor_title": "Imate novo naročilo",
+        "order_id": "naročilo",
+        "product": "Izdelek",
+        "qty": "Količina",
+        "total": "Skupaj",
+        "thanks": "Hvala za nakup na Strugu!",
+        "vendor_msg": "Prosimo, da čim prej pripravite in pošljete to naročilo."
+      },
+      "status": {
+        "tag": "POSODOBITEV NAROČILA",
+        "order_id": "ID naročila",
+        "tracking": "Sledilna številka",
+        "track_button": "Ogled naročila",
+        "subjects": {
+          "confirmed": "Strug Shop: Vaše naročilo je potrjeno",
+          "shipped": "Strug Shop: Vaše naročilo je odposlano",
+          "fulfilled": "Strug Shop: Vaše naročilo je bilo dostavljeno"
+        },
+        "messages": {
+          "confirmed": "Prodajalec je potrdil vaše naročilo in ga pripravlja za odpremo.",
+          "shipped": "Vaš paket je na poti. Sledenje: {{tracking_number}}",
+          "fulfilled": "Vaše naročilo je bilo dostavljeno. Upamo, da boste uživali v nakupu!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Vaš tedenski učni napredek je tukaj 📚",
+        "unread_chat": "Strug: V mapi »Prejeto« imate neprebrana sporočila 💬"
+      },
+      "lms": {
+        "title": "Učni napredek",
+        "tag": "OSTANI PAMETEN",
+        "msg": "Super ti gre! Tukaj je povzetek vaše dejavnosti s kartico ta teden.",
+        "cards_reviewed": "Pregledane kartice",
+        "new_decks": "Pridruženi novi krovi"
+      },
+      "chat": {
+        "title": "Nova sporočila",
+        "tag": "SKUPNOST",
+        "msg": "Nekaj časa ste bili odsotni. Vaši prijatelji in člani ekipe vas poskušajo doseči.",
+        "button": "Prikaži klepet"
+      }
+    }
+  }
+}

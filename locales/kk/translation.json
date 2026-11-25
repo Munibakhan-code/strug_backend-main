@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} табылмады",
+    "fetchFailed": "{{resource}} алынбады",
+    "createFailed": "{{resource}} жасалмады",
+    "updateFailed": "{{resource}} жаңартылмады",
+    "deleteFailed": "{{resource}} жойылмады",
+    "invalidId": "{{field}} сан болуы керек",
+    "alreadyExists": "{{field}} бұрыннан бар",
+    "invalidFormat": "{{field}} пішімі жарамсыз",
+    "internalServer": "Ішкі сервер қатесі",
+    "accessDenied": "Кіруге тыйым салынды",
+    "invalidToken": "Жарамсыз белгі",
+    "adminRequired": "Әкімші рұқсаты қажет",
+    "forbidden": "Бұл әрекетті орындауға рұқсатыңыз жоқ"
+  },
+  "food": {
+    "filterError": "Сүзгі қатесі",
+    "orderAlreadyTaken": "Бұл тапсырысты басқа жүргізуші алып қойған.",
+    "orderAccepted": "Тапсырыс жеткізуге қабылданды",
+    "orderDeclined": "Тапсырыс қабылданбады.",
+    "orderRejected": "Тапсырыс қабылданбады."
+  },
+  "user": {
+    "notFound": "Пайдаланушы табылмады",
+    "deleted": "Пайдаланушы сәтті жойылды",
+    "labelStreetRequired": "Жапсырма және көше қажет",
+    "addressNotFound": "Мекенжай табылмады",
+    "savedAddressRequired": "Жеткізу мекенжайы қажет",
+    "cannotModifyOther": "Басқа пайдаланушының тіркелгісін өзгерту мүмкін емес",
+    "emailExists": "Электрондық пошта немесе сілтеме коды бұрыннан бар"
+  },
+  "auth": {
+    "invalidLoginFormat": "Кіру пішімі жарамсыз",
+    "userNotFound": "Пайдаланушы табылмады",
+    "renewSubscription": "Жазылымыңызды жаңартыңыз",
+    "verifyBefore": "Жүйеге кірмес бұрын {{method}} растаңыз.",
+    "noPassword": "Бұл тіркелгіде құпия сөз жоқ. Google логинін қолданып көріңіз.",
+    "invalidPassword": "Жарамсыз құпия сөз",
+    "teamMemberNotFound": "Топ мүшесі табылмады",
+    "loginSuccessful": "Жүйеге кіру сәтті",
+    "invalidCredentials": "Жарамсыз тіркелгі деректері",
+    "noRefreshToken": "Жаңарту белгісі берілмейді",
+    "invalidRefreshToken": "Жарамсыз немесе мерзімі өткен жаңарту белгісі",
+    "invalidRefreshTokenPayload": "Жарамсыз жаңарту таңбалауышы пайдалы жүктеме",
+    "teamMembershipNotFound": "Топ мүшелігі табылмады",
+    "accessTokenRefreshed": "Кіру таңбалауышы жаңартылды",
+    "refreshTokenDeleted": "Жаңарту белгісі жойылды",
+    "emailRequired": "Электрондық пошта қажет",
+    "passwordAccountExists": "Бұл электрондық пошта құпия сөз арқылы тіркелген. Қолмен кіріңіз.",
+    "emailRequiredFacebook": "Электрондық пошта қажет, бірақ Facebook қамтамасыз етпейді. Facebook тіркелгіңізде расталған электрондық пошта бар екеніне көз жеткізіңіз.",
+    "authCodeRequired": "Авторизация коды қажет",
+    "validEmailRequired": "Жарамды электрондық пошта қажет.",
+    "accountEmailExists": "Бұл электрондық пошта бар есептік жазба бұрыннан бар.",
+    "usernameTaken": "Бұл пайдаланушы аты әлдеқашан алынған.",
+    "tooManyOtpRequests": "Тым көп код сұраулары. Әрекетті кейінірек қайталаңыз.",
+    "failedSendCode": "Код жіберілмеді.",
+    "registerFieldsRequired": "электрондық пошта, аты, құпия сөз және OTP барлығы қажет.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Құпия сөз мынаны қамтуы керек: {{requirements}}.",
+    "noVerificationCode": "Растау коды табылмады. Жаңасын сұраңыз.",
+    "verificationExpired": "Растау кодының мерзімі аяқталды. Жаңасын сұраңыз.",
+    "tooManyOtpAttempts": "Тым көп қате әрекеттер. Жаңа растау кодын сұраңыз.",
+    "invalidVerificationCode": "Жарамсыз растау коды.",
+    "verificationFailed": "Тексеру сәтсіз аяқталды.",
+    "tooManyRequests": "Тым көп сұраулар. Тағы жасауды сәл кейінірек көріңізді өтінеміз.",
+    "resetFieldsRequired": "электрондық пошта, newPassword және таңбалауыш қажет.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Жарамсыз немесе мерзімі өткен қалпына келтіру сілтемесі.",
+    "accountLocked": "Есептік жазба уақытша құлыпталған. Әрекетті кейінірек қайталаңыз.",
+    "verificationCodeRequired": "Растау коды қажет.",
+    "invalidSession": "Жарамсыз сеанс",
+    "passwordFieldsRequired": "currentPassword және newPassword қажет"
+  },
+  "success": {
+    "deleted": "{{resource}} сәтті жойылды",
+    "created": "{{resource}} сәтті жасалды",
+    "updated": "{{resource}} сәтті жаңартылды"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Жарнама тіркелгісінің төмен балансы туралы ескерту",
+      "spend_alert_subject": "Strug Жарнамалар туралы ескерту: {{percentage}}% №{{campaign_id}} науқанының күнделікті бюджетіне жетті",
+      "low_balance": {
+        "tag": "ЖАРНАМА ТІРКЕЛІГІНІҢ ЕСКЕРТУ",
+        "title": "Төмен баланс туралы ескерту",
+        "instruction": "Сәлеметсіз бе, {{name}}, Ads Wallet теңгеріміңіз азайып барады. Белсенді науқандарды автоматты түрде кідіртуге жол бермеу үшін шот балансын толтырыңыз.",
+        "balance_label": "Ағымдағы теңгерім:",
+        "button": "Жарнама әмиянын толтырыңыз"
+      },
+      "spend_alert": {
+        "tag": "БЮДЖЕТТІК МӘРТЕБЕСІ ЖЕТІЛДІ",
+        "title": "{{percentage}}% Күнделікті бюджет жұмсалды",
+        "instruction": "Сәлеметсіз бе {{name}}, бұл белсенді жарнамалар жинағыңыздың автоматты күй жаңартуы. Науқаныңыз күнделікті шығыс шегіне жетті.",
+        "campaign_label": "Науқан идентификаторы:",
+        "button": "Науқанды басқару"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: Сіздің кодыңыз осында",
+      "welcome": "Strug отбасына қош келдіңіз!",
+      "password_reset": "Strug: құпия сөзді қалпына келтіріңіз",
+      "login_alert": "Strug Қауіпсіздік ескертуі: жаңа кіру анықталды",
+      "ride_receipt": "Strug Ride Қысқаша мазмұны: Атқа мінгеніңізге рахмет!"
+    },
+    "otp": {
+      "tag": "ҚАУІПСІЗДІК ТЕКСЕРІСІ",
+      "title": "Есептік жазбаны растау",
+      "instruction": "Тіркеуді аяқтау үшін төмендегі қауіпсіз кодты пайдаланыңыз. 10 минут бойы жарамды.",
+      "ignore": "Егер сіз мұны сұрамаған болсаңыз, бұл электрондық поштаны елемеңіз."
+    },
+    "common": {
+      "tagline": "Сіздің жұмысыңыз • Сіздің уақытыңыз • Сіздің ақшаңыз",
+      "rights_reserved": "Барлық құқықтар қорғалған",
+      "need_help": "Көмек керек пе? Осы электрондық поштаға жауап беріңіз немесе қолдау орталығына кіріңіз."
+    },
+    "welcome": {
+      "tag": "STRUG КОМПАНИЯСЫНА ҚОШ КЕЛДІҢІЗ",
+      "title": "Сәлем, {{name}}!",
+      "instruction": "Есептік жазбаңыз расталды. Сіз енді жұмысыңызды, уақытыңызды және ақшаңызды жеңілдету үшін жасалған платформаның бір бөлігісіз.",
+      "button": "Бақылау тақтасын зерттеңіз"
+    },
+    "password_reset": {
+      "tag": "ҚАУІПСІЗДІК",
+      "title": "Құпия сөзді қалпына келтіру",
+      "instruction": "Strug есептік жазбаңыздың құпия сөзін қалпына келтіруге сұрау жіберілді. Жаңасын таңдау үшін төмендегі түймені басыңыз.",
+      "button": "Құпия сөзімді қалпына келтіру",
+      "ignore": "Егер сіз мұны сұрамаған болсаңыз, бұл электрондық поштаны елемеуге болады. Сілтеменің мерзімі 1 сағатта аяқталады."
+    },
+    "login_alert": {
+      "tag": "ҚАУІПСІЗДІК ЕСКЕРТУ",
+      "title": "Жаңа логин анықталды",
+      "instruction": "Strug есептік жазбаңызға жаңа логинді байқадық. Бұл сіз болсаңыз, бұл электрондық поштаны елемеуіңізге болады.",
+      "device": "Құрылғы",
+      "time": "Уақыт",
+      "not_you": "Бұл сіз ЕМЕС болсаңыз, құпия сөзіңізді өзгерту арқылы есептік жазбаңызды дереу қорғаңыз."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Жүгіру туралы қорытынды",
+      "tag": "САПАР АЯҚТАЛДЫ",
+      "total_fare": "Жалпы тариф",
+      "distance": "Қашықтық",
+      "duration": "Ұзақтығы",
+      "pickup": "Алып кету",
+      "drop": "Түсіру",
+      "driver": "Жүргізуші",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Strug мінгеніңіз үшін рахмет!",
+      "support": "Бұл сапарға қатысты қандай да бір мәселелер туындаса, қолдау қызметіне хабарласыңыз."
+    },
+    "carpool_booking": {
+      "subject": "Carpool расталды: Сіздің сапарыңыз брондалған!",
+      "title": "Брондау расталды",
+      "tag": "КӨЛІК БЕРІЛГЕН",
+      "from": "бастап",
+      "to": "Кімге",
+      "seats": "Орындар брондалған",
+      "total_cost": "Жалпы құны",
+      "status": "Күй",
+      "thanks": "Strug-пен көлікпен айналысқаныңыз үшін рахмет!",
+      "details_msg": "Орыныңыз сәтті брондалды. Уақытында қабылдау орнында болыңыз."
+    },
+    "ghost_driver": {
+      "subject": "Жолды жаңарту: біз сізге жаңа драйверді қайта тағайындаймыз",
+      "title": "Жаңа драйверді табу",
+      "tag": "ЖАҢАЛЫҚТАР",
+      "instruction": "Сіздің алдыңғы драйверіңіз қолжетімсіз немесе жауап бермейді. Уайымдамаңыз, біз сізді алып кететін жаңа жүргізушіні автоматты түрде іздейміз.",
+      "status": "Ағымдағы күй: жүргізушілерді қайта іздеу...",
+      "hang_tight": "Өтінемін, мықтап ұстаңыз! Жаңа драйвер сұрауыңызды қабылдаған кезде сізге хабарлаймыз."
+    },
+    "password_changed": {
+      "subject": "Strug Қауіпсіздік ескертуі: құпия сөзіңіз өзгертілді",
+      "title": "Құпия сөз жаңартылды",
+      "tag": "ҚАУІПСІЗДІК ЖАҢАРТУ",
+      "instruction": "Strug есептік жазбаңыздың құпия сөзі жақында өзгертілді. Бұл өзгертуді енгізсеңіз, бұл электрондық поштаны елемеуге болады.",
+      "warning": "Құпия сөзіңізді өзгертпеген болсаңыз, есептік жазбаңызға қауіп төнуі мүмкін. Есептік жазбаңызды дереу қорғаңыз.",
+      "button": "Менің тіркелгімді қорғаңыз",
+      "footer": "Strug платформасының қауіпсіздік тобы"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: тапсырыс расталды! #{{order_id}}",
+        "new_order_vendor": "Қажетті әрекет: Жаңа тапсырыс алынды! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Тапсырыс түбіртегі",
+        "tag": "СӘТТІ ТАПСЫРЫС",
+        "vendor_tag": "ӘРЕКЕТ КЕРЕК",
+        "order_id": "Тапсырыс идентификаторы",
+        "item": "Элемент",
+        "qty": "Саны",
+        "price": "Бағасы",
+        "subtotal": "Аралық жиынтық",
+        "delivery_fee": "Жеткізу ақысы",
+        "service_tax": "Қызмет салығы",
+        "platform_fee": "Платформа ақысы",
+        "grand_total": "ЖАЛПЫ СОМА",
+        "total": "Жалпы сома",
+        "delivery_address": "Жеткізу мекенжайы",
+        "thanks": "Тамағың ұнайды деп үміттенеміз!",
+        "vendor_title": "Сізге жаңа тапсырыс",
+        "vendor_msg": "Сіз жаңа тапсырыс алдыңыз. Оны дереу дайындауды бастаңыз."
+      }
+    },
+    "food_status": {
+      "tag": "ТАПСЫРЫСТЫ ЖАҢАРТУ",
+      "subjects": {
+        "preparing": "Strug Food: Сіздің тапсырысыңыз дайындалуда! 🍳",
+        "dispatched": "Керемет жаңалық! Тапсырысыңыз жолда 🛵",
+        "delivered": "Астарыңыз дәмді болсын! Тапсырыс сәтті жеткізілді✅",
+        "cancelled": "Strug Ескерту: Тапсырысыңыздан бас тартылды ❌"
+      },
+      "messages": {
+        "preparing": "Мейрамхана сіздің дәмді тағамыңызды дайындауға кірісті. Жеткізу үшін шыққан кезде сізге хабарлаймыз.",
+        "dispatched": "Тапсырысыңыз алынды және біздің жеткізу серіктесіміз сіздің орналасқан жеріңізге жолдама алды.",
+        "delivered": "Тапсырысыңыз тапсырылды. Strug таңдағаныңызға рахмет!",
+        "cancelled": "Сіздің тапсырысыңыздың күші жойылғанын өкінішпен хабарлаймыз. Төлеген болсаңыз, жақын арада қайтару басталады."
+      },
+      "labels": {
+        "order_id": "Тапсырыс идентификаторы",
+        "current_status": "Ағымдағы күй"
+      }
+    },
+    "digital": {
+      "subject": "Strug сандық мазмұны дайын!",
+      "title": "Өніміңізді жүктеп алыңыз",
+      "instruction": "Сатып алғаныңыз үшін рахмет! Енді төмендегі түймені пайдаланып сандық мазмұнға қол жеткізуге және жүктеп алуға болады.",
+      "button": "Қазір жүктеп алыңыз"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Сіздің осы айға арналған төлем картасы дайын 📄",
+      "title": "Ай сайынғы төлем түбіртегі",
+      "tag": "ЖАЛАҚЫ ТӨЛІМІ",
+      "net_salary": "Таза жалақы",
+      "epf": "EPF (қызметкер)",
+      "etf": "жалақы etf — ETF",
+      "ot": "OT төлеу",
+      "bonus": "Бонус",
+      "status": "Төлем күйі",
+      "thanks": "Жалақыға қатысты сұрақтарыңыз болса HR қызметіне хабарласыңыз."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Сіздің демалыс туралы өтінішіңіз мақұлданды ✅",
+      "subject_rejected": "Strug HR: Демалу туралы өтінішіңізді жаңарту ❌",
+      "title_approved": "Бекітілген қалдырыңыз!",
+      "title_rejected": "Жаңартудан шығыңыз",
+      "tag": "СҰРАНЫСТЫ ҚАЛДЫРЫҢЫЗ",
+      "status_approved": "Келесі кезеңге демалыс сұрауыңыз сәтті мақұлданды.",
+      "status_rejected": "Келесі кезеңге демалыс беру туралы өтінішіңіз қабылданбағанын өкінішпен хабарлаймыз.",
+      "from_date": "Күннен бастап",
+      "to_date": "Бүгінгі күнге",
+      "reason": "Бас тарту себебі",
+      "thanks": "Қосымша сұрақтар бойынша кадрлар бөліміне хабарласыңыз."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: {{job_title}} үшін жаңа өтінім 💼 алынды",
+      "title": "Жаңа үміткер өтініш берді",
+      "tag": "ЖҰМЫСҚА ӨТІНІШ",
+      "instruction": "Жаңа үміткер сіздің жұмыс тізімдеріңіздің біріне өтініш берді. Міне, қысқаша мәліметтер:",
+      "job_title": "Жұмыс рөлі",
+      "candidate": "Кандидаттың аты-жөні",
+      "view_button": "Қолданбаны көру",
+      "thanks": "Толық мәліметтер мен түйіндемені қарау үшін агент порталына кіріңіз."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Сіздің жұмыс ауысымыңыз жаңартылды 🕒",
+      "title": "Shift жаңартылды",
+      "tag": "ЖАҢАРТУ КЕСТЕСІ",
+      "instruction": "Сіздің жұмыс кестеңізді жақында кадрлар бөлімі жаңартты. Төмендегі жаңа ауысым уақыттарын тексеріңіз.",
+      "start_time": "Shift басталады",
+      "end_time": "Shift аяқталады",
+      "thanks": "Жаңа кестеге сәйкес келуіңізге көз жеткізіңіз. Кез келген мәселелер бойынша HR қызметіне хабарласыңыз."
+    },
+    "services": {
+      "tag": "ҚЫЗМЕТТІ ЖАҢАРТУ",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Сіздің кездесуіңіз расталды! ✅",
+        "new_alert_provider": "Жаңа кездесу: Сізде жаңа брон бар! 📅",
+        "reminder": "Еске салғыш: Кездесу бірнеше сағаттан кейін ⏳",
+        "rental_expiry": "Міндетті әрекет: Жалдау мерзімі жақында бітеді! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Қызмет",
+        "provider": "Провайдер",
+        "customer": "Тұтынушы",
+        "date": "Күн",
+        "time": "Уақыт",
+        "location": "Орналасқан жері",
+        "expiry": "Жарамдылық мерзімі"
+      },
+      "messages": {
+        "confirmed": "Кездесу сәтті жоспарланған. Уақытында болыңыз.",
+        "provider_alert": "Жаңа тұтынушы қызметіңізге тапсырыс берді. Міне, егжей-тегжейлер.",
+        "reminder": "Бұл сіздің Strug компаниясымен алдағы кездесуіңіз туралы достық ескерту.",
+        "rental_expiry": "Жалдау мерзімі аяқталуға жақын. Айыппұлды болдырмау үшін затты қайтарыңыз немесе мерзімін ұзартыңыз.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "ШҰДЫЛЫҚ: МЕРЗІМІ ЖҮЗУ ЖӨНІНДЕГІ ЕСКЕРТУ",
+        "item_name": "Элемент атауы",
+        "due_date": "Аяқталу күні",
+        "order_id": "Тапсырыс идентификаторы",
+        "button": "Элементті ұзарту немесе қайтару",
+        "footer": "Белгіленген уақыттан бұрын затты қайтару арқылы кешіктірілген төлемдерді болдырмаңыз.",
+        "thanks": "Strug Rentals қолданбасын пайдаланғаныңыз үшін рахмет."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Жомарт қайырымдылықыңыз үшін рахмет! ❤️",
+        "loan_reminder": "Төлем туралы ескерту: Сіздің несиеңізді төлеу мерзімі 💳"
+      },
+      "donation": {
+        "title": "Қайырымдылық алынды",
+        "tag": "ҚАЙТАРУ",
+        "msg": "Сіздің қолдауыңыз үлкен өзгеріс әкеледі! Біз сіздің жобаға қосқан үлесіңізді алдық.",
+        "amount": "Қайырымдылық сомасы",
+        "project": "Жоба"
+      },
+      "loan": {
+        "title": "Несиені өтеу",
+        "tag": "ТӨЛЕМ",
+        "msg": "Бұл несиені өтеу күнінің жақындап қалғанын еске салады. Қаражаттың жеткілікті екеніне көз жеткізіңіз.",
+        "due_date": "Аяқталу күні",
+        "amount": "Бөліп төлеу сомасы"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: тапсырыс расталды №{{order_id}}",
+        "new_order_seller": "Strug Shop: жаңа тапсырыс алынды №{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ТАПСЫРЫС РЕТТЕЛДІ",
+        "vendor_tag": "ЖАҢА ТАПСЫРЫС",
+        "title": "Тапсырысыңыз расталды",
+        "vendor_title": "Сізде жаңа тапсырыс бар",
+        "order_id": "Тапсырыс беру",
+        "product": "Өнім",
+        "qty": "Саны",
+        "total": "Барлығы",
+        "thanks": "Strug дүкенінен сатып алғаныңызға рахмет!",
+        "vendor_msg": "Бұл тапсырысты мүмкіндігінше тезірек дайындап, жіберіңіз."
+      },
+      "status": {
+        "tag": "ТАПСЫРЫСТЫ ЖАҢАРТУ",
+        "order_id": "Тапсырыс идентификаторы",
+        "tracking": "Бақылау нөмірі",
+        "track_button": "Тапсырысты қарау",
+        "subjects": {
+          "confirmed": "Strug Shop: Сіздің тапсырысыңыз расталды",
+          "shipped": "Strug Shop: Сіздің тапсырысыңыз жөнелтілді",
+          "fulfilled": "Strug Shop: Сіздің тапсырысыңыз жеткізілді"
+        },
+        "messages": {
+          "confirmed": "Сатушы тапсырысыңызды растады және оны жөнелтуге дайындауда.",
+          "shipped": "Сіздің пакетіңіз жолда. Бақылау: {{tracking_number}}",
+          "fulfilled": "Тапсырысыңыз жеткізілді. Сатып алу сізге ұнайды деп үміттенеміз!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Сіздің апта сайынғы оқу үлгеріміңіз осында 📚",
+        "unread_chat": "Strug: Сіздің кіріс жәшігіңізде оқылмаған хабарламалар бар 💬"
+      },
+      "lms": {
+        "title": "Оқу үлгерімі",
+        "tag": "АҚЫЛДЫ БОЛЫҢЫЗ",
+        "msg": "Сіз тамаша істеп жатырсыз! Міне, осы аптадағы флэшкарта әрекетінің қысқаша мазмұны.",
+        "cards_reviewed": "Карточкалар қаралды",
+        "new_decks": "Жаңа палубалар қосылды"
+      },
+      "chat": {
+        "title": "Жаңа хабарламалар",
+        "tag": "ҚОҒАМДЫҚ",
+        "msg": "Сіз біраз уақыт болдыңыз. Сіздің достарыңыз бен топ мүшелері сізге жетуге тырысуда.",
+        "button": "Чат көру"
+      }
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "Το {{resource}} δεν βρέθηκε",
+    "fetchFailed": "Αποτυχία ανάκτησης {{resource}}",
+    "createFailed": "Αποτυχία δημιουργίας {{resource}}",
+    "updateFailed": "Αποτυχία ενημέρωσης {{resource}}",
+    "deleteFailed": "Αποτυχία διαγραφής {{resource}}",
+    "invalidId": "Το {{field}} πρέπει να είναι αριθμός",
+    "alreadyExists": "Το {{field}} υπάρχει ήδη",
+    "invalidFormat": "Μη έγκυρη μορφή {{field}}",
+    "internalServer": "Σφάλμα εσωτερικού διακομιστή",
+    "accessDenied": "Δεν επιτρέπεται η πρόσβαση",
+    "invalidToken": "Μη έγκυρο διακριτικό",
+    "adminRequired": "Απαιτείται πρόσβαση διαχειριστή",
+    "forbidden": "Δεν έχετε άδεια να εκτελέσετε αυτήν την ενέργεια"
+  },
+  "food": {
+    "filterError": "Σφάλμα φίλτρου",
+    "orderAlreadyTaken": "Αυτή η παραγγελία είχε ήδη ληφθεί από άλλο οδηγό.",
+    "orderAccepted": "Παραγγελία αποδεκτή για παράδοση",
+    "orderDeclined": "Η παραγγελία απορρίφθηκε.",
+    "orderRejected": "Η παραγγελία απορρίφθηκε."
+  },
+  "user": {
+    "notFound": "Ο χρήστης δεν βρέθηκε",
+    "deleted": "Ο χρήστης διαγράφηκε με επιτυχία",
+    "labelStreetRequired": "Απαιτείται ετικέτα και οδός",
+    "addressNotFound": "Η διεύθυνση δεν βρέθηκε",
+    "savedAddressRequired": "Απαιτείται διεύθυνση παράδοσης",
+    "cannotModifyOther": "Δεν είναι δυνατή η τροποποίηση του λογαριασμού άλλου χρήστη",
+    "emailExists": "Το email ή ο κωδικός παραπομπής υπάρχει ήδη"
+  },
+  "auth": {
+    "invalidLoginFormat": "Μη έγκυρη μορφή σύνδεσης",
+    "userNotFound": "Ο χρήστης δεν βρέθηκε",
+    "renewSubscription": "Ανανεώστε τη συνδρομή σας",
+    "verifyBefore": "Επαληθεύστε το {{method}} σας πριν συνδεθείτε.",
+    "noPassword": "Αυτός ο λογαριασμός δεν έχει κωδικό πρόσβασης. Δοκιμάστε τη σύνδεση στο Google.",
+    "invalidPassword": "Μη έγκυρος κωδικός πρόσβασης",
+    "teamMemberNotFound": "Το μέλος της ομάδας δεν βρέθηκε",
+    "loginSuccessful": "Επιτυχής σύνδεση",
+    "invalidCredentials": "Μη έγκυρα διαπιστευτήρια",
+    "noRefreshToken": "Δεν παρέχεται διακριτικό ανανέωσης",
+    "invalidRefreshToken": "Μη έγκυρο ή ληγμένο διακριτικό ανανέωσης",
+    "invalidRefreshTokenPayload": "Μη έγκυρο ωφέλιμο φορτίο διακριτικού ανανέωσης",
+    "teamMembershipNotFound": "Η ιδιότητα μέλους ομάδας δεν βρέθηκε",
+    "accessTokenRefreshed": "Το διακριτικό πρόσβασης ανανεώθηκε",
+    "refreshTokenDeleted": "Το διακριτικό ανανέωσης διαγράφηκε",
+    "emailRequired": "Απαιτείται email",
+    "passwordAccountExists": "Αυτό το email έχει καταχωρηθεί με χρήση κωδικού πρόσβασης. Παρακαλούμε συνδεθείτε με μη αυτόματο τρόπο.",
+    "emailRequiredFacebook": "Απαιτείται email αλλά δεν παρέχεται από το Facebook. Βεβαιωθείτε ότι ο λογαριασμός σας στο Facebook έχει επαληθευμένο email.",
+    "authCodeRequired": "Απαιτείται κωδικός εξουσιοδότησης",
+    "validEmailRequired": "Απαιτείται έγκυρο email.",
+    "accountEmailExists": "Υπάρχει ήδη λογαριασμός με αυτό το email.",
+    "usernameTaken": "Αυτό το όνομα χρήστη έχει ήδη ληφθεί.",
+    "tooManyOtpRequests": "Πάρα πολλά αιτήματα κωδικού. Δοκιμάστε ξανά αργότερα.",
+    "failedSendCode": "Αποτυχία αποστολής κωδικού.",
+    "registerFieldsRequired": "email, όνομα, κωδικός πρόσβασης και otp είναι όλα απαραίτητα.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Ο κωδικός πρόσβασης πρέπει να περιλαμβάνει: {{requirements}}.",
+    "noVerificationCode": "Δεν βρέθηκε κωδικός επαλήθευσης. Ζητήστε ένα νέο.",
+    "verificationExpired": "Ο κωδικός επαλήθευσης έχει λήξει. Ζητήστε ένα νέο.",
+    "tooManyOtpAttempts": "Πάρα πολλές λανθασμένες προσπάθειες. Ζητήστε νέο κωδικό επαλήθευσης.",
+    "invalidVerificationCode": "Μη έγκυρος κωδικός επαλήθευσης.",
+    "verificationFailed": "Η επαλήθευση απέτυχε.",
+    "tooManyRequests": "Πάρα πολλά αιτήματα. Δοκιμάστε ξανά αργότερα.",
+    "resetFieldsRequired": "Απαιτούνται email, νέος κωδικός πρόσβασης και διακριτικό.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Μη έγκυρος ή ληγμένος σύνδεσμος επαναφοράς.",
+    "accountLocked": "Ο λογαριασμός κλειδώθηκε προσωρινά. Δοκιμάστε ξανά αργότερα.",
+    "verificationCodeRequired": "Απαιτείται κωδικός επαλήθευσης.",
+    "invalidSession": "Μη έγκυρη συνεδρία",
+    "passwordFieldsRequired": "Απαιτείται ο τρέχων κωδικός και ο νέος κωδικός πρόσβασης"
+  },
+  "success": {
+    "deleted": "Το {{resource}} διαγράφηκε με επιτυχία",
+    "created": "Το {{resource}} δημιουργήθηκε με επιτυχία",
+    "updated": "Το {{resource}} ενημερώθηκε με επιτυχία"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Προειδοποίηση χαμηλού υπολοίπου λογαριασμού διαφημίσεων",
+      "spend_alert_subject": "Ειδοποίηση για διαφημίσεις Strug: {{percentage}}% Προσεγγίστηκε ημερήσιος προϋπολογισμός για την καμπάνια #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ΕΙΔΟΠΟΙΗΣΗ ΛΟΓΑΡΙΑΣΜΟΥ ΔΙΑΦΗΜΙΣΕΩΝ",
+        "title": "Προειδοποίηση χαμηλής ισορροπίας",
+        "instruction": "Γεια σας {{name}}, το υπόλοιπο του Πορτοφολιού Διαφημίσεών σας εξαντλείται. Για να αποτρέψετε την αυτόματη παύση ενεργών καμπανιών, συμπληρώστε το υπόλοιπο του λογαριασμού σας.",
+        "balance_label": "Τρέχον υπόλοιπο:",
+        "button": "Συμπληρώστε το διαφημιστικό πορτοφόλι"
+      },
+      "spend_alert": {
+        "tag": "ΕΠΙΤΥΧΘΗΚΕ ΤΟ ΟΡΟΣΟΜΟ ΤΟΥ ΠΡΟΫΠΟΛΟΓΙΣΜΟΥ",
+        "title": "{{percentage}}% ημερήσια δαπάνη προϋπολογισμού",
+        "instruction": "Γεια σας {{name}}, αυτή είναι μια αυτοματοποιημένη ενημέρωση κατάστασης για το ενεργό διαφημιστικό σας σύνολο. Η καμπάνια σας έχει φτάσει σε ένα ημερήσιο όριο δαπανών.",
+        "campaign_label": "Αναγνωριστικό καμπάνιας:",
+        "button": "Διαχείριση καμπάνιας"
+      }
+    },
+    "subjects": {
+      "otp": "Επαλήθευση Strug: Ο κωδικός σας είναι εδώ",
+      "welcome": "Καλώς ήρθατε στην οικογένεια Strug!",
+      "password_reset": "Strug: Επαναφέρετε τον κωδικό πρόσβασής σας",
+      "login_alert": "Strug Security Alert: Εντοπίστηκε νέα σύνδεση",
+      "ride_receipt": "Περίληψη Strug Ride: Σας ευχαριστούμε που οδηγείτε!"
+    },
+    "otp": {
+      "tag": "ΕΛΕΓΧΟΣ ΑΣΦΑΛΕΙΑΣ",
+      "title": "Επαλήθευση λογαριασμού",
+      "instruction": "Χρησιμοποιήστε τον παρακάτω κωδικό ασφαλείας για να ολοκληρώσετε την εγγραφή σας. Ισχύει για 10 λεπτά.",
+      "ignore": "Εάν δεν το ζητήσατε εσείς, αγνοήστε αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου."
+    },
+    "common": {
+      "tagline": "Η εργασία σας • ο χρόνος σας • τα χρήματά σας",
+      "rights_reserved": "Με την επιφύλαξη παντός δικαιώματος",
+      "need_help": "Χρειάζεστε βοήθεια; Απαντήστε σε αυτό το email ή επισκεφτείτε το κέντρο υποστήριξης."
+    },
+    "welcome": {
+      "tag": "ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΟ STRUG",
+      "title": "Γεια, {{name}}!",
+      "instruction": "Ο λογαριασμός σας έχει επαληθευτεί. Είστε πλέον μέρος μιας πλατφόρμας που έχει δημιουργηθεί για να απλοποιεί την εργασία, τον χρόνο και τα χρήματά σας.",
+      "button": "Εξερευνήστε τον πίνακα ελέγχου"
+    },
+    "password_reset": {
+      "tag": "ΑΣΦΑΛΕΙΑ",
+      "title": "Επαναφορά κωδικού πρόσβασης",
+      "instruction": "Υποβλήθηκε αίτημα επαναφοράς του κωδικού πρόσβασης του λογαριασμού σας Strug. Κάντε κλικ στο κουμπί παρακάτω για να επιλέξετε ένα νέο.",
+      "button": "Επαναφορά του κωδικού πρόσβασής μου",
+      "ignore": "Εάν δεν το ζητήσατε εσείς, μπορείτε να αγνοήσετε με ασφάλεια αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου. Ο σύνδεσμος λήγει σε 1 ώρα."
+    },
+    "login_alert": {
+      "tag": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΑΣΦΑΛΕΙΑΣ",
+      "title": "Εντοπίστηκε νέα σύνδεση",
+      "instruction": "Παρατηρήσαμε μια νέα σύνδεση στον λογαριασμό σας στο Strug. Εάν ήσασταν εσείς, μπορείτε να αγνοήσετε αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου.",
+      "device": "Συσκευή",
+      "time": "Χρόνος",
+      "not_you": "Εάν ΔΕΝ ήσασταν εσείς, ασφαλίστε αμέσως τον λογαριασμό σας αλλάζοντας τον κωδικό πρόσβασής σας."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Περίληψη διαδρομής",
+      "tag": "ΤΟ ΤΑΞΙΔΙ ΟΛΟΚΛΗΡΩΘΗΚΕ",
+      "total_fare": "Συνολικός ναύλος",
+      "distance": "Απόσταση",
+      "duration": "Διάρκεια",
+      "pickup": "Παραλαβή",
+      "drop": "Αποβίβαση",
+      "driver": "Οδηγός",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Σας ευχαριστούμε που οδηγείτε με τον Strug!",
+      "support": "Εάν αντιμετωπίζετε προβλήματα με αυτήν τη διαδρομή, επικοινωνήστε με την υποστήριξη."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Confirmed: Η διαδρομή σας έχει κλείσει!",
+      "title": "Η κράτηση επιβεβαιώθηκε",
+      "tag": "ΚΡΑΤΗΣΗ ΚΑΡΠΟΥΛΩΝ",
+      "from": "Από",
+      "to": "προς",
+      "seats": "Κρατήσεις θέσεων",
+      "total_cost": "Συνολικό Κόστος",
+      "status": "Κατάσταση",
+      "thanks": "Σας ευχαριστούμε για τη συνεργασία με τον Strug!",
+      "details_msg": "Η κράτηση της θέσης σας έγινε με επιτυχία. Παρακαλούμε να είστε στο σημείο παραλαβής εγκαίρως."
+    },
+    "ghost_driver": {
+      "subject": "Ride Update: Αναθέτουμε εκ νέου ένα νέο πρόγραμμα οδήγησης για εσάς",
+      "title": "Εύρεση νέου προγράμματος οδήγησης",
+      "tag": "ΕΝΗΜΕΡΩΣΗ ΒΟΛΗΣ",
+      "instruction": "Το προηγούμενο πρόγραμμα οδήγησης δεν είναι διαθέσιμο ή δεν ανταποκρίνεται. Μην ανησυχείτε, αναζητούμε αυτόματα έναν νέο οδηγό για να σας παραλάβει.",
+      "status": "Τρέχουσα κατάσταση: Εκ νέου αναζήτηση για προγράμματα οδήγησης...",
+      "hang_tight": "Παρακαλώ κρατηθείτε σφιχτά! Θα σας ειδοποιήσουμε μόλις ένας νέος οδηγός αποδεχτεί το αίτημά σας."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Ο κωδικός πρόσβασής σας άλλαξε",
+      "title": "Ο Κωδικός Ενημερώθηκε",
+      "tag": "ΕΝΗΜΕΡΩΣΗ ΑΣΦΑΛΕΙΑΣ",
+      "instruction": "Ο κωδικός πρόσβασης του λογαριασμού σας Strug άλλαξε πρόσφατα. Εάν κάνατε αυτήν την αλλαγή, μπορείτε να αγνοήσετε με ασφάλεια αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου.",
+      "warning": "Εάν ΔΕΝ αλλάξατε τον κωδικό πρόσβασής σας, ο λογαριασμός σας μπορεί να παραβιαστεί. Ασφαλίστε αμέσως τον λογαριασμό σας.",
+      "button": "Ασφαλίστε τον λογαριασμό μου",
+      "footer": "Ομάδα ασφαλείας Strug Platform"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Η παραγγελία επιβεβαιώθηκε! #{{order_id}}",
+        "new_order_vendor": "Απαιτούμενη ενέργεια: Λήψη νέας παραγγελίας! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Απόδειξη παραγγελίας",
+        "tag": "ΠΑΡΑΓΓΕΛΙΑ ΕΠΙΤΥΧΙΑΣ",
+        "vendor_tag": "ΑΠΑΙΤΟΥΜΕΝΗ ΕΝΕΡΓΕΙΑ",
+        "order_id": "Ταυτότητα παραγγελίας",
+        "item": "Στοιχείο",
+        "qty": "Ποσ",
+        "price": "Τιμή",
+        "subtotal": "Υποσύνολο",
+        "delivery_fee": "Τέλος παράδοσης",
+        "service_tax": "Φόρος Υπηρεσιών",
+        "platform_fee": "Τέλος πλατφόρμας",
+        "grand_total": "ΣΥΝΟΛΙΚΟ ΠΟΣΟ",
+        "total": "Συνολικό Ποσό",
+        "delivery_address": "Διεύθυνση Παράδοσης",
+        "thanks": "Ελπίζω να απολαύσετε το γεύμα σας!",
+        "vendor_title": "Νέα παραγγελία για εσάς",
+        "vendor_msg": "Έχετε λάβει νέα παραγγελία. Ξεκινήστε αμέσως την προετοιμασία του."
+      }
+    },
+    "food_status": {
+      "tag": "ΠΑΡΑΓΓΕΛΙΑ ΕΝΗΜΕΡΩΣΗ",
+      "subjects": {
+        "preparing": "Strug Food: Η παραγγελία σας ετοιμάζεται! 🍳",
+        "dispatched": "Υπέροχα νέα! Η παραγγελία σας είναι καθ' οδόν 🛵",
+        "delivered": "Απολαύστε το γεύμα σας! Η παραγγελία παραδόθηκε με επιτυχία ✅",
+        "cancelled": "Σημείωση Strug: Η παραγγελία σας ακυρώθηκε ❌"
+      },
+      "messages": {
+        "preparing": "Το εστιατόριο έχει αρχίσει να ετοιμάζει το νόστιμο γεύμα σας. Θα σας ενημερώσουμε όταν βγει για παράδοση.",
+        "dispatched": "Η παραγγελία σας παραλήφθηκε και ο συνεργάτης παράδοσης είναι καθ' οδόν για την τοποθεσία σας.",
+        "delivered": "Η παραγγελία σας παραδόθηκε. Σας ευχαριστούμε που επιλέξατε το Strug!",
+        "cancelled": "Με λύπη σας ενημερώνουμε ότι η παραγγελία σας ακυρώθηκε. Εάν έχετε ήδη πληρώσει, σύντομα θα ξεκινήσει η επιστροφή χρημάτων."
+      },
+      "labels": {
+        "order_id": "Ταυτότητα παραγγελίας",
+        "current_status": "Τρέχουσα κατάσταση"
+      }
+    },
+    "digital": {
+      "subject": "Το Strug Digital Content είναι έτοιμο!",
+      "title": "Κατεβάστε το προϊόν σας",
+      "instruction": "Σας ευχαριστούμε για την αγορά σας! Τώρα μπορείτε να αποκτήσετε πρόσβαση και να κατεβάσετε το ψηφιακό σας περιεχόμενο χρησιμοποιώντας το παρακάτω κουμπί.",
+      "button": "Λήψη τώρα"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Το δελτίο πληρωμής σας για αυτόν τον μήνα είναι έτοιμο 📄",
+      "title": "Μηνιαίο δελτίο μισθοδοσίας",
+      "tag": "ΠΕΡΙΛΗΨΗ ΜΙΣΘΟΔΟΤΩΝ",
+      "net_salary": "Καθαρός μισθός",
+      "epf": "EPF (Εργαζόμενος)",
+      "etf": "μισθοδοσία ETF — ETF",
+      "ot": "μισθοδοσία ot — OT Pay",
+      "bonus": "Μπόνους",
+      "status": "Κατάσταση πληρωμής",
+      "thanks": "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με τον μισθό σας, επικοινωνήστε με το HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Το αίτημά σας για άδεια έχει εγκριθεί ✅",
+      "subject_rejected": "Strug HR: Ενημέρωση σχετικά με το αίτημα άδειας ❌",
+      "title_approved": "Αφήστε Εγκεκριμένο!",
+      "title_rejected": "Αφήστε την Ενημέρωση",
+      "tag": "ΑΠΟΔΟΣΗ ΑΙΤΗΣΗΣ",
+      "status_approved": "Το αίτημά σας άδειας για την επόμενη περίοδο εγκρίθηκε με επιτυχία.",
+      "status_rejected": "Με λύπη σας ενημερώνουμε ότι το αίτημά σας για άδεια για την επόμενη περίοδο έχει απορριφθεί.",
+      "from_date": "Από Ημερομηνία",
+      "to_date": "Μέχρι σήμερα",
+      "reason": "Λόγος Απόρριψης",
+      "thanks": "Για περισσότερες ερωτήσεις, επικοινωνήστε με το τμήμα HR."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Λήφθηκε νέα αίτηση για {{job_title}} 💼",
+      "title": "Εφαρμόστηκε νέος υποψήφιος",
+      "tag": "ΑΙΤΗΣΗ ΕΡΓΑΣΙΑΣ",
+      "instruction": "Ένας νέος υποψήφιος έχει υποβάλει αίτηση για μια από τις λίστες εργασίας σας. Εδώ είναι οι σύντομες λεπτομέρειες:",
+      "job_title": "Ρόλος Εργασίας",
+      "candidate": "Όνομα υποψηφίου",
+      "view_button": "Προβολή Εφαρμογής",
+      "thanks": "Παρακαλούμε συνδεθείτε στην πύλη του αντιπροσώπου σας για να δείτε τα πλήρη στοιχεία και το βιογραφικό."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Η βάρδια εργασίας σας έχει ενημερωθεί 🕒",
+      "title": "Shift Ενημερώθηκε",
+      "tag": "ΕΝΗΜΕΡΩΣΗ ΠΡΟΓΡΑΜΜΑΤΟΣ",
+      "instruction": "Το πρόγραμμα εργασίας σας ενημερώθηκε πρόσφατα από το τμήμα HR. Ελέγξτε παρακάτω τους νέους χρόνους βάρδιας σας.",
+      "start_time": "Το Shift ξεκινά",
+      "end_time": "Shift Ends",
+      "thanks": "Βεβαιωθείτε ότι είστε παρόντες σύμφωνα με το νέο πρόγραμμα. Επικοινωνήστε με το HR για οποιεσδήποτε ανησυχίες."
+    },
+    "services": {
+      "tag": "ΕΝΗΜΕΡΩΣΗ ΥΠΗΡΕΣΙΑΣ",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Το ραντεβού σας επιβεβαιώθηκε! ✅",
+        "new_alert_provider": "Νέο Ραντεβού: Έχετε νέα κράτηση! 📅",
+        "reminder": "Υπενθύμιση: Το ραντεβού σας είναι σε λίγες ώρες ⏳",
+        "rental_expiry": "Απαιτούμενη ενέργεια: Η ενοικίασή σας λήγει σύντομα! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Υπηρεσία",
+        "provider": "Πάροχος",
+        "customer": "Πελάτης",
+        "date": "Ημερομηνία",
+        "time": "Χρόνος",
+        "location": "Τοποθεσία",
+        "expiry": "Ημερομηνία Λήξης"
+      },
+      "messages": {
+        "confirmed": "Το ραντεβού σας έχει προγραμματιστεί με επιτυχία. Please be on time.",
+        "provider_alert": "Ένας νέος πελάτης έκανε κράτηση για την υπηρεσία σας. Here are the details.",
+        "reminder": "Αυτή είναι μια φιλική υπενθύμιση του επερχόμενου ραντεβού σας με τον Strug.",
+        "rental_expiry": "Η περίοδος ενοικίασής σας πρόκειται να τελειώσει. Επιστρέψτε το προϊόν ή παρατείνετε την περίοδο για να αποφύγετε κυρώσεις.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "ΕΠΕΙΓΟΝ: ΕΙΔΟΠΟΙΗΣΗ ΛΗΞΗΣ",
+        "item_name": "Όνομα αντικειμένου",
+        "due_date": "Ημερομηνία λήξης",
+        "order_id": "Ταυτότητα παραγγελίας",
+        "button": "Επέκταση ή επιστροφή αντικειμένου",
+        "footer": "Αποφύγετε καθυστερημένες χρεώσεις επιστρέφοντας το προϊόν πριν από την καθορισμένη ώρα.",
+        "thanks": "Σας ευχαριστούμε που χρησιμοποιείτε το Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Σας ευχαριστούμε για τη γενναιόδωρη δωρεά σας! ❤️",
+        "loan_reminder": "Υπενθύμιση πληρωμής: Η δόση του δανείου σας έχει εξοφληθεί 💳"
+      },
+      "donation": {
+        "title": "Λήφθηκε η δωρεά",
+        "tag": "ΕΠΙΣΤΡΟΦΗ",
+        "msg": "Η υποστήριξή σας κάνει τεράστια διαφορά! Λάβαμε με επιτυχία τη συνεισφορά σας για το έργο.",
+        "amount": "Ποσό Δωρεά",
+        "project": "Έργο"
+      },
+      "loan": {
+        "title": "Αποπληρωμή Δανείου",
+        "tag": "ΟΦΕΙΛΗ ΠΛΗΡΩΜΗΣ",
+        "msg": "Αυτή είναι μια υπενθύμιση ότι πλησιάζει η ημερομηνία αποπληρωμής του δανείου σας. Βεβαιωθείτε ότι υπάρχουν επαρκή κεφάλαια.",
+        "due_date": "Ημερομηνία λήξης",
+        "amount": "Ποσό Δόσεων"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Η παραγγελία επιβεβαιώθηκε #{{order_id}}",
+        "new_order_seller": "Strug Shop: Λήφθηκε νέα παραγγελία #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "Η ΠΑΡΑΓΓΕΛΙΑ ΕΠΙΒΕΒΑΙΩΘΗΚΕ",
+        "vendor_tag": "ΝΕΑ ΠΑΡΑΓΓΕΛΙΑ",
+        "title": "Η παραγγελία σας επιβεβαιώθηκε",
+        "vendor_title": "Έχετε νέα παραγγελία",
+        "order_id": "Παραγγελία",
+        "product": "Προϊόν",
+        "qty": "Ποσότητα",
+        "total": "Σύνολο",
+        "thanks": "Σας ευχαριστούμε για τις αγορές σας στο Strug!",
+        "vendor_msg": "Ετοιμάστε και στείλτε αυτήν την παραγγελία το συντομότερο δυνατό."
+      },
+      "status": {
+        "tag": "ΠΑΡΑΓΓΕΛΙΑ ΕΝΗΜΕΡΩΣΗ",
+        "order_id": "Ταυτότητα παραγγελίας",
+        "tracking": "Αριθμός παρακολούθησης",
+        "track_button": "Προβολή παραγγελίας",
+        "subjects": {
+          "confirmed": "Strug Shop: Η παραγγελία σας επιβεβαιώθηκε",
+          "shipped": "Strug Shop: Η παραγγελία σας έχει αποσταλεί",
+          "fulfilled": "Strug Shop: Η παραγγελία σας παραδόθηκε"
+        },
+        "messages": {
+          "confirmed": "Ο πωλητής επιβεβαίωσε την παραγγελία σας και την ετοιμάζει για αποστολή.",
+          "shipped": "Το πακέτο σας είναι καθ' οδόν. Παρακολούθηση: {{tracking_number}}",
+          "fulfilled": "Η παραγγελία σας παραδόθηκε. Ελπίζουμε να απολαύσετε την αγορά σας!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Η εβδομαδιαία μαθησιακή σας πρόοδος είναι εδώ 📚",
+        "unread_chat": "Strug: Έχετε μη αναγνωσμένα μηνύματα στα εισερχόμενά σας 💬"
+      },
+      "lms": {
+        "title": "Μαθησιακή Πρόοδος",
+        "tag": "ΜΕΙΝΕ ΕΞΥΠΝΟ",
+        "msg": "Τα πας υπέροχα! Ακολουθεί μια σύνοψη της δραστηριότητας της κάρτας flash αυτή την εβδομάδα.",
+        "cards_reviewed": "Οι κάρτες εξετάστηκαν",
+        "new_decks": "Έγιναν νέα καταστρώματα"
+      },
+      "chat": {
+        "title": "Νέα μηνύματα",
+        "tag": "ΚΟΙΝΟΤΗΤΑ",
+        "msg": "Λείπεις για λίγο. Οι φίλοι και τα μέλη της ομάδας σας προσπαθούν να σας προσεγγίσουν.",
+        "button": "Προβολή συνομιλίας"
+      }
+    }
+  }
+}

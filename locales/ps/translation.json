@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ونه موندل شو",
+    "fetchFailed": "په راوړلو کې ناکام شو {{resource}}",
+    "createFailed": "په جوړولو کې پاتې راغلی {{resource}}",
+    "updateFailed": "په تازه کولو کې پاتې راغلی {{resource}}",
+    "deleteFailed": "په ړنګولو کې پاتې راغلی {{resource}}",
+    "invalidId": "{{field}} باید یو شمیر وي",
+    "alreadyExists": "{{field}} لا دمخه شتون لري",
+    "invalidFormat": "ناسمه {{field}} بڼه",
+    "internalServer": "د داخلي سرور تېروتنه",
+    "accessDenied": "لاسرسی رد شو",
+    "invalidToken": "ناسمه نښه",
+    "adminRequired": "اډمین ته لاسرسی اړین دی",
+    "forbidden": "تاسو د دې عمل د ترسره کولو اجازه نلرئ"
+  },
+  "food": {
+    "filterError": "د فلټر تېروتنه",
+    "orderAlreadyTaken": "دا امر لا دمخه د بل موټر چلوونکي لخوا اخیستل شوی و.",
+    "orderAccepted": "امر د تحویل لپاره منل شوی",
+    "orderDeclined": "امر رد شو.",
+    "orderRejected": "امر رد شو."
+  },
+  "user": {
+    "notFound": "کارن ونه موندل شو",
+    "deleted": "کارن په بریالیتوب سره حذف شو",
+    "labelStreetRequired": "لیبل او کوڅه اړین دي",
+    "addressNotFound": "ادرس ونه موندل شو",
+    "savedAddressRequired": "د تحویلي ادرس ته اړتیا ده",
+    "cannotModifyOther": "د بل کارونکي حساب نه شي بدلولی",
+    "emailExists": "د بریښنالیک یا راجع کولو کوډ دمخه شتون لري"
+  },
+  "auth": {
+    "invalidLoginFormat": "د ننوتلو ناسمه بڼه",
+    "userNotFound": "کارن ونه موندل شو",
+    "renewSubscription": "مهرباني وکړئ خپل ګډون نوي کړئ",
+    "verifyBefore": "مهرباني وکړئ د ننوتلو دمخه خپل {{method}} تصدیق کړئ.",
+    "noPassword": "دا حساب هیڅ پټنوم نلري. د ګوګل ننوتل هڅه وکړئ.",
+    "invalidPassword": "ناسم پټنوم",
+    "teamMemberNotFound": "د ټیم غړی ونه موندل شو",
+    "loginSuccessful": "ننوت بریالی شو",
+    "invalidCredentials": "ناسم اسناد",
+    "noRefreshToken": "د ریفریش نښه نشته",
+    "invalidRefreshToken": "ناسم یا ختم شوی ریفریش نښه",
+    "invalidRefreshTokenPayload": "ناباوره ریفریش ټوکن پیلوډ",
+    "teamMembershipNotFound": "د ټیم غړیتوب ونه موندل شو",
+    "accessTokenRefreshed": "د لاسرسي نښه تازه شوه",
+    "refreshTokenDeleted": "تازه کول ړنګ شوی",
+    "emailRequired": "بریښنالیک اړین دی",
+    "passwordAccountExists": "دا بریښنالیک د پټنوم په کارولو سره ثبت شوی. مهرباني وکړئ په لاسي ډول ننوتل.",
+    "emailRequiredFacebook": "بریښنالیک اړین دی مګر د فیسبوک لخوا ندی ورکړل شوی. مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو د فېسبوک حساب تایید شوی بریښنالیک لري.",
+    "authCodeRequired": "د تصدیق کوډ ته اړتیا ده",
+    "validEmailRequired": "یو باوري بریښنالیک ته اړتیا ده.",
+    "accountEmailExists": "د دې بریښنالیک سره یو حساب دمخه شتون لري.",
+    "usernameTaken": "دا کارن نوم لا دمخه اخیستل شوی.",
+    "tooManyOtpRequests": "د کوډ ډیرې غوښتنې. وروسته بیا هڅه وکړئ.",
+    "failedSendCode": "د کوډ لیږلو کې پاتې راغلی.",
+    "registerFieldsRequired": "بریښنالیک، نوم، پټنوم، او otp ټول اړین دي.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "پاسورډ باید پکې شامل وي: {{requirements}}.",
+    "noVerificationCode": "د تایید کوډ ونه موندل شو. مهرباني وکړئ د نوي غوښتنه وکړئ.",
+    "verificationExpired": "د تایید کوډ پای ته رسیدلی. مهرباني وکړئ د نوي غوښتنه وکړئ.",
+    "tooManyOtpAttempts": "ډیری غلطې هڅې. مهرباني وکړئ د نوي تایید کوډ غوښتنه وکړئ.",
+    "invalidVerificationCode": "ناسم تایید کوډ.",
+    "verificationFailed": "تایید ناکام شو.",
+    "tooManyRequests": "ډیرې غوښتنې. مهرباني وکړئ وروسته بیا هڅه وکړئ.",
+    "resetFieldsRequired": "بریښنالیک، نوی پاسورډ، او نښه اړین دي.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "ناباوره یا ختم شوی د بیا تنظیم کولو لینک.",
+    "accountLocked": "حساب په موقتي توګه تړل شوی. وروسته بیا هڅه وکړئ.",
+    "verificationCodeRequired": "د تایید کوډ ته اړتیا ده.",
+    "invalidSession": "ناسمه ناسته",
+    "passwordFieldsRequired": "اوسنی پاسورډ او نوی پاسورډ اړین دی"
+  },
+  "success": {
+    "deleted": "{{resource}} په بریالیتوب سره ړنګ شو",
+    "created": "{{resource}} په بریالیتوب سره جوړ شو",
+    "updated": "{{resource}} په بریالیتوب سره تازه شو"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug اعلانونه: د اعلان حساب د ټیټ بیلانس خبرداری",
+      "spend_alert_subject": "Strug د اعلاناتو خبرتیا: {{percentage}}% ورځنۍ بودیجه د کمپاین لپاره رسیدلې #{{campaign_id}}",
+      "low_balance": {
+        "tag": "د اعلاناتو حساب خبرتیا",
+        "title": "د ټیټ توازن خبرداری",
+        "instruction": "سلام {{name}}، ستاسو د اعلاناتو والیټ بیلانس ټیټ دی. د دې لپاره چې فعال کمپاینونه په اتوماتيک ډول ودرول شي، مهرباني وکړئ د خپل حساب بیلانس لوړ کړئ.",
+        "balance_label": "اوسنی بیلانس:",
+        "button": "ټاپ اپ اډ والټ"
+      },
+      "spend_alert": {
+        "tag": "د بودیجې هدف ته ورسید",
+        "title": "{{percentage}}% ورځنۍ بودیجه لګول",
+        "instruction": "سلام {{name}}، دا ستاسو د فعال اعلان سیټ لپاره یو اتوماتیک حالت تازه دی. ستاسو کمپاین د ورځني لګښت حد ته رسیدلی.",
+        "campaign_label": "د کمپاین پېژندنه:",
+        "button": "د کمپاین اداره کول"
+      }
+    },
+    "subjects": {
+      "otp": "Strug تایید: ستاسو کوډ دلته دی",
+      "welcome": "Strug کورنۍ ته ښه راغلاست!",
+      "password_reset": "Strug: خپل پټنوم بیا تنظیم کړئ",
+      "login_alert": "Strug امنیتي خبرتیا: نوی ننوت کشف شو",
+      "ride_receipt": "Strug د سواری لنډیز: د سواری لپاره مننه!"
+    },
+    "otp": {
+      "tag": "امنیتي چک",
+      "title": "حساب تصدیق کړئ",
+      "instruction": "د خپل راجسټریشن بشپړولو لپاره لاندې خوندي کوډ وکاروئ. د 10 دقیقو لپاره اعتبار.",
+      "ignore": "که تاسو دا غوښتنه نه ده کړې، مهرباني وکړئ دا بریښنالیک له پامه غورځوئ."
+    },
+    "common": {
+      "tagline": "ستاسو کار • ستاسو وخت • ستاسو پیسې",
+      "rights_reserved": "ټول حقونه خوندي دي",
+      "need_help": "مرستې ته اړتیا لرئ؟ دې بریښنالیک ته ځواب ورکړئ یا زموږ د ملاتړ مرکز څخه لیدنه وکړئ."
+    },
+    "welcome": {
+      "tag": "STRUG ته ښه راغلاست",
+      "title": "سلام، {{name}}!",
+      "instruction": "ستاسو حساب تایید شوی. تاسو اوس د هغه پلیټ فارم برخه یاست چې ستاسو د کار، وخت او پیسو ساده کولو لپاره جوړ شوی.",
+      "button": "ډشبورډ وپلټئ"
+    },
+    "password_reset": {
+      "tag": "امنیت",
+      "title": "پټنوم بیا تنظیم کړئ",
+      "instruction": "ستاسو د Strug حساب پټنوم بیا تنظیمولو لپاره غوښتنه شوې وه. د نوي غوره کولو لپاره لاندې تڼۍ کلیک وکړئ.",
+      "button": "زما پټنوم بیا تنظیم کړئ",
+      "ignore": "که تاسو دا غوښتنه نه وه کړې، تاسو کولی شئ په خوندي توګه دا بریښنالیک له پامه غورځولی شئ. لینک په 1 ساعت کې پای ته رسیږي."
+    },
+    "login_alert": {
+      "tag": "د امنیت خبرتیا",
+      "title": "نوی ننوت کشف شو",
+      "instruction": "موږ ستاسو د Strug حساب ته نوی ننوتل ولیدل. که دا تاسو یاست، تاسو کولی شئ دا بریښنالیک له پامه غورځولی شئ.",
+      "device": "وسیله",
+      "time": "وخت",
+      "not_you": "که دا تاسو نه یاست، مهرباني وکړئ سمدلاسه د خپل پټنوم بدلولو سره خپل حساب خوندي کړئ."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "د سواری لنډیز",
+      "tag": "سفر بشپړ شو",
+      "total_fare": "ټوله کرایه",
+      "distance": "واټن",
+      "duration": "موده",
+      "pickup": "پورته کول",
+      "drop": "غورځول",
+      "driver": "چلوونکی",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "د Strug سره د سواری لپاره مننه!",
+      "support": "که تاسو د دې سواری سره کومه ستونزه لرئ، د ملاتړ سره اړیکه ونیسئ."
+    },
+    "carpool_booking": {
+      "subject": "د کارپول تایید شوی: ستاسو سواری بک شوی دی!",
+      "title": "بکینګ تایید شو",
+      "tag": "کارپول ساتل شوی",
+      "from": "څخه",
+      "to": "ته",
+      "seats": "څوکۍ بک شوي",
+      "total_cost": "ټول لګښت",
+      "status": "حالت",
+      "thanks": "د Strug سره د کارپول کولو لپاره مننه!",
+      "details_msg": "ستاسو څوکۍ په بریالیتوب سره خوندي شوې. مهرباني وکړئ په وخت د اخیستلو ځای ته اوسئ."
+    },
+    "ghost_driver": {
+      "subject": "د سواری تازه کول: موږ ستاسو لپاره یو نوی ډرایور بیا ګمارو",
+      "title": "د نوي چلوونکي موندل",
+      "tag": "د سواری تازه کول",
+      "instruction": "ستاسو پخوانی چلوونکی شتون نلري یا ځواب نه ورکوي. اندیښنه مه کوئ، موږ په اتوماتيک ډول د نوي موټر چلوونکي په لټه کې یو چې تاسو یې پورته کړئ.",
+      "status": "اوسنی حالت: د موټر چلوونکو لپاره بیا لټون...",
+      "hang_tight": "مهرباني وکړئ کلک ودریږئ! موږ به ژر تر ژره تاسو ته خبر درکړو کله چې یو نوی چلونکی ستاسو غوښتنه ومني."
+    },
+    "password_changed": {
+      "subject": "Strug امنیتي خبرتیا: ستاسو پټنوم بدل شوی",
+      "title": "پټنوم تازه شوی",
+      "tag": "د امنیت تازه کول",
+      "instruction": "ستاسو د Strug حساب پټنوم په دې وروستیو کې بدل شوی. که تاسو دا بدلون کړی، تاسو کولی شئ په خوندي توګه دا بریښنالیک له پامه غورځولی شئ.",
+      "warning": "که تاسو خپل پټنوم نه وي بدل کړی، ستاسو اکاونټ ممکن خراب شي. مهرباني وکړئ سمدلاسه خپل حساب خوندي کړئ.",
+      "button": "زما حساب خوندي کړئ",
+      "footer": "Strug د پلیټ فارم امنیتي ټیم"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug خواړه: امر تایید شوی! #{{order_id}}",
+        "new_order_vendor": "عمل ته اړتیا ده: نوی امر ترلاسه شو! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "د امر رسید",
+        "tag": "د امر بریالیتوب",
+        "vendor_tag": "اقدام ته اړتیا ده",
+        "order_id": "د امر ID",
+        "item": "توکي",
+        "qty": "مقدار",
+        "price": "قیمت",
+        "subtotal": "فرعي مجموعه",
+        "delivery_fee": "د سپارلو فیس",
+        "service_tax": "د خدماتو مالیه",
+        "platform_fee": "د پلیټ فارم فیس",
+        "grand_total": "رسید لوی_ټول — TOTAL AMOUNT",
+        "total": "ټول رقم",
+        "delivery_address": "د سپارلو پته",
+        "thanks": "هیله ده له ډوډۍ څخه خوند واخلئ!",
+        "vendor_title": "ستاسو لپاره نوی امر",
+        "vendor_msg": "تاسو یو نوی امر ترلاسه کړی دی. مهرباني وکړئ سمدلاسه یې چمتو کول پیل کړئ."
+      }
+    },
+    "food_status": {
+      "tag": "د امر تازه کول",
+      "subjects": {
+        "preparing": "Strug خواړه: ستاسو امر چمتو کیږي! 🍳",
+        "dispatched": "ښه خبر! ستاسو امر په لاره کې دی 🛵",
+        "delivered": "خپل خواړه خوند واخلئ! آرډر په بریالیتوب سره وسپارل شو ✅",
+        "cancelled": "Strug خبرتیا: ستاسو امر لغوه شوی دی ❌"
+      },
+      "messages": {
+        "preparing": "رستوران ستاسو د خوندور خواړه چمتو کول پیل کړي. موږ به تاسو ته خبر درکړو کله چې دا د تحویل لپاره بهر وي.",
+        "dispatched": "ستاسو امر اخیستل شوی او زموږ د تحویلي ملګری ستاسو ځای ته په لاره دی.",
+        "delivered": "ستاسو امر سپارل شوی دی. د Strug غوره کولو لپاره مننه!",
+        "cancelled": "په خواشینۍ سره مو خبر ترلاسه کړ چې ستاسو امر لغوه شوی دی. که تاسو دمخه تادیه کړې وي ، نو بیرته به ډیر ژر پیل شي."
+      },
+      "labels": {
+        "order_id": "د امر ID",
+        "current_status": "اوسنی حالت"
+      }
+    },
+    "digital": {
+      "subject": "ستاسو Strug ډیجیټل مینځپانګه چمتو ده!",
+      "title": "خپل محصول ډاونلوډ کړئ",
+      "instruction": "ستاسو د پیرودلو لپاره مننه! تاسو اوس کولی شئ د لاندې تڼۍ په کارولو سره خپل ډیجیټل مینځپانګې ته لاسرسی ومومئ او ډاونلوډ کړئ.",
+      "button": "همدا اوس ډاونلوډ کړئ"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: د دې میاشتې لپاره ستاسو د پیسو سلیپ چمتو دی 📄",
+      "title": "میاشتنۍ تادیه سلیپ",
+      "tag": "د تادیاتو لنډیز",
+      "net_salary": "خالص معاش",
+      "epf": "EPF (کارمند)",
+      "etf": "معاش ETF - ETF",
+      "ot": "د OT تادیه",
+      "bonus": "بونس",
+      "status": "د تادیاتو حالت",
+      "thanks": "که تاسو د خپل معاش په اړه کومه پوښتنه لرئ، مهرباني وکړئ د HR سره اړیکه ونیسئ."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: ستاسو د رخصتۍ غوښتنه منل شوې ده ✅",
+      "subject_rejected": "Strug HR: ستاسو د رخصتۍ غوښتنې تازه کول ❌",
+      "title_approved": "پریږده تصویب شوه!",
+      "title_rejected": "تازه کول پریږدئ",
+      "tag": "د پرېښودو غوښتنه",
+      "status_approved": "د لاندې مودې لپاره ستاسو د رخصتۍ غوښتنه په بریالیتوب سره تصویب شوه.",
+      "status_rejected": "په خواشینۍ سره مو خبر ترلاسه کړ چې د لاندې مودې لپاره ستاسو د رخصتۍ غوښتنه رد شوې ده.",
+      "from_date": "له نیټې څخه",
+      "to_date": "تر نیټې پورې",
+      "reason": "د ردولو دلیل",
+      "thanks": "د نورو پوښتنو لپاره، مهرباني وکړئ خپل د بشري حقونو څانګې سره اړیکه ونیسئ."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: نوی غوښتنلیک د {{job_title}} 💼 لپاره ترلاسه شو",
+      "title": "نوی نوماند عریضه شو",
+      "tag": "د کار غوښتنلیک",
+      "instruction": "یو نوی نوماند ستاسو د کار لیست لپاره غوښتنه کړې ده. دلته لنډ معلومات دي:",
+      "job_title": "د دندې رول",
+      "candidate": "د کاندید نوم",
+      "view_button": "غوښتنلیک وګورئ",
+      "thanks": "مهرباني وکړئ د بشپړ توضیحاتو او CV بیاکتنې لپاره خپل اجنټ پورټل ته ننوځئ."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: ستاسو د کار بدلون تازه شوی 🕒",
+      "title": "شفټ تازه شوی",
+      "tag": "د مهال ویش تازه کول",
+      "instruction": "ستاسو د کار مهال ویش په دې وروستیو کې د بشري حقونو څانګې لخوا تازه شوی. مهرباني وکړئ لاندې د خپل نوي بدلون وختونه وګورئ.",
+      "start_time": "شفټ پیل کیږي",
+      "end_time": "شفټ پای ته رسیږي",
+      "thanks": "مهرباني وکړئ ډاډ ترلاسه کړئ چې تاسو د نوي مهالویش سره سم حاضر یاست. د هرې اندیښنې لپاره د HR سره اړیکه ونیسئ."
+    },
+    "services": {
+      "tag": "د خدمت تازه کول",
+      "subjects": {
+        "confirmed_customer": "Strug خدمتونه: ستاسو ملاقات تایید شو! ✅",
+        "new_alert_provider": "نوې ملاقات: تاسو یو نوی بکینګ لرئ! 📅",
+        "reminder": "یادونه: ستاسو ملاقات په څو ساعتونو کې دی ⏳",
+        "rental_expiry": "عمل ته اړتیا ده: ستاسو کرایه ډیر ژر پای ته رسیږي! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "خدمت",
+        "provider": "چمتو کوونکی",
+        "customer": "پیرودونکي",
+        "date": "نیټه",
+        "time": "وخت",
+        "location": "ځای",
+        "expiry": "د ختمیدو نیټه"
+      },
+      "messages": {
+        "confirmed": "ستاسو ملاقات په بریالیتوب سره ټاکل شوی. مهرباني وکړئ پر وخت اوسئ.",
+        "provider_alert": "یو نوی پیرودونکي ستاسو خدمت ثبت کړی دی. دلته توضیحات دي.",
+        "reminder": "دا د Strug سره ستاسو د راتلونکي ملاقات یو دوستانه یادونه ده.",
+        "rental_expiry": "ستاسو د کرایې موده پای ته رسیدلې ده. مهرباني وکړئ توکي بیرته ورکړئ یا د جریمې څخه مخنیوي لپاره موده وغځوئ.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "عاجل: د ختمیدو خبرتیا",
+        "item_name": "د توکي نوم",
+        "due_date": "د نیټې نیټه",
+        "order_id": "د امر ID",
+        "button": "توکي پراخ کړئ یا بیرته راشئ",
+        "footer": "د ټاکل شوي وخت څخه دمخه د توکو بیرته راستنیدو سره د ناوخته فیسونو څخه مخنیوی وکړئ.",
+        "thanks": "د Strug کرایه کارولو لپاره مننه."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: ستاسو د سخاوتمندانه مرستې لپاره مننه! ❤️",
+        "loan_reminder": "د تادیې یادونه: ستاسو د پور قسط پای ته رسیدلی 💳"
+      },
+      "donation": {
+        "title": "بسپنه ترلاسه شوه",
+        "tag": "بیرته ورکول",
+        "msg": "ستاسو ملاتړ لوی توپیر رامنځته کوي! موږ د پروژې لپاره ستاسو مرسته په بریالیتوب سره ترلاسه کړې.",
+        "amount": "مرسته شوې پیسې",
+        "project": "پروژه"
+      },
+      "loan": {
+        "title": "د پور بیرته تادیه",
+        "tag": "د پیسو تادیه",
+        "msg": "دا یو یادونه ده چې ستاسو د پور بیرته ورکولو نیټه نږدې کیږي. مهرباني وکړئ ډاډ ترلاسه کړئ چې کافي فنډ شتون لري.",
+        "due_date": "د نیټې نیټه",
+        "amount": "د قسط اندازه"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug هټۍ: امر تایید شوی #{{order_id}}",
+        "new_order_seller": "Strug Shop: نوی امر ترلاسه شوی #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "امر تایید شو",
+        "vendor_tag": "نوی امر",
+        "title": "ستاسو امر تایید شوی",
+        "vendor_title": "تاسو یو نوی امر لرئ",
+        "order_id": "امر",
+        "product": "محصول",
+        "qty": "مقدار",
+        "total": "ټول",
+        "thanks": "په Strug کې د پیرودلو لپاره مننه!",
+        "vendor_msg": "مهرباني وکړئ دا امر ژر تر ژره چمتو او واستوئ."
+      },
+      "status": {
+        "tag": "د امر تازه کول",
+        "order_id": "د امر ID",
+        "tracking": "د تعقیب شمیره",
+        "track_button": "امر وګورئ",
+        "subjects": {
+          "confirmed": "Strug هټۍ: ستاسو امر تایید شوی",
+          "shipped": "Strug هټۍ: ستاسو امر لیږل شوی",
+          "fulfilled": "Strug هټۍ: ستاسو امر سپارل شوی"
+        },
+        "messages": {
+          "confirmed": "پلورونکي ستاسو امر تایید کړی او د بار وړلو لپاره یې چمتو کوي.",
+          "shipped": "ستاسو کڅوړه په لاره کې ده. تعقیب: {{tracking_number}}",
+          "fulfilled": "ستاسو امر سپارل شوی دی. موږ هیله لرو چې تاسو د خپل پیرود څخه خوند واخلئ!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug زده کړه: ستاسو د اونۍ د زده کړې پرمختګ دلته دی 📚",
+        "unread_chat": "Strug: تاسو په خپل ان باکس کې نه لوستل شوي پیغامونه لرئ 💬"
+      },
+      "lms": {
+        "title": "د زده کړې پرمختګ",
+        "tag": "هوښیار اوسئ",
+        "msg": "تاسو ښه کار کوئ! دلته د دې اونۍ ستاسو د فلش کارډ فعالیت لنډیز دی.",
+        "cards_reviewed": "کارتونه بیاکتنه شوي",
+        "new_decks": "نوي ډیکونه یوځای شوي"
+      },
+      "chat": {
+        "title": "نوي پیغامونه",
+        "tag": "ټولنه",
+        "msg": "تاسو د یو څه مودې لپاره لرې یاست. ستاسو ملګري او د ټیم غړي هڅه کوي تاسو ته ورسیږي.",
+        "button": "چیٹ وګورئ"
+      }
+    }
+  }
+}

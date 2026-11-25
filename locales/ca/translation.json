@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} no s'ha trobat",
+    "fetchFailed": "No s'ha pogut obtenir {{resource}}",
+    "createFailed": "No s'ha pogut crear {{resource}}",
+    "updateFailed": "No s'ha pogut actualitzar {{resource}}",
+    "deleteFailed": "No s'ha pogut suprimir {{resource}}",
+    "invalidId": "{{field}} ha de ser un número",
+    "alreadyExists": "{{field}} ja existeix",
+    "invalidFormat": "Format {{field}} no vàlid",
+    "internalServer": "Error intern del servidor",
+    "accessDenied": "Accés denegat",
+    "invalidToken": "El testimoni no és vàlid",
+    "adminRequired": "Cal accés d'administrador",
+    "forbidden": "No teniu permís per dur a terme aquesta acció"
+  },
+  "food": {
+    "filterError": "Error de filtre",
+    "orderAlreadyTaken": "Aquesta comanda ja la va prendre un altre conductor.",
+    "orderAccepted": "Comanda acceptada per al lliurament",
+    "orderDeclined": "Comanda rebutjada.",
+    "orderRejected": "Comanda rebutjada."
+  },
+  "user": {
+    "notFound": "No s'ha trobat l'usuari",
+    "deleted": "L'usuari s'ha suprimit correctament",
+    "labelStreetRequired": "Cal l'etiqueta i el carrer",
+    "addressNotFound": "No s'ha trobat l'adreça",
+    "savedAddressRequired": "L'adreça de lliurament és necessària",
+    "cannotModifyOther": "No es pot modificar el compte d'un altre usuari",
+    "emailExists": "El correu electrònic o el codi de referència ja existeix"
+  },
+  "auth": {
+    "invalidLoginFormat": "Format d'inici de sessió no vàlid",
+    "userNotFound": "No s'ha trobat l'usuari",
+    "renewSubscription": "Si us plau, renova la teva subscripció",
+    "verifyBefore": "Verifiqueu el vostre {{method}} abans d'iniciar sessió.",
+    "noPassword": "Aquest compte no té contrasenya. Prova d'iniciar sessió a Google.",
+    "invalidPassword": "Contrasenya no vàlida",
+    "teamMemberNotFound": "No s'ha trobat el membre de l'equip",
+    "loginSuccessful": "Inici de sessió correcte",
+    "invalidCredentials": "Credencials no vàlides",
+    "noRefreshToken": "No s'ha proporcionat cap testimoni d'actualització",
+    "invalidRefreshToken": "El testimoni d'actualització no és vàlid o ha caducat",
+    "invalidRefreshTokenPayload": "Càrrega útil del testimoni d'actualització no vàlida",
+    "teamMembershipNotFound": "No s'ha trobat la pertinença a l'equip",
+    "accessTokenRefreshed": "S'ha actualitzat el testimoni d'accés",
+    "refreshTokenDeleted": "S'ha suprimit el testimoni d'actualització",
+    "emailRequired": "El correu electrònic és obligatori",
+    "passwordAccountExists": "Aquest correu electrònic està registrat amb contrasenya. Si us plau, inicieu sessió manualment.",
+    "emailRequiredFacebook": "El correu electrònic és obligatori però no proporcionat per Facebook. Assegureu-vos que el vostre compte de Facebook tingui un correu electrònic verificat.",
+    "authCodeRequired": "El codi d'autenticació és obligatori",
+    "validEmailRequired": "Es requereix un correu electrònic vàlid.",
+    "accountEmailExists": "Ja existeix un compte amb aquest correu electrònic.",
+    "usernameTaken": "Aquest nom d'usuari ja està pres.",
+    "tooManyOtpRequests": "Massa sol·licituds de codi. Torna-ho a provar més tard.",
+    "failedSendCode": "No s'ha pogut enviar el codi.",
+    "registerFieldsRequired": "Correu electrònic, nom, contrasenya i otp són tots necessaris.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "La contrasenya ha d'incloure: {{requirements}}.",
+    "noVerificationCode": "No s'ha trobat cap codi de verificació. Si us plau, sol·liciteu-ne un de nou.",
+    "verificationExpired": "El codi de verificació ha caducat. Si us plau, sol·liciteu-ne un de nou.",
+    "tooManyOtpAttempts": "Massa intents incorrectes. Sol·liciteu un codi de verificació nou.",
+    "invalidVerificationCode": "Codi de verificació no vàlid.",
+    "verificationFailed": "La verificació ha fallat.",
+    "tooManyRequests": "Massa peticions. Si us plau, torna-ho a provar més tard.",
+    "resetFieldsRequired": "Es requereix un correu electrònic, una nova contrasenya i un testimoni.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Enllaç de restabliment no vàlid o caducat.",
+    "accountLocked": "Compte bloquejat temporalment. Torna-ho a provar més tard.",
+    "verificationCodeRequired": "Cal un codi de verificació.",
+    "invalidSession": "Sessió no vàlida",
+    "passwordFieldsRequired": "currentPassword i newPassword són necessaris"
+  },
+  "success": {
+    "deleted": "{{resource}} s'ha suprimit correctament",
+    "created": "{{resource}} creat correctament",
+    "updated": "{{resource}} s'ha actualitzat correctament"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Anuncis: advertiment de saldo baix del compte d'anuncis",
+      "spend_alert_subject": "Strug Alerta d'anuncis: {{percentage}}% pressupost diari assolit per a la campanya núm. {{campaign_id}}",
+      "low_balance": {
+        "tag": "ALERTA DEL COMPTE D'ADS",
+        "title": "Avís de saldo baix",
+        "instruction": "Hola, {{name}}, el vostre saldo d'Ads Wallet s'està esgotant. Per evitar que les campanyes actives es posin en pausa automàticament, recarregueu el saldo del vostre compte.",
+        "balance_label": "Saldo actual:",
+        "button": "Recarrega la cartera d'anuncis"
+      },
+      "spend_alert": {
+        "tag": "FITA PRESSUPOSTA ACONSEGUIDA",
+        "title": "{{percentage}}% pressupost diari gastat",
+        "instruction": "Hola {{name}}, aquesta és una actualització automàtica d'estat del vostre conjunt d'anuncis actiu. La vostra campanya ha assolit un llindar de despesa diària.",
+        "campaign_label": "Identificador de campanya:",
+        "button": "Gestionar la campanya"
+      }
+    },
+    "subjects": {
+      "otp": "Verificació de Strug: el vostre codi és aquí",
+      "welcome": "Benvinguts a la família Strug!",
+      "password_reset": "Strug: restableix la teva contrasenya",
+      "login_alert": "Alerta de seguretat de Strug: s'ha detectat un inici de sessió nou",
+      "ride_receipt": "Strug Ride Resum: Gràcies per muntar!"
+    },
+    "otp": {
+      "tag": "CONTROL DE SEGURETAT",
+      "title": "Verifica el compte",
+      "instruction": "Utilitzeu el codi segur següent per completar el vostre registre. Vàlid durant 10 minuts.",
+      "ignore": "Si no ho heu sol·licitat, ignoreu aquest correu electrònic."
+    },
+    "common": {
+      "tagline": "La teva feina • El teu temps • Els teus diners",
+      "rights_reserved": "Tots els drets reservats",
+      "need_help": "Necessites ajuda? Respon a aquest correu electrònic o visita el nostre centre d'assistència."
+    },
+    "welcome": {
+      "tag": "BENVINGUTS A STRUG",
+      "title": "Hola, {{name}}!",
+      "instruction": "El teu compte està verificat. Ara formeu part d'una plataforma creada per simplificar el vostre treball, temps i diners.",
+      "button": "Exploreu el Dashboard"
+    },
+    "password_reset": {
+      "tag": "SEGURETAT",
+      "title": "Restableix la contrasenya",
+      "instruction": "S'ha fet una sol·licitud per restablir la contrasenya del vostre compte Strug. Feu clic al botó següent per triar-ne un de nou.",
+      "button": "Restableix la meva contrasenya",
+      "ignore": "Si no ho heu sol·licitat, podeu ignorar aquest correu electrònic amb seguretat. L'enllaç caduca d'aquí a 1 hora."
+    },
+    "login_alert": {
+      "tag": "ALERTA DE SEGURETAT",
+      "title": "S'ha detectat un nou inici de sessió",
+      "instruction": "Hem detectat un nou inici de sessió al vostre compte Strug. Si vas ser tu, pots ignorar aquest correu electrònic.",
+      "device": "Dispositiu",
+      "time": "Temps",
+      "not_you": "Si aquest NO va ser tu, protegeix el teu compte immediatament canviant la teva contrasenya."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Resum del viatge",
+      "tag": "VIATGE COMPLET",
+      "total_fare": "Tarifa total",
+      "distance": "Distància",
+      "duration": "Durada",
+      "pickup": "Recollida",
+      "drop": "Baixa",
+      "driver": "Conductor",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Gràcies per muntar amb Strug!",
+      "support": "Si teniu cap problema amb aquest viatge, poseu-vos en contacte amb el servei d'assistència."
+    },
+    "carpool_booking": {
+      "subject": "Cotxe compartit confirmat: el vostre viatge està reservat!",
+      "title": "Reserva confirmada",
+      "tag": "RESERVA DE COUSSORIS",
+      "from": "Des de",
+      "to": "A",
+      "seats": "Seients reservats",
+      "total_cost": "Cost total",
+      "status": "Estat",
+      "thanks": "Gràcies per compartir cotxe amb Strug!",
+      "details_msg": "El vostre seient s'ha reservat correctament. Si us plau, arribeu puntualment al punt de recollida."
+    },
+    "ghost_driver": {
+      "subject": "Actualització del viatge: estem reassignant un nou conductor per a tu",
+      "title": "Trobar un nou controlador",
+      "tag": "ACTUALITZACIÓ DE RIDE",
+      "instruction": "El teu controlador anterior no està disponible o no respon. No et preocupis, busquem automàticament un nou conductor per recollir-te.",
+      "status": "Estat actual: Recerca de conductors...",
+      "hang_tight": "Si us plau, estigueu ben fort! T'avisarem tan aviat com un nou conductor accepti la teva sol·licitud."
+    },
+    "password_changed": {
+      "subject": "Alerta de seguretat de Strug: la vostra contrasenya s'ha canviat",
+      "title": "Contrasenya actualitzada",
+      "tag": "ACTUALITZACIÓ DE SEGURETAT",
+      "instruction": "La contrasenya del vostre compte Strug s'ha canviat recentment. Si heu fet aquest canvi, podeu ignorar aquest correu electrònic amb seguretat.",
+      "warning": "Si NO HAVEU canviat la contrasenya, és possible que el vostre compte estigui en perill. Protegiu el vostre compte immediatament.",
+      "button": "Assegureu el meu compte",
+      "footer": "Equip de seguretat de la plataforma Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: comanda confirmada! #{{order_id}}",
+        "new_order_vendor": "Acció necessària: s'ha rebut una nova comanda! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Rebut de comanda",
+        "tag": "ÈXIT DE LA COMANDA",
+        "vendor_tag": "ACCIÓ REQUERIDA",
+        "order_id": "Identificador de comanda",
+        "item": "ítem de rebut — Item",
+        "qty": "quantitat de rebut — Quantitat",
+        "price": "Preu",
+        "subtotal": "subtotal del rebut — Subtotal",
+        "delivery_fee": "Taxa de lliurament",
+        "service_tax": "Impost de serveis",
+        "platform_fee": "Tarifa de la plataforma",
+        "grand_total": "IMPORT TOTAL",
+        "total": "Import total",
+        "delivery_address": "Adreça de lliurament",
+        "thanks": "Espero que gaudiu del vostre àpat!",
+        "vendor_title": "Nova comanda per a tu",
+        "vendor_msg": "Heu rebut una nova comanda. Si us plau, comença a preparar-lo immediatament."
+      }
+    },
+    "food_status": {
+      "tag": "ACTUALITZACIÓ DE LA COMANDA",
+      "subjects": {
+        "preparing": "Strug Food: la teva comanda s'està preparant! 🍳",
+        "dispatched": "Gran notícia! La teva comanda està en camí 🛵",
+        "delivered": "Gaudeix del teu àpat! Comanda lliurada amb èxit ✅",
+        "cancelled": "Strug Avís: la teva comanda s'ha cancel·lat ❌"
+      },
+      "messages": {
+        "preparing": "El restaurant ha començat a preparar el vostre deliciós àpat. T'avisarem quan surti per lliurar.",
+        "dispatched": "La teva comanda ha estat recollida i el nostre soci de lliurament està de camí cap a la teva ubicació.",
+        "delivered": "La teva comanda ha estat lliurada. Gràcies per triar Strug!",
+        "cancelled": "Lamentem informar-te que la teva comanda ha estat cancel·lada. Si ja heu pagat, en breu s'iniciarà un reemborsament."
+      },
+      "labels": {
+        "order_id": "Identificador de comanda",
+        "current_status": "Estat actual"
+      }
+    },
+    "digital": {
+      "subject": "El vostre contingut digital de Strug està llest!",
+      "title": "Descarrega el teu producte",
+      "instruction": "Gràcies per la teva compra! Ara podeu accedir i descarregar el vostre contingut digital mitjançant el botó següent.",
+      "button": "Descarrega ara"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: el vostre full de pagament d'aquest mes està llest 📄",
+      "title": "Full de pagament mensual",
+      "tag": "RESUM NÒMINA",
+      "net_salary": "Salari net",
+      "epf": "EPF (empleat)",
+      "etf": "nòmina etf — ETF",
+      "ot": "nòmina ot — OT Pay",
+      "bonus": "Bonificació",
+      "status": "Estat de pagament",
+      "thanks": "Si teniu cap pregunta sobre el vostre sou, poseu-vos en contacte amb RRHH."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: la vostra sol·licitud d'excedència ha estat aprovada ✅",
+      "subject_rejected": "Strug HR: Actualització de la vostra sol·licitud d'excedència ❌",
+      "title_approved": "Deixeu aprovat!",
+      "title_rejected": "Deixeu l'actualització",
+      "tag": "SOL·LICITUD DE DIXIDA",
+      "status_approved": "La vostra sol·licitud d'excedència per al període següent s'ha aprovat correctament.",
+      "status_rejected": "Lamentem informar-vos que la vostra sol·licitud d'excedència per al període següent ha estat denegada.",
+      "from_date": "Des de la data",
+      "to_date": "Fins a la data",
+      "reason": "Motiu del rebuig",
+      "thanks": "Per a qualsevol altra pregunta, poseu-vos en contacte amb el vostre departament de recursos humans."
+    },
+    "job_alert": {
+      "subject": "Strug Feines: s'ha rebut una nova sol·licitud per a {{job_title}} 💼",
+      "title": "S'ha presentat un nou candidat",
+      "tag": "SOL·LICITUD DE TREBALL",
+      "instruction": "Un nou candidat ha sol·licitat una de les vostres ofertes de feina. Aquests són els breus detalls:",
+      "job_title": "Funció laboral",
+      "candidate": "Nom del candidat",
+      "view_button": "Veure l'aplicació",
+      "thanks": "Si us plau, inicieu sessió al portal del vostre agent per revisar els detalls complets i el currículum."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: el vostre torn de treball s'ha actualitzat 🕒",
+      "title": "S'ha actualitzat el torn",
+      "tag": "ACTUALITZACIÓ HORARIS",
+      "instruction": "El departament de recursos humans ha actualitzat recentment el vostre horari de treball. Si us plau, comproveu els horaris dels vostres nous torns a continuació.",
+      "start_time": "Comença el torn",
+      "end_time": "Finalitza el torn",
+      "thanks": "Assegureu-vos d'estar presents segons el nou horari. Poseu-vos en contacte amb RRHH per a qualsevol dubte."
+    },
+    "services": {
+      "tag": "ACTUALITZACIÓ DEL SERVEI",
+      "subjects": {
+        "confirmed_customer": "Strug Services: La vostra cita està confirmada! ✅",
+        "new_alert_provider": "Nova cita: tens una nova reserva! 📅",
+        "reminder": "Recordatori: la teva cita és d'aquí a unes hores ⏳",
+        "rental_expiry": "Acció necessària: el vostre lloguer caducarà aviat! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Servei",
+        "provider": "Proveïdor",
+        "customer": "Client",
+        "date": "Data",
+        "time": "Temps",
+        "location": "Ubicació",
+        "expiry": "Data de caducitat"
+      },
+      "messages": {
+        "confirmed": "La vostra cita s'ha programat correctament. Si us plau, sigueu puntuals.",
+        "provider_alert": "Un nou client ha reservat el vostre servei. Aquí teniu els detalls.",
+        "reminder": "Aquest és un recordatori amable de la vostra propera cita amb Strug.",
+        "rental_expiry": "El vostre període de lloguer està a punt d'acabar. Si us plau, retorneu l'article o amplia el període per evitar penalitzacions.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "URGENT: AVÍS DE CADUCITAT",
+        "item_name": "Nom de l'element",
+        "due_date": "Data de venciment",
+        "order_id": "Identificador de comanda",
+        "button": "Ampliar o retornar l'article",
+        "footer": "Eviteu comissions per retard retornant l'article abans de l'hora prevista.",
+        "thanks": "Gràcies per utilitzar Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Gràcies per la teva generosa donació! ❤️",
+        "loan_reminder": "Recordatori de pagament: s'ha de pagar el pagament del vostre préstec 💳"
+      },
+      "donation": {
+        "title": "Donació rebuda",
+        "tag": "RETORN",
+        "msg": "El vostre suport marca una gran diferència! Hem rebut amb èxit la teva aportació al projecte.",
+        "amount": "Import donat",
+        "project": "Projecte"
+      },
+      "loan": {
+        "title": "Reemborsament del préstec",
+        "tag": "PAGAMENT DEVENGAT",
+        "msg": "Aquest és un recordatori que s'acosta la data de devolució del préstec. Assegureu-vos que hi ha prou fons disponibles.",
+        "due_date": "Data de venciment",
+        "amount": "Import fraccionat"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: comanda confirmada #{{order_id}}",
+        "new_order_seller": "Strug Shop: s'ha rebut una nova comanda #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "COMANDA CONFIRMADA",
+        "vendor_tag": "NOVA COMANDA",
+        "title": "La teva comanda està confirmada",
+        "vendor_title": "Tens una nova comanda",
+        "order_id": "Ordre",
+        "product": "Producte",
+        "qty": "Quantitat",
+        "total": "total del rebut — Total",
+        "thanks": "Gràcies per comprar a Strug!",
+        "vendor_msg": "Si us plau, prepareu i envieu aquesta comanda el més aviat possible."
+      },
+      "status": {
+        "tag": "ACTUALITZACIÓ DE LA COMANDA",
+        "order_id": "Identificador de comanda",
+        "tracking": "Número de seguiment",
+        "track_button": "Veure l'ordre",
+        "subjects": {
+          "confirmed": "Strug Shop: la teva comanda està confirmada",
+          "shipped": "Strug Shop: la teva comanda s'ha enviat",
+          "fulfilled": "Strug Shop: la teva comanda s'ha lliurat"
+        },
+        "messages": {
+          "confirmed": "El venedor ha confirmat la vostra comanda i l'està preparant per a l'enviament.",
+          "shipped": "El teu paquet està en camí. Seguiment: {{tracking_number}}",
+          "fulfilled": "La teva comanda ha estat lliurada. Esperem que gaudiu de la vostra compra!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: el vostre progrés d'aprenentatge setmanal és aquí 📚",
+        "unread_chat": "Strug: tens missatges no llegits a la safata d'entrada 💬"
+      },
+      "lms": {
+        "title": "Progrés d'aprenentatge",
+        "tag": "SEGUIR INTELLIGENT",
+        "msg": "Ho estàs fent genial! Aquí teniu un resum de la vostra activitat de flashcard aquesta setmana.",
+        "cards_reviewed": "Targetes revisades",
+        "new_decks": "S'han unit nous decks"
+      },
+      "chat": {
+        "title": "Nous missatges",
+        "tag": "COMUNITAT",
+        "msg": "Fa temps que estàs fora. Els teus amics i membres de l'equip estan intentant contactar amb tu.",
+        "button": "Veure el xat"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/node_modules
+/.npm-cache
+/my-api.txt
+
+# Env / secrets. ALL real env files are gitignored — never commit secrets.
+# Staging/prod env is injected at deploy time from GitHub Actions secrets
+# (ENV_STAGING / ENV_PRODUCTION), written to .env.staging / .env.production in CI.
+# Only .env.example (placeholder template) is tracked.
+!.env.example
+scripts/seed-credentials.json
+faiz/
+# Local scratch docs stay ignored; tracked mail inventory is an exception below
+docs/*
+!docs/mail-gap-matrix.md
+!docs/mail-template-inventory.md
+!docs/mail-smtp-cutover-gate.md
+
+# Markdown — ignore all (CLAUDE.md, plans, PR notes, scratch) EXCEPT READMEs + mail inventory
+*.md
+!README.md
+!**/README.md
+!docs/mail-gap-matrix.md
+!docs/mail-template-inventory.md
+!docs/mail-smtp-cutover-gate.md
+# ...except this vendored upstream README, intentionally not tracked
+infra/mediamtx/README.md
+
+# OS / editor
+.DS_Store
+.idea/
+*.log
+
+# local git worktrees — never commit these as gitlinks
+_worktrees/
+_wt-rbac/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+
+public
+
+config.bat

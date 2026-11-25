@@ -1,0 +1,98 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <!-- Tag & Header -->
+    <tr>
+        <td align="center" style="padding-bottom: 10px; background-color: #0b1120;">
+            <span style="color: #e31e24; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px;">
+                {{#if isVendor}}{{t 'emails.food.receipt.vendor_tag'}}{{else}}{{t 'emails.food.receipt.tag'}}{{/if}}
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -1px;">
+                {{#if isVendor}}{{t 'emails.food.receipt.vendor_title'}}{{else}}{{t 'emails.food.receipt.title'}}{{/if}}
+            </h1>
+            <p style="margin: 5px 0 0 0; color: #64748b; font-size: 14px;">{{t 'emails.food.receipt.order_id'}}: #{{order_id}}</p>
+        </td>
+    </tr>
+
+    <!-- Main Invoice Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 24px; border: 1px solid #1e293b; overflow: hidden;">
+                <tr>
+                    <td style="padding: 25px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <!-- Table Header -->
+                            <tr>
+                                <td style="color: #64748b; font-size: 11px; font-weight: bold; text-transform: uppercase; padding-bottom: 12px;">{{t 'emails.food.receipt.item'}}</td>
+                                <td align="center" style="color: #64748b; font-size: 11px; font-weight: bold; text-transform: uppercase; padding-bottom: 12px;">{{t 'emails.food.receipt.qty'}}</td>
+                                <td align="right" style="color: #64748b; font-size: 11px; font-weight: bold; text-transform: uppercase; padding-bottom: 12px;">{{t 'emails.food.receipt.price'}}</td>
+                            </tr>
+                            
+                            <!-- Dynamic Item Loop -->
+                            {{#each items}}
+                            <tr>
+                                <td style="color: #ffffff; font-size: 14px; padding: 10px 0; border-top: 1px solid #1e293b;">{{this.name}}</td>
+                                <td align="center" style="color: #ffffff; font-size: 14px; padding: 10px 0; border-top: 1px solid #1e293b;">{{this.qty}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 14px; padding: 10px 0; border-top: 1px solid #1e293b;"> {{currency}} {{this.price}}</td>
+                            </tr>
+                            {{/each}}
+
+                            <!-- Billing Breakdown -->
+                            <tr>
+                                <td colspan="2" style="color: #94a3b8; font-size: 13px; padding-top: 20px; border-top: 2px solid #1e293b;">{{t 'emails.food.receipt.subtotal'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 20px; border-top: 2px solid #1e293b;"> {{currency}} {{subtotal}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.food.receipt.delivery_fee'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;"> {{currency}} {{delivery_fee}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.food.receipt.service_tax'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;"> {{currency}} {{gov_tax}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: #94a3b8; font-size: 13px; padding-top: 8px; padding-bottom: 15px;">{{t 'emails.food.receipt.platform_fee'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px; padding-bottom: 15px;"> {{currency}} {{platform_fee}}</td>
+                            </tr>
+
+                            <!-- Grand Total -->
+                            <tr>
+                                <td colspan="2" style="color: #ffffff; font-size: 16px; font-weight: bold; border-top: 1px solid #1e293b; padding-top: 15px;">{{t 'emails.food.receipt.grand_total'}}</td>
+                                <td align="right" style="color: #e31e24; font-size: 20px; font-weight: 800; border-top: 1px solid #1e293b; padding-top: 15px;"> {{currency}} {{total_amount}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Delivery Address Section -->
+    <tr>
+        <td align="left" style="padding: 35px 5px 0 5px; background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <p style="margin: 0; color: #64748b; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                            {{t 'emails.food.receipt.delivery_address'}}
+                        </p>
+                        <p style="margin: 8px 0 0 0; color: #cbd5e1; font-size: 14px; line-height: 1.5;">
+                            {{delivery_location}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Bottom Message -->
+    <tr>
+        <td align="center" style="padding-top: 40px; background-color: #0b1120;">
+            <p style="margin: 0; font-size: 14px; color: #94a3b8; line-height: 1.6;">
+                {{#if isVendor}}{{t 'emails.food.receipt.vendor_msg'}}{{else}}{{t 'emails.food.receipt.thanks'}}{{/if}}
+            </p>
+        </td>
+    </tr>
+</table>

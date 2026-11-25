@@ -1,0 +1,470 @@
+{
+  "errors": {
+    "notFound": "{{resource}} hindi nahanap",
+    "fetchFailed": "Nabigong makuha si {{resource}}",
+    "createFailed": "Nabigong gawin ang {{resource}}",
+    "updateFailed": "Nabigong i-update ang {{resource}}",
+    "deleteFailed": "Nabigong tanggalin ang {{resource}}",
+    "invalidId": "Dapat ay isang numero ang {{field}}",
+    "alreadyExists": "Umiiral na ang {{field}}",
+    "invalidFormat": "Di-wastong {{field}} na format",
+    "internalServer": "Error sa panloob na server",
+    "accessDenied": "Tinanggihan ang pag-access",
+    "invalidToken": "Di-wastong token",
+    "adminRequired": "Kailangan ng access ng admin",
+    "forbidden": "Wala kang pahintulot na gawin ang pagkilos na ito"
+  },
+  "food": {
+    "filterError": "Error sa filter",
+    "orderAlreadyTaken": "Ang order na ito ay kinuha na ng isa pang driver.",
+    "orderAccepted": "Tinanggap ang order para sa paghahatid",
+    "orderDeclined": "Tinanggihan ang order.",
+    "orderRejected": "Tinanggihan ang order."
+  },
+  "user": {
+    "notFound": "Hindi nahanap ang user",
+    "deleted": "Matagumpay na natanggal ang user",
+    "labelStreetRequired": "Kinakailangan ang label at kalye",
+    "addressNotFound": "Hindi nakita ang address",
+    "savedAddressRequired": "Kinakailangan ang address ng paghahatid",
+    "cannotModifyOther": "Hindi maaaring baguhin ang account ng isa pang user",
+    "emailExists": "Umiiral na ang email o referral code"
+  },
+  "auth": {
+    "invalidLoginFormat": "Di-wastong format sa pag-log in",
+    "userNotFound": "Hindi nahanap ang user",
+    "renewSubscription": "Mangyaring i-renew ang iyong subscription",
+    "verifyBefore": "Paki-verify ang iyong {{method}} bago mag-log in.",
+    "noPassword": "Walang password ang account na ito. Subukan ang pag-login sa Google.",
+    "invalidPassword": "Di-wastong password",
+    "teamMemberNotFound": "Hindi nahanap ang miyembro ng koponan",
+    "loginSuccessful": "Matagumpay ang pag-log in",
+    "invalidCredentials": "Di-wastong mga kredensyal",
+    "noRefreshToken": "Walang ibinigay na refresh token",
+    "invalidRefreshToken": "Di-wasto o nag-expire na refresh token",
+    "invalidRefreshTokenPayload": "Di-wastong refresh token payload",
+    "teamMembershipNotFound": "Hindi nakita ang membership ng team",
+    "accessTokenRefreshed": "Na-refresh ang token ng access",
+    "refreshTokenDeleted": "Ang refresh token ay tinanggal",
+    "emailRequired": "Kinakailangan ang email",
+    "passwordAccountExists": "Ang email na ito ay nakarehistro gamit ang password. Mangyaring mag-login nang manu-mano.",
+    "emailRequiredFacebook": "Kinakailangan ang email ngunit hindi ibinigay ng Facebook. Pakitiyak na ang iyong Facebook account ay may na-verify na email.",
+    "authCodeRequired": "Kinakailangan ang auth code",
+    "validEmailRequired": "Kinakailangan ang isang wastong email.",
+    "accountEmailExists": "Mayroon nang account na may ganitong email.",
+    "usernameTaken": "Nakuha na ang username na iyon.",
+    "tooManyOtpRequests": "Masyadong maraming kahilingan sa code. Subukan ulit mamaya.",
+    "failedSendCode": "Nabigong magpadala ng code.",
+    "registerFieldsRequired": "email, pangalan, password, at otp ay kailangan lahat.",
+    "passwordRequirements": "Dapat kasama sa password ang: {{requirements}}.",
+    "noVerificationCode": "Walang nakitang verification code. Mangyaring humiling ng bago.",
+    "verificationExpired": "Nag-expire na ang verification code. Mangyaring humiling ng bago.",
+    "tooManyOtpAttempts": "Masyadong maraming maling pagtatangka. Mangyaring humiling ng bagong verification code.",
+    "invalidVerificationCode": "Di-wastong verification code.",
+    "verificationFailed": "Nabigo ang pag-verify.",
+    "tooManyRequests": "Masyadong maraming kahilingan. Pakisubukang muli mamaya.",
+    "resetFieldsRequired": "email, newPassword, at token ay kinakailangan.",
+    "invalidResetLink": "Di-wasto o nag-expire na link sa pag-reset.",
+    "accountLocked": "Pansamantalang naka-lock ang account. Subukan ulit mamaya.",
+    "verificationCodeRequired": "Kinakailangan ang verification code.",
+    "invalidSession": "Di-wastong session",
+    "passwordFieldsRequired": "Kinakailangan ang currentPassword at newPassword"
+  },
+  "success": {
+    "deleted": "Matagumpay na natanggal ang {{resource}}",
+    "created": "Matagumpay na nagawa ang {{resource}}",
+    "updated": "Matagumpay na na-update ang {{resource}}"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Babala sa Mababang Balanse ng Ad Account",
+      "spend_alert_subject": "Alerto sa Strug Ads: {{percentage}}% Naabot ng Pang-araw-araw na Badyet para sa Kampanya #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ALERTO NG AD ACCOUNT",
+        "title": "Babala sa Mababang Balanse",
+        "instruction": "Kamusta {{name}}, ubos na ang balanse ng iyong Ads Wallet. Upang maiwasang awtomatikong ma-pause ang mga aktibong kampanya, mangyaring i-top up ang balanse ng iyong account.",
+        "balance_label": "Kasalukuyang Balanse:",
+        "button": "button na low_balance — Top Up Ad Wallet"
+      },
+      "spend_alert": {
+        "tag": "NAABOT ANG BUDGET MILESTONE",
+        "title": "{{percentage}}% Pang-araw-araw na Badyet na Ginastos",
+        "instruction": "Kamusta {{name}}, ito ay isang awtomatikong update sa katayuan para sa iyong aktibong hanay ng ad. Naabot ng iyong kampanya ang pang-araw-araw na limitasyon sa paggastos.",
+        "campaign_label": "— Campaign ID:",
+        "button": "Pamahalaan ang Kampanya"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: Narito ang iyong code",
+      "welcome": "Maligayang pagdating sa Strug Family!",
+      "password_reset": "Strug: I-reset ang iyong password",
+      "login_alert": "Strug Security Alert: May nakitang bagong login",
+      "ride_receipt": "Strug Ride Summary: Salamat sa pagsakay!"
+    },
+    "otp": {
+      "tag": "PAGSUSURI NG SEGURIDAD",
+      "title": "I-verify ang Account",
+      "instruction": "Gamitin ang secure na code sa ibaba upang kumpletuhin ang iyong pagpaparehistro. May bisa sa loob ng 10 minuto.",
+      "ignore": "Kung hindi mo ito hiniling, mangyaring huwag pansinin ang email na ito."
+    },
+    "common": {
+      "tagline": "Ang Iyong Trabaho • Ang Iyong Oras • Ang Iyong Pera",
+      "rights_reserved": "Lahat ng Karapatan ay Nakalaan",
+      "need_help": "Kailangan ng tulong? Tumugon sa email na ito o bisitahin ang aming support center."
+    },
+    "password_reset": {
+      "title": "I-reset ang Password",
+      "instruction": "Isang kahilingan ang ginawa upang i-reset ang password ng iyong Strug account. I-click ang button sa ibaba para pumili ng bago.",
+      "button": "I-reset ang Aking Password",
+      "ignore": "Kung hindi mo ito hiniling, maaari mong ligtas na balewalain ang email na ito. Mag-e-expire ang link sa loob ng 1 oras.",
+      "tag": "SEGURIDAD"
+    },
+    "login_alert": {
+      "title": "Natukoy ang Bagong Login",
+      "instruction": "May napansin kaming bagong login sa iyong Strug account. Kung ikaw ito, maaari mong balewalain ang email na ito.",
+      "device": "— Device",
+      "time": "Oras",
+      "not_you": "Kung HINDI ito ikaw, mangyaring i-secure kaagad ang iyong account sa pamamagitan ng pagpapalit ng iyong password.",
+      "tag": "ALERTO SA SEGURIDAD"
+    },
+    "ride_receipt": {
+      "title": "Buod ng Ride",
+      "tag": "KUMPLETO NA ANG Biyahe",
+      "total_fare": "Kabuuang Pamasahe",
+      "distance": "Distansya",
+      "duration": "Tagal",
+      "pickup": "— Pickup",
+      "drop": "— Drop-off",
+      "driver": "— Driver",
+      "thanks": "Salamat sa pagsakay sa Strug!",
+      "support": "Kung mayroon kang anumang mga isyu sa biyaheng ito, makipag-ugnayan sa suporta.",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed"
+    },
+    "carpool_booking": {
+      "subject": "Kinumpirma ng Carpool: Naka-book na ang iyong biyahe!",
+      "title": "Nakumpirma ang Pagbu-book",
+      "tag": "— CARPOOL RESERVED",
+      "from": "Mula sa",
+      "to": "Upang",
+      "seats": "Naka-book na ang mga upuan",
+      "total_cost": "Kabuuang Gastos",
+      "status": "Katayuan",
+      "thanks": "Salamat sa pag-carpool sa Strug!",
+      "details_msg": "Ang iyong upuan ay matagumpay na naireserba. Mangyaring pumunta sa pickup point sa oras."
+    },
+    "ghost_driver": {
+      "subject": "Update sa Pagsakay: Nagtatalaga kami muli ng bagong driver para sa iyo",
+      "title": "Paghahanap ng Bagong Driver",
+      "tag": "UPDATE sa pagsakay",
+      "instruction": "Ang iyong dating driver ay hindi available o hindi tumutugon. Huwag mag-alala, awtomatiko kaming naghahanap ng bagong driver na susundo sa iyo.",
+      "status": "Kasalukuyang Katayuan: Muling naghahanap ng mga driver...",
+      "hang_tight": "Please hang tight! Aabisuhan ka namin sa sandaling tanggapin ng bagong driver ang iyong kahilingan."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Nabago ang iyong password",
+      "title": "Na-update ang Password",
+      "tag": "UPDATE SA SEGURIDAD",
+      "instruction": "Ang password ng iyong Strug account ay binago kamakailan. Kung ginawa mo ang pagbabagong ito, maaari mong ligtas na balewalain ang email na ito.",
+      "warning": "Kung HINDI mo binago ang iyong password, maaaring makompromiso ang iyong account. Mangyaring i-secure kaagad ang iyong account.",
+      "button": "I-secure ang Aking Account",
+      "footer": "— Strug Platform Security Team"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Nakumpirma ang Order! #{{order_id}}",
+        "new_order_vendor": "Kinakailangan ng Pagkilos: Bagong Order na Natanggap! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Resibo ng Order",
+        "tag": "TAGUMPAY NG ORDER",
+        "item": "item",
+        "qty": "qty ng resibo — Qty",
+        "price": "Presyo",
+        "total": "Kabuuang Halaga",
+        "delivery_address": "Address ng Paghahatid",
+        "thanks": "Sana ay masiyahan ka sa iyong pagkain!",
+        "vendor_title": "Bagong Order para sa Iyo",
+        "vendor_msg": "Nakatanggap ka ng bagong order. Mangyaring simulan ang paghahanda nito kaagad.",
+        "vendor_tag": "KINAKAILANGAN ANG PAGKILOS",
+        "order_id": "resibo order_id — Order ID",
+        "subtotal": "subtotal ng resibo — Subtotal",
+        "delivery_fee": "Bayarin sa Paghahatid",
+        "service_tax": "Buwis sa Serbisyo",
+        "platform_fee": "Bayad sa Platform",
+        "grand_total": "KABUUANG HALAGA"
+      }
+    },
+    "food_status": {
+      "subjects": {
+        "preparing": "Strug Food: Inihahanda na ang iyong order! 🍳",
+        "dispatched": "Magandang balita! On the way na ang order mo 🛵",
+        "delivered": "Masiyahan sa iyong pagkain! Matagumpay na naihatid ang order ✅",
+        "cancelled": "Strug Notice: Nakansela ang iyong order ❌"
+      },
+      "messages": {
+        "preparing": "Nagsimula nang maghanda ang restaurant ng iyong masarap na pagkain. Ipapaalam namin sa iyo kapag wala na ito para sa paghahatid.",
+        "dispatched": "Ang iyong order ay kinuha at ang aming kasosyo sa paghahatid ay papunta sa iyong lokasyon.",
+        "delivered": "Naibigay na ang iyong order. Salamat sa pagpili sa Strug!",
+        "cancelled": "Ikinalulungkot naming ipaalam sa iyo na nakansela ang iyong order. Kung nagbayad ka na, sisimulan ang isang refund sa ilang sandali."
+      },
+      "labels": {
+        "order_id": "mga label order_id — Order ID",
+        "current_status": "Kasalukuyang Katayuan"
+      },
+      "tag": "UPDATE NG ORDER"
+    },
+    "digital": {
+      "subject": "Handa na ang iyong Strug Digital Content!",
+      "title": "I-download ang Iyong Produkto",
+      "instruction": "Salamat sa iyong pagbili! Maaari mo na ngayong i-access at i-download ang iyong digital na nilalaman gamit ang button sa ibaba.",
+      "button": "I-download Ngayon"
+    },
+    "payroll": {
+      "subject": "Strug HR: Handa na ang Payslip mo para sa buwang ito 📄",
+      "title": "Buwanang Payslip",
+      "tag": "BUOD NG PAYROLL",
+      "net_salary": "Netong suweldo",
+      "epf": "EPF (Empleyado)",
+      "etf": "— ETF",
+      "ot": "— OT Pay",
+      "bonus": "— Bonus",
+      "status": "Katayuan ng Pagbabayad",
+      "thanks": "Kung mayroon kang anumang mga katanungan tungkol sa iyong suweldo, mangyaring makipag-ugnayan sa HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Ang iyong Kahilingan sa Pag-iwan ay Naaprubahan ✅",
+      "subject_rejected": "Strug HR: Update sa iyong Kahilingan sa Pag-iwan ❌",
+      "title_approved": "Naaprubahan ang Umalis!",
+      "title_rejected": "Mag-iwan ng Update",
+      "tag": "IWAN ANG KAHILINGAN",
+      "status_approved": "Ang iyong kahilingan sa bakasyon para sa susunod na panahon ay matagumpay na naaprubahan.",
+      "status_rejected": "Ikinalulungkot naming ipaalam sa iyo na ang iyong kahilingan sa leave para sa susunod na panahon ay tinanggihan.",
+      "from_date": "Mula sa Petsa",
+      "to_date": "Upang Date",
+      "reason": "Dahilan ng Pagtanggi",
+      "thanks": "Para sa anumang karagdagang katanungan, mangyaring makipag-ugnayan sa iyong departamento ng HR."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Bagong Aplikasyon na Natanggap para sa {{job_title}} 💼",
+      "title": "Bagong Kandidato Nag-apply",
+      "tag": "APLIKASYON NG TRABAHO",
+      "instruction": "Isang bagong kandidato ang nag-apply para sa isa sa iyong mga listahan ng trabaho. Narito ang maikling detalye:",
+      "job_title": "Tungkulin sa Trabaho",
+      "candidate": "Pangalan ng Kandidato",
+      "view_button": "Tingnan ang Application",
+      "thanks": "Mangyaring mag-log in sa iyong portal ng ahente upang suriin ang buong detalye at CV."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Na-update na ang iyong Work Shift 🕒",
+      "title": "Na-update ang Shift",
+      "tag": "PAG-UPDATE NG SCHEDULE",
+      "instruction": "Ang iyong iskedyul ng trabaho ay na-update kamakailan ng departamento ng HR. Pakisuri ang iyong mga bagong timing ng shift sa ibaba.",
+      "start_time": "Magsisimula ang Shift",
+      "end_time": "Nagtatapos ang Shift",
+      "thanks": "Pakitiyak na naroroon ka ayon sa bagong iskedyul. Makipag-ugnayan sa HR para sa anumang alalahanin."
+    },
+    "services": {
+      "subjects": {
+        "confirmed_customer": "Strug Services: Nakumpirma na ang iyong appointment! ✅",
+        "new_alert_provider": "Bagong Appointment: May bago kang booking! 📅",
+        "reminder": "Paalala: Ang iyong appointment ay sa loob ng ilang oras ⏳",
+        "rental_expiry": "Kinakailangan ng Pagkilos: Malapit nang mag-expire ang iyong rental! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Serbisyo",
+        "provider": "tagapagbigay ng label — Provider",
+        "customer": "nag-label ng customer — Customer",
+        "date": "Petsa",
+        "time": "Oras",
+        "location": "Lokasyon",
+        "expiry": "Petsa ng Pag-expire"
+      },
+      "messages": {
+        "confirmed": "Ang iyong appointment ay matagumpay na naiskedyul. Mangyaring maging nasa oras.",
+        "provider_alert": "Isang bagong customer ang nag-book ng iyong serbisyo. Narito ang mga detalye.",
+        "reminder": "Isa itong magiliw na paalala ng iyong paparating na appointment sa Strug.",
+        "rental_expiry": "Malapit nang matapos ang panahon ng iyong pagrenta. Mangyaring ibalik ang item o pahabain ang panahon upang maiwasan ang mga parusa.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "tag": "UPDATE NG SERBISYO",
+      "rental": {
+        "tag": "— URGENT: EXPIRY NOTICE",
+        "item_name": "Pangalan ng Item",
+        "due_date": "Takdang Petsa",
+        "order_id": "— Order ID",
+        "button": "Palawakin o Ibalik ang Item",
+        "footer": "Iwasan ang mga late fee sa pamamagitan ng pagbabalik ng item bago ang takdang oras.",
+        "thanks": "Salamat sa paggamit ng Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Salamat sa iyong mapagbigay na donasyon! ❤️",
+        "loan_reminder": "Paalala sa Pagbabayad: Ang iyong installment sa utang ay dapat bayaran 💳"
+      },
+      "donation": {
+        "title": "Natanggap ang Donasyon",
+        "tag": "PAGBABALIK",
+        "msg": "Malaki ang nagagawa ng iyong suporta! Matagumpay naming natanggap ang iyong kontribusyon para sa proyekto.",
+        "amount": "Halaga ng Donasyon",
+        "project": "Proyekto"
+      },
+      "loan": {
+        "title": "Pagbabayad ng Loan",
+        "tag": "BAYAD NA",
+        "msg": "Ito ay isang paalala na nalalapit na ang petsa ng pagbabayad ng iyong utang. Pakitiyak na may sapat na pondo.",
+        "due_date": "Takdang Petsa",
+        "amount": "Halaga ng Pag-install"
+      }
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Narito na ang iyong lingguhang pag-unlad sa pag-aaral 📚",
+        "unread_chat": "Strug: Mayroon kang mga hindi pa nababasang mensahe sa iyong inbox 💬"
+      },
+      "lms": {
+        "title": "Pag-unlad ng Pagkatuto",
+        "tag": "MAnatiling MATALINO",
+        "msg": "Ang galing mo! Narito ang isang buod ng iyong aktibidad sa flashcard ngayong linggo.",
+        "cards_reviewed": "Mga Card na Sinuri",
+        "new_decks": "Bagong Deck ang sumali"
+      },
+      "chat": {
+        "title": "Mga Bagong Mensahe",
+        "tag": "KOMUNIDAD",
+        "msg": "Kanina ka pa wala. Sinusubukan ng iyong mga kaibigan at miyembro ng koponan na makipag-ugnayan sa iyo.",
+        "button": "Tingnan ang Chat"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Nakumpirma ang order #{{order_id}}",
+        "new_order_seller": "Strug Shop: Natanggap ang bagong order #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "KUMPIRMADO ANG ORDER",
+        "vendor_tag": "BAGONG ORDER",
+        "title": "Nakumpirma ang iyong order",
+        "vendor_title": "May bago kang order",
+        "order_id": "Umorder",
+        "product": "produkto",
+        "qty": "Dami",
+        "total": "Kabuuan",
+        "thanks": "Salamat sa pamimili sa Strug!",
+        "vendor_msg": "Mangyaring ihanda at ipadala ang order na ito sa lalong madaling panahon."
+      },
+      "status": {
+        "tag": "UPDATE NG ORDER",
+        "order_id": "— Order ID",
+        "tracking": "Numero ng pagsubaybay",
+        "track_button": "Tingnan ang order",
+        "subjects": {
+          "confirmed": "Strug Shop: Nakumpirma ang iyong order",
+          "shipped": "Strug Shop: Naipadala na ang iyong order",
+          "fulfilled": "Strug Shop: Naihatid na ang iyong order"
+        },
+        "messages": {
+          "confirmed": "Kinumpirma ng nagbebenta ang iyong order at inihahanda ito para sa pagpapadala.",
+          "shipped": "Paparating na ang iyong package. Pagsubaybay: {{tracking_number}}",
+          "fulfilled": "Naihatid na ang iyong order. Umaasa kaming nasiyahan ka sa iyong pagbili!"
+        }
+      }
+    },
+    "welcome": {
+      "tag": "WELCOME SA STRUG",
+      "title": "Kumusta, {{name}}!",
+      "instruction": "Na-verify na ang iyong account. Bahagi ka na ngayon ng isang platform na ginawa para pasimplehin ang iyong trabaho, oras, at pera.",
+      "button": "I-explore ang Dashboard"
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    }
+  }
+}

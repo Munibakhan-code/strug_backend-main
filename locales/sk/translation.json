@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} sa nenašlo",
+    "fetchFailed": "Nepodarilo sa načítať {{resource}}",
+    "createFailed": "Nepodarilo sa vytvoriť {{resource}}",
+    "updateFailed": "Aktualizácia {{resource}} zlyhala",
+    "deleteFailed": "Nepodarilo sa odstrániť {{resource}}",
+    "invalidId": "{{field}} musí byť číslo",
+    "alreadyExists": "{{field}} už existuje",
+    "invalidFormat": "Neplatný formát {{field}}",
+    "internalServer": "Interná chyba servera",
+    "accessDenied": "Prístup odmietnutý",
+    "invalidToken": "Neplatný token",
+    "adminRequired": "Vyžaduje sa prístup správcu",
+    "forbidden": "Na vykonanie tejto akcie nemáte povolenie"
+  },
+  "food": {
+    "filterError": "Chyba filtra",
+    "orderAlreadyTaken": "Túto objednávku už prevzal iný vodič.",
+    "orderAccepted": "Objednávka prijatá na doručenie",
+    "orderDeclined": "Objednávka odmietnutá.",
+    "orderRejected": "Objednávka odmietnutá."
+  },
+  "user": {
+    "notFound": "Používateľ sa nenašiel",
+    "deleted": "Používateľ bol úspešne odstránený",
+    "labelStreetRequired": "Štítok a ulica sú povinné",
+    "addressNotFound": "Adresa sa nenašla",
+    "savedAddressRequired": "Vyžaduje sa adresa doručenia",
+    "cannotModifyOther": "Nie je možné upraviť účet iného používateľa",
+    "emailExists": "E-mail alebo odporúčací kód už existuje"
+  },
+  "auth": {
+    "invalidLoginFormat": "Neplatný prihlasovací formát",
+    "userNotFound": "Používateľ sa nenašiel",
+    "renewSubscription": "Obnovte si predplatné",
+    "verifyBefore": "Pred prihlásením overte svoje {{method}}.",
+    "noPassword": "Tento účet nemá žiadne heslo. Skúste Google prihlásiť.",
+    "invalidPassword": "Neplatné heslo",
+    "teamMemberNotFound": "Člen tímu sa nenašiel",
+    "loginSuccessful": "Prihlásenie bolo úspešné",
+    "invalidCredentials": "Neplatné poverenia",
+    "noRefreshToken": "Nebol poskytnutý žiadny obnovovací token",
+    "invalidRefreshToken": "Neplatný obnovovací token alebo jeho platnosť vypršala",
+    "invalidRefreshTokenPayload": "Neplatné zaťaženie tokenu obnovenia",
+    "teamMembershipNotFound": "Členstvo v tíme sa nenašlo",
+    "accessTokenRefreshed": "Prístupový token bol obnovený",
+    "refreshTokenDeleted": "Obnovovací token bol odstránený",
+    "emailRequired": "Vyžaduje sa e-mail",
+    "passwordAccountExists": "Tento email je zaregistrovaný pomocou hesla. Prosím prihláste sa manuálne.",
+    "emailRequiredFacebook": "E-mail je povinný, ale Facebook ho neposkytuje. Uistite sa, že váš účet Facebook má overený e-mail.",
+    "authCodeRequired": "Vyžaduje sa autorizačný kód",
+    "validEmailRequired": "Vyžaduje sa platný e-mail.",
+    "accountEmailExists": "Účet s týmto e-mailom už existuje.",
+    "usernameTaken": "Toto používateľské meno je už obsadené.",
+    "tooManyOtpRequests": "Príliš veľa žiadostí o kód. Skúste to znova neskôr.",
+    "failedSendCode": "Odoslanie kódu zlyhalo.",
+    "registerFieldsRequired": "e-mail, meno, heslo a otp sú povinné.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Heslo musí obsahovať: {{requirements}}.",
+    "noVerificationCode": "Nenašiel sa žiadny overovací kód. Požiadajte o nový.",
+    "verificationExpired": "Platnosť overovacieho kódu vypršala. Požiadajte o nový.",
+    "tooManyOtpAttempts": "Príliš veľa nesprávnych pokusov. Požiadajte o nový overovací kód.",
+    "invalidVerificationCode": "Neplatný overovací kód.",
+    "verificationFailed": "Overenie zlyhalo.",
+    "tooManyRequests": "Príliš veľa žiadostí. Skúste to znova neskôr.",
+    "resetFieldsRequired": "vyžaduje sa e-mail, nové heslo a token.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Neplatný alebo vypršaný odkaz na obnovenie.",
+    "accountLocked": "Účet je dočasne zablokovaný. Skúste to znova neskôr.",
+    "verificationCodeRequired": "Vyžaduje sa overovací kód.",
+    "invalidSession": "Neplatná relácia",
+    "passwordFieldsRequired": "aktuálne heslo a nové heslo sú povinné"
+  },
+  "success": {
+    "deleted": "{{resource}} bolo úspešne odstránené",
+    "created": "{{resource}} úspešne vytvorené",
+    "updated": "{{resource}} úspešne aktualizované"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Upozornenie na nízky zostatok reklamného účtu",
+      "spend_alert_subject": "Strug Upozornenie na reklamy: {{percentage}}% denný rozpočet dosiahnutý pre kampaň č.{{campaign_id}}",
+      "low_balance": {
+        "tag": "UPOZORNENIE NA REKLAMNÝ ÚČET",
+        "title": "Upozornenie na nízky zostatok",
+        "instruction": "Dobrý deň, {{name}}, váš zostatok v Peňaženke reklám je nízky. Ak chcete zabrániť automatickému pozastaveniu aktívnych kampaní, doplňte zostatok na účte.",
+        "balance_label": "Aktuálny zostatok:",
+        "button": "Dobitie reklamnej peňaženky"
+      },
+      "spend_alert": {
+        "tag": "DOSIAHNUTÝ ROZPOČTOVÝ MÍLNÍK",
+        "title": "Výdavky denného rozpočtu {{percentage}}%.",
+        "instruction": "Dobrý deň, {{name}}, toto je automatická aktualizácia stavu vašej aktívnej sady reklám. Vaša kampaň dosiahla denný limit výdavkov.",
+        "campaign_label": "ID kampane:",
+        "button": "Spravovať kampaň"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: Váš kód je tu",
+      "welcome": "Vitajte v rodine Strugovcov!",
+      "password_reset": "Strug: Obnovte svoje heslo",
+      "login_alert": "Strug Security Alert: Zistilo sa nové prihlásenie",
+      "ride_receipt": "Strug Ride Zhrnutie: Ďakujeme za jazdu!"
+    },
+    "otp": {
+      "tag": "BEZPEČNOSTNÁ KONTROLA",
+      "title": "Overiť účet",
+      "instruction": "Na dokončenie registrácie použite bezpečnostný kód uvedený nižšie. Platí 10 minút.",
+      "ignore": "Ak ste o to nepožiadali, ignorujte tento e-mail."
+    },
+    "common": {
+      "tagline": "Vaša práca • Váš čas • Vaše peniaze",
+      "rights_reserved": "Všetky práva vyhradené",
+      "need_help": "Potrebujete pomoc? Odpovedzte na tento e-mail alebo navštívte naše centrum podpory."
+    },
+    "welcome": {
+      "tag": "VITAJTE V STRUG",
+      "title": "Dobrý deň, {{name}}!",
+      "instruction": "Váš účet je overený. Teraz ste súčasťou platformy vytvorenej tak, aby vám zjednodušila prácu, čas a peniaze.",
+      "button": "Preskúmajte informačný panel"
+    },
+    "password_reset": {
+      "tag": "BEZPEČNOSŤ",
+      "title": "Obnoviť heslo",
+      "instruction": "Bola podaná žiadosť o obnovenie hesla účtu Strug. Kliknutím na tlačidlo nižšie vyberte nový.",
+      "button": "Obnoviť moje heslo",
+      "ignore": "Ak ste o to nepožiadali, môžete tento e-mail pokojne ignorovať. Platnosť odkazu vyprší o 1 hodinu."
+    },
+    "login_alert": {
+      "tag": "BEZPEČNOSTNÁ VÝSTRAHA",
+      "title": "Zistilo sa nové prihlásenie",
+      "instruction": "Všimli sme si nové prihlásenie do vášho účtu Strug. Ak ste to boli vy, môžete tento e-mail ignorovať.",
+      "device": "Zariadenie",
+      "time": "Čas",
+      "not_you": "Ak ste to NEBYLI VY, okamžite si zabezpečte svoj účet zmenou hesla."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Súhrn jazdy",
+      "tag": "VÝLET UKONČENÝ",
+      "total_fare": "Celkové cestovné",
+      "distance": "Vzdialenosť",
+      "duration": "Trvanie",
+      "pickup": "Vyzdvihnutie",
+      "drop": "— Drop-off",
+      "driver": "Vodič",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Ďakujeme, že jazdíte so Strugom!",
+      "support": "Ak máte s touto jazdou nejaké problémy, kontaktujte podporu."
+    },
+    "carpool_booking": {
+      "subject": "Spolujazda potvrdená: Vaša jazda je rezervovaná!",
+      "title": "Rezervácia potvrdená",
+      "tag": "KARIÉRA VYHRADENÁ",
+      "from": "Od",
+      "to": "Komu",
+      "seats": "Obsadené miesta",
+      "total_cost": "Celkové náklady",
+      "status": "Stav",
+      "thanks": "Ďakujeme vám za spolujazdu so Strugom!",
+      "details_msg": "Vaše miesto bolo úspešne rezervované. Buďte prosím na mieste vyzdvihnutia včas."
+    },
+    "ghost_driver": {
+      "subject": "Aktualizácia jazdy: Priraďujeme vám nového vodiča",
+      "title": "Hľadanie nového vodiča",
+      "tag": "AKTUALIZÁCIA JAZDY",
+      "instruction": "Váš predchádzajúci ovládač je nedostupný alebo neodpovedá. Nebojte sa, automaticky hľadáme nového šoféra, ktorý vás vyzdvihne.",
+      "status": "Aktuálny stav: Opätovne sa hľadajú ovládače...",
+      "hang_tight": "Držte sa prosím! Hneď ako nový vodič prijme vašu požiadavku, upozorníme vás."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Vaše heslo bolo zmenené",
+      "title": "Heslo aktualizované",
+      "tag": "AKTUALIZÁCIA ZABEZPEČENIA",
+      "instruction": "Heslo vášho účtu Strug bolo nedávno zmenené. Ak ste túto zmenu vykonali vy, môžete tento e-mail pokojne ignorovať.",
+      "warning": "Ak ste NEZMENILI svoje heslo, váš účet môže byť napadnutý. Okamžite si zabezpečte svoj účet.",
+      "button": "Zabezpečte môj účet",
+      "footer": "Bezpečnostný tím platformy Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Objednávka potvrdená! #{{order_id}}",
+        "new_order_vendor": "Vyžaduje sa akcia: Prijatá nová objednávka! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Potvrdenie objednávky",
+        "tag": "OBJEDNÁVKA ÚSPEŠNÁ",
+        "vendor_tag": "VYŽADUJE SA AKCIA",
+        "order_id": "ID objednávky",
+        "item": "Položka",
+        "qty": "Množ",
+        "price": "Cena",
+        "subtotal": "Medzisúčet",
+        "delivery_fee": "Poplatok za doručenie",
+        "service_tax": "Servisná daň",
+        "platform_fee": "Poplatok za platformu",
+        "grand_total": "CELKOVÁ SUMA",
+        "total": "Celková suma",
+        "delivery_address": "Dodacia adresa",
+        "thanks": "Dúfam, že si pochutnáte na jedle!",
+        "vendor_title": "Nová objednávka pre vás",
+        "vendor_msg": "Dostali ste novú objednávku. Začnite ho prosím ihneď pripravovať."
+      }
+    },
+    "food_status": {
+      "tag": "AKTUALIZÁCIA OBJEDNÁVKY",
+      "subjects": {
+        "preparing": "Strug Food: Vaša objednávka sa pripravuje! 🍳",
+        "dispatched": "Skvelá správa! Vaša objednávka je na ceste 🛵",
+        "delivered": "Vychutnajte si jedlo! Objednávka úspešne doručená ✅",
+        "cancelled": "Strug Upozornenie: Vaša objednávka bola zrušená ❌"
+      },
+      "messages": {
+        "preparing": "Reštaurácia začala pripravovať vaše chutné jedlo. Dáme vám vedieť, keď bude doručená.",
+        "dispatched": "Vaša objednávka bola vyzdvihnutá a náš doručovací partner je na ceste k vám.",
+        "delivered": "Vaša objednávka bola odovzdaná. Ďakujeme, že ste si vybrali Strug!",
+        "cancelled": "S ľútosťou Vám oznamujeme, že Vaša objednávka bola zrušená. Ak ste už zaplatili, čoskoro sa začne vrátenie peňazí."
+      },
+      "labels": {
+        "order_id": "ID objednávky",
+        "current_status": "Aktuálny stav"
+      }
+    },
+    "digital": {
+      "subject": "Váš digitálny obsah Strug je pripravený!",
+      "title": "Stiahnite si svoj produkt",
+      "instruction": "Ďakujeme za váš nákup! Teraz môžete pristupovať k svojmu digitálnemu obsahu a sťahovať ho pomocou tlačidla nižšie.",
+      "button": "Stiahnuť teraz"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Vaša výplatná páska na tento mesiac je pripravená 📄",
+      "title": "Mesačná výplatná páska",
+      "tag": "PREHĽAD MZD",
+      "net_salary": "Čistá mzda",
+      "epf": "EPF (zamestnanec)",
+      "etf": "mzdy etf — ETF",
+      "ot": "Platba OT",
+      "bonus": "mzdový bonus — Bonus",
+      "status": "Stav platby",
+      "thanks": "Ak máte akékoľvek otázky týkajúce sa vášho platu, kontaktujte HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Vaša žiadosť o dovolenku bola schválená ✅",
+      "subject_rejected": "Strug HR: Aktualizujte svoju žiadosť o dovolenku ❌",
+      "title_approved": "Nechajte schválené!",
+      "title_rejected": "Nechajte Aktualizovať",
+      "tag": "ZANECHAŤ ŽIADOSŤ",
+      "status_approved": "Vaša žiadosť o dovolenku na nasledujúce obdobie bola úspešne schválená.",
+      "status_rejected": "S ľútosťou vám oznamujeme, že vaša žiadosť o dovolenku na nasledujúce obdobie bola zamietnutá.",
+      "from_date": "Od dátumu",
+      "to_date": "K dnešnému dňu",
+      "reason": "Dôvod odmietnutia",
+      "thanks": "V prípade ďalších otázok sa obráťte na svoje HR oddelenie."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Nová žiadosť prijatá za {{job_title}} 💼",
+      "title": "Prihlásil sa nový kandidát",
+      "tag": "PRACOVNÁ APLIKÁCIA",
+      "instruction": "Nový kandidát sa prihlásil na jednu z vašich pracovných ponúk. Tu sú stručné podrobnosti:",
+      "job_title": "Pracovná rola",
+      "candidate": "Meno kandidáta",
+      "view_button": "Zobraziť aplikáciu",
+      "thanks": "Prihláste sa na portál svojho agenta a pozrite si všetky podrobnosti a životopis."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Vaša pracovná zmena bola aktualizovaná 🕒",
+      "title": "Shift Aktualizované",
+      "tag": "AKTUALIZÁCIA ROZVRHU",
+      "instruction": "Váš pracovný plán bol nedávno aktualizovaný oddelením ľudských zdrojov. Nižšie skontrolujte svoje nové časy zmien.",
+      "start_time": "Spustí sa Shift",
+      "end_time": "— Shift Ends",
+      "thanks": "Uistite sa, že ste prítomní podľa nového rozvrhu. V prípade akýchkoľvek nejasností kontaktujte HR."
+    },
+    "services": {
+      "tag": "AKTUALIZÁCIA SLUŽBY",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Váš termín je potvrdený! ✅",
+        "new_alert_provider": "Nový termín: Máte novú rezerváciu! 📅",
+        "reminder": "Pripomienka: Vaše stretnutie je o pár hodín ⏳",
+        "rental_expiry": "Vyžaduje sa akcia: Platnosť vašej výpožičky čoskoro vyprší! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "servis",
+        "provider": "Poskytovateľ",
+        "customer": "Zákazník",
+        "date": "Dátum",
+        "time": "Čas",
+        "location": "Poloha",
+        "expiry": "Dátum vypršania platnosti"
+      },
+      "messages": {
+        "confirmed": "Vaše stretnutie bolo úspešne naplánované. Buďte prosím včas.",
+        "provider_alert": "Vašu službu si zarezervoval nový zákazník. Tu sú podrobnosti.",
+        "reminder": "Toto je priateľská pripomienka vášho nadchádzajúceho stretnutia so Strugom.",
+        "rental_expiry": "Vaša doba prenájmu sa čoskoro skončí. Vráťte tovar alebo predĺžte lehotu, aby ste sa vyhli sankciám.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "NALIEHAVÉ: OZNÁMENIE O UPLYNUTÍ PLATNOSTI",
+        "item_name": "Názov položky",
+        "due_date": "Dátum splatnosti",
+        "order_id": "ID objednávky",
+        "button": "Predĺžiť alebo vrátiť položku",
+        "footer": "Vyhnite sa poplatkom z omeškania vrátením položky pred stanoveným termínom.",
+        "thanks": "Ďakujeme, že používate Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Ďakujeme za váš štedrý dar! ❤️",
+        "loan_reminder": "Pripomienka platby: Vaša splátka úveru je splatná 💳"
+      },
+      "donation": {
+        "title": "Prijatý dar",
+        "tag": "DÁVANIE SPÄŤ",
+        "msg": "Vaša podpora je obrovský rozdiel! Úspešne sme prijali váš príspevok na projekt.",
+        "amount": "Darovaná suma",
+        "project": "Projekt"
+      },
+      "loan": {
+        "title": "Splácanie pôžičky",
+        "tag": "SPLATNÁ PLATBA",
+        "msg": "Toto je pripomienka, že sa blíži dátum splatenia vášho úveru. Uistite sa, že je k dispozícii dostatok finančných prostriedkov.",
+        "due_date": "Dátum splatnosti",
+        "amount": "Výška splátky"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Objednávka potvrdená #{{order_id}}",
+        "new_order_seller": "Strug Shop: Nová objednávka prijatá #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "OBJEDNÁVKA POTVRDENÁ",
+        "vendor_tag": "NOVÁ OBJEDNÁVKA",
+        "title": "Vaša objednávka je potvrdená",
+        "vendor_title": "Máte novú objednávku",
+        "order_id": "Objednať",
+        "product": "Produkt",
+        "qty": "Množstvo",
+        "total": "Celkom",
+        "thanks": "Ďakujeme za nákup na Strugu!",
+        "vendor_msg": "Prosím, pripravte a odošlite túto objednávku čo najskôr."
+      },
+      "status": {
+        "tag": "AKTUALIZÁCIA OBJEDNÁVKY",
+        "order_id": "ID objednávky",
+        "tracking": "Sledovacie číslo",
+        "track_button": "Zobraziť objednávku",
+        "subjects": {
+          "confirmed": "Strug Shop: Vaša objednávka je potvrdená",
+          "shipped": "Strug Shop: Vaša objednávka bola odoslaná",
+          "fulfilled": "Strug Shop: Vaša objednávka bola doručená"
+        },
+        "messages": {
+          "confirmed": "Predajca potvrdil vašu objednávku a pripravuje ju na odoslanie.",
+          "shipped": "Váš balík je na ceste. Sledovanie: {{tracking_number}}",
+          "fulfilled": "Vaša objednávka bola doručená. Dúfame, že si nákup užijete!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Váš týždenný pokrok v učení je tu 📚",
+        "unread_chat": "Strug: V doručenej pošte máte neprečítané správy 💬"
+      },
+      "lms": {
+        "title": "Pokrok v učení",
+        "tag": "ZOSTAŇTE SMART",
+        "msg": "Ide ti to skvele! Tu je súhrn vašej aktivity na kartách tento týždeň.",
+        "cards_reviewed": "Skontrolované karty",
+        "new_decks": "Pripojili sa nové balíčky"
+      },
+      "chat": {
+        "title": "Nové správy",
+        "tag": "SPOLOČENSTVO",
+        "msg": "Chvíľu ste boli preč. Vaši priatelia a členovia tímu sa vás snažia kontaktovať.",
+        "button": "Zobraziť chat"
+      }
+    }
+  }
+}

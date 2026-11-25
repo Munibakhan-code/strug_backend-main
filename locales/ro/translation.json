@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} nu a fost găsit",
+    "fetchFailed": "Preluarea {{resource}} a eșuat",
+    "createFailed": "Nu s-a putut crea {{resource}}",
+    "updateFailed": "Actualizarea {{resource}} a eșuat",
+    "deleteFailed": "{{resource}} nu s-a șters",
+    "invalidId": "{{field}} trebuie să fie un număr",
+    "alreadyExists": "{{field}} există deja",
+    "invalidFormat": "Format {{field}} nevalid",
+    "internalServer": "Eroare internă de server",
+    "accessDenied": "Acces refuzat",
+    "invalidToken": "Token nevalid",
+    "adminRequired": "Este necesar accesul de administrator",
+    "forbidden": "Nu aveți permisiunea de a efectua această acțiune"
+  },
+  "food": {
+    "filterError": "Eroare de filtrare",
+    "orderAlreadyTaken": "Această comandă a fost deja luată de un alt șofer.",
+    "orderAccepted": "Comanda acceptata pentru livrare",
+    "orderDeclined": "Comanda a fost refuzată.",
+    "orderRejected": "Comanda respinsă."
+  },
+  "user": {
+    "notFound": "Utilizatorul nu a fost găsit",
+    "deleted": "Utilizatorul a fost șters cu succes",
+    "labelStreetRequired": "Eticheta și strada sunt obligatorii",
+    "addressNotFound": "Adresa nu a fost găsită",
+    "savedAddressRequired": "Adresa de livrare este obligatorie",
+    "cannotModifyOther": "Nu se poate modifica contul altui utilizator",
+    "emailExists": "E-mailul sau codul de recomandare există deja"
+  },
+  "auth": {
+    "invalidLoginFormat": "Format de conectare nevalid",
+    "userNotFound": "Utilizatorul nu a fost găsit",
+    "renewSubscription": "Vă rugăm să vă reînnoiți abonamentul",
+    "verifyBefore": "Vă rugăm să verificați {{method}} înainte de a vă conecta.",
+    "noPassword": "Acest cont nu are parolă. Încercați conectarea la Google.",
+    "invalidPassword": "Parolă nevalidă",
+    "teamMemberNotFound": "Membrul echipei nu a fost găsit",
+    "loginSuccessful": "Conectare reușită",
+    "invalidCredentials": "Acreditări nevalide",
+    "noRefreshToken": "Nu este furnizat un jeton de reîmprospătare",
+    "invalidRefreshToken": "Indicativ de reîmprospătare nevalid sau expirat",
+    "invalidRefreshTokenPayload": "Sarcină utilă a jetonului de reîmprospătare nevalid",
+    "teamMembershipNotFound": "Calitatea de membru al echipei nu a fost găsită",
+    "accessTokenRefreshed": "Jeton de acces reîmprospătat",
+    "refreshTokenDeleted": "Indicatorul de reîmprospătare a fost șters",
+    "emailRequired": "E-mailul este obligatoriu",
+    "passwordAccountExists": "Acest e-mail este înregistrat folosind parola. Vă rugăm să vă conectați manual.",
+    "emailRequiredFacebook": "E-mailul este obligatoriu, dar nu este furnizat de Facebook. Asigurați-vă că contul dvs. de Facebook are un e-mail verificat.",
+    "authCodeRequired": "Codul de autentificare este necesar",
+    "validEmailRequired": "Este necesar un e-mail valid.",
+    "accountEmailExists": "Există deja un cont cu acest e-mail.",
+    "usernameTaken": "Acel nume de utilizator este deja luat.",
+    "tooManyOtpRequests": "Prea multe solicitări de cod. Încercați din nou mai târziu.",
+    "failedSendCode": "Nu s-a putut trimite codul.",
+    "registerFieldsRequired": "e-mailul, numele, parola și otp sunt toate necesare.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Parola trebuie să includă: {{requirements}}.",
+    "noVerificationCode": "Nu a fost găsit niciun cod de verificare. Vă rugăm să solicitați unul nou.",
+    "verificationExpired": "Codul de verificare a expirat. Vă rugăm să solicitați unul nou.",
+    "tooManyOtpAttempts": "Prea multe încercări incorecte. Vă rugăm să solicitați un nou cod de verificare.",
+    "invalidVerificationCode": "Cod de verificare nevalid.",
+    "verificationFailed": "Verificarea a eșuat.",
+    "tooManyRequests": "Prea multe cereri. Vă rugăm să încercați din nou mai târziu.",
+    "resetFieldsRequired": "sunt necesare e-mail, parolă nouă și simbol.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Link de resetare nevalid sau expirat.",
+    "accountLocked": "Cont blocat temporar. Încercați din nou mai târziu.",
+    "verificationCodeRequired": "Codul de verificare este necesar.",
+    "invalidSession": "Sesiune nevalidă",
+    "passwordFieldsRequired": "currentPassword și newPassword sunt necesare"
+  },
+  "success": {
+    "deleted": "{{resource}} a fost șters cu succes",
+    "created": "{{resource}} creat cu succes",
+    "updated": "{{resource}} a fost actualizat cu succes"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Anunțuri: Avertisment privind soldul scăzut al contului publicitar",
+      "spend_alert_subject": "Strug Alertă privind anunțurile: {{percentage}}% buget zilnic atins pentru campania #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ALERTA CONTULUI Anunțuri",
+        "title": "Avertizare de echilibru scăzut",
+        "instruction": "Bună ziua {{name}}, soldul dvs. Ads Wallet este epuizat. Pentru a preveni întreruperea automată a campaniilor active, vă rugăm să reîncărcați soldul contului.",
+        "balance_label": "Sold curent:",
+        "button": "Încărcați portofelul de anunțuri"
+      },
+      "spend_alert": {
+        "tag": "ETAPA DE BUGET ATINS",
+        "title": "{{percentage}}% Buget zilnic cheltuit",
+        "instruction": "Bună ziua {{name}}, aceasta este o actualizare automată a stării pentru setul dvs. de anunțuri activ. Campania dvs. a atins un prag zilnic de cheltuieli.",
+        "campaign_label": "ID campanie:",
+        "button": "Gestionați campania"
+      }
+    },
+    "subjects": {
+      "otp": "Verificare Strug: Codul dvs. este aici",
+      "welcome": "Bun venit în familia Strug!",
+      "password_reset": "Strug: resetați-vă parola",
+      "login_alert": "Alertă de securitate Strug: Autentificare nouă detectată",
+      "ride_receipt": "Strug Ride Rezumat: Vă mulțumim că ați călătorit!"
+    },
+    "otp": {
+      "tag": "VERIFICARE DE SECURITATE",
+      "title": "Verificați contul",
+      "instruction": "Utilizați codul securizat de mai jos pentru a vă finaliza înregistrarea. Valabil 10 minute.",
+      "ignore": "Dacă nu ați solicitat acest lucru, vă rugăm să ignorați acest e-mail."
+    },
+    "common": {
+      "tagline": "Munca ta • Timpul tău • Banii tăi",
+      "rights_reserved": "Toate drepturile rezervate",
+      "need_help": "Ai nevoie de ajutor? Răspundeți la acest e-mail sau vizitați centrul nostru de asistență."
+    },
+    "welcome": {
+      "tag": "Bine ați venit la STRUG",
+      "title": "Bună, {{name}}!",
+      "instruction": "Contul dvs. este verificat. Acum faceți parte dintr-o platformă creată pentru a vă simplifica munca, timpul și banii.",
+      "button": "Explorați tabloul de bord"
+    },
+    "password_reset": {
+      "tag": "SECURITATE",
+      "title": "Resetează parola",
+      "instruction": "A fost făcută o solicitare pentru a vă reseta parola contului Strug. Faceți clic pe butonul de mai jos pentru a alege unul nou.",
+      "button": "Resetați parola mea",
+      "ignore": "Dacă nu ați solicitat acest lucru, puteți ignora acest e-mail în siguranță. Linkul expiră în 1 oră."
+    },
+    "login_alert": {
+      "tag": "ALERTA DE SECURITATE",
+      "title": "Autentificare nouă detectată",
+      "instruction": "Am observat o nouă conectare la contul dvs. Strug. Dacă acesta ai fost tu, poți ignora acest e-mail.",
+      "device": "Dispozitiv",
+      "time": "timpul",
+      "not_you": "Dacă acesta NU ați fost dvs., vă rugăm să vă securizați imediat contul prin schimbarea parolei."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Rezumatul călătoriei",
+      "tag": "CALATORIA TERMINATA",
+      "total_fare": "Tariful total",
+      "distance": "Distanța",
+      "duration": "Durata",
+      "pickup": "Ridicare",
+      "drop": "Predare",
+      "driver": "Șofer",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Vă mulțumim că ați călătorit cu Strug!",
+      "support": "Dacă aveți probleme cu această călătorie, contactați asistența."
+    },
+    "carpool_booking": {
+      "subject": "Carpool confirmat: călătoria dvs. este rezervată!",
+      "title": "Rezervare confirmată",
+      "tag": "CARpool REZERVAT",
+      "from": "De la",
+      "to": "Pentru a",
+      "seats": "Locuri rezervate",
+      "total_cost": "Costul total",
+      "status": "Stare",
+      "thanks": "Vă mulțumim că ați făcut comun cu Strug!",
+      "details_msg": "Locul dvs. a fost rezervat cu succes. Vă rugăm să fiți la punctul de ridicare la timp."
+    },
+    "ghost_driver": {
+      "subject": "Actualizare cursă: reatribuim un nou șofer pentru dvs",
+      "title": "Găsirea unui șofer nou",
+      "tag": "ACTUALIZARE RIDE",
+      "instruction": "Driverul dvs. anterior este indisponibil sau nu răspunde. Nu vă faceți griji, căutăm automat un nou șofer care să vă ia.",
+      "status": "Starea curentă: Se caută șoferi...",
+      "hang_tight": "Te rog stai bine! Vă vom anunța de îndată ce un nou șofer vă acceptă solicitarea."
+    },
+    "password_changed": {
+      "subject": "Alertă de securitate Strug: parola dvs. a fost schimbată",
+      "title": "Parola a fost actualizată",
+      "tag": "ACTUALIZARE DE SECURITATE",
+      "instruction": "Parola contului dvs. Strug a fost schimbată recent. Dacă ați făcut această modificare, puteți ignora acest e-mail în siguranță.",
+      "warning": "Dacă NU ți-ai schimbat parola, contul tău poate fi compromis. Vă rugăm să vă asigurați imediat contul.",
+      "button": "Securizați contul meu",
+      "footer": "Echipa de securitate Strug Platform"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Comanda confirmată! #{{order_id}}",
+        "new_order_vendor": "Acțiune necesară: Comandă nouă primită! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Chitanța de comandă",
+        "tag": "SUCCES COMANDA",
+        "vendor_tag": "ACȚIUNE NECESARĂ",
+        "order_id": "ID comandă",
+        "item": "Articol",
+        "qty": "Cant",
+        "price": "Preț",
+        "subtotal": "subtotal chitanță — Subtotal",
+        "delivery_fee": "Taxa de livrare",
+        "service_tax": "Taxa de servicii",
+        "platform_fee": "Taxa de platformă",
+        "grand_total": "SUMA TOTALĂ",
+        "total": "Suma totală",
+        "delivery_address": "Adresa de livrare",
+        "thanks": "Sper să vă bucurați de masa!",
+        "vendor_title": "O nouă comandă pentru tine",
+        "vendor_msg": "Ați primit o nouă comandă. Vă rugăm să începeți imediat să îl pregătiți."
+      }
+    },
+    "food_status": {
+      "tag": "ACTUALIZARE COMANDĂ",
+      "subjects": {
+        "preparing": "Strug Food: Comanda dumneavoastră este în curs de pregătire! 🍳",
+        "dispatched": "Vești grozave! Comanda ta este pe drum 🛵",
+        "delivered": "Bucurați-vă de masă! Comanda a fost livrată cu succes ✅",
+        "cancelled": "Strug Notă: Comanda dvs. a fost anulată ❌"
+      },
+      "messages": {
+        "preparing": "Restaurantul a început să vă pregătească masa delicioasă. Vă vom anunța când este disponibil pentru livrare.",
+        "dispatched": "Comanda dvs. a fost ridicată, iar partenerul nostru de livrare este în drum spre locația dvs.",
+        "delivered": "Comanda dvs. a fost predată. Vă mulțumim că ați ales Strug!",
+        "cancelled": "Ne pare rău să vă informăm că comanda dumneavoastră a fost anulată. Dacă ați plătit deja, o rambursare va fi inițiată în curând."
+      },
+      "labels": {
+        "order_id": "ID comandă",
+        "current_status": "Starea curentă"
+      }
+    },
+    "digital": {
+      "subject": "Conținutul digital Strug este gata!",
+      "title": "Descărcați produsul dvs",
+      "instruction": "Vă mulțumim pentru achiziție! Acum puteți accesa și descărca conținutul digital folosind butonul de mai jos.",
+      "button": "Descărcați acum"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Tala ta de plată pentru această lună este gata 📄",
+      "title": "buletinul lunar de plată",
+      "tag": "REZUMATUL SALARIILOR",
+      "net_salary": "Salariu net",
+      "epf": "EPF (angajat)",
+      "etf": "salarizare etf — ETF",
+      "ot": "salarizare ot — OT Pay",
+      "bonus": "bonus de salariu — Bonus",
+      "status": "Starea plății",
+      "thanks": "Dacă aveți întrebări legate de salariu, vă rugăm să contactați HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Solicitarea dvs. de concediu a fost aprobată ✅",
+      "subject_rejected": "Strug HR: Actualizare cu privire la solicitarea dvs. de concediu ❌",
+      "title_approved": "Lasă Aprobat!",
+      "title_rejected": "Lăsați Actualizarea",
+      "tag": "CERERE DE LASARE",
+      "status_approved": "Solicitarea dvs. de concediu pentru perioada următoare a fost aprobată cu succes.",
+      "status_rejected": "Ne pare rău să vă informăm că solicitarea dvs. de concediu pentru perioada următoare a fost respinsă.",
+      "from_date": "De la Data",
+      "to_date": "Până în prezent",
+      "reason": "Motivul respingerii",
+      "thanks": "Pentru orice întrebări suplimentare, vă rugăm să contactați departamentul dvs. de resurse umane."
+    },
+    "job_alert": {
+      "subject": "Strug Locuri de muncă: Solicitare nouă primită pentru {{job_title}} 💼",
+      "title": "S-a aplicat un nou candidat",
+      "tag": "APLICARE DE POST",
+      "instruction": "Un nou candidat a aplicat pentru una dintre listele dvs. de locuri de muncă. Iată pe scurt detaliile:",
+      "job_title": "Rolul postului",
+      "candidate": "Numele candidatului",
+      "view_button": "Vizualizați aplicația",
+      "thanks": "Vă rugăm să vă conectați la portalul agentului dvs. pentru a examina detaliile complete și CV-ul."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Turul tău de lucru a fost actualizat 🕒",
+      "title": "Shift actualizat",
+      "tag": "ACTUALIZARE PROGRAM",
+      "instruction": "Programul dvs. de lucru a fost actualizat recent de departamentul de resurse umane. Vă rugăm să verificați mai jos noul program al schimburilor.",
+      "start_time": "Începe schimbul",
+      "end_time": "Shift se termină",
+      "thanks": "Vă rugăm să vă asigurați că sunteți prezent conform noului program. Contactați HR pentru orice nelămurire."
+    },
+    "services": {
+      "tag": "ACTUALIZARE SERVICIULUI",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Numirea dumneavoastră este confirmată! ✅",
+        "new_alert_provider": "Noua programare: ai o noua rezervare! 📅",
+        "reminder": "Memento: Întâlnirea ta este în câteva ore ⏳",
+        "rental_expiry": "Acțiune necesară: închirierea dvs. expiră în curând! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Serviciu",
+        "provider": "Furnizor",
+        "customer": "Client",
+        "date": "Data",
+        "time": "timpul",
+        "location": "Locație",
+        "expiry": "Data de expirare"
+      },
+      "messages": {
+        "confirmed": "Întâlnirea dvs. a fost programată cu succes. Vă rog să fiți la timp.",
+        "provider_alert": "Un client nou a rezervat serviciul dvs. Iată detaliile.",
+        "reminder": "Acesta este o reamintire prietenoasă a următoarei întâlniri cu Strug.",
+        "rental_expiry": "Perioada ta de închiriere este pe cale să se încheie. Vă rugăm să returnați articolul sau să prelungiți perioada pentru a evita penalizări.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "URGENT: NOTIFICARE DE EXPIRARE",
+        "item_name": "Nume articol",
+        "due_date": "Data scadentă",
+        "order_id": "ID comandă",
+        "button": "Extindeți sau returnați articolul",
+        "footer": "Evitați taxele de întârziere prin returnarea articolului înainte de termenul stabilit.",
+        "thanks": "Vă mulțumim că folosiți Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Vă mulțumim pentru donația dumneavoastră generoasă! ❤️",
+        "loan_reminder": "Memento de plată: rata împrumutului dvs. este scadentă 💳"
+      },
+      "donation": {
+        "title": "Donatie primita",
+        "tag": "DARE ÎNAPOI",
+        "msg": "Sprijinul tău face o diferență enormă! Am primit cu succes contribuția dumneavoastră pentru proiect.",
+        "amount": "Suma donată",
+        "project": "Proiect"
+      },
+      "loan": {
+        "title": "Rambursarea împrumutului",
+        "tag": "PLATA CU CURS",
+        "msg": "Acesta este un memento că se apropie data rambursării împrumutului. Vă rugăm să vă asigurați că sunt disponibile fonduri suficiente.",
+        "due_date": "Data scadentă",
+        "amount": "Suma ratei"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Comanda confirmată #{{order_id}}",
+        "new_order_seller": "Strug Shop: Comandă nouă primită #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "COMANDA CONFIRMATA",
+        "vendor_tag": "COMANDA NOUĂ",
+        "title": "Comanda dvs. este confirmată",
+        "vendor_title": "Aveți o nouă comandă",
+        "order_id": "Comanda",
+        "product": "Produs",
+        "qty": "Cantitatea",
+        "total": "total încasări — Total",
+        "thanks": "Vă mulțumim pentru cumpărături de pe Strug!",
+        "vendor_msg": "Vă rugăm să pregătiți și să expediați această comandă cât mai curând posibil."
+      },
+      "status": {
+        "tag": "ACTUALIZARE COMANDĂ",
+        "order_id": "ID comandă",
+        "tracking": "Număr de urmărire",
+        "track_button": "Vizualizați comanda",
+        "subjects": {
+          "confirmed": "Strug Shop: Comanda dvs. este confirmată",
+          "shipped": "Strug Shop: Comanda dvs. a fost expediată",
+          "fulfilled": "Strug Shop: Comanda dvs. a fost livrată"
+        },
+        "messages": {
+          "confirmed": "Vânzătorul a confirmat comanda dumneavoastră și o pregătește pentru expediere.",
+          "shipped": "Pachetul tău este pe drum. Urmărire: {{tracking_number}}",
+          "fulfilled": "Comanda dvs. a fost livrată. Sperăm să vă bucurați de achiziția dvs.!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Progresul tău săptămânal de învățare este aici 📚",
+        "unread_chat": "Strug: Ai mesaje necitite în căsuța de e-mail 💬"
+      },
+      "lms": {
+        "title": "Progresul invatarii",
+        "tag": "RĂMÂNȚI INTELIGENT",
+        "msg": "Te descurci grozav! Iată un rezumat al activității tale flashcard săptămâna aceasta.",
+        "cards_reviewed": "Carduri revizuite",
+        "new_decks": "S-au alăturat punți noi"
+      },
+      "chat": {
+        "title": "Mesaje noi",
+        "tag": "COMUNITATEA",
+        "msg": "Ai fost plecat de ceva vreme. Prietenii tăi și membrii echipei încearcă să te contacteze.",
+        "button": "Vizualizați chatul"
+      }
+    }
+  }
+}

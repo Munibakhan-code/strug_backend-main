@@ -1,0 +1,89 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <!-- Top Warning Tag -->
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <table border="0" cellspacing="0" cellpadding="0" style="background-color: rgba(227, 30, 36, 0.1); border-radius: 100px;">
+                <tr>
+                    <td style="padding: 5px 15px; color: #ff4d4d; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">
+                        {{t 'emails.services.rental.tag'}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Title -->
+    <tr>
+        <td align="center" style="padding-bottom: 15px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
+                {{t 'emails.services.subjects.rental_expiry'}}
+            </h1>
+        </td>
+    </tr>
+
+    <!-- Message -->
+    <tr>
+        <td align="center" style="padding-bottom: 30px; background-color: #0b1120;">
+            <p style="margin: 0; color: #94a3b8; font-size: 16px; line-height: 1.6;">
+                {{t 'emails.services.messages.rental_expiry'}}
+            </p>
+        </td>
+    </tr>
+
+    <!-- Item Detail Island -->
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 24px; border: 1px solid #ff4d4d; overflow: hidden;">
+                <tr>
+                    <td style="padding: 25px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <!-- Item Name -->
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; text-transform: uppercase; padding-bottom: 5px;">{{t 'emails.services.rental.item_name'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 15px; font-weight: bold; padding-bottom: 5px;">{{item_name}}</td>
+                            </tr>
+                            <tr><td colspan="2" style="border-bottom: 1px solid #1e293b; padding-top: 10px; margin-bottom: 10px;"></td></tr>
+                            
+                            <!-- Expiry Date -->
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-top: 15px;">{{t 'emails.services.rental.due_date'}}</td>
+                                <td align="right" style="color: #ff4d4d; font-size: 15px; font-weight: bold; padding-top: 15px;">{{expire_date}}</td>
+                            </tr>
+                            
+                            <!-- Rental ID -->
+                            <tr>
+                                <td style="color: #64748b; font-size: 13px; padding-top: 8px;">{{t 'emails.services.rental.order_id'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;">#{{rental_id}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Action Button -->
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center" bgcolor="#e31e24" style="border-radius: 100px;">
+                        <a href="{{frontend_url}}/rentals/{{rental_id}}" target="_blank" style="padding: 15px 35px; color: #ffffff; font-size: 14px; font-weight: bold; text-decoration: none; display: inline-block;">
+                            {{t 'emails.services.rental.button'}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Help Message -->
+    <tr>
+        <td align="center" style="padding-top: 30px; background-color: #0b1120;">
+            <p style="margin: 0; font-size: 13px; color: #475569; line-height: 1.5;">
+                {{t 'emails.services.rental.footer'}}<br>
+                {{t 'emails.services.rental.thanks'}}
+            </p>
+        </td>
+    </tr>
+</table>

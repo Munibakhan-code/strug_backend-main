@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} غير موجود",
+    "fetchFailed": "فشل جلب {{resource}}",
+    "createFailed": "فشل في إنشاء {{resource}}",
+    "updateFailed": "فشل تحديث {{resource}}",
+    "deleteFailed": "فشل في حذف {{resource}}",
+    "invalidId": "{{field}} يجب أن يكون رقمًا",
+    "alreadyExists": "{{field}} موجود بالفعل",
+    "invalidFormat": "تنسيق {{field}} غير صالح",
+    "internalServer": "خطأ داخلي في الخادم",
+    "accessDenied": "تم رفض الوصول",
+    "invalidToken": "رمز مميز غير صالح",
+    "adminRequired": "مطلوب وصول المشرف",
+    "forbidden": "ليس لديك الإذن للقيام بهذا الإجراء"
+  },
+  "food": {
+    "filterError": "خطأ في التصفية",
+    "orderAlreadyTaken": "لقد تم بالفعل أخذ هذا الطلب من قبل سائق آخر.",
+    "orderAccepted": "تم قبول الطلب للتسليم",
+    "orderDeclined": "تم رفض الطلب.",
+    "orderRejected": "تم رفض الطلب."
+  },
+  "user": {
+    "notFound": "لم يتم العثور على المستخدم",
+    "deleted": "تم حذف المستخدم بنجاح",
+    "labelStreetRequired": "التسمية والشارع مطلوبة",
+    "addressNotFound": "لم يتم العثور على العنوان",
+    "savedAddressRequired": "عنوان التسليم مطلوب",
+    "cannotModifyOther": "لا يمكن تعديل حساب مستخدم آخر",
+    "emailExists": "البريد الإلكتروني أو رمز الإحالة موجود بالفعل"
+  },
+  "auth": {
+    "invalidLoginFormat": "تنسيق تسجيل الدخول غير صالح",
+    "userNotFound": "لم يتم العثور على المستخدم",
+    "renewSubscription": "يرجى تجديد اشتراكك",
+    "verifyBefore": "يرجى التحقق من {{method}} قبل تسجيل الدخول.",
+    "noPassword": "هذا الحساب ليس لديه كلمة مرور. حاول تسجيل الدخول إلى جوجل.",
+    "invalidPassword": "كلمة المرور غير صالحة",
+    "teamMemberNotFound": "لم يتم العثور على عضو الفريق",
+    "loginSuccessful": "تم تسجيل الدخول بنجاح",
+    "invalidCredentials": "بيانات اعتماد غير صالحة",
+    "noRefreshToken": "لم يتم توفير رمز التحديث",
+    "invalidRefreshToken": "رمز التحديث غير صالح أو منتهي الصلاحية",
+    "invalidRefreshTokenPayload": "حمولة رمز التحديث غير صالحة",
+    "teamMembershipNotFound": "لم يتم العثور على عضوية الفريق",
+    "accessTokenRefreshed": "تم تحديث رمز الوصول",
+    "refreshTokenDeleted": "تم حذف رمز التحديث",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "passwordAccountExists": "تم تسجيل هذا البريد الإلكتروني باستخدام كلمة المرور. الرجاء تسجيل الدخول يدويا.",
+    "emailRequiredFacebook": "البريد الإلكتروني مطلوب ولكن لا يتم توفيره من قبل الفيسبوك. يرجى التأكد من أن حسابك على Facebook يحتوي على بريد إلكتروني تم التحقق منه.",
+    "authCodeRequired": "مطلوب رمز المصادقة",
+    "validEmailRequired": "مطلوب بريد إلكتروني صالح.",
+    "accountEmailExists": "يوجد حساب بهذا البريد الإلكتروني بالفعل.",
+    "usernameTaken": "اسم المستخدم هذا مأخوذ بالفعل.",
+    "tooManyOtpRequests": "عدد كبير جدًا من طلبات التعليمات البرمجية. حاول مرة أخرى لاحقًا.",
+    "failedSendCode": "فشل في إرسال الرمز.",
+    "registerFieldsRequired": "البريد الإلكتروني والاسم وكلمة المرور وOTP كلها مطلوبة.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "يجب أن تتضمن كلمة المرور: {{requirements}}.",
+    "noVerificationCode": "لم يتم العثور على رمز التحقق. يرجى طلب واحدة جديدة.",
+    "verificationExpired": "انتهت صلاحية رمز التحقق. يرجى طلب واحدة جديدة.",
+    "tooManyOtpAttempts": "عدد كبير جدًا من المحاولات غير الصحيحة. الرجاء طلب رمز التحقق الجديد.",
+    "invalidVerificationCode": "رمز التحقق غير صالح.",
+    "verificationFailed": "فشل التحقق.",
+    "tooManyRequests": "طلبات كثيرة جدًا. يرجى المحاولة مرة أخرى لاحقا.",
+    "resetFieldsRequired": "مطلوب البريد الإلكتروني وكلمة المرور الجديدة والرمز المميز.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "رابط إعادة التعيين غير صالح أو منتهي الصلاحية.",
+    "accountLocked": "الحساب مغلق مؤقتا. حاول مرة أخرى لاحقًا.",
+    "verificationCodeRequired": "رمز التحقق مطلوب.",
+    "invalidSession": "جلسة غير صالحة",
+    "passwordFieldsRequired": "كلمة المرور الحالية وكلمة المرور الجديدة مطلوبة"
+  },
+  "success": {
+    "deleted": "تم حذف {{resource}} بنجاح",
+    "created": "تم إنشاء {{resource}} بنجاح",
+    "updated": "تم تحديث {{resource}} بنجاح"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug الإعلانات: تحذير من انخفاض رصيد الحساب الإعلاني",
+      "spend_alert_subject": "Strug تنبيه الإعلانات: {{percentage}}% تم الوصول إلى الميزانية اليومية للحملة #{{campaign_id}}",
+      "low_balance": {
+        "tag": "تنبيه حساب الإعلانات",
+        "title": "تحذير من انخفاض الرصيد",
+        "instruction": "مرحبًا {{name}}، رصيد محفظة الإعلانات الخاص بك على وشك النفاد. لمنع إيقاف الحملات النشطة مؤقتًا تلقائيًا، يرجى تعبئة رصيد حسابك.",
+        "balance_label": "الرصيد الحالي:",
+        "button": "تعبئة رصيد المحفظة الإعلانية"
+      },
+      "spend_alert": {
+        "tag": "تم الوصول إلى مرحلة هامة في الميزانية",
+        "title": "{{percentage}}% إنفاق الميزانية اليومية",
+        "instruction": "مرحبًا {{name}}، هذا تحديث تلقائي لحالة مجموعتك الإعلانية النشطة. لقد وصلت حملتك إلى حد الإنفاق اليومي.",
+        "campaign_label": "معرف الحملة:",
+        "button": "إدارة الحملة"
+      }
+    },
+    "subjects": {
+      "otp": "Strug التحقق: الرمز الخاص بك موجود هنا",
+      "welcome": "مرحبًا بك في عائلة Strug!",
+      "password_reset": "Strug: إعادة تعيين كلمة المرور الخاصة بك",
+      "login_alert": "Strug تنبيه أمني: تم اكتشاف تسجيل دخول جديد",
+      "ride_receipt": "ملخص رحلة Strug: شكرًا لك على الركوب!"
+    },
+    "otp": {
+      "tag": "فحص الأمان",
+      "title": "التحقق من الحساب",
+      "instruction": "استخدم الرمز الآمن أدناه لإكمال تسجيلك. صالحة لمدة 10 دقائق.",
+      "ignore": "إذا لم تطلب ذلك، فيرجى تجاهل هذه الرسالة الإلكترونية."
+    },
+    "common": {
+      "tagline": "عملك • وقتك • أموالك",
+      "rights_reserved": "جميع الحقوق محفوظة",
+      "need_help": "بحاجة الى مساعدة؟ قم بالرد على هذا البريد الإلكتروني أو قم بزيارة مركز الدعم الخاص بنا."
+    },
+    "welcome": {
+      "tag": "مرحبًا بك في STRUG",
+      "title": "مرحبًا، {{name}}!",
+      "instruction": "تم التحقق من حسابك. أنت الآن جزء من منصة مصممة لتبسيط عملك ووقتك وأموالك.",
+      "button": "استكشف لوحة التحكم"
+    },
+    "password_reset": {
+      "tag": "الأمن",
+      "title": "إعادة تعيين كلمة المرور",
+      "instruction": "تم تقديم طلب لإعادة تعيين كلمة مرور حساب Strug الخاص بك. انقر فوق الزر أدناه لاختيار زر جديد.",
+      "button": "إعادة تعيين كلمة المرور الخاصة بي",
+      "ignore": "إذا لم تطلب ذلك، فيمكنك تجاهل هذه الرسالة الإلكترونية بأمان. تنتهي صلاحية الرابط خلال ساعة واحدة."
+    },
+    "login_alert": {
+      "tag": "تنبيه أمني",
+      "title": "تم اكتشاف تسجيل دخول جديد",
+      "instruction": "لقد لاحظنا تسجيل دخول جديد إلى حساب Strug الخاص بك. إذا كنت أنت، فيمكنك تجاهل هذه الرسالة الإلكترونية.",
+      "device": "الجهاز",
+      "time": "الوقت",
+      "not_you": "إذا لم تكن أنت، يرجى تأمين حسابك على الفور عن طريق تغيير كلمة المرور الخاصة بك."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "ملخص الرحلة",
+      "tag": "اكتملت الرحلة",
+      "total_fare": "إجمالي الأجرة",
+      "distance": "المسافة",
+      "duration": "المدة",
+      "pickup": "بيك اب",
+      "drop": "الانزال",
+      "driver": "سائق",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "شكرًا لك على الركوب مع Strug!",
+      "support": "إذا كان لديك أي مشاكل مع هذه الرحلة، فاتصل بالدعم."
+    },
+    "carpool_booking": {
+      "subject": "تم تأكيد مرافقي السيارات: لقد تم حجز رحلتك!",
+      "title": "تم تأكيد الحجز",
+      "tag": "سيارة محجوزة",
+      "from": "من",
+      "to": "ل",
+      "seats": "تم حجز المقاعد",
+      "total_cost": "التكلفة الإجمالية",
+      "status": "الحالة",
+      "thanks": "شكرًا لك على استخدام السيارات مع Strug!",
+      "details_msg": "لقد تم حجز مقعدك بنجاح. يرجى التواجد في نقطة التجمع في الوقت المحدد."
+    },
+    "ghost_driver": {
+      "subject": "تحديث الرحلة: نقوم بإعادة تعيين سائق جديد لك",
+      "title": "العثور على سائق جديد",
+      "tag": "تحديث الركوب",
+      "instruction": "برنامج التشغيل السابق الخاص بك غير متوفر أو لا يستجيب. لا تقلق، فنحن نبحث تلقائيًا عن سائق جديد ليقلك.",
+      "status": "الوضع الحالي: جارٍ البحث عن برامج تشغيل...",
+      "hang_tight": "يرجى شنق بقوة! سنقوم بإعلامك بمجرد قبول السائق الجديد لطلبك."
+    },
+    "password_changed": {
+      "subject": "Strug تنبيه أمني: تم تغيير كلمة المرور الخاصة بك",
+      "title": "تم تحديث كلمة المرور",
+      "tag": "تحديث أمني",
+      "instruction": "تم تغيير كلمة مرور حساب Strug مؤخرًا. إذا قمت بإجراء هذا التغيير، فيمكنك تجاهل هذه الرسالة الإلكترونية بأمان.",
+      "warning": "إذا لم تقم بتغيير كلمة المرور الخاصة بك، فقد يتم اختراق حسابك. يرجى تأمين حسابك على الفور.",
+      "button": "تأمين حسابي",
+      "footer": "فريق أمن منصة Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug الطعام: تم تأكيد الطلب! #{{order_id}}",
+        "new_order_vendor": "الإجراء المطلوب: تم استلام طلب جديد! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "استلام الطلب",
+        "tag": "نجاح الطلب",
+        "vendor_tag": "الإجراء مطلوب",
+        "order_id": "معرف الطلب",
+        "item": "البند",
+        "qty": "الكمية",
+        "price": "السعر",
+        "subtotal": "المجموع الفرعي",
+        "delivery_fee": "رسوم التوصيل",
+        "service_tax": "ضريبة الخدمة",
+        "platform_fee": "رسوم المنصة",
+        "grand_total": "المبلغ الإجمالي",
+        "total": "المبلغ الإجمالي",
+        "delivery_address": "عنوان التسليم",
+        "thanks": "آمل أن تستمتع بوجبتك!",
+        "vendor_title": "طلب جديد لك",
+        "vendor_msg": "لقد تلقيت طلبًا جديدًا. يرجى البدء في إعداده على الفور."
+      }
+    },
+    "food_status": {
+      "tag": "تحديث الطلب",
+      "subjects": {
+        "preparing": "Strug الطعام: طلبك قيد الإعداد! 🍳",
+        "dispatched": "أخبار عظيمة! طلبك في الطريق 🛵",
+        "delivered": "استمتع بوجبتك! تم تسليم الطلب بنجاح ✅",
+        "cancelled": "Strug ملاحظة: تم إلغاء طلبك ❌"
+      },
+      "messages": {
+        "preparing": "بدأ المطعم بإعداد وجبتك اللذيذة. سنخبرك عندما يكون التسليم متاحًا.",
+        "dispatched": "لقد تم استلام طلبك وشريك التوصيل لدينا في طريقه إلى موقعك.",
+        "delivered": "لقد تم تسليم طلبك. شكرًا لاختيارك Strug!",
+        "cancelled": "نأسف لإبلاغك بأنه تم إلغاء طلبك. إذا كنت قد دفعت بالفعل، سيتم البدء في استرداد الأموال قريبًا."
+      },
+      "labels": {
+        "order_id": "معرف الطلب",
+        "current_status": "الوضع الحالي"
+      }
+    },
+    "digital": {
+      "subject": "المحتوى الرقمي Strug الخاص بك جاهز!",
+      "title": "قم بتنزيل المنتج الخاص بك",
+      "instruction": "شكرا لك على الشراء! يمكنك الآن الوصول إلى المحتوى الرقمي الخاص بك وتنزيله باستخدام الزر أدناه.",
+      "button": "تحميل الآن"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: قسيمة الراتب الخاصة بك لهذا الشهر جاهزة 📄",
+      "title": "قسيمة الراتب الشهرية",
+      "tag": "ملخص الرواتب",
+      "net_salary": "صافي الراتب",
+      "epf": "EPF (الموظف)",
+      "etf": "مؤسسة التدريب الأوروبية",
+      "ot": "أوت الدفع",
+      "bonus": "مكافأة",
+      "status": "حالة الدفع",
+      "thanks": "إذا كان لديك أي أسئلة بخصوص راتبك، يرجى الاتصال بالموارد البشرية."
+    },
+    "leave_status": {
+      "subject_approved": "Strugg HR: تمت الموافقة على طلب الإجازة الخاص بك ✅",
+      "subject_rejected": "Strugg HR: تحديث بشأن طلب الإجازة الخاص بك ❌",
+      "title_approved": "تمت الموافقة على الإجازة!",
+      "title_rejected": "ترك التحديث",
+      "tag": "طلب الإجازة",
+      "status_approved": "لقد تمت الموافقة بنجاح على طلب إجازتك للفترة التالية.",
+      "status_rejected": "يؤسفنا إبلاغك بأن طلب الإجازة الخاص بك للفترة التالية قد تم رفضه.",
+      "from_date": "من التاريخ",
+      "to_date": "حتى الآن",
+      "reason": "سبب الرفض",
+      "thanks": "إذا كانت لديك أي أسئلة أخرى، يرجى الاتصال بقسم الموارد البشرية لديك."
+    },
+    "job_alert": {
+      "subject": "وظائف Strug: تم تلقي طلب جديد لـ {{job_title}} 💼",
+      "title": "تم تطبيق مرشح جديد",
+      "tag": "طلب الوظيفة",
+      "instruction": "لقد تقدم مرشح جديد بطلب للحصول على واحدة من قوائم الوظائف الخاصة بك. وفيما يلي التفاصيل المختصرة:",
+      "job_title": "الدور الوظيفي",
+      "candidate": "اسم المرشح",
+      "view_button": "عرض التطبيق",
+      "thanks": "يرجى تسجيل الدخول إلى بوابة الوكيل الخاص بك لمراجعة التفاصيل الكاملة والسيرة الذاتية."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strugg HR: تم تحديث وردية عملك 🕒",
+      "title": "تم تحديث التحول",
+      "tag": "تحديث الجدول الزمني",
+      "instruction": "لقد تم تحديث جدول عملك مؤخرًا من قبل قسم الموارد البشرية. يرجى التحقق من مواعيد الورديات الجديدة أدناه.",
+      "start_time": "يبدأ التحول",
+      "end_time": "ينتهي التحول",
+      "thanks": "برجاء التأكد من الحضور طبقا للجدول الجديد. اتصل بالموارد البشرية لأية مخاوف."
+    },
+    "services": {
+      "tag": "تحديث الخدمة",
+      "subjects": {
+        "confirmed_customer": "Strug الخدمات: تم تأكيد موعدك! ✅",
+        "new_alert_provider": "موعد جديد: لديك حجز جديد! 📅",
+        "reminder": "تذكير: موعدك بعد ساعات قليلة ⏳",
+        "rental_expiry": "الإجراء المطلوب: ستنتهي صلاحية الإيجار الخاص بك قريبًا! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "الخدمة",
+        "provider": "مزود",
+        "customer": "العميل",
+        "date": "التاريخ",
+        "time": "الوقت",
+        "location": "الموقع",
+        "expiry": "تاريخ انتهاء الصلاحية"
+      },
+      "messages": {
+        "confirmed": "لقد تم جدولة موعدك بنجاح. يرجى أن تكون في الوقت المحدد.",
+        "provider_alert": "لقد حجز عميل جديد خدمتك. وهنا التفاصيل.",
+        "reminder": "هذا تذكير ودي بموعدك القادم مع Strug.",
+        "rental_expiry": "فترة الإيجار الخاصة بك على وشك الانتهاء. يرجى إرجاع المنتج أو تمديد الفترة لتجنب العقوبات.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "عاجل: إشعار انتهاء الصلاحية",
+        "item_name": "اسم العنصر",
+        "due_date": "تاريخ الاستحقاق",
+        "order_id": "معرف الطلب",
+        "button": "تمديد أو إرجاع العنصر",
+        "footer": "تجنب رسوم التأخير عن طريق إرجاع المنتج قبل الوقت المحدد.",
+        "thanks": "شكرًا لك على استخدام Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: شكرًا لك على تبرعك السخي! ❤️",
+        "loan_reminder": "تذكير بالدفع: قسط القرض الخاص بك مستحق 💳"
+      },
+      "donation": {
+        "title": "تم استلام التبرع",
+        "tag": "العطاء",
+        "msg": "دعمكم يحدث فرقا كبيرا! لقد تلقينا مساهمتك في المشروع بنجاح.",
+        "amount": "المبلغ المتبرع به",
+        "project": "مشروع"
+      },
+      "loan": {
+        "title": "سداد القرض",
+        "tag": "الدفع المستحق",
+        "msg": "هذا تذكير بأن موعد سداد القرض الخاص بك قد اقترب. يرجى التأكد من توفر الأموال الكافية.",
+        "due_date": "تاريخ الاستحقاق",
+        "amount": "مبلغ القسط"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug المتجر: تم تأكيد الطلب #{{order_id}}",
+        "new_order_seller": "متجر Strug: تم استلام طلب جديد #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "تم تأكيد الطلب",
+        "vendor_tag": "طلب جديد",
+        "title": "تم تأكيد طلبك",
+        "vendor_title": "لديك أمر جديد",
+        "order_id": "النظام",
+        "product": "المنتج",
+        "qty": "الكمية",
+        "total": "المجموع",
+        "thanks": "شكرًا لك على التسوق في Strug!",
+        "vendor_msg": "يرجى إعداد وشحن هذا الطلب في أقرب وقت ممكن."
+      },
+      "status": {
+        "tag": "تحديث الطلب",
+        "order_id": "معرف الطلب",
+        "tracking": "رقم التتبع",
+        "track_button": "عرض الطلب",
+        "subjects": {
+          "confirmed": "Strug المتجر: تم تأكيد طلبك",
+          "shipped": "Strug المتجر: تم شحن طلبك",
+          "fulfilled": "Strug المتجر: تم تسليم طلبك"
+        },
+        "messages": {
+          "confirmed": "أكد البائع طلبك ويقوم بإعداده للشحن.",
+          "shipped": "الحزمة الخاصة بك في الطريق. التتبع: {{tracking_number}}",
+          "fulfilled": "لقد تم تسليم طلبك. نأمل أن تستمتع بعملية الشراء!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "تعليم Strug: تقدم التعلم الأسبوعي الخاص بك موجود هنا 📚",
+        "unread_chat": "Strug: لديك رسائل غير مقروءة في صندوق الوارد الخاص بك 💬"
+      },
+      "lms": {
+        "title": "التقدم في التعلم",
+        "tag": "كن ذكيا",
+        "msg": "أنت تقوم بعمل رائع! فيما يلي ملخص لنشاط البطاقات التعليمية الخاص بك هذا الأسبوع.",
+        "cards_reviewed": "تمت مراجعة البطاقات",
+        "new_decks": "انضمت التشكيلات الجديدة"
+      },
+      "chat": {
+        "title": "رسائل جديدة",
+        "tag": "المجتمع",
+        "msg": "لقد كنت بعيدا لفترة من الوقت. يحاول أصدقاؤك وأعضاء فريقك الوصول إليك.",
+        "button": "عرض الدردشة"
+      }
+    }
+  }
+}

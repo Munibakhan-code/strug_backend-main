@@ -1,0 +1,55 @@
+# MediaMTX config for Strug Live — LOCAL DOCKER DEV ONLY.
+# Production uses mediamtx.yml on the live media VM (api.strug.ca hooks).
+# OBS publishes RTMP to :1935; viewers play via backend proxy /live-session/play/:playback_id.
+
+logLevel: info
+
+authMethod: http
+# No ?secret= — LIVE state is driven by notify.sh with x-live-hook-secret header.
+authHTTPAddress: http://host.docker.internal:5000/live-session/rtmp/auth
+authHTTPExclude:
+  - action: api
+  - action: metrics
+  - action: pprof
+
+rtmp: yes
+rtmpAddress: :1935
+
+hls: yes
+hlsAddress: :8888
+hlsAllowOrigin: '*'
+hlsVariant: mpegts
+hlsSegmentCount: 7
+hlsSegmentDuration: 1s
+hlsPartDuration: 0.2s
+hlsAlwaysRemux: no
+
+# Browser / phone go-live (WHIP). OBS still uses RTMP :1935.
+# Advertise 127.0.0.1 so ICE candidates are reachable from the host browser
+# (Docker bridge IPs are not). Production should set the public host IP.
+webrtc: yes
+webrtcAddress: :8889
+webrtcAllowOrigin: '*'
+webrtcIPsFromInterfaces: no
+webrtcAdditionalHosts:
+  - 127.0.0.1
+webrtcLocalUDPAddress: :8189
+
+playback: yes
+playbackAddress: :9996
+
+metrics: yes
+metricsAddress: :9998
+
+pathDefaults:
+  record: yes
+  recordPath: /recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+  recordFormat: fmp4
+  recordSegmentDuration: 1h
+  recordDeleteAfter: 720h
+  runOnReady: /scripts/notify.sh ready $MTX_PATH
+  runOnReadyRestart: no
+  runOnNotReady: /scripts/notify.sh notReady $MTX_PATH
+
+paths:
+  all_others:

@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} haijapatikana",
+    "fetchFailed": "Imeshindwa kuleta {{resource}}",
+    "createFailed": "Imeshindwa kuunda {{resource}}",
+    "updateFailed": "Imeshindwa kusasisha {{resource}}",
+    "deleteFailed": "Imeshindwa kufuta {{resource}}",
+    "invalidId": "{{field}} lazima iwe nambari",
+    "alreadyExists": "{{field}} tayari ipo",
+    "invalidFormat": "Umbizo la {{field}} si sahihi",
+    "internalServer": "Hitilafu ya seva ya ndani",
+    "accessDenied": "Ufikiaji umekataliwa",
+    "invalidToken": "Tokeni batili",
+    "adminRequired": "Idhini ya kufikia ya msimamizi inahitajika",
+    "forbidden": "Huna ruhusa ya kutekeleza kitendo hiki"
+  },
+  "food": {
+    "filterError": "Hitilafu ya kichujio",
+    "orderAlreadyTaken": "Agizo hili tayari lilichukuliwa na dereva mwingine.",
+    "orderAccepted": "Agizo limekubaliwa kwa usafirishaji",
+    "orderDeclined": "Agizo limekataliwa.",
+    "orderRejected": "Agizo limekataliwa."
+  },
+  "user": {
+    "notFound": "Mtumiaji hakupatikana",
+    "deleted": "Mtumiaji amefutwa",
+    "labelStreetRequired": "Lebo na barabara zinahitajika",
+    "addressNotFound": "Anwani haijapatikana",
+    "savedAddressRequired": "Anwani ya kuletwa inahitajika",
+    "cannotModifyOther": "Haiwezi kurekebisha akaunti ya mtumiaji mwingine",
+    "emailExists": "Barua pepe au msimbo wa rufaa tayari upo"
+  },
+  "auth": {
+    "invalidLoginFormat": "Umbizo batili la kuingia",
+    "userNotFound": "Mtumiaji hakupatikana",
+    "renewSubscription": "Tafadhali sasisha usajili wako",
+    "verifyBefore": "Tafadhali thibitisha {{method}} yako kabla ya kuingia.",
+    "noPassword": "Akaunti hii haina nenosiri. Jaribu kuingia kwenye Google.",
+    "invalidPassword": "Nenosiri batili",
+    "teamMemberNotFound": "Mwanachama wa timu hajapatikana",
+    "loginSuccessful": "Kuingia kumefaulu",
+    "invalidCredentials": "Vitambulisho batili",
+    "noRefreshToken": "Hakuna tokeni ya kuonyesha upya iliyotolewa",
+    "invalidRefreshToken": "Tokeni ya kuonyesha upya batili au iliyoisha muda wake",
+    "invalidRefreshTokenPayload": "Upakiaji wa tokeni ya kuonyesha upya batili",
+    "teamMembershipNotFound": "Uanachama wa timu haujapatikana",
+    "accessTokenRefreshed": "Tokeni ya ufikiaji imeonyeshwa upya",
+    "refreshTokenDeleted": "Tokeni ya kuonyesha upya imefutwa",
+    "emailRequired": "Barua pepe inahitajika",
+    "passwordAccountExists": "Barua pepe hii imesajiliwa kwa kutumia nenosiri. Tafadhali ingia wewe mwenyewe.",
+    "emailRequiredFacebook": "Barua pepe inahitajika lakini haijatolewa na Facebook. Tafadhali hakikisha kuwa akaunti yako ya Facebook ina barua pepe iliyothibitishwa.",
+    "authCodeRequired": "Msimbo wa uthibitishaji unahitajika",
+    "validEmailRequired": "Barua pepe halali inahitajika.",
+    "accountEmailExists": "Akaunti iliyo na barua pepe hii tayari ipo.",
+    "usernameTaken": "Jina hilo la mtumiaji tayari limechukuliwa.",
+    "tooManyOtpRequests": "Maombi mengi ya msimbo. Jaribu tena baadaye.",
+    "failedSendCode": "Imeshindwa kutuma msimbo.",
+    "registerFieldsRequired": "barua pepe, jina, nenosiri na otp vyote vinahitajika.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Nenosiri lazima lijumuishe: {{requirements}}.",
+    "noVerificationCode": "Hakuna nambari ya kuthibitisha iliyopatikana. Tafadhali omba jipya.",
+    "verificationExpired": "Muda wa kutumia nambari ya kuthibitisha umekwisha. Tafadhali omba jipya.",
+    "tooManyOtpAttempts": "Majaribio mengi sana yasiyo sahihi. Tafadhali omba nambari mpya ya uthibitishaji.",
+    "invalidVerificationCode": "Nambari ya uthibitishaji si sahihi.",
+    "verificationFailed": "Uthibitishaji haukufaulu.",
+    "tooManyRequests": "Maombi mengi sana. Tafadhali jaribu tena baadaye.",
+    "resetFieldsRequired": "barua pepe, Nenosiri mpya, na tokeni zinahitajika.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Kiungo batili au kimekwisha muda wa kuweka upya.",
+    "accountLocked": "Akaunti imefungwa kwa muda. Jaribu tena baadaye.",
+    "verificationCodeRequired": "Nambari ya uthibitishaji inahitajika.",
+    "invalidSession": "Kipindi batili",
+    "passwordFieldsRequired": "currentPassword na newPassword zinahitajika"
+  },
+  "success": {
+    "deleted": "{{resource}} imefutwa",
+    "created": "{{resource}} imeundwa",
+    "updated": "{{resource}} imesasishwa"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Matangazo ya Strug: Onyo la Salio la Chini la Akaunti ya Matangazo",
+      "spend_alert_subject": "Arifa ya Matangazo ya Strug: {{percentage}}% Bajeti ya Kila Siku Imefikiwa kwa Kampeni #{{campaign_id}}",
+      "low_balance": {
+        "tag": "TAHADHARI YA AKAUNTI YA MATANGAZO",
+        "title": "Onyo la Usawa wa Chini",
+        "instruction": "Hujambo {{name}}, salio lako la Ads Wallet linapungua. Ili kuzuia kampeni zinazoendelea kusitishwa kiotomatiki, tafadhali jaza salio la akaunti yako.",
+        "balance_label": "Salio la Sasa:",
+        "button": "Ongeza Wallet ya Matangazo"
+      },
+      "spend_alert": {
+        "tag": "HATUA YA BAJETI IMEFIKIWA",
+        "title": "{{percentage}}% Bajeti ya Kila Siku Iliyotumika",
+        "instruction": "Hujambo {{name}}, hili ni sasisho otomatiki la tangazo lako linalotumika. Kampeni yako imefikia kikomo cha matumizi ya kila siku.",
+        "campaign_label": "Kitambulisho cha Kampeni:",
+        "button": "Dhibiti Kampeni"
+      }
+    },
+    "subjects": {
+      "otp": "Uthibitishaji wa Strug: Nambari yako iko hapa",
+      "welcome": "Karibu kwenye Familia ya Strug!",
+      "password_reset": "Strug: Weka upya nenosiri lako",
+      "login_alert": "Arifa ya Usalama wa Strug: Kuingia kupya kumegunduliwa",
+      "ride_receipt": "Muhtasari wa Safari ya Strug: Asante kwa kuendesha!"
+    },
+    "otp": {
+      "tag": "ANGALIA USALAMA",
+      "title": "Thibitisha Akaunti",
+      "instruction": "Tumia nambari salama iliyo hapa chini ili kukamilisha usajili wako. Inatumika kwa dakika 10.",
+      "ignore": "Ikiwa hukuomba hili, tafadhali puuza barua pepe hii."
+    },
+    "common": {
+      "tagline": "Kazi yako • Muda wako • Pesa yako",
+      "rights_reserved": "Haki Zote Zimehifadhiwa",
+      "need_help": "Je, unahitaji usaidizi? Jibu barua pepe hii au tembelea kituo chetu cha usaidizi."
+    },
+    "welcome": {
+      "tag": "KARIBU KWENYE STRUG",
+      "title": "Hujambo, {{name}}!",
+      "instruction": "Akaunti yako imethibitishwa. Sasa wewe ni sehemu ya jukwaa lililoundwa ili kurahisisha kazi, wakati na pesa zako.",
+      "button": "Gundua Dashibodi"
+    },
+    "password_reset": {
+      "tag": "USALAMA",
+      "title": "Weka upya Nenosiri",
+      "instruction": "Ombi lilitumwa ili kuweka upya nenosiri la akaunti yako ya Strug. Bofya kitufe kilicho hapa chini ili kuchagua kipya.",
+      "button": "Weka upya Nenosiri Langu",
+      "ignore": "Ikiwa hukuomba hili, unaweza kupuuza barua pepe hii kwa usalama. Muda wa kiungo utakwisha baada ya saa 1."
+    },
+    "login_alert": {
+      "tag": "TAHADHARI YA USALAMA",
+      "title": "Kuingia Kupya Kumegunduliwa",
+      "instruction": "Tumegundua kuingia upya kwa akaunti yako ya Strug. Ikiwa huyu ni wewe, unaweza kupuuza barua pepe hii.",
+      "device": "Kifaa",
+      "time": "Wakati",
+      "not_you": "Ikiwa SI wewe huyu, tafadhali linda akaunti yako mara moja kwa kubadilisha nenosiri lako."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Muhtasari wa Safari",
+      "tag": "SAFARI IMEKWISHA",
+      "total_fare": "Nauli Jumla",
+      "distance": "Umbali",
+      "duration": "Muda",
+      "pickup": "Kuchukua",
+      "drop": "Kuacha",
+      "driver": "Dereva",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Asante kwa kupanda na Strug!",
+      "support": "Ikiwa una matatizo yoyote na usafiri huu, wasiliana na usaidizi."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Imethibitishwa: Usafiri wako umehifadhiwa!",
+      "title": "Uhifadhi Umethibitishwa",
+      "tag": "CARPOOL IMEHIFADHIWA",
+      "from": "Kutoka",
+      "to": "Kwa",
+      "seats": "Viti vilivyowekwa",
+      "total_cost": "Jumla ya Gharama",
+      "status": "Hali",
+      "thanks": "Asante kwa kushirikiana na Strug!",
+      "details_msg": "Kiti chako kimehifadhiwa. Tafadhali fika mahali pa kuchukua kwa wakati."
+    },
+    "ghost_driver": {
+      "subject": "Sasisho la Safari: Tunakukabidhi dereva mpya",
+      "title": "Kupata Dereva Mpya",
+      "tag": "SASISHA SASA",
+      "instruction": "Dereva wako wa awali hapatikani au hajibu. Usijali, tunatafuta kiotomatiki dereva mpya wa kukuchukua.",
+      "status": "Hali ya Sasa: Inatafuta tena madereva...",
+      "hang_tight": "Tafadhali subiri! Tutakuarifu mara tu dereva mpya atakapokubali ombi lako."
+    },
+    "password_changed": {
+      "subject": "Tahadhari ya Usalama ya Strug: Nenosiri lako lilibadilishwa",
+      "title": "Nenosiri Limesasishwa",
+      "tag": "USASISHAJI WA USALAMA",
+      "instruction": "Nenosiri la akaunti yako ya Strug lilibadilishwa hivi majuzi. Ikiwa ulifanya mabadiliko haya, unaweza kupuuza barua pepe hii kwa usalama.",
+      "warning": "Iwapo HUKUBADILISHA nenosiri lako, akaunti yako inaweza kuathiriwa. Tafadhali linda akaunti yako mara moja.",
+      "button": "Linda Akaunti Yangu",
+      "footer": "Timu ya Usalama ya Jukwaa la Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Chakula cha Strug: Agizo Limethibitishwa! #{{order_id}}",
+        "new_order_vendor": "Hatua Inahitajika: Agizo Jipya Limepokelewa! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Risiti ya Agizo",
+        "tag": "AGIZA MAFANIKIO",
+        "vendor_tag": "HATUA INAYOTAKIWA",
+        "order_id": "Kitambulisho cha agizo",
+        "item": "Kipengee",
+        "qty": "Kiasi",
+        "price": "Bei",
+        "subtotal": "Jumla ndogo",
+        "delivery_fee": "Ada ya Uwasilishaji",
+        "service_tax": "Kodi ya Huduma",
+        "platform_fee": "Ada ya Jukwaa",
+        "grand_total": "JUMLA YA KIASI",
+        "total": "Jumla ya Kiasi",
+        "delivery_address": "Anwani ya Uwasilishaji",
+        "thanks": "Natumai unafurahiya chakula chako!",
+        "vendor_title": "Agizo Jipya kwa Ajili Yako",
+        "vendor_msg": "Umepokea agizo jipya. Tafadhali anza kuitayarisha mara moja."
+      }
+    },
+    "food_status": {
+      "tag": "AGIZA USASISHAJI",
+      "subjects": {
+        "preparing": "Strug Food: Agizo lako linatayarishwa! 🍳",
+        "dispatched": "Habari njema! Agizo lako lipo njiani 🛵",
+        "delivered": "Furahia chakula chako! Agizo limewasilishwa kwa ufanisi ✅",
+        "cancelled": "Notisi ya Strug: Agizo lako limeghairiwa ❌"
+      },
+      "messages": {
+        "preparing": "Mkahawa umeanza kuandaa chakula chako kitamu. Tutakujulisha ikitoka kwa ajili ya kuletewa.",
+        "dispatched": "Agizo lako limepokelewa na mshirika wetu wa kukuletea yuko njiani kuelekea eneo lako.",
+        "delivered": "Agizo lako limekabidhiwa. Asante kwa kuchagua Strug!",
+        "cancelled": "Tunasikitika kukujulisha kuwa agizo lako limeghairiwa. Ikiwa tayari umelipia, urejeshaji wa pesa utaanzishwa hivi karibuni."
+      },
+      "labels": {
+        "order_id": "Kitambulisho cha agizo",
+        "current_status": "Hali ya Sasa"
+      }
+    },
+    "digital": {
+      "subject": "Maudhui yako ya Kidigitali ya Strug iko Tayari!",
+      "title": "Pakua Bidhaa Yako",
+      "instruction": "Asante kwa ununuzi wako! Sasa unaweza kufikia na kupakua maudhui yako ya kidijitali kwa kutumia kitufe kilicho hapa chini.",
+      "button": "Pakua Sasa"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Payslip yako ya mwezi huu iko tayari 📄",
+      "title": "Malipo ya kila mwezi",
+      "tag": "MUHTASARI WA MALIPO",
+      "net_salary": "Mshahara Halisi",
+      "epf": "EPF (Mfanyakazi)",
+      "etf": "malipo etf - ETF",
+      "ot": "Malipo ya OT",
+      "bonus": "Bonasi",
+      "status": "Hali ya Malipo",
+      "thanks": "Ikiwa una maswali yoyote kuhusu mshahara wako, tafadhali wasiliana na HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Ombi Lako la Kuondoka Limeidhinishwa ✅",
+      "subject_rejected": "Strug HR: Sasisha kuhusu Ombi lako la Kuondoka ❌",
+      "title_approved": "Ondoka Imeidhinishwa!",
+      "title_rejected": "Acha Usasishaji",
+      "tag": "ACHENI OMBI",
+      "status_approved": "Ombi lako la likizo kwa kipindi kifuatacho limeidhinishwa.",
+      "status_rejected": "Tunasikitika kukujulisha kwamba ombi lako la likizo kwa kipindi kifuatacho limekataliwa.",
+      "from_date": "Kuanzia Tarehe",
+      "to_date": "Hadi Sasa",
+      "reason": "Sababu ya Kukataliwa",
+      "thanks": "Kwa maswali yoyote zaidi, tafadhali wasiliana na idara yako ya HR."
+    },
+    "job_alert": {
+      "subject": "Kazi za Strug: Programu Mpya Imepokewa kwa {{job_title}} 💼",
+      "title": "Mgombea Mpya Ametumika",
+      "tag": "MAOMBI YA KAZI",
+      "instruction": "Mgombea mpya ametuma ombi la kuorodhesha moja ya kazi zako. Hapa kuna maelezo mafupi:",
+      "job_title": "Jukumu la Kazi",
+      "candidate": "Jina la Mgombea",
+      "view_button": "Tazama Programu",
+      "thanks": "Tafadhali ingia kwenye tovuti yako ya wakala ili kukagua maelezo kamili na CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Mabadiliko Yako ya Kazini Imesasishwa 🕒",
+      "title": "Shift Imesasishwa",
+      "tag": "USASISHAJI WA RATIBA",
+      "instruction": "Ratiba yako ya kazi imesasishwa hivi majuzi na idara ya Utumishi. Tafadhali angalia saa zako mpya za zamu hapa chini.",
+      "start_time": "Shift Inaanza",
+      "end_time": "Shift Mwisho",
+      "thanks": "Tafadhali hakikisha kuwa uko kwa mujibu wa ratiba mpya. Wasiliana na HR kwa hoja zozote."
+    },
+    "services": {
+      "tag": "USASISHAJI WA HUDUMA",
+      "subjects": {
+        "confirmed_customer": "Huduma za Strug: Miadi yako imethibitishwa! ✅",
+        "new_alert_provider": "Uteuzi Mpya: Una nafasi mpya! 📅",
+        "reminder": "Kikumbusho: Miadi yako ni baada ya saa chache ⏳",
+        "rental_expiry": "Hatua Inahitajika: Muda wa ukodishaji wako unaisha hivi karibuni! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Huduma",
+        "provider": "Mtoa huduma",
+        "customer": "Mteja",
+        "date": "Tarehe",
+        "time": "Wakati",
+        "location": "Mahali",
+        "expiry": "Tarehe ya kumalizika muda wake"
+      },
+      "messages": {
+        "confirmed": "Miadi yako imeratibiwa kwa ufanisi. Tafadhali kuwa kwa wakati.",
+        "provider_alert": "Mteja mpya ameweka nafasi ya huduma yako. Hapa kuna maelezo.",
+        "reminder": "Hiki ni kikumbusho cha kirafiki cha miadi yako ijayo na Strug.",
+        "rental_expiry": "Kipindi chako cha kukodisha kinakaribia kuisha. Tafadhali rudisha bidhaa au uongeze muda ili kuepuka adhabu.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "HARAKA: ILANI YA MUDA WA KUISHA",
+        "item_name": "Jina la Kipengee",
+        "due_date": "Tarehe ya Mwisho",
+        "order_id": "Kitambulisho cha agizo",
+        "button": "Panua au Rudisha Kipengee",
+        "footer": "Epuka ada za kuchelewa kwa kurudisha bidhaa kabla ya muda uliowekwa.",
+        "thanks": "Asante kwa kutumia Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Asante kwa mchango wako wa ukarimu! ❤️",
+        "loan_reminder": "Kikumbusho cha Malipo: Malipo ya mkopo wako yanadaiwa 💳"
+      },
+      "donation": {
+        "title": "Mchango Umepokelewa",
+        "tag": "KURUDISHA",
+        "msg": "Msaada wako hufanya tofauti kubwa! Tumepokea mchango wako kwa mradi.",
+        "amount": "Kiasi Kilichochangwa",
+        "project": "Mradi"
+      },
+      "loan": {
+        "title": "Urejeshaji wa Mkopo",
+        "tag": "MALIPO YANAYOTOLEWA",
+        "msg": "Huu ni ukumbusho kwamba tarehe yako ya kurejesha mkopo inakaribia. Tafadhali hakikisha kuwa fedha za kutosha zinapatikana.",
+        "due_date": "Tarehe ya Mwisho",
+        "amount": "Kiasi cha Malipo"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Agizo limethibitishwa #{{order_id}}",
+        "new_order_seller": "Strug Shop: Agizo jipya limepokelewa #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "AGIZO LIMETHIBITISHWA",
+        "vendor_tag": "AGIZO MPYA",
+        "title": "Agizo lako limethibitishwa",
+        "vendor_title": "Una agizo jipya",
+        "order_id": "Agizo",
+        "product": "Bidhaa",
+        "qty": "Kiasi",
+        "total": "Jumla",
+        "thanks": "Asante kwa ununuzi kwenye Strug!",
+        "vendor_msg": "Tafadhali tayarisha na utume agizo hili haraka iwezekanavyo."
+      },
+      "status": {
+        "tag": "AGIZA USASISHAJI",
+        "order_id": "Kitambulisho cha agizo",
+        "tracking": "Nambari ya ufuatiliaji",
+        "track_button": "Tazama agizo",
+        "subjects": {
+          "confirmed": "Strug Shop: Agizo lako limethibitishwa",
+          "shipped": "Strug Shop: Agizo lako limesafirishwa",
+          "fulfilled": "Strug Shop: Agizo lako liliwasilishwa"
+        },
+        "messages": {
+          "confirmed": "Muuzaji alithibitisha agizo lako na anaitayarisha kwa usafirishaji.",
+          "shipped": "Kifurushi chako kiko njiani. Kufuatilia: {{tracking_number}}",
+          "fulfilled": "Agizo lako limewasilishwa. Tunatarajia kufurahia ununuzi wako!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Elimu: Maendeleo yako ya kujifunza kila wiki yako hapa 📚",
+        "unread_chat": "Strug: Una ujumbe ambao haujasomwa kwenye kikasha chako 💬"
+      },
+      "lms": {
+        "title": "Maendeleo ya Kujifunza",
+        "tag": "KAA AKILI",
+        "msg": "Unafanya vizuri! Huu hapa ni muhtasari wa shughuli yako ya kadi ya flash wiki hii.",
+        "cards_reviewed": "Kadi Zimekaguliwa",
+        "new_decks": "Deki Mpya Imeunganishwa"
+      },
+      "chat": {
+        "title": "Ujumbe Mpya",
+        "tag": "JUMUIYA",
+        "msg": "Umekuwa mbali kwa muda. Marafiki na washiriki wa timu yako wanajaribu kukufikia.",
+        "button": "Tazama Gumzo"
+      }
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} לא נמצא",
+    "fetchFailed": "אחזור {{resource}} נכשל",
+    "createFailed": "יצירת {{resource}} נכשלה",
+    "updateFailed": "עדכון {{resource}} נכשל",
+    "deleteFailed": "מחיקת {{resource}} נכשלה",
+    "invalidId": "{{field}} חייב להיות מספר",
+    "alreadyExists": "{{field}} כבר קיים",
+    "invalidFormat": "פורמט {{field}} לא חוקי",
+    "internalServer": "שגיאת שרת פנימית",
+    "accessDenied": "הגישה נדחתה",
+    "invalidToken": "אסימון לא חוקי",
+    "adminRequired": "נדרשת גישת מנהל",
+    "forbidden": "אין לך הרשאה לבצע פעולה זו"
+  },
+  "food": {
+    "filterError": "שגיאת סינון",
+    "orderAlreadyTaken": "הזמנה זו כבר נלקחה על ידי נהג אחר.",
+    "orderAccepted": "ההזמנה התקבלה למשלוח",
+    "orderDeclined": "ההזמנה נדחתה.",
+    "orderRejected": "ההזמנה נדחתה."
+  },
+  "user": {
+    "notFound": "המשתמש לא נמצא",
+    "deleted": "המשתמש נמחק בהצלחה",
+    "labelStreetRequired": "תווית ורחוב נדרשים",
+    "addressNotFound": "הכתובת לא נמצאה",
+    "savedAddressRequired": "נדרשת כתובת למשלוח",
+    "cannotModifyOther": "לא ניתן לשנות חשבון של משתמש אחר",
+    "emailExists": "דוא\"ל או קוד הפניה כבר קיים"
+  },
+  "auth": {
+    "invalidLoginFormat": "פורמט כניסה לא חוקי",
+    "userNotFound": "המשתמש לא נמצא",
+    "renewSubscription": "אנא חדש את המנוי שלך",
+    "verifyBefore": "אנא אמת את ה-{{method}} שלך לפני הכניסה.",
+    "noPassword": "לחשבון זה אין סיסמה. נסה להיכנס לגוגל.",
+    "invalidPassword": "סיסמה לא חוקית",
+    "teamMemberNotFound": "חבר הצוות לא נמצא",
+    "loginSuccessful": "הכניסה מוצלחת",
+    "invalidCredentials": "אישורים לא חוקיים",
+    "noRefreshToken": "לא סופק אסימון רענון",
+    "invalidRefreshToken": "אסימון רענון לא חוקי או שפג תוקפו",
+    "invalidRefreshTokenPayload": "מטען אסימון רענון לא חוקי",
+    "teamMembershipNotFound": "חברות בצוות לא נמצאה",
+    "accessTokenRefreshed": "אסימון הגישה רענן",
+    "refreshTokenDeleted": "אסימון רענון נמחק",
+    "emailRequired": "נדרש אימייל",
+    "passwordAccountExists": "דוא\"ל זה נרשם באמצעות סיסמה. אנא התחבר באופן ידני.",
+    "emailRequiredFacebook": "דוא\"ל נדרש אך לא מסופק על ידי פייסבוק. אנא ודא שלחשבון הפייסבוק שלך יש דוא\"ל מאומת.",
+    "authCodeRequired": "נדרש קוד אישור",
+    "validEmailRequired": "יש צורך באימייל תקף.",
+    "accountEmailExists": "חשבון עם האימייל הזה כבר קיים.",
+    "usernameTaken": "שם המשתמש הזה כבר תפוס.",
+    "tooManyOtpRequests": "יותר מדי בקשות קוד. נסה שוב מאוחר יותר.",
+    "failedSendCode": "שליחת הקוד נכשלה.",
+    "registerFieldsRequired": "דוא\"ל, שם, סיסמה ו-otp כולם נדרשים.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "הסיסמה חייבת לכלול: {{requirements}}.",
+    "noVerificationCode": "לא נמצא קוד אימות. בבקשה בקש אחד חדש.",
+    "verificationExpired": "תוקף קוד האימות פג. בבקשה בקש אחד חדש.",
+    "tooManyOtpAttempts": "יותר מדי ניסיונות לא נכונים. בקש קוד אימות חדש.",
+    "invalidVerificationCode": "קוד אימות לא חוקי.",
+    "verificationFailed": "האימות נכשל.",
+    "tooManyRequests": "יותר מדי בקשות. אנא נסה שוב מאוחר יותר.",
+    "resetFieldsRequired": "נדרשים אימייל, סיסמה חדשה ואסימון.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "קישור לאיפוס לא חוקי או שפג תוקפו.",
+    "accountLocked": "החשבון ננעל זמנית. נסה שוב מאוחר יותר.",
+    "verificationCodeRequired": "נדרש קוד אימות.",
+    "invalidSession": "הפעלה לא חוקית",
+    "passwordFieldsRequired": "הסיסמה הנוכחית וסיסמה חדשה נדרשות"
+  },
+  "success": {
+    "deleted": "{{resource}} נמחק בהצלחה",
+    "created": "{{resource}} נוצר בהצלחה",
+    "updated": "{{resource}} עודכן בהצלחה"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug מודעות: אזהרה על יתרה נמוכה בחשבון המודעות",
+      "spend_alert_subject": "Strug התראת מודעות: {{percentage}}% מהתקציב היומי הושג עבור מסע פרסום מס' {{campaign_id}}",
+      "low_balance": {
+        "tag": "התראת חשבון מודעות",
+        "title": "אזהרת איזון נמוך",
+        "instruction": "שלום {{name}}, היתרה שלך בארנק המודעות אוזלת. כדי למנוע השהייה אוטומטית של מסעות פרסום פעילים, השלם את יתרת החשבון שלך.",
+        "balance_label": "יתרה נוכחית:",
+        "button": "העלאת ארנק מודעות"
+      },
+      "spend_alert": {
+        "tag": "אבן דרך התקציב הגיעה",
+        "title": "{{percentage}}% תקציב יומי שהוצא",
+        "instruction": "שלום {{name}}, זהו עדכון סטטוס אוטומטי עבור ערכת המודעות הפעילה שלך. מסע הפרסום שלך הגיע לסף הוצאה יומית.",
+        "campaign_label": "מזהה מסע פרסום:",
+        "button": "נהל מסע פרסום"
+      }
+    },
+    "subjects": {
+      "otp": "Strug אימות: הקוד שלך כאן",
+      "welcome": "ברוכים הבאים למשפחת Strug!",
+      "password_reset": "Strug: אפס את הסיסמה שלך",
+      "login_alert": "התראת אבטחה Strug: התחברות חדשה זוהתה",
+      "ride_receipt": "תקציר רכיבת Strug: תודה על הרכיבה!"
+    },
+    "otp": {
+      "tag": "בדיקת אבטחה",
+      "title": "אמת חשבון",
+      "instruction": "השתמש בקוד המאובטח למטה כדי להשלים את ההרשמה שלך. תקף ל-10 דקות.",
+      "ignore": "אם לא ביקשת זאת, אנא התעלם מאימייל זה."
+    },
+    "common": {
+      "tagline": "העבודה שלך • הזמן שלך • הכסף שלך",
+      "rights_reserved": "כל הזכויות שמורות",
+      "need_help": "צריך עזרה? השב לדוא\"ל זה או בקר במרכז התמיכה שלנו."
+    },
+    "welcome": {
+      "tag": "ברוכים הבאים ל-StrUG",
+      "title": "שלום, {{name}}!",
+      "instruction": "החשבון שלך מאומת. כעת אתה חלק מפלטפורמה שנבנתה כדי לפשט את העבודה, הזמן והכסף שלך.",
+      "button": "חקור את לוח המחוונים"
+    },
+    "password_reset": {
+      "tag": "אבטחה",
+      "title": "אפס סיסמה",
+      "instruction": "הוגשה בקשה לאפס את סיסמת חשבון Strug שלך. לחץ על הכפתור למטה כדי לבחור אחד חדש.",
+      "button": "אפס את הסיסמה שלי",
+      "ignore": "אם לא ביקשת זאת, תוכל להתעלם בבטחה מאימייל זה. הקישור יפוג בעוד שעה."
+    },
+    "login_alert": {
+      "tag": "התראת אבטחה",
+      "title": "התחברות חדשה זוהתה",
+      "instruction": "שמנו לב לכניסה חדשה לחשבון Strug שלך. אם זה היית אתה, אתה יכול להתעלם מהמייל הזה.",
+      "device": "מכשיר",
+      "time": "זמן",
+      "not_you": "אם זה לא היית אתה, נא לאבטח את חשבונך מיד על ידי שינוי הסיסמה שלך."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "סיכום רכיבה",
+      "tag": "הטיול הושלם",
+      "total_fare": "מחיר כולל",
+      "distance": "מרחק",
+      "duration": "משך זמן",
+      "pickup": "איסוף",
+      "drop": "הורדה",
+      "driver": "נהג",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "תודה שרכבת עם Strug!",
+      "support": "אם יש לך בעיות עם הנסיעה הזו, צור קשר עם התמיכה."
+    },
+    "carpool_booking": {
+      "subject": "Carpool אושר: הנסיעה שלך הוזמנה!",
+      "title": "ההזמנה אושרה",
+      "tag": "קרפול שמור",
+      "from": "מ",
+      "to": "ל",
+      "seats": "מקומות הוזמנו",
+      "total_cost": "עלות כוללת",
+      "status": "סטטוס",
+      "thanks": "תודה על הנסיעה עם Strug!",
+      "details_msg": "המושב שלך נשמר בהצלחה. נא להגיע בזמן לנקודת האיסוף."
+    },
+    "ghost_driver": {
+      "subject": "עדכון נסיעה: אנו מקצים עבורך מנהל התקן חדש",
+      "title": "מציאת דרייבר חדש",
+      "tag": "עדכון רכיבה",
+      "instruction": "מנהל ההתקן הקודם שלך אינו זמין או אינו מגיב. אל דאגה, אנו מחפשים אוטומטית נהג חדש שיאסוף אותך.",
+      "status": "סטטוס נוכחי: מחפש מחדש מנהלי התקנים...",
+      "hang_tight": "בבקשה תחזיק חזק! אנו נודיע לך ברגע שנהג חדש יקבל את בקשתך."
+    },
+    "password_changed": {
+      "subject": "התראת אבטחה Strug: הסיסמה שלך שונתה",
+      "title": "הסיסמה עודכנה",
+      "tag": "עדכון אבטחה",
+      "instruction": "סיסמת חשבון Strug שלך שונתה לאחרונה. אם ביצעת את השינוי הזה, תוכל להתעלם בבטחה מאימייל זה.",
+      "warning": "אם לא שינית את הסיסמה שלך, חשבונך עלול להיפגע. נא לאבטח את חשבונך באופן מיידי.",
+      "button": "אבטח את החשבון שלי",
+      "footer": "צוות אבטחת פלטפורמת Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: ההזמנה אושרה! #{{order_id}}",
+        "new_order_vendor": "נדרשת פעולה: התקבלה הזמנה חדשה! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "קבלה של הזמנה",
+        "tag": "ההזמנה הצליחה",
+        "vendor_tag": "נדרשת פעולה",
+        "order_id": "מזהה הזמנה",
+        "item": "פריט",
+        "qty": "כמות",
+        "price": "מחיר",
+        "subtotal": "סכום משנה",
+        "delivery_fee": "דמי משלוח",
+        "service_tax": "מס שירות",
+        "platform_fee": "עמלת פלטפורמה",
+        "grand_total": "סכום כולל",
+        "total": "סכום כולל",
+        "delivery_address": "כתובת למשלוח",
+        "thanks": "מקווה שתהנה מהארוחה שלך!",
+        "vendor_title": "הזמנה חדשה בשבילך",
+        "vendor_msg": "קיבלת הזמנה חדשה. אנא התחל להכין אותו מיד."
+      }
+    },
+    "food_status": {
+      "tag": "עדכון הזמנה",
+      "subjects": {
+        "preparing": "Strug Food: ההזמנה שלך מתכוננת! 🍳",
+        "dispatched": "חדשות נהדרות! ההזמנה שלך בדרך 🛵",
+        "delivered": "תהנה מהארוחה שלך! ההזמנה נמסרה בהצלחה ✅",
+        "cancelled": "Strug הודעה: ההזמנה שלך בוטלה ❌"
+      },
+      "messages": {
+        "preparing": "המסעדה החלה להכין את הארוחה הטעימה שלכם. נודיע לך כשהיא יוצאת למשלוח.",
+        "dispatched": "ההזמנה שלך נאספה ושותף המשלוח שלנו בדרך למיקום שלך.",
+        "delivered": "ההזמנה שלך נמסרה. תודה שבחרת ב-Strug!",
+        "cancelled": "אנו מצטערים להודיע לך שהזמנתך בוטלה. אם כבר שילמת, החזר יבוצע בקרוב."
+      },
+      "labels": {
+        "order_id": "מזהה הזמנה",
+        "current_status": "מצב נוכחי"
+      }
+    },
+    "digital": {
+      "subject": "התוכן הדיגיטלי של Strug שלך מוכן!",
+      "title": "הורד את המוצר שלך",
+      "instruction": "תודה על הרכישה! כעת תוכל לגשת ולהוריד את התוכן הדיגיטלי שלך באמצעות הכפתור למטה.",
+      "button": "הורד עכשיו"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: תלוש השכר שלך לחודש זה מוכן 📄",
+      "title": "תלוש שכר חודשי",
+      "tag": "סיכום שכר",
+      "net_salary": "שכר נטו",
+      "epf": "EPF (עובד)",
+      "etf": "תעודת סל",
+      "ot": "— OT Pay",
+      "bonus": "בונוס",
+      "status": "מצב תשלום",
+      "thanks": "אם יש לך שאלות לגבי השכר שלך, אנא צור קשר עם משאבי אנוש."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: בקשת החופשה שלך אושרה ✅",
+      "subject_rejected": "Strug HR: עדכון לגבי בקשת החופשה שלך ❌",
+      "title_approved": "עזוב מאושר!",
+      "title_rejected": "עזוב את העדכון",
+      "tag": "השאירו בקשה",
+      "status_approved": "בקשת החופשה שלך לתקופה הבאה אושרה בהצלחה.",
+      "status_rejected": "אנו מצטערים להודיע לך שבקשת החופשה שלך לתקופה הבאה נדחתה.",
+      "from_date": "מתאריך",
+      "to_date": "עד היום",
+      "reason": "סיבה לדחייה",
+      "thanks": "לכל שאלה נוספת, אנא פנה למחלקת משאבי אנוש שלך."
+    },
+    "job_alert": {
+      "subject": "משרות Strug: בקשה חדשה התקבלה עבור {{job_title}} 💼",
+      "title": "מועמד חדש הגיש מועמדות",
+      "tag": "בקשת עבודה",
+      "instruction": "מועמד חדש הגיש מועמדות לאחד מרשימות המשרות שלך. להלן הפרטים הקצרים:",
+      "job_title": "תפקיד עבודה",
+      "candidate": "שם המועמד",
+      "view_button": "צפה באפליקציה",
+      "thanks": "אנא היכנס לפורטל הסוכן שלך כדי לעיין בפרטים המלאים ובקורות החיים."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: משמרת העבודה שלך עודכנה 🕒",
+      "title": "Shift עודכן",
+      "tag": "עדכון לוח זמנים",
+      "instruction": "לוח הזמנים של העבודה שלך עודכן לאחרונה על ידי מחלקת משאבי אנוש. אנא בדוק את תזמוני המשמרות החדשים שלך למטה.",
+      "start_time": "Shift Starts",
+      "end_time": "משמרת מסתיימת",
+      "thanks": "אנא וודא שאתה נוכח בהתאם ללוח הזמנים החדש. צור קשר עם משאבי אנוש לכל בעיה."
+    },
+    "services": {
+      "tag": "עדכון שירות",
+      "subjects": {
+        "confirmed_customer": "שירותי Strug: המינוי שלך אושר! ✅",
+        "new_alert_provider": "פגישה חדשה: יש לך הזמנה חדשה! 📅",
+        "reminder": "תזכורת: התור שלך הוא בעוד מספר שעות ⏳",
+        "rental_expiry": "נדרשת פעולה: תוקף ההשכרה שלך יפוג בקרוב! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "שירות",
+        "provider": "ספק",
+        "customer": "לקוח",
+        "date": "תאריך",
+        "time": "זמן",
+        "location": "מיקום",
+        "expiry": "תאריך תפוגה"
+      },
+      "messages": {
+        "confirmed": "הפגישה שלך נקבעה בהצלחה. נא להגיע בזמן.",
+        "provider_alert": "לקוח חדש הזמין את השירות שלך. הנה הפרטים.",
+        "reminder": "זוהי תזכורת ידידותית לפגישה הקרובה שלך עם Strug.",
+        "rental_expiry": "תקופת השכירות שלך עומדת להסתיים. נא להחזיר את הפריט או להאריך את התקופה כדי למנוע קנסות.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "דחוף: הודעת תפוגה",
+        "item_name": "שם פריט",
+        "due_date": "תאריך יעד",
+        "order_id": "מזהה הזמנה",
+        "button": "הארכה או החזרת פריט",
+        "footer": "הימנע מעמלות איחור על ידי החזרת הפריט לפני המועד.",
+        "thanks": "תודה על השימוש ב-Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: תודה על התרומה הנדיבה שלך! ❤️",
+        "loan_reminder": "תזכורת לתשלום: יש לשלם את תשלומי ההלוואה שלך 💳"
+      },
+      "donation": {
+        "title": "תרומה התקבלה",
+        "tag": "מחזיר",
+        "msg": "התמיכה שלך עושה הבדל עצום! קיבלנו בהצלחה את תרומתך לפרויקט.",
+        "amount": "סכום שנתרם",
+        "project": "פרויקט"
+      },
+      "loan": {
+        "title": "החזר הלוואה",
+        "tag": "התשלום",
+        "msg": "זוהי תזכורת לכך שמועד פירעון ההלוואה שלך מתקרב. אנא ודא שיש מספיק כספים זמינים.",
+        "due_date": "תאריך יעד",
+        "amount": "סכום התשלומים"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: ההזמנה אושרה #{{order_id}}",
+        "new_order_seller": "Strug Shop: הזמנה חדשה התקבלה #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ההזמנה אושרה",
+        "vendor_tag": "הזמנה חדשה",
+        "title": "ההזמנה שלך מאושרת",
+        "vendor_title": "יש לך הזמנה חדשה",
+        "order_id": "סדר",
+        "product": "מוצר",
+        "qty": "כמות",
+        "total": "סך הכל",
+        "thanks": "תודה שקנית ב-Strug!",
+        "vendor_msg": "נא להכין ולשלוח הזמנה זו בהקדם האפשרי."
+      },
+      "status": {
+        "tag": "עדכון הזמנה",
+        "order_id": "מזהה הזמנה",
+        "tracking": "מספר מעקב",
+        "track_button": "צפה בהזמנה",
+        "subjects": {
+          "confirmed": "Strug Shop: ההזמנה שלך מאושרת",
+          "shipped": "Strug Shop: ההזמנה שלך נשלחה",
+          "fulfilled": "Strug Shop: ההזמנה שלך נמסרה"
+        },
+        "messages": {
+          "confirmed": "המוכר אישר את הזמנתך ומכין אותה למשלוח.",
+          "shipped": "החבילה שלך בדרך. מעקב: {{tracking_number}}",
+          "fulfilled": "ההזמנה שלך נמסרה. אנו מקווים שתיהנו מהרכישה!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug חינוך: התקדמות הלמידה השבועית שלך כאן 📚",
+        "unread_chat": "Strug: יש לך הודעות שלא נקראו בתיבת הדואר הנכנס שלך 💬"
+      },
+      "lms": {
+        "title": "התקדמות הלמידה",
+        "tag": "הישאר חכם",
+        "msg": "אתה מסתדר מצוין! להלן סיכום של פעילות כרטיס הבזק שלך השבוע.",
+        "cards_reviewed": "כרטיסים נבדקו",
+        "new_decks": "חפיסות חדשות הצטרפו"
+      },
+      "chat": {
+        "title": "הודעות חדשות",
+        "tag": "קהילה",
+        "msg": "נעדרת לזמן מה. החברים וחברי הצוות שלך מנסים להגיע אליך.",
+        "button": "הצג צ'אט"
+      }
+    }
+  }
+}

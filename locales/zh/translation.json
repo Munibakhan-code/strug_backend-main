@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} 未找到",
+    "fetchFailed": "无法获取 {{resource}}",
+    "createFailed": "创建 {{resource}} 失败",
+    "updateFailed": "更新 {{resource}} 失败",
+    "deleteFailed": "删除 {{resource}} 失败",
+    "invalidId": "{{field}} 必须是数字",
+    "alreadyExists": "{{field}} 已经存在",
+    "invalidFormat": "{{field}} 格式无效",
+    "internalServer": "服务器内部错误",
+    "accessDenied": "访问被拒绝",
+    "invalidToken": "无效令牌",
+    "adminRequired": "需要管理员权限",
+    "forbidden": "您没有执行此操作的权限"
+  },
+  "food": {
+    "filterError": "过滤器错误",
+    "orderAlreadyTaken": "该订单已被另一位司机接受。",
+    "orderAccepted": "订单已接受交付",
+    "orderDeclined": "订单被拒绝。",
+    "orderRejected": "订单被拒绝。"
+  },
+  "user": {
+    "notFound": "未找到用户",
+    "deleted": "用户删除成功",
+    "labelStreetRequired": "标签和街道为必填项",
+    "addressNotFound": "找不到地址",
+    "savedAddressRequired": "送货地址为必填项",
+    "cannotModifyOther": "无法修改其他用户的帐户",
+    "emailExists": "电子邮件或推荐代码已存在"
+  },
+  "auth": {
+    "invalidLoginFormat": "登录格式无效",
+    "userNotFound": "未找到用户",
+    "renewSubscription": "请续订您的订阅",
+    "verifyBefore": "请在登录前验证您的 {{method}}。",
+    "noPassword": "该帐户没有密码。尝试谷歌登录。",
+    "invalidPassword": "密码无效",
+    "teamMemberNotFound": "未找到团队成员",
+    "loginSuccessful": "登录成功",
+    "invalidCredentials": "凭证无效",
+    "noRefreshToken": "未提供刷新令牌",
+    "invalidRefreshToken": "刷新令牌无效或过期",
+    "invalidRefreshTokenPayload": "刷新令牌有效负载无效",
+    "teamMembershipNotFound": "未找到团队成员",
+    "accessTokenRefreshed": "访问令牌已刷新",
+    "refreshTokenDeleted": "刷新令牌已删除",
+    "emailRequired": "电子邮件为必填项",
+    "passwordAccountExists": "该邮箱是使用密码注册的。请手动登录。",
+    "emailRequiredFacebook": "电子邮件是必需的，但 Facebook 不提供。请确保您的 Facebook 帐户有经过验证的电子邮件。",
+    "authCodeRequired": "需要验证码",
+    "validEmailRequired": "需要一个有效的电子邮件。",
+    "accountEmailExists": "使用此电子邮件的帐户已存在。",
+    "usernameTaken": "该用户名已被占用。",
+    "tooManyOtpRequests": "代码请求太多。稍后再试。",
+    "failedSendCode": "发送代码失败。",
+    "registerFieldsRequired": "电子邮件、姓名、密码和 OTP 均为必填项。",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "密码必须包含：{{requirements}}。",
+    "noVerificationCode": "未找到验证码。请索取一份新的。",
+    "verificationExpired": "验证码已过期。请索取一份新的。",
+    "tooManyOtpAttempts": "错误的尝试太多。请请求新的验证码。",
+    "invalidVerificationCode": "验证码无效。",
+    "verificationFailed": "验证失败。",
+    "tooManyRequests": "请求太多。请稍后重试。",
+    "resetFieldsRequired": "需要电子邮件、新密码和令牌。",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "重置链接无效或过期。",
+    "accountLocked": "帐户暂时被锁定。稍后再试。",
+    "verificationCodeRequired": "需要验证码。",
+    "invalidSession": "无效会话",
+    "passwordFieldsRequired": "当前密码和新密码是必需的"
+  },
+  "success": {
+    "deleted": "{{resource}} 删除成功",
+    "created": "{{resource}} 创建成功",
+    "updated": "{{resource}} 更新成功"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads：广告帐户余额不足警告",
+      "spend_alert_subject": "Strug 广告警报：活动 #{{campaign_id}} 达到 {{percentage}}% 每日预算",
+      "low_balance": {
+        "tag": "广告账户提醒",
+        "title": "低余额警告",
+        "instruction": "您好 {{name}}，您的广告钱包余额所剩无几。为防止正在进行的活动被自动暂停，请充值您的账户余额。",
+        "balance_label": "当前余额：",
+        "button": "充值广告钱包"
+      },
+      "spend_alert": {
+        "tag": "达到预算里程碑",
+        "title": "{{percentage}}% 每日预算支出",
+        "instruction": "您好 {{name}}，这是您的活动广告集的自动状态更新。您的广告系列已达到每日支出阈值。",
+        "campaign_label": "活动 ID：",
+        "button": "管理活动"
+      }
+    },
+    "subjects": {
+      "otp": "Strug 验证：您的代码在这里",
+      "welcome": "欢迎加入Strug大家庭！",
+      "password_reset": "Strug：重置您的密码",
+      "login_alert": "Strug 安全警报：检测到新登录",
+      "ride_receipt": "Strug 骑行总结：感谢您的骑行！"
+    },
+    "otp": {
+      "tag": "安全检查",
+      "title": "验证账户",
+      "instruction": "使用下面的安全代码完成您的注册。 10分钟内有效。",
+      "ignore": "如果您没有提出此要求，请忽略这封电子邮件。"
+    },
+    "common": {
+      "tagline": "您的工作 • 您的时间 • 您的金钱",
+      "rights_reserved": "保留所有权利",
+      "need_help": "需要帮助吗？回复此电子邮件或访问我们的支持中心。"
+    },
+    "welcome": {
+      "tag": "欢迎来到STRUG",
+      "title": "你好，{{name}}！",
+      "instruction": "您的帐户已验证。您现在是一个旨在简化您的工作、时间和金钱的平台的一部分。",
+      "button": "探索仪表板"
+    },
+    "password_reset": {
+      "tag": "安全性",
+      "title": "重置密码",
+      "instruction": "已请求重置您的 Strug 帐户密码。单击下面的按钮选择一个新的。",
+      "button": "重置我的密码",
+      "ignore": "如果您没有提出此要求，您可以安全地忽略这封电子邮件。链接将在 1 小时后过期。"
+    },
+    "login_alert": {
+      "tag": "安全警报",
+      "title": "检测到新登录",
+      "instruction": "我们注意到您的 Strug 帐户有新的登录信息。如果这是您，您可以忽略这封电子邮件。",
+      "device": "设备",
+      "time": "时间",
+      "not_you": "如果这不是您本人操作，请立即更改密码以保护您的帐户。"
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "骑行总结",
+      "tag": "行程已完成",
+      "total_fare": "总票价",
+      "distance": "距离",
+      "duration": "持续时间",
+      "pickup": "皮卡",
+      "drop": "还车",
+      "driver": "司机",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "感谢您与 Strug 一起骑行！",
+      "support": "如果您对此行程有任何问题，请联系支持人员。"
+    },
+    "carpool_booking": {
+      "subject": "拼车已确认：您的行程已预订！",
+      "title": "预订已确认",
+      "tag": "拼车预订",
+      "from": "来自",
+      "to": "至",
+      "seats": "已预订座位",
+      "total_cost": "总成本",
+      "status": "状态",
+      "thanks": "感谢您与 Strug 拼车！",
+      "details_msg": "您的座位已成功预订。请准时到达接送点。"
+    },
+    "ghost_driver": {
+      "subject": "行程更新：我们正在为您重新指派新司机",
+      "title": "寻找新司机",
+      "tag": "乘车更新",
+      "instruction": "您之前的驱动程序无法使用或没有响应。不用担心，我们会自动寻找新司机来接您。",
+      "status": "当前状态：正在寻找驱动程序...",
+      "hang_tight": "请坚持住！新司机接受您的请求后，我们会立即通知您。"
+    },
+    "password_changed": {
+      "subject": "Strug 安全警报：您的密码已更改",
+      "title": "密码已更新",
+      "tag": "安全更新",
+      "instruction": "您的 Strug 帐户密码最近已更改。如果您进行了此更改，您可以放心地忽略这封电子邮件。",
+      "warning": "如果您没有更改密码，您的帐户可能会受到威胁。请立即保护您的帐户。",
+      "button": "保护我的帐户",
+      "footer": "Strug 平台安全团队"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food：订单已确认！ #{{order_id}}",
+        "new_order_vendor": "需要采取的行动：收到新订单！ #{{order_id}}"
+      },
+      "receipt": {
+        "title": "订单收据",
+        "tag": "订单成功",
+        "vendor_tag": "需要采取的行动",
+        "order_id": "订单号",
+        "item": "项目",
+        "qty": "数量",
+        "price": "价格",
+        "subtotal": "小计",
+        "delivery_fee": "运费",
+        "service_tax": "服务税",
+        "platform_fee": "平台费",
+        "grand_total": "总金额",
+        "total": "总额",
+        "delivery_address": "送货地址",
+        "thanks": "希望您用餐愉快！",
+        "vendor_title": "为您提供新订单",
+        "vendor_msg": "您收到了一份新订单。请立即开始准备。"
+      }
+    },
+    "food_status": {
+      "tag": "订单更新",
+      "subjects": {
+        "preparing": "Strug Food：正在准备您的订单！ 🍳",
+        "dispatched": "好消息！您的订单正在路上🛵",
+        "delivered": "祝您用餐愉快！订单已成功送达✅",
+        "cancelled": "Strug通知：您的订单已被取消❌"
+      },
+      "messages": {
+        "preparing": "餐厅已经开始为您准备美味佳肴。发货后我们会通知您。",
+        "dispatched": "您的订单已被提取，我们的送货合作伙伴正在前往您所在地的途中。",
+        "delivered": "您的订单已移交。感谢您选择Strug！",
+        "cancelled": "我们很遗憾地通知您，您的订单已被取消。如果您已经付款，我们将很快发起退款。"
+      },
+      "labels": {
+        "order_id": "订单号",
+        "current_status": "目前状态"
+      }
+    },
+    "digital": {
+      "subject": "您的 Strug 数字内容已准备就绪！",
+      "title": "下载您的产品",
+      "instruction": "感谢您的购买！您现在可以使用下面的按钮访问和下载您的数字内容。",
+      "button": "立即下载"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR：您本月的工资单已准备好📄",
+      "title": "每月工资单",
+      "tag": "工资汇总",
+      "net_salary": "净工资",
+      "epf": "公积金（雇员）",
+      "etf": "工资ETF — ETF",
+      "ot": "加班费",
+      "bonus": "奖金",
+      "status": "付款状态",
+      "thanks": "如果您对薪资有任何疑问，请联系HR。"
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR：您的休假申请已获批准 ✅",
+      "subject_rejected": "Strug HR：请假申请的最新情况 ❌",
+      "title_approved": "批准离开！",
+      "title_rejected": "留下更新",
+      "tag": "留下请求",
+      "status_approved": "您下期的休假申请已成功获得批准。",
+      "status_rejected": "我们很遗憾地通知您，您在以下期间的休假申请已被拒绝。",
+      "from_date": "开始日期",
+      "to_date": "迄今为止",
+      "reason": "拒绝原因",
+      "thanks": "如有任何其他问题，请联系您的人力资源部门。"
+    },
+    "job_alert": {
+      "subject": "Strug 工作：收到 {{job_title}} 的新申请 💼",
+      "title": "新候选人申请",
+      "tag": "职位申请",
+      "instruction": "一位新候选人已申请您的一份职位列表。以下是简要细节：",
+      "job_title": "工作角色",
+      "candidate": "候选人姓名",
+      "view_button": "查看应用",
+      "thanks": "请登录您的代理门户查看完整的详细信息和简历。"
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR：您的工作班次已更新🕒",
+      "title": "班次更新",
+      "tag": "时间表更新",
+      "instruction": "人力资源部门最近更新了您的工作时间表。请在下面查看您的新轮班时间。",
+      "start_time": "轮班开始",
+      "end_time": "班次结束",
+      "thanks": "请确保您按照新的时间表出席。如有任何疑问，请联系人力资源部。"
+    },
+    "services": {
+      "tag": "服务更新",
+      "subjects": {
+        "confirmed_customer": "Strug 服务：您的预约已确认！ ✅",
+        "new_alert_provider": "新预约：您有新的预订！ 📅",
+        "reminder": "提醒：您的预约将在几个小时后进行 ⏳",
+        "rental_expiry": "需要采取的行动：您的租金即将到期！ 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "服务",
+        "provider": "提供者",
+        "customer": "客户",
+        "date": "日期",
+        "time": "时间",
+        "location": "地点",
+        "expiry": "到期日"
+      },
+      "messages": {
+        "confirmed": "您的预约已成功安排。请准时。",
+        "provider_alert": "有新客户预订了您的服务。以下是详细信息。",
+        "reminder": "这是对您即将与 Strug 的约会的友好提醒。",
+        "rental_expiry": "您的租赁期即将结束。请退回物品或延长期限以避免处罚。",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "紧急：到期通知",
+        "item_name": "商品名称",
+        "due_date": "截止日期",
+        "order_id": "订单号",
+        "button": "延长或退回物品",
+        "footer": "在到期时间之前退回物品可以避免滞纳金。",
+        "thanks": "感谢您使用 Strug 租赁。"
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug：感谢您的慷慨捐赠！ ❤️",
+        "loan_reminder": "付款提醒：您的贷款分期付款已到期💳"
+      },
+      "donation": {
+        "title": "收到捐款",
+        "tag": "回馈",
+        "msg": "您的支持会带来巨大的改变！我们已成功收到您对该项目的贡献。",
+        "amount": "捐赠金额",
+        "project": "项目"
+      },
+      "loan": {
+        "title": "偿还贷款",
+        "tag": "到期付款",
+        "msg": "这是提醒您的贷款偿还日期即将到来。请确保有足够的资金。",
+        "due_date": "截止日期",
+        "amount": "分期金额"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug 商店：订单已确认#{{order_id}}",
+        "new_order_seller": "Strug 商店：收到新订单#{{order_id}}"
+      },
+      "receipt": {
+        "tag": "订单已确认",
+        "vendor_tag": "新订单",
+        "title": "您的订单已确认",
+        "vendor_title": "您有新订单",
+        "order_id": "订单",
+        "product": "产品展示",
+        "qty": "数量",
+        "total": "总计",
+        "thanks": "感谢您在 Strug 上购物！",
+        "vendor_msg": "请尽快准备并发货此订单。"
+      },
+      "status": {
+        "tag": "订单更新",
+        "order_id": "订单号",
+        "tracking": "追踪号码",
+        "track_button": "查看订单",
+        "subjects": {
+          "confirmed": "Strug Shop：您的订单已确认",
+          "shipped": "Strug Shop：您的订单已发货",
+          "fulfilled": "Strug Shop：您的订单已送达"
+        },
+        "messages": {
+          "confirmed": "卖家已确认您的订单并正在准备发货。",
+          "shipped": "您的包裹正在路上。追踪：{{tracking_number}}",
+          "fulfilled": "您的订单已送达。我们希望您购买愉快！"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education：您每周的学习进度都在这里📚",
+        "unread_chat": "Strug：您的收件箱中有未读消息💬"
+      },
+      "lms": {
+        "title": "学习进度",
+        "tag": "保持聪明",
+        "msg": "你做得很好！以下是本周抽认卡活动的摘要。",
+        "cards_reviewed": "已审查的卡片",
+        "new_decks": "新套牌加入"
+      },
+      "chat": {
+        "title": "新消息",
+        "tag": "社区",
+        "msg": "你已经离开有一段时间了。您的朋友和团队成员正在尝试联系您。",
+        "button": "查看聊天"
+      }
+    }
+  }
+}

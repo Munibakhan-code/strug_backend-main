@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} net fonnt",
+    "fetchFailed": "{{resource}} konnt net erofhuelen",
+    "createFailed": "Konnt net erstellen {{resource}}",
+    "updateFailed": "Konnt net aktualiséieren {{resource}}",
+    "deleteFailed": "Ausgefall fir {{resource}} ze läschen",
+    "invalidId": "{{field}} muss eng Zuel sinn",
+    "alreadyExists": "{{field}} existéiert schonn",
+    "invalidFormat": "Invalid {{field}} Format",
+    "internalServer": "Interne Serverfehler",
+    "accessDenied": "Zougang refuséiert",
+    "invalidToken": "Ongülteg Token",
+    "adminRequired": "Admin Zougang néideg",
+    "forbidden": "Dir hutt keng Erlaabnis fir dës Aktioun ze maachen"
+  },
+  "food": {
+    "filterError": "Filterfehler",
+    "orderAlreadyTaken": "Dës Bestellung gouf scho vun engem anere Chauffeur geholl.",
+    "orderAccepted": "Bestellung akzeptéiert fir Liwwerung",
+    "orderDeclined": "Bestellung refuséiert.",
+    "orderRejected": "Bestellung refuséiert."
+  },
+  "user": {
+    "notFound": "Benotzer net fonnt",
+    "deleted": "Benotzer erfollegräich geläscht",
+    "labelStreetRequired": "Etikett a Strooss sinn néideg",
+    "addressNotFound": "Adress net fonnt",
+    "savedAddressRequired": "Liwwerung Adress ass néideg",
+    "cannotModifyOther": "Kann de Kont vun engem anere Benotzer net änneren",
+    "emailExists": "E-Mail oder Referralcode gëtt et schonn"
+  },
+  "auth": {
+    "invalidLoginFormat": "Invalid Login Format",
+    "userNotFound": "Benotzer net fonnt",
+    "renewSubscription": "Weg erneieren Är Abonnement",
+    "verifyBefore": "Verifizéiert w.e.g. Är {{method}} ier Dir Iech aloggen.",
+    "noPassword": "Dëse Kont huet kee Passwuert. Probéiert Google Login.",
+    "invalidPassword": "Ongëlteg Passwuert",
+    "teamMemberNotFound": "Teammember net fonnt",
+    "loginSuccessful": "Login erfollegräich",
+    "invalidCredentials": "Ongülteg Umeldungsinformatiounen",
+    "noRefreshToken": "Keen Erfrëschung Token gëtt geliwwert",
+    "invalidRefreshToken": "Ongëlteg oder ofgelaaf Erfrëschungstoken",
+    "invalidRefreshTokenPayload": "Ongülteg Erfrëschung Token Notzlaascht",
+    "teamMembershipNotFound": "Team Memberschaft net fonnt",
+    "accessTokenRefreshed": "Zougang Token erfrëscht",
+    "refreshTokenDeleted": "Erfrëschen Token geläscht",
+    "emailRequired": "E-Mail ass néideg",
+    "passwordAccountExists": "Dës E-Mail ass mat Passwuert registréiert. Weg aloggen manuell.",
+    "emailRequiredFacebook": "E-Mail ass erfuerderlech awer net vu Facebook geliwwert. Gitt sécher datt Äre Facebook Kont eng verifizéiert E-Mail huet.",
+    "authCodeRequired": "Auth Code ass néideg",
+    "validEmailRequired": "Eng valabel E-Mail ass erfuerderlech.",
+    "accountEmailExists": "E Kont mat dëser E-Mail gëtt et schonn.",
+    "usernameTaken": "Dëse Benotzernumm ass scho geholl.",
+    "tooManyOtpRequests": "Ze vill Code Ufroen. Probéiert méi spéit nach eng Kéier.",
+    "failedSendCode": "Ausgefall Code ze schécken.",
+    "registerFieldsRequired": "Email, Numm, Passwuert, an otp sinn all néideg.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Passwuert muss enthalen: {{requirements}}.",
+    "noVerificationCode": "Kee Verifikatiounscode fonnt. Ufro w.e.g. eng nei.",
+    "verificationExpired": "Verifikatiounscode ass ofgelaf. Ufro w.e.g. eng nei.",
+    "tooManyOtpAttempts": "Ze vill falsch Versich. Ufro w.e.g. en neie Verifikatiounscode.",
+    "invalidVerificationCode": "Ongülteg Verifikatiounscode.",
+    "verificationFailed": "Verifizéierung ass gescheitert.",
+    "tooManyRequests": "Ze vill Ufroen. Probéiert w.e.g. méi spéit nach eng Kéier.",
+    "resetFieldsRequired": "E-Mail, NewPassword an Token sinn erfuerderlech.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Ongëlteg oder ofgelaaf Resetlink.",
+    "accountLocked": "Kont temporär gespaart. Probéiert méi spéit nach eng Kéier.",
+    "verificationCodeRequired": "Verifikatiounscode ass erfuerderlech.",
+    "invalidSession": "Invalid Sëtzung",
+    "passwordFieldsRequired": "currentPassword an newPassword sinn erfuerderlech"
+  },
+  "success": {
+    "deleted": "{{resource}} erfollegräich geläscht",
+    "created": "{{resource}} erfollegräich erstallt",
+    "updated": "{{resource}} erfollegräich aktualiséiert"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Annoncen: Ad Account Low Balance Warnung",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% Deeglech Budget erreecht fir Kampagne #{{campaign_id}}",
+      "low_balance": {
+        "tag": "REKLAME KONTO ALERT",
+        "title": "Niddereg Gläichgewiicht Warnung",
+        "instruction": "Moien {{name}}, Är Annonce Portemonnaie Gläichgewiicht leeft niddereg. Fir ze verhënneren datt aktiv Kampagnen automatesch gepaust ginn, w.e.g. fëllt Äre Kontsaldo erop.",
+        "balance_label": "Aktuelle Bilan:",
+        "button": "Top Up Annonce Portemonnaie"
+      },
+      "spend_alert": {
+        "tag": "BUDGET Meilesteen erreecht",
+        "title": "{{percentage}}% deegleche Budget benotzt",
+        "instruction": "Moien {{name}}, dëst ass en automatiséierte Statusupdate fir Ären aktive Annonceset. Är Kampagne huet eng deeglech Ausgabegrenz erreecht.",
+        "campaign_label": "Campagne ID:",
+        "button": "Verwalte Campagne"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verifikatioun: Äre Code ass hei",
+      "welcome": "Wëllkomm an der Strug Famill!",
+      "password_reset": "Strug: Äert Passwuert zrécksetzen",
+      "login_alert": "Strug Sécherheet Alarm: Neie Login entdeckt",
+      "ride_receipt": "Strug Ride Resumé: Merci fir d'Reiden!"
+    },
+    "otp": {
+      "tag": "— SECURITY CHECK",
+      "title": "Verifizéiert Kont",
+      "instruction": "Benotzt de séchere Code hei ënnen fir Är Aschreiwung ofzeschléissen. Valabel fir 10 Minutten.",
+      "ignore": "Wann Dir dëst net gefrot hutt, ignoréiert w.e.g. dës E-Mail."
+    },
+    "common": {
+      "tagline": "Är Aarbecht • Är Zäit • Är Suen",
+      "rights_reserved": "All Rechter reservéiert",
+      "need_help": "Hëllef braucht? Äntwert op dës E-Mail oder besicht eise Supportcenter."
+    },
+    "welcome": {
+      "tag": "WELCOME BIS STRUG",
+      "title": "Moien, {{name}}!",
+      "instruction": "Äre Kont ass verifizéiert. Dir sidd elo Deel vun enger Plattform gebaut fir Är Aarbecht, Zäit a Suen ze vereinfachen.",
+      "button": "Entdeckt Dashboard"
+    },
+    "password_reset": {
+      "tag": "SECURITÉIT",
+      "title": "Reset Passwuert",
+      "instruction": "Eng Ufro gouf gemaach fir Äert Strug Kont Passwuert zréckzesetzen. Klickt op de Knäppchen hei ënnen fir en neien ze wielen.",
+      "button": "Mäi Passwuert zrécksetzen",
+      "ignore": "Wann Dir dëst net gefrot hutt, kënnt Dir dës E-Mail sécher ignoréieren. Link leeft an 1 Stonn."
+    },
+    "login_alert": {
+      "tag": "— SECURITY ALERT",
+      "title": "Neie Login entdeckt",
+      "instruction": "Mir hunn en neie Login op Äre Strug Kont gemierkt. Wann dëst Dir sidd, kënnt Dir dës E-Mail ignoréieren.",
+      "device": "Apparat",
+      "time": "Zäit",
+      "not_you": "Wann dëst NET Dir war, séchert w.e.g. Äre Kont direkt andeems Dir Äert Passwuert ännert."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Ride Resumé",
+      "tag": "TRIP FËLLT",
+      "total_fare": "Total Tarif",
+      "distance": "Distanz",
+      "duration": "Dauer",
+      "pickup": "Ofhuelen",
+      "drop": "Ofginn",
+      "driver": "Chauffeur",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Merci datt Dir mam Strug gefuer sidd!",
+      "support": "Wann Dir Probleemer mat dëser Ride hutt, kontaktéiert d'Ënnerstëtzung."
+    },
+    "carpool_booking": {
+      "subject": "Carpool bestätegt: Är Fahrt ass gebucht!",
+      "title": "Reservatioun confirméiert",
+      "tag": "CARPOOL RESERVÉIERT",
+      "from": "Vun",
+      "to": "Zu",
+      "seats": "Plaze reservéiert",
+      "total_cost": "Total Käschten",
+      "status": "Statut",
+      "thanks": "Merci fir de Carpooling mam Strug!",
+      "details_msg": "Äre Sëtz gouf erfollegräich reservéiert. Sidd w.e.g. op Zäit um Pickup Punkt."
+    },
+    "ghost_driver": {
+      "subject": "Ride Update: Mir ginn en neie Chauffer fir Iech zou",
+      "title": "En neie Chauffer ze fannen",
+      "tag": "FAHRT AKTUALISÉIERUNG",
+      "instruction": "Äre fréiere Chauffer ass net verfügbar oder reagéiert net. Maacht Iech keng Suergen, mir sichen automatesch no engem neie Chauffeur fir Iech opzehuelen.",
+      "status": "Aktuelle Status: Nei Sich no Chauffeuren ...",
+      "hang_tight": "Halt w.e.g. fest! Mir informéieren Iech soubal en neie Chauffeur Är Demande acceptéiert."
+    },
+    "password_changed": {
+      "subject": "Strug Sécherheet Alarm: Äert Passwuert gouf geännert",
+      "title": "Passwuert aktualiséiert",
+      "tag": "SÉCHERHEET AKTUALISÉIERUNG",
+      "instruction": "Äert Strug Kont Passwuert gouf viru kuerzem geännert. Wann Dir dës Ännerung gemaach hutt, kënnt Dir dës E-Mail sécher ignoréieren.",
+      "warning": "Wann Dir Äert Passwuert NET geännert hutt, kann Äre Kont kompromittéiert ginn. Séchert w.e.g. Äre Kont direkt.",
+      "button": "Séchert Mäi Kont",
+      "footer": "Strug Plattform Sécherheetsrot Team"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Bestellung bestätegt! #{{order_id}}",
+        "new_order_vendor": "Aktioun erfuerderlech: Nei Bestellung kritt! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Bestellung Empfang",
+        "tag": "SUCCESS BESTELLEN",
+        "vendor_tag": "ACTION NËMMEN",
+        "order_id": "Bestellung ID",
+        "item": "Artikel",
+        "qty": "Quty",
+        "price": "Präis",
+        "subtotal": "Empfang Subtotal - Subtotal",
+        "delivery_fee": "Liwwerung Käschten",
+        "service_tax": "Service Steier",
+        "platform_fee": "Plattform Käschten",
+        "grand_total": "TOTAL Quantitéit",
+        "total": "Gesamtbetrag",
+        "delivery_address": "Liwwerung Adress",
+        "thanks": "Hoffen Dir genéisst Är Iessen!",
+        "vendor_title": "Nei Bestellung fir Iech",
+        "vendor_msg": "Dir hutt eng nei Bestellung kritt. Fänkt w.e.g. direkt un ze preparéieren."
+      }
+    },
+    "food_status": {
+      "tag": "BESTELLUNG AKTUALISÉIERUNG",
+      "subjects": {
+        "preparing": "Strug Food: Är Bestellung gëtt virbereet! 🍳",
+        "dispatched": "Flott Neiegkeet! Är Bestellung ass ënnerwee 🛵",
+        "delivered": "Genéisst Äert Iessen! Bestellung erfollegräich geliwwert ✅",
+        "cancelled": "Strug Notice: Är Bestellung gouf annuléiert ❌"
+      },
+      "messages": {
+        "preparing": "De Restaurant huet ugefaang Är lecker Iessen ze preparéieren. Mir wäerten Iech matdeelen wann et fir Liwwerung eraus ass.",
+        "dispatched": "Är Bestellung gouf ofgeholl an eise Liwwerpartner ass um Wee op Är Plaz.",
+        "delivered": "Är Bestellung gouf iwwerginn. Merci datt Dir Strug gewielt hutt!",
+        "cancelled": "Mir bedaueren Iech ze informéieren datt Är Bestellung annuléiert gouf. Wann Dir scho bezuelt hutt, gëtt e Remboursement geschwënn initiéiert."
+      },
+      "labels": {
+        "order_id": "Bestellung ID",
+        "current_status": "Aktuelle Status"
+      }
+    },
+    "digital": {
+      "subject": "Äre Strug Digital Inhalt ass prett!",
+      "title": "Download Äre Produit",
+      "instruction": "Merci fir Äre Kaf! Dir kënnt elo Zougang zu Ärem digitalen Inhalt eroflueden andeems Dir de Knäppchen hei drënner benotzt.",
+      "button": "Elo eroflueden"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Äre Payslip fir dëse Mount ass prett 📄",
+      "title": "Mount Payslip",
+      "tag": "PAYROLL RESUMÉ",
+      "net_salary": "Netto Gehalt",
+      "epf": "EPF (Employé)",
+      "etf": "ETF-Beitrag",
+      "ot": "Paieziedel ot - OT Pay",
+      "bonus": "Paieziedel Bonus - Bonus",
+      "status": "Bezuelen Status",
+      "thanks": "Wann Dir Froen iwwer Är Pai hutt, kontaktéiert w.e.g. HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Är Congé Ufro gouf guttgeheescht ✅",
+      "subject_rejected": "Strug HR: Update op Är Congé Ufro ❌",
+      "title_approved": "Loosst guttgeheescht!",
+      "title_rejected": "Verloossen Update",
+      "tag": "LOOS Ufro",
+      "status_approved": "Är Congé Ufro fir déi folgend Period gouf erfollegräich guttgeheescht.",
+      "status_rejected": "Mir bedaueren Iech matzedeelen datt Är Congé Ufro fir déi folgend Period refuséiert gouf.",
+      "from_date": "Vun Datum",
+      "to_date": "Fir Datum",
+      "reason": "Grond fir Ofleenung",
+      "thanks": "Fir weider Froen, kontaktéiert w.e.g. Äre HR Departement."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Nei Applikatioun kritt fir {{job_title}} 💼",
+      "title": "Neie Kandidat ugemellt",
+      "tag": "JOB APPLICATIOUN",
+      "instruction": "En neie Kandidat huet sech fir eng vun Ären Aarbechtsplazen ugemellt. Hei sinn déi kuerz Detailer:",
+      "job_title": "Aarbecht Roll",
+      "candidate": "Kandidat Numm",
+      "view_button": "View Applikatioun",
+      "thanks": "Mellt Iech w.e.g. an Ärem Agentportal un fir déi voll Detailer an CV ze iwwerpréiwen."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Är Aarbechtsschicht gouf aktualiséiert 🕒",
+      "title": "Verréckelung aktualiséiert",
+      "tag": "SCHEMA UPDATE",
+      "instruction": "Ären Aarbechtsplang gouf viru kuerzem vum HR Departement aktualiséiert. Kuckt w.e.g. Är nei Schichtzäiten hei ënnen.",
+      "start_time": "Shift fänkt un",
+      "end_time": "Verréckelung Enn",
+      "thanks": "Gitt sécher datt Dir präsent sidd no dem neie Zäitplang. Kontakt HR fir all Bedenken."
+    },
+    "services": {
+      "tag": "Servicer Tag - SERVICE UPDATE",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Äre Rendez-vous ass bestätegt! ✅",
+        "new_alert_provider": "Neie Rendez-vous: Dir hutt eng nei Buchung! 📅",
+        "reminder": "Erënnerung: Äre Rendez-vous ass an e puer Stonnen ⏳",
+        "rental_expiry": "Aktioun erfuerderlech: Är Locatioun leeft geschwënn aus! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Etiketten Service - Service",
+        "provider": "Etiketten Provider - Provider",
+        "customer": "Client",
+        "date": "Datum",
+        "time": "Zäit",
+        "location": "Etiketten Location - Location",
+        "expiry": "Verfallsdatum"
+      },
+      "messages": {
+        "confirmed": "Äre Rendez-vous ass erfollegräich geplangt. Sidd w.e.g. op Zäit.",
+        "provider_alert": "En neie Client huet Äre Service gebucht. Hei sinn d'Detailer.",
+        "reminder": "Dëst ass eng frëndlech Erënnerung un Äre kommende Rendez-vous mam Strug.",
+        "rental_expiry": "Är Locatiounsperiod ass um Enn. Gitt w.e.g. den Artikel zréck oder verlängert d'Period fir Strofe ze vermeiden.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "DRINGEND: EXPIRY NOTICE",
+        "item_name": "Artikel Numm",
+        "due_date": "Termin Datum",
+        "order_id": "Bestellung ID",
+        "button": "Artikel verlängeren oder zréckginn",
+        "footer": "Vermeit spéit Fraisen andeems Dir den Artikel virun der Zäit zréckschéckt.",
+        "thanks": "Merci datt Dir Strug Rentals benotzt."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Merci fir Äre generéisen Don! ❤️",
+        "loan_reminder": "Bezuelen Erënnerung: Är Prêt Remboursement ass wéinst 💳"
+      },
+      "donation": {
+        "title": "Spende kritt",
+        "tag": "Zréckginn",
+        "msg": "Är Ënnerstëtzung mécht e groussen Ënnerscheed! Mir hunn Äre Bäitrag fir de Projet erfollegräich kritt.",
+        "amount": "Betrag gespent",
+        "project": "Projet"
+      },
+      "loan": {
+        "title": "Prêt Remboursement",
+        "tag": "BEZUELEN DUER",
+        "msg": "Dëst ass eng Erënnerung datt Äre Prêt zréckbezuelt ass. Gitt sécher datt genuch Fongen verfügbar sinn.",
+        "due_date": "Termin Datum",
+        "amount": "Montant Betrag"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Bestellung bestätegt #{{order_id}}",
+        "new_order_seller": "Strug Shop: Nei Bestellung kritt #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "Uerdnung confirméiert",
+        "vendor_tag": "NEW Uerdnung",
+        "title": "Är Bestellung ass bestätegt",
+        "vendor_title": "Dir hutt eng nei Uerdnung",
+        "order_id": "Uerdnung",
+        "product": "Produit",
+        "qty": "Quantitéit",
+        "total": "Ganzen",
+        "thanks": "Merci fir Akafen op Strug!",
+        "vendor_msg": "W.e.g. preparéiert a schéckt dës Bestellung sou séier wéi méiglech."
+      },
+      "status": {
+        "tag": "BESTELLUNG AKTUALISÉIERUNG",
+        "order_id": "Bestellung ID",
+        "tracking": "Tracking Zuel",
+        "track_button": "Bestellung kucken",
+        "subjects": {
+          "confirmed": "Strug Shop: Är Bestellung ass bestätegt",
+          "shipped": "Strug Shop: Är Bestellung ass geschéckt",
+          "fulfilled": "Strug Shop: Är Bestellung gouf geliwwert"
+        },
+        "messages": {
+          "confirmed": "De Verkeefer huet Är Bestellung bestätegt a preparéiert se op d'Versendung.",
+          "shipped": "Äre Package ass ënnerwee. Tracking: {{tracking_number}}",
+          "fulfilled": "Är Bestellung gouf geliwwert. Mir hoffen Dir genéisst Äre Kaf!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Äre wëchentleche Léierfortschrëtt ass hei 📚",
+        "unread_chat": "Strug: Dir hutt ongelies Messagen an Ärer Inbox 💬"
+      },
+      "lms": {
+        "title": "Léieren Fortschrëtter",
+        "tag": "Bleift SMART",
+        "msg": "Dir maacht et super! Hei ass e Resumé vun Ärer Flashcard Aktivitéit dës Woch.",
+        "cards_reviewed": "Kaarte iwwerpréift",
+        "new_decks": "Nei Deck ugeschloss"
+      },
+      "chat": {
+        "title": "Nei Messagen",
+        "tag": "GEMENG",
+        "msg": "Dir sidd fir eng Zäit fort. Är Frënn an Teammember probéieren Iech z'erreechen.",
+        "button": "Chat Knäppchen - View Chat"
+      }
+    }
+  }
+}

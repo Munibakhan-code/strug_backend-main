@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} gan aimsiú",
+    "fetchFailed": "Theip ar {{resource}} a fháil",
+    "createFailed": "Theip ar chruthú {{resource}}",
+    "updateFailed": "Theip ar nuashonrú {{resource}}",
+    "deleteFailed": "Theip ar scriosadh {{resource}}",
+    "invalidId": "Caithfidh {{field}} a bheith ina uimhir",
+    "alreadyExists": "Tá {{field}} ann cheana féin",
+    "invalidFormat": "Formáid {{field}} neamhbhailí",
+    "internalServer": "Earráid freastalaí inmheánach",
+    "accessDenied": "Rochtain diúltaithe",
+    "invalidToken": "Comhartha neamhbhailí",
+    "adminRequired": "Rochtain admin ag teastáil",
+    "forbidden": "Níl cead agat an gníomh seo a dhéanamh"
+  },
+  "food": {
+    "filterError": "Earráid scagaire",
+    "orderAlreadyTaken": "Ghlac tiománaí eile an t-ordú seo cheana féin.",
+    "orderAccepted": "Ordú glactha le seachadadh",
+    "orderDeclined": "Ordú diúltaithe.",
+    "orderRejected": "Ordú diúltaithe."
+  },
+  "user": {
+    "notFound": "Úsáideoir gan aimsiú",
+    "deleted": "D'éirigh leis an úsáideoir a scriosadh",
+    "labelStreetRequired": "Tá lipéad agus sráid ag teastáil",
+    "addressNotFound": "Seoladh gan aimsiú",
+    "savedAddressRequired": "Tá seoladh seachadta ag teastáil",
+    "cannotModifyOther": "Ní féidir cuntas úsáideora eile a mhionathrú",
+    "emailExists": "Tá seoladh ríomhphoist nó cód atreoraithe ann cheana féin"
+  },
+  "auth": {
+    "invalidLoginFormat": "Formáid logáil isteach neamhbhailí",
+    "userNotFound": "Úsáideoir gan aimsiú",
+    "renewSubscription": "Athnuaigh do shíntiús le do thoil",
+    "verifyBefore": "Fíoraigh do {{method}} roimh logáil isteach.",
+    "noPassword": "Níl aon phasfhocal ag an gcuntas seo. Bain triail as logáil isteach Google.",
+    "invalidPassword": "Pasfhocal neamhbhailí",
+    "teamMemberNotFound": "Níor aimsíodh ball foirne",
+    "loginSuccessful": "Logáil isteach rathúil",
+    "invalidCredentials": "Dintiúir neamhbhailí",
+    "noRefreshToken": "Níor soláthraíodh aon chomhartha athnuachana",
+    "invalidRefreshToken": "Comhartha athnuachana neamhbhailí nó imithe in éag",
+    "invalidRefreshTokenPayload": "Pálasta dearbháin athnuachana neamhbhailí",
+    "teamMembershipNotFound": "Níor aimsíodh ballraíocht foirne",
+    "accessTokenRefreshed": "Athnuadh an comhartha rochtana",
+    "refreshTokenDeleted": "Scriosadh an comhartha athnuachana",
+    "emailRequired": "Tá ríomhphost ag teastáil",
+    "passwordAccountExists": "Tá an ríomhphost seo cláraithe le pasfhocal. Logáil isteach de láimh le do thoil.",
+    "emailRequiredFacebook": "Tá ríomhphost ag teastáil ach ní sholáthraíonn Facebook é. Cinntigh le do thoil go bhfuil ríomhphost fíoraithe ag do chuntas Facebook.",
+    "authCodeRequired": "Tá cód an údair ag teastáil",
+    "validEmailRequired": "Tá ríomhphost bailí ag teastáil.",
+    "accountEmailExists": "Tá cuntas leis an ríomhphost seo ann cheana.",
+    "usernameTaken": "Tá an t-ainm úsáideora sin glactha cheana féin.",
+    "tooManyOtpRequests": "An iomarca iarratas cód. Bain triail eile as ar ball.",
+    "failedSendCode": "Theip ar an gcód a sheoladh.",
+    "registerFieldsRequired": "ríomhphost, ainm, pasfhocal, agus otp ag teastáil go léir.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Caithfidh: {{requirements}} a bheith san áireamh sa phasfhocal.",
+    "noVerificationCode": "Níor aimsíodh aon chód fíorúcháin. Iarr ceann nua le do thoil.",
+    "verificationExpired": "Tá an cód fíoraithe imithe in éag. Iarr ceann nua le do thoil.",
+    "tooManyOtpAttempts": "An iomarca iarrachtaí míchearta. Iarr cód fíorúcháin nua.",
+    "invalidVerificationCode": "Cód fíoraithe neamhbhailí.",
+    "verificationFailed": "Theip ar an bhfíorú.",
+    "tooManyRequests": "An iomarca iarratas. Bain triail eile as ar ball.",
+    "resetFieldsRequired": "r-phost, newPassword, agus comhartha ag teastáil.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Nasc athshocraithe neamhbhailí nó imithe in éag.",
+    "accountLocked": "Cuntas glasáilte go sealadach. Bain triail eile as ar ball.",
+    "verificationCodeRequired": "Tá cód fíoraithe de dhíth.",
+    "invalidSession": "Seisiún neamhbhailí",
+    "passwordFieldsRequired": "tá gá le currentPassword agus newPassword"
+  },
+  "success": {
+    "deleted": "Scriosadh {{resource}} go rathúil",
+    "created": "{{resource}} cruthaithe go rathúil",
+    "updated": "{{resource}} nuashonraithe go rathúil"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Fógraí Strug: Rabhadh Iarmhéid Íseal Chuntas Fógraí",
+      "spend_alert_subject": "Foláireamh maidir le Fógraí Strugaí: {{percentage}}% Buiséad Laethúil a Baineadh Amach don Fheachtas #{{campaign_id}}",
+      "low_balance": {
+        "tag": "FOLÁIR CHUNTAIS FÓGRA",
+        "title": "Rabhadh Iarmhéid Íseal",
+        "instruction": "Dia duit {{name}}, tá d'iarmhéid Ads Wallet ag rith íseal. Chun feachtais ghníomhacha a chosc ó bheith curtha ar sos go huathoibríoch, breisigh le do thoil iarmhéid do chuntais.",
+        "balance_label": "Iarmhéid Reatha:",
+        "button": "Sparán Fógraí Barr Suas"
+      },
+      "spend_alert": {
+        "tag": "CLOCH MÍLE BHUISÉAD sroichte",
+        "title": "{{percentage}}% Buiséad Laethúil Caiteach",
+        "instruction": "Dia duit {{name}}, is nuashonrú stádais uathoibrithe é seo do do thacar fógraí gníomhacha. Tá tairseach caiteachais laethúil sroichte ag d’fheachtas.",
+        "campaign_label": "Aitheantas an fheachtais:",
+        "button": "Bainistigh Feachtas"
+      }
+    },
+    "subjects": {
+      "otp": "Fíorú Strugaí: Tá do chód anseo",
+      "welcome": "Fáilte go dtí an Teaghlach Strug!",
+      "password_reset": "Strug: Athshocraigh do phasfhocal",
+      "login_alert": "Foláireamh Slándála Strugaí: Braitheadh ​​logáil isteach nua",
+      "ride_receipt": "Achoimre ar Thaisteal Strug: Go raibh maith agat as marcaíocht!"
+    },
+    "otp": {
+      "tag": "SEICEÁIL SLÁNDÁLA",
+      "title": "Fíoraigh Cuntas",
+      "instruction": "Bain úsáid as an gcód slán thíos chun do chlárú a chur i gcrích. Bailí ar feadh 10 nóiméad.",
+      "ignore": "Murar iarr tú é seo, déan neamhaird den ríomhphost seo."
+    },
+    "common": {
+      "tagline": "Do chuid Oibre • Do Chuid Am • Do Airgead",
+      "rights_reserved": "Gach ceart ar cosaint",
+      "need_help": "Cabhair uait? Freagair an ríomhphost seo nó tabhair cuairt ar ár n-ionad tacaíochta."
+    },
+    "welcome": {
+      "tag": "FÁILTE CHUIG STRUG",
+      "title": "Dia duit, {{name}}!",
+      "instruction": "Tá do chuntas fíoraithe. Tá tú anois mar chuid d’ardán a tógadh chun do chuid oibre, am agus airgead a shimpliú.",
+      "button": "Déan iniúchadh ar an Deais"
+    },
+    "password_reset": {
+      "tag": "SLÁNDÁLA",
+      "title": "Athshocraigh Pasfhocal",
+      "instruction": "Rinneadh iarratas chun pasfhocal do chuntais Strug a athshocrú. Cliceáil ar an gcnaipe thíos chun ceann nua a roghnú.",
+      "button": "Athshocraigh Mo Phasfhocal",
+      "ignore": "Murar iarr tú é seo, is féidir leat neamhaird a dhéanamh den ríomhphost seo go sábháilte. Téann nasc in éag i gceann 1 uair."
+    },
+    "login_alert": {
+      "tag": "FOLÁIR SLÁNDÁLA",
+      "title": "Braitheadh ​​Logáil Isteach Nua",
+      "instruction": "Thugamar faoi deara logáil isteach nua chuig do chuntas Strug. Más tusa a bhí ann, is féidir leat neamhaird a dhéanamh den ríomhphost seo.",
+      "device": "Gléas",
+      "time": "Am",
+      "not_you": "Mura tusa a bhí ann, déan do chuntas slán láithreach le do thoil trí do phasfhocal a athrú."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Achoimre Taistil",
+      "tag": "TRIP Críochnaithe",
+      "total_fare": "Táille Iomlán",
+      "distance": "Fad",
+      "duration": "Fad",
+      "pickup": "Piocadh",
+      "drop": "Drochsheanamh",
+      "driver": "Tiománaí",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Go raibh maith agat as marcaíocht le Strug!",
+      "support": "Má tá aon fhadhb agat leis an turas seo, déan teagmháil le tacaíocht."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Deimhnithe: Tá do turas curtha in áirithe!",
+      "title": "Áirithint Deimhnithe",
+      "tag": "CARPOOL AR CHUN CINN",
+      "from": "Ó",
+      "to": "Chuig",
+      "seats": "Suíocháin Áirithe",
+      "total_cost": "Costas Iomlán",
+      "status": "Stádas",
+      "thanks": "Go raibh maith agat as carpooling le Strug!",
+      "details_msg": "Tá do shuíochán curtha in áirithe go rathúil. Bígí ag an bpointe bailithe in am le do thoil."
+    },
+    "ghost_driver": {
+      "subject": "Nuashonrú Taistil: Táimid ag athshannadh tiománaí nua duit",
+      "title": "Tiománaí nua a aimsiú",
+      "tag": "RIDE NUASHONRUITHE",
+      "instruction": "Níl do thiománaí roimhe seo ar fáil nó níl sé ag freagairt. Ná bí buartha, táimid go huathoibríoch ag lorg tiománaí nua chun tú a phiocadh suas.",
+      "status": "Stádas Reatha: Tiománaithe á gcuardach arís...",
+      "hang_tight": "Fan go docht le do thoil! Cuirfimid in iúl duit a luaithe a ghlacann tiománaí nua le d'iarratas."
+    },
+    "password_changed": {
+      "subject": "Foláireamh Slándála Strug: Athraíodh do phasfhocal",
+      "title": "Pasfhocal Nuashonraithe",
+      "tag": "NUASHONRUITHE SLÁNDÁLA",
+      "instruction": "Athraíodh pasfhocal do chuntais Strug le déanaí. Má rinne tú an t-athrú seo, is féidir leat neamhaird a dhéanamh den ríomhphost seo go sábháilte.",
+      "warning": "Mura n-athraigh tú do phasfhocal, seans go mbeidh do chuntas i mbaol. Déan do chuntas slán láithreach le do thoil.",
+      "button": "Slán Mo Chuntas",
+      "footer": "Foireann Slándála Ardán Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Bia Strug: Ordú Deimhnithe! #{{order_id}}",
+        "new_order_vendor": "Gníomh de dhíth: Fuarthas Ordú Nua! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Admháil Ordaithe",
+        "tag": "RATHÚ ORDÚ",
+        "vendor_tag": "GNÍOMH AG TEASTÁIL",
+        "order_id": "Aitheantas an Ordaithe",
+        "item": "Mír",
+        "qty": "Ceathair",
+        "price": "Praghas",
+        "subtotal": "Fo-iomlán",
+        "delivery_fee": "Táille Seachadta",
+        "service_tax": "Cáin Seirbhíse",
+        "platform_fee": "Táille Ardáin",
+        "grand_total": "MÉID IOMLÁN",
+        "total": "Méid Iomlán",
+        "delivery_address": "Seoladh Seachadta",
+        "thanks": "Tá súil agam go mbainfidh tú taitneamh as do bhéile!",
+        "vendor_title": "Ordú Nua Duit",
+        "vendor_msg": "Tá ordú nua faighte agat. Tosaigh le do thoil é a ullmhú láithreach."
+      }
+    },
+    "food_status": {
+      "tag": "ORDÚ NUASHONRUITHE",
+      "subjects": {
+        "preparing": "Bia Strug: Tá d'ordú á ullmhú! 🍳",
+        "dispatched": "Nuacht iontach! Tá d'ordú ar an mbealach 🛵",
+        "delivered": "Bain sult as do bhéile! Ordú seachadta go rathúil ✅",
+        "cancelled": "Fógra Strugaí: Cuireadh d’ordú ar ceal ❌"
+      },
+      "messages": {
+        "preparing": "Tá an bhialann tosaithe ag ullmhú do bhéile blasta. Cuirfimid in iúl duit nuair a bheidh sé amach le seachadadh.",
+        "dispatched": "Tá d’ordú bailithe agus tá ár gcomhpháirtí seachadta ar an mbealach chuig do láthair.",
+        "delivered": "Tugadh d'ordú ar láimh. Go raibh maith agat as Strug a roghnú!",
+        "cancelled": "Is oth linn a chur in iúl duit go bhfuil d'ordú curtha ar ceal. Má tá íoctha agat cheana féin, cuirfear tús le haisíocaíocht gan mhoill."
+      },
+      "labels": {
+        "order_id": "Aitheantas an Ordaithe",
+        "current_status": "Stádas Reatha"
+      }
+    },
+    "digital": {
+      "subject": "Tá d'Inneachar Digiteach Strug Réidh!",
+      "title": "Íosluchtaigh do táirge",
+      "instruction": "Go raibh maith agat as do cheannach! Is féidir leat d’ábhar digiteach a rochtain agus a íoslódáil anois ag baint úsáide as an gcnaipe thíos.",
+      "button": "Íosluchtaigh Anois"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Tá do Dhuillín Pá don mhí seo réidh 📄",
+      "title": "Duillín Pá Míosúil",
+      "tag": "ACHOIMRE PÁROLL",
+      "net_salary": "Tuarastal Glan",
+      "epf": "EPF (Fostaí)",
+      "etf": "párolla etf — ETF",
+      "ot": "OT Pá",
+      "bonus": "Bónas",
+      "status": "Stádas Íocaíochta",
+      "thanks": "Má tá aon cheist agat maidir le do thuarastal, déan teagmháil le AD le do thoil."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Tá d'Iarratas ar Shaoire ceadaithe ✅",
+      "subject_rejected": "Strug HR: Nuashonrú ar d'Iarratas ar Shaoire ❌",
+      "title_approved": "Fág Ceadaithe!",
+      "title_rejected": "Fág Nuashonrú",
+      "tag": "SAOIRE IARRATAS",
+      "status_approved": "D'éirigh le d'iarratas saoire don tréimhse seo a leanas a cheadú.",
+      "status_rejected": "Is oth linn a chur in iúl duit gur diúltaíodh do d’iarratas ar shaoire don tréimhse dár gcionn.",
+      "from_date": "Ó Dáta",
+      "to_date": "Go dtí seo",
+      "reason": "Cúis Diúltaithe",
+      "thanks": "Má tá aon cheisteanna eile agat, déan teagmháil le do Roinn Acmhainní Daonna."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Iarratas Nua faighte le haghaidh {{job_title}} 💼",
+      "title": "Iarrthóir Nua i bhFeidhm",
+      "tag": "IARRATAS AR PHOST",
+      "instruction": "Chuir iarrthóir nua isteach ar cheann de do liostaí post. Seo iad na sonraí gairide:",
+      "job_title": "Ról Poist",
+      "candidate": "Ainm an Iarrthóra",
+      "view_button": "Féach ar an bhFeidhmchlár",
+      "thanks": "Logáil isteach le do thoil ar thairseach do ghníomhaire chun na sonraí iomlána agus CV a athbhreithniú."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Nuashonraíodh do Shift Oibre 🕒",
+      "title": "Shift Nuashonraithe",
+      "tag": "AN SCEIDEAL",
+      "instruction": "Tá do sceideal oibre nuashonraithe le déanaí ag an Roinn Acmhainní Daonna. Seiceáil d'amanna seala nua thíos.",
+      "start_time": "Tosaíonn Shift",
+      "end_time": "Críoch Shift",
+      "thanks": "Cinntigh le do thoil go bhfuil tú i láthair de réir an sceidil nua. Déan teagmháil le AD le haghaidh aon imní."
+    },
+    "services": {
+      "tag": "NUASHONRUITHE SEIRBHÍSE",
+      "subjects": {
+        "confirmed_customer": "Seirbhísí Struga: Deimhnítear do choinne! ✅",
+        "new_alert_provider": "Ceapachán Nua: Tá áirithint nua agat! 📅",
+        "reminder": "Meabhrúchán: Beidh do choinne i gceann cúpla uair an chloig ⏳",
+        "rental_expiry": "Gníomh de dhíth: Tá do chíos ag dul in éag go luath! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Seirbhís",
+        "provider": "Soláthraí",
+        "customer": "Custaiméir",
+        "date": "Dáta",
+        "time": "Am",
+        "location": "Suíomh",
+        "expiry": "Dáta Éaga"
+      },
+      "messages": {
+        "confirmed": "Tá do choinne sceidealaithe go rathúil. Bí in am le do thoil.",
+        "provider_alert": "Tá do sheirbhís curtha in áirithe ag custaiméir nua. Seo iad na sonraí.",
+        "reminder": "Is meabhrúchán cairdiúil é seo ar do choinne le Strug le teacht.",
+        "rental_expiry": "Tá do thréimhse cíosa ar tí críochnú. Seol an t-earra ar ais le do thoil nó cuir síneadh leis an tréimhse chun pionóis a sheachaint.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "Práinneach: FÓGRA Éaga",
+        "item_name": "Ainm na Míre",
+        "due_date": "Dáta Dlite",
+        "order_id": "Aitheantas an Ordaithe",
+        "button": "Síneadh nó Mír ar ais",
+        "footer": "Seachain táillí déanacha tríd an mír a sheoladh ar ais roimh an am dlite.",
+        "thanks": "Go raibh maith agat as Strug Rentals a úsáid."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Go raibh maith agat as do bhronnadh flaithiúil! ❤️",
+        "loan_reminder": "Meabhrúchán Íocaíochta: Tá do thráthchuid iasachta dlite 💳"
+      },
+      "donation": {
+        "title": "Síntiús a Fuarthas",
+        "tag": "A THABHAIRT AR AIS",
+        "msg": "Déanann do thacaíocht difríocht ollmhór! D’éirigh linn do ranníocaíocht don tionscadal a fháil.",
+        "amount": "Méid Deonaithe",
+        "project": "Tionscadal"
+      },
+      "loan": {
+        "title": "Aisíocaíocht Iasachta",
+        "tag": "ÍOCAÍOCHT Dlite",
+        "msg": "Seo meabhrúchán go bhfuil dáta aisíocaíochta d’iasachta ag druidim. Cinntigh le do thoil go bhfuil dóthain airgid ar fáil.",
+        "due_date": "Dáta Dlite",
+        "amount": "Méid Tráthchuid"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Siopa Strugaí: Ordú deimhnithe #{{order_id}}",
+        "new_order_seller": "Siopa Strugaí: Ordú nua faighte #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "ORDÚ DEIMHNITHE",
+        "vendor_tag": "ORDÚ NUA",
+        "title": "Deimhnítear d’ordú",
+        "vendor_title": "Tá ordú nua agat",
+        "order_id": "Ordú",
+        "product": "Táirge",
+        "qty": "Cainníocht",
+        "total": "Iomlán",
+        "thanks": "Go raibh maith agat as siopadóireacht a dhéanamh ar Strug!",
+        "vendor_msg": "Déan an t-ordú seo a ullmhú agus a sheoladh chomh luath agus is féidir."
+      },
+      "status": {
+        "tag": "ORDÚ NUASHONRUITHE",
+        "order_id": "Aitheantas an Ordaithe",
+        "tracking": "Uimhir rianaithe",
+        "track_button": "Féach ar ordú",
+        "subjects": {
+          "confirmed": "Siopa Strugaí: Deimhnítear d'ordú",
+          "shipped": "Siopa Strugaí: Tá d'ordú seolta",
+          "fulfilled": "Siopa Strugaí: Seachadadh d'ordú"
+        },
+        "messages": {
+          "confirmed": "Dhearbhaigh an díoltóir d'ordú agus tá sé á ullmhú le haghaidh loingsiú.",
+          "shipped": "Tá do phacáiste ar an mbealach. Rianú: {{tracking_number}}",
+          "fulfilled": "Tá d'ordú seachadta. Tá súil againn go mbainfidh tú taitneamh as do cheannach!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Oideachas Strug: Tá do dhul chun cinn foghlama seachtainiúil anseo 📚",
+        "unread_chat": "Strug: Tá teachtaireachtaí neamhléite agat i do bhosca isteach 💬"
+      },
+      "lms": {
+        "title": "Dul Chun Cinn Foghlama",
+        "tag": "BÍ SMART",
+        "msg": "Tá tú ag déanamh go hiontach! Seo achoimre ar do ghníomhaíocht luaschártaí an tseachtain seo.",
+        "cards_reviewed": "Cártaí Athbhreithnithe",
+        "new_decks": "Deiceanna Nua Ceangailte"
+      },
+      "chat": {
+        "title": "Teachtaireachtaí Nua",
+        "tag": "POBAL",
+        "msg": "Tá tú ar shiúl ar feadh tamaill. Tá do chairde agus baill foirne ag iarraidh dul i dteagmháil leat.",
+        "button": "Féach ar Chat"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.ride_status.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 15px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">{{status_title}}</h1>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 30px; background-color: #0b1120;">
+            <p style="margin: 0; color: #94a3b8; font-size: 16px; line-height: 1.6;">{{status_message}}</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="background-color: #0b1120;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="background-color: #000000; border-radius: 20px; border: 1px solid #1e293b;">
+                <tr>
+                    <td style="padding: 25px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px;">{{t 'emails.ride_status.labels.ride_id'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; font-weight: bold;">{{ride_id_label}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.ride_status.labels.driver'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;">{{driver_name}}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.ride_status.labels.vehicle'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;">{{vehicle_type}}</td>
+                            </tr>
+                            {{#if plate_number}}
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.ride_status.labels.plate'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;">{{plate_number}}</td>
+                            </tr>
+                            {{/if}}
+                            {{#if eta}}
+                            <tr>
+                                <td style="color: #94a3b8; font-size: 13px; padding-top: 8px;">{{t 'emails.ride_status.labels.eta'}}</td>
+                                <td align="right" style="color: #ffffff; font-size: 13px; padding-top: 8px;">{{eta}}</td>
+                            </tr>
+                            {{/if}}
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="left" style="padding: 30px 0 0 0; background-color: #0b1120;">
+            <p style="margin: 0; color: #64748b; font-size: 12px; text-transform: uppercase;">{{t 'emails.ride_status.labels.pickup'}}</p>
+            <p style="margin: 5px 0 15px 0; color: #ffffff; font-size: 14px;">{{pickup_address}}</p>
+
+            <p style="margin: 0; color: #64748b; font-size: 12px; text-transform: uppercase;">{{t 'emails.ride_status.labels.drop'}}</p>
+            <p style="margin: 5px 0 0 0; color: #ffffff; font-size: 14px;">{{drop_address}}</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" style="padding-top: 35px; background-color: #0b1120;">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center" bgcolor="#e31e24" style="border-radius: 100px;">
+                        <a href="{{track_url}}" target="_blank" style="padding: 12px 30px; color: #ffffff; font-size: 13px; font-weight: bold; text-decoration: none; display: inline-block;">
+                            {{t 'emails.ride_status.button'}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

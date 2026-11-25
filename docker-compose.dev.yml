@@ -1,0 +1,80 @@
+# Local dev dependencies — Postgres + Redis + MediaMTX (live RTMP→HLS).
+#
+#   npm run dev:docker:up
+#   npx prisma migrate deploy
+#   npm run dev
+#
+# Matches typical .env:
+#   DATABASE_URL=postgresql://strug:strug@localhost:5433/strug
+#   REDIS_URL=redis://127.0.0.1:6379
+#   LIVE_RTMP_URL=rtmp://127.0.0.1:1935
+#   LIVE_HLS_BASE=http://127.0.0.1:8888
+#   LIVE_WHIP_INTERNAL=http://127.0.0.1:8889
+#   LIVE_VOD_PLAYBACK_BASE=http://127.0.0.1:9996
+#   LIVE_HOOK_SECRET=local-dev-live-hook-secret
+#
+# MediaMTX calls the API on the host (host.docker.internal:5000) for RTMP auth +
+# ready/notReady hooks — keep `npm run dev` listening on :5000 while streaming.
+#
+# Stop: npm run dev:docker:down
+# Port 5432 may clash with a system Postgres install — this file maps 5433:5432.
+# Standalone media-only compose still lives at infra/mediamtx/docker-compose.yml.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: strug-postgres
+    environment:
+      POSTGRES_USER: strug
+      POSTGRES_PASSWORD: strug
+      POSTGRES_DB: strug
+    ports:
+      # Match local DATABASE_URL host port (often 5433 to avoid clashing with system Postgres).
+      - "5433:5432"
+    volumes:
+      - strug_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U strug -d strug"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: strug-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 10
+
+  mediamtx:
+    build: ./infra/mediamtx
+    image: strug-mediamtx:local
+    container_name: strug-mediamtx
+    restart: unless-stopped
+    ports:
+      - "1935:1935"   # RTMP ingest (OBS)
+      - "8888:8888"   # HLS playback (Vite /hls proxy)
+      - "8889:8889"   # WHIP (browser one-tap go-live)
+      - "8189:8189/udp"  # WebRTC ICE
+      - "9996:9996"   # VOD recording playback API
+      - "9998:9998"   # MediaMTX metrics (optional scrape)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      MTX_CONFFILE: /mediamtx.yml
+      BACKEND_AUTH_URL: ${BACKEND_AUTH_URL:-http://host.docker.internal:5000/live-session/rtmp/auth}
+      BACKEND_HOOK_URL: ${BACKEND_HOOK_URL:-http://host.docker.internal:5000/live-session/rtmp/event}
+      # Must match LIVE_HOOK_SECRET in the API .env
+      LIVE_HOOK_SECRET: ${LIVE_HOOK_SECRET:-local-dev-live-hook-secret}
+    volumes:
+      - ./infra/mediamtx/mediamtx.dev.yml:/mediamtx.yml:ro
+      - ./infra/mediamtx/notify.sh:/scripts/notify.sh:ro
+      - mediamtx_recordings:/recordings
+
+volumes:
+  strug_postgres_data:
+  mediamtx_recordings:

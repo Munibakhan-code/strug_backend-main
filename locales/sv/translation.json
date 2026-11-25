@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} hittades inte",
+    "fetchFailed": "Det gick inte att hämta {{resource}}",
+    "createFailed": "Det gick inte att skapa {{resource}}",
+    "updateFailed": "Det gick inte att uppdatera {{resource}}",
+    "deleteFailed": "Det gick inte att ta bort {{resource}}",
+    "invalidId": "{{field}} måste vara ett nummer",
+    "alreadyExists": "{{field}} finns redan",
+    "invalidFormat": "Ogiltigt {{field}}-format",
+    "internalServer": "Internt serverfel",
+    "accessDenied": "Åtkomst nekad",
+    "invalidToken": "Ogiltig token",
+    "adminRequired": "Adminåtkomst krävs",
+    "forbidden": "Du har inte behörighet att utföra den här åtgärden"
+  },
+  "food": {
+    "filterError": "Filterfel",
+    "orderAlreadyTaken": "Denna beställning togs redan av en annan förare.",
+    "orderAccepted": "Beställning accepterad för leverans",
+    "orderDeclined": "Beställningen avvisades.",
+    "orderRejected": "Beställning avvisad."
+  },
+  "user": {
+    "notFound": "Användaren hittades inte",
+    "deleted": "Användaren har raderats",
+    "labelStreetRequired": "Etikett och gata krävs",
+    "addressNotFound": "Adressen hittades inte",
+    "savedAddressRequired": "Leveransadress krävs",
+    "cannotModifyOther": "Det går inte att ändra en annan användares konto",
+    "emailExists": "E-post eller hänvisningskod finns redan"
+  },
+  "auth": {
+    "invalidLoginFormat": "Ogiltigt inloggningsformat",
+    "userNotFound": "Användaren hittades inte",
+    "renewSubscription": "Vänligen förnya din prenumeration",
+    "verifyBefore": "Vänligen verifiera din {{method}} innan du loggar in.",
+    "noPassword": "Detta konto har inget lösenord. Testa att logga in på Google.",
+    "invalidPassword": "Ogiltigt lösenord",
+    "teamMemberNotFound": "Teammedlem hittades inte",
+    "loginSuccessful": "Inloggningen lyckades",
+    "invalidCredentials": "Ogiltiga användaruppgifter",
+    "noRefreshToken": "Ingen uppdateringstoken tillhandahålls",
+    "invalidRefreshToken": "Ogiltig eller utgången uppdateringstoken",
+    "invalidRefreshTokenPayload": "Ogiltig nyttolast för uppdateringstoken",
+    "teamMembershipNotFound": "Teammedlemskap hittades inte",
+    "accessTokenRefreshed": "Åtkomsttoken har uppdaterats",
+    "refreshTokenDeleted": "Uppdatera token raderades",
+    "emailRequired": "E-post krävs",
+    "passwordAccountExists": "Denna e-post är registrerad med lösenord. Logga in manuellt.",
+    "emailRequiredFacebook": "E-post krävs men tillhandahålls inte av Facebook. Se till att ditt Facebook-konto har en verifierad e-postadress.",
+    "authCodeRequired": "Auth-kod krävs",
+    "validEmailRequired": "En giltig e-postadress krävs.",
+    "accountEmailExists": "Ett konto med denna e-postadress finns redan.",
+    "usernameTaken": "Det användarnamnet är redan upptaget.",
+    "tooManyOtpRequests": "För många kodförfrågningar. Försök igen senare.",
+    "failedSendCode": "Det gick inte att skicka koden.",
+    "registerFieldsRequired": "e-post, namn, lösenord och otp krävs alla.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Lösenordet måste innehålla: {{requirements}}.",
+    "noVerificationCode": "Ingen verifieringskod hittades. Begär en ny.",
+    "verificationExpired": "Verifieringskoden har löpt ut. Begär en ny.",
+    "tooManyOtpAttempts": "För många felaktiga försök. Begär en ny verifieringskod.",
+    "invalidVerificationCode": "Ogiltig verifieringskod.",
+    "verificationFailed": "Verifieringen misslyckades.",
+    "tooManyRequests": "För många förfrågningar. Försök igen senare.",
+    "resetFieldsRequired": "e-post, nytt lösenord och token krävs.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Ogiltig eller utgången återställningslänk.",
+    "accountLocked": "Kontot är tillfälligt låst. Försök igen senare.",
+    "verificationCodeRequired": "Verifieringskod krävs.",
+    "invalidSession": "Ogiltig session",
+    "passwordFieldsRequired": "currentPassword och newPassword krävs"
+  },
+  "success": {
+    "deleted": "{{resource}} har tagits bort",
+    "created": "{{resource}} skapades framgångsrikt",
+    "updated": "{{resource}} har uppdaterats"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: Varning för lågt saldo i annonskontot",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% daglig budget uppnådd för kampanj #{{campaign_id}}",
+      "low_balance": {
+        "tag": "ANNONSKONTOVARNING",
+        "title": "Varning för låg balans",
+        "instruction": "Hej {{name}}, ditt Ads Wallet-saldo börjar ta slut. Fyll på ditt kontosaldo för att förhindra att aktiva kampanjer pausas automatiskt.",
+        "balance_label": "Nuvarande saldo:",
+        "button": "Fyll på annonsplånbok"
+      },
+      "spend_alert": {
+        "tag": "BUDGETMILSTÅL NÅDD",
+        "title": "{{percentage}} % spenderad daglig budget",
+        "instruction": "Hej {{name}}, detta är en automatisk statusuppdatering för din aktiva annonsuppsättning. Din kampanj har nått en daglig utgiftströskel.",
+        "campaign_label": "Kampanj-ID:",
+        "button": "Hantera kampanj"
+      }
+    },
+    "subjects": {
+      "otp": "Strug-verifiering: Din kod är här",
+      "welcome": "Välkommen till familjen Strug!",
+      "password_reset": "Strug: Återställ ditt lösenord",
+      "login_alert": "Strug Security Alert: Ny inloggning upptäckt",
+      "ride_receipt": "Strug Ride Sammanfattning: Tack för att du åkte!"
+    },
+    "otp": {
+      "tag": "SÄKERHETSKONTROLL",
+      "title": "Verifiera konto",
+      "instruction": "Använd säkerhetskoden nedan för att slutföra din registrering. Gäller i 10 minuter.",
+      "ignore": "Om du inte har begärt detta, ignorera det här e-postmeddelandet."
+    },
+    "common": {
+      "tagline": "Ditt arbete • Din tid • Dina pengar",
+      "rights_reserved": "Alla rättigheter reserverade",
+      "need_help": "Behöver du hjälp? Svara på det här e-postmeddelandet eller besök vårt supportcenter."
+    },
+    "welcome": {
+      "tag": "VÄLKOMMEN TILL STRUG",
+      "title": "Hej, {{name}}!",
+      "instruction": "Ditt konto är verifierat. Du är nu en del av en plattform byggd för att förenkla ditt arbete, din tid och dina pengar.",
+      "button": "Utforska Dashboard"
+    },
+    "password_reset": {
+      "tag": "SÄKERHET",
+      "title": "Återställ lösenord",
+      "instruction": "En begäran gjordes om att återställa lösenordet för ditt Strug-konto. Klicka på knappen nedan för att välja en ny.",
+      "button": "Återställ mitt lösenord",
+      "ignore": "Om du inte har begärt detta kan du lugnt ignorera det här e-postmeddelandet. Länken upphör att gälla om 1 timme."
+    },
+    "login_alert": {
+      "tag": "SÄKERHETSVARNING",
+      "title": "Ny inloggning upptäckt",
+      "instruction": "Vi märkte en ny inloggning till ditt Strug-konto. Om det här var du kan du ignorera det här e-postmeddelandet.",
+      "device": "Enhet",
+      "time": "Tid",
+      "not_you": "Om detta INTE var du, vänligen säkra ditt konto omedelbart genom att ändra ditt lösenord."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Sammanfattning av färden",
+      "tag": "RESAN AVSLUTAD",
+      "total_fare": "Totalt pris",
+      "distance": "Avstånd",
+      "duration": "Varaktighet",
+      "pickup": "Upphämtning",
+      "drop": "Avlämning",
+      "driver": "Förare",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Tack för att du åker med Strug!",
+      "support": "Kontakta supporten om du har några problem med denna resa."
+    },
+    "carpool_booking": {
+      "subject": "Samåkning bekräftad: Din resa är bokad!",
+      "title": "Bokning bekräftad",
+      "tag": "CARPOOL RESERVERAD",
+      "from": "Från",
+      "to": "Till",
+      "seats": "Platser bokade",
+      "total_cost": "Total kostnad",
+      "status": "— Status",
+      "thanks": "Tack för samåkning med Strug!",
+      "details_msg": "Din plats har reserverats. Var vänlig vid upphämtningsplatsen i tid."
+    },
+    "ghost_driver": {
+      "subject": "Ride Update: Vi tilldelar en ny drivrutin åt dig",
+      "title": "Att hitta en ny drivrutin",
+      "tag": "RIDE UPPDATERING",
+      "instruction": "Din tidigare drivrutin är inte tillgänglig eller svarar inte. Oroa dig inte, vi letar automatiskt efter en ny förare för att hämta dig.",
+      "status": "Nuvarande status: Söker om förare...",
+      "hang_tight": "Snälla häng hårt! Vi meddelar dig så snart en ny förare accepterar din begäran."
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: Ditt lösenord har ändrats",
+      "title": "Lösenordet uppdaterat",
+      "tag": "SÄKERHETSUPPDATERING",
+      "instruction": "Lösenordet för ditt Strug-konto ändrades nyligen. Om du har gjort den här ändringen kan du lugnt ignorera det här e-postmeddelandet.",
+      "warning": "Om du INTE har ändrat ditt lösenord kan ditt konto äventyras. Säkra ditt konto omedelbart.",
+      "button": "Säkra mitt konto",
+      "footer": "Strug Plattformssäkerhetsteam"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: Beställning bekräftad! #{{order_id}}",
+        "new_order_vendor": "Åtgärd krävs: Ny beställning mottagen! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Orderkvitto",
+        "tag": "BESTÄLLNING FRAMGÅNG",
+        "vendor_tag": "ÅTGÄRD KRÄVS",
+        "order_id": "Beställnings-ID",
+        "item": "Objekt",
+        "qty": "Antal",
+        "price": "Pris",
+        "subtotal": "Delsumma",
+        "delivery_fee": "Leveransavgift",
+        "service_tax": "Serviceskatt",
+        "platform_fee": "Plattformsavgift",
+        "grand_total": "TOTALT BELOPP",
+        "total": "Totalt belopp",
+        "delivery_address": "Leveransadress",
+        "thanks": "Hoppas du njuter av din måltid!",
+        "vendor_title": "Ny beställning för dig",
+        "vendor_msg": "Du har fått en ny beställning. Vänligen börja förbereda det omedelbart."
+      }
+    },
+    "food_status": {
+      "tag": "BESTÄLLNING UPPDATERING",
+      "subjects": {
+        "preparing": "Strug Food: Din beställning förbereds! 🍳",
+        "dispatched": "Bra nyheter! Din beställning är på väg 🛵",
+        "delivered": "Njut av din måltid! Beställning levererad framgångsrikt ✅",
+        "cancelled": "Strug-meddelande: Din beställning har annullerats ❌"
+      },
+      "messages": {
+        "preparing": "Restaurangen har börjat förbereda din utsökta måltid. Vi meddelar dig när den är ute för leverans.",
+        "dispatched": "Din beställning har hämtats och vår leveranspartner är på väg till din plats.",
+        "delivered": "Din beställning har överlämnats. Tack för att du valde Strug!",
+        "cancelled": "Vi beklagar att meddela dig att din beställning har annullerats. Om du redan har betalat kommer en återbetalning att påbörjas inom kort."
+      },
+      "labels": {
+        "order_id": "Beställnings-ID",
+        "current_status": "Aktuell status"
+      }
+    },
+    "digital": {
+      "subject": "Ditt Strug digitala innehåll är klart!",
+      "title": "Ladda ner din produkt",
+      "instruction": "Tack för ditt köp! Du kan nu komma åt och ladda ner ditt digitala innehåll med knappen nedan.",
+      "button": "Ladda ner nu"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Din lönebesked för denna månad är klar 📄",
+      "title": "Månadslönebesked",
+      "tag": "SAMMANFATTNING AV LÖNER",
+      "net_salary": "Nettolön",
+      "epf": "EPF (anställd)",
+      "etf": "— ETF",
+      "ot": "lönelista ot — OT Pay",
+      "bonus": "lönebonus — Bonus",
+      "status": "Betalningsstatus",
+      "thanks": "Om du har några frågor angående din lön, vänligen kontakta HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Din ledighetsförfrågan har godkänts ✅",
+      "subject_rejected": "Strug HR: Uppdatering om din ledighetsförfrågan ❌",
+      "title_approved": "Lämna godkänd!",
+      "title_rejected": "Lämna uppdatering",
+      "tag": "LÄMNA BEGÄRAN",
+      "status_approved": "Din ledighetsbegäran för följande period har godkänts.",
+      "status_rejected": "Vi beklagar att informera dig om att din begäran om ledighet för följande period har avslagits.",
+      "from_date": "Från datum",
+      "to_date": "Till datum",
+      "reason": "Orsak till avslag",
+      "thanks": "För ytterligare frågor, vänligen kontakta din HR-avdelning."
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: Ny ansökan mottagen för {{job_title}} 💼",
+      "title": "Ny kandidat ansökt",
+      "tag": "JOBBANSÖKNING",
+      "instruction": "En ny kandidat har ansökt om en av dina jobbannonser. Här är de korta detaljerna:",
+      "job_title": "Arbetsroll",
+      "candidate": "Kandidatens namn",
+      "view_button": "Visa applikation",
+      "thanks": "Logga in på din agentportal för att granska alla detaljer och CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Ditt arbetspass har uppdaterats 🕒",
+      "title": "Skift uppdaterad",
+      "tag": "SCHEMA UPPDATERING",
+      "instruction": "Ditt arbetsschema har nyligen uppdaterats av HR-avdelningen. Kontrollera dina nya skifttider nedan.",
+      "start_time": "Skift startar",
+      "end_time": "Skiftet slutar",
+      "thanks": "Se till att du är närvarande enligt det nya schemat. Kontakta HR för eventuella funderingar."
+    },
+    "services": {
+      "tag": "UPPDATERING AV SERVICE",
+      "subjects": {
+        "confirmed_customer": "Strug Services: Ditt möte är bekräftat! ✅",
+        "new_alert_provider": "Nytt möte: Du har en ny bokning! 📅",
+        "reminder": "Påminnelse: Ditt möte är om några timmar ⏳",
+        "rental_expiry": "Åtgärd krävs: Din hyra löper snart ut! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "etiketter tjänst — Service",
+        "provider": "Leverantör",
+        "customer": "Kund",
+        "date": "Datum",
+        "time": "Tid",
+        "location": "Plats",
+        "expiry": "Utgångsdatum"
+      },
+      "messages": {
+        "confirmed": "Ditt möte har schemalagts. Vänligen kom i tid.",
+        "provider_alert": "En ny kund har bokat din tjänst. Här är detaljerna.",
+        "reminder": "Det här är en vänlig påminnelse om ditt kommande möte med Strug.",
+        "rental_expiry": "Din hyresperiod är snart över. Vänligen returnera varan eller förläng perioden för att undvika straffavgifter.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "Brådskande: UTGÅNGSMEDDELANDE",
+        "item_name": "Objektets namn",
+        "due_date": "Förfallodatum",
+        "order_id": "Beställnings-ID",
+        "button": "Förläng eller returnera objekt",
+        "footer": "Undvik förseningsavgifter genom att returnera varan innan utsatt tid.",
+        "thanks": "Tack för att du använder Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Tack för din generösa donation! ❤️",
+        "loan_reminder": "Betalningspåminnelse: Din avbetalning förfaller 💳"
+      },
+      "donation": {
+        "title": "Donation mottagen",
+        "tag": "GER TILLBAKA",
+        "msg": "Ditt stöd gör stor skillnad! Vi har framgångsrikt tagit emot ditt bidrag till projektet.",
+        "amount": "Donerat belopp",
+        "project": "Projekt"
+      },
+      "loan": {
+        "title": "Återbetalning av lån",
+        "tag": "BETALNING",
+        "msg": "Detta är en påminnelse om att ditt återbetalningsdatum närmar sig. Se till att det finns tillräckligt med pengar.",
+        "due_date": "Förfallodatum",
+        "amount": "Avbetalningsbelopp"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: Beställning bekräftad #{{order_id}}",
+        "new_order_seller": "Strug Shop: Ny beställning mottagen #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "BESTÄLLNING BEKRÄFTAD",
+        "vendor_tag": "NY BESTÄLLNING",
+        "title": "Din beställning är bekräftad",
+        "vendor_title": "Du har en ny beställning",
+        "order_id": "Beställ",
+        "product": "Produkt",
+        "qty": "Kvantitet",
+        "total": "Totalt",
+        "thanks": "Tack för att du handlar på Strug!",
+        "vendor_msg": "Vänligen förbered och skicka denna beställning så snart som möjligt."
+      },
+      "status": {
+        "tag": "BESTÄLLNING UPPDATERING",
+        "order_id": "Beställnings-ID",
+        "tracking": "Spårningsnummer",
+        "track_button": "Visa beställning",
+        "subjects": {
+          "confirmed": "Strug Shop: Din beställning är bekräftad",
+          "shipped": "Strug Shop: Din beställning har skickats",
+          "fulfilled": "Strug Shop: Din beställning levererades"
+        },
+        "messages": {
+          "confirmed": "Säljaren bekräftade din beställning och förbereder den för leverans.",
+          "shipped": "Ditt paket är på väg. Spårning: {{tracking_number}}",
+          "fulfilled": "Din beställning har levererats. Vi hoppas att du gillar ditt köp!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: Dina inlärningsframsteg per vecka är här 📚",
+        "unread_chat": "Strug: Du har olästa meddelanden i din inkorg 💬"
+      },
+      "lms": {
+        "title": "Lärande framsteg",
+        "tag": "FÖRHÅLL SMART",
+        "msg": "Du gör det jättebra! Här är en sammanfattning av din flashcard-aktivitet den här veckan.",
+        "cards_reviewed": "Kort granskade",
+        "new_decks": "Nya däck anslutna"
+      },
+      "chat": {
+        "title": "Nya meddelanden",
+        "tag": "GEMENSKAP",
+        "msg": "Du har varit borta ett tag. Dina vänner och teammedlemmar försöker nå dig.",
+        "button": "Visa chatt"
+      }
+    }
+  }
+}

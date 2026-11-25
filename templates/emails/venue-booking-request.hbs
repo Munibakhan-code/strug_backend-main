@@ -1,0 +1,30 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
+    <tr>
+        <td align="center" style="padding-bottom: 12px; background-color: #0b1120;">
+            <font color="#e31e24" style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;">{{t 'emails.venue_booking_request.tag'}}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 15px; background-color: #0b1120;">
+            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">{{t 'emails.venue_booking_request.title'}}</h1>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-bottom: 25px; background-color: #0b1120;">
+            <p style="margin: 0; color: #94a3b8; font-size: 16px; line-height: 1.6;">{{t 'emails.venue_booking_request.instruction' name=name guest_name=guest_name}}{{#if listing_title}} {{listing_title}}{{/if}}</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-top: 10px; background-color: #0b1120;">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center" bgcolor="#e31e24" style="border-radius: 100px;">
+                        <a href="{{cta_url}}" target="_blank" style="padding: 12px 30px; color: #ffffff; font-size: 13px; font-weight: bold; text-decoration: none; display: inline-block;">
+                            {{t 'emails.venue_booking_request.button'}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,22 @@
+{
+  "comments": [
+    "This is exactly what I needed to see today.",
+    "Great perspective — thanks for sharing.",
+    "More people need to hear this.",
+    "Well said.",
+    "Couldn't agree more."
+  ],
+  "ratios": {
+    "viewsMin": 80,
+    "viewsMax": 320,
+    "likeRateMin": 0.04,
+    "likeRateMax": 0.07,
+    "commentRateMin": 0.12,
+    "commentRateMax": 0.22
+  },
+  "targets": [
+    { "type": "social", "id": 1 },
+    { "type": "townhall", "id": 1 },
+    { "type": "video", "id": 1 }
+  ]
+}

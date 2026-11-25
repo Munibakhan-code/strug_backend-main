@@ -1,0 +1,9 @@
+{
+  "comment": "Known-bad versions/hashes from Aug 2026 ChainDrop/Shai-Hulud. Update within 24h of new advisories. Do not put IOC hostnames in this file as executable strings in JS — hashes only here.",
+  "packages": {},
+  "dropperHashesSha256": [
+    "54dc7ea54a1317cca0e890a2770630cf7fa6c97813e0cb9d2caa93012b350668",
+    "9fc2570b7cef51c1b8df116d144d11ff4096357be7d2c4c6367cfc2509cf1bcc"
+  ],
+  "preinstallAllowlist": []
+}

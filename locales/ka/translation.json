@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ვერ მოიძებნა",
+    "fetchFailed": "{{resource}} ვერ მოიპოვა",
+    "createFailed": "{{resource}} ვერ შეიქმნა",
+    "updateFailed": "{{resource}} ვერ განახლდა",
+    "deleteFailed": "{{resource}} წაშლა ვერ მოხერხდა",
+    "invalidId": "{{field}} უნდა იყოს რიცხვი",
+    "alreadyExists": "{{field}} უკვე არსებობს",
+    "invalidFormat": "არასწორი {{field}} ფორმატი",
+    "internalServer": "შიდა სერვერის შეცდომა",
+    "accessDenied": "წვდომა აკრძალულია",
+    "invalidToken": "არასწორი ჟეტონი",
+    "adminRequired": "საჭიროა ადმინისტრატორის წვდომა",
+    "forbidden": "თქვენ არ გაქვთ ამ მოქმედების შესრულების ნებართვა"
+  },
+  "food": {
+    "filterError": "ფილტრის შეცდომა",
+    "orderAlreadyTaken": "ეს შეკვეთა უკვე მიიღო სხვა მძღოლმა.",
+    "orderAccepted": "შეკვეთა მიღებულია მიწოდებაზე",
+    "orderDeclined": "შეკვეთა უარყოფილია.",
+    "orderRejected": "შეკვეთა უარყოფილია."
+  },
+  "user": {
+    "notFound": "მომხმარებელი ვერ მოიძებნა",
+    "deleted": "მომხმარებელი წარმატებით წაიშალა",
+    "labelStreetRequired": "აუცილებელია ეტიკეტი და ქუჩა",
+    "addressNotFound": "მისამართი ვერ მოიძებნა",
+    "savedAddressRequired": "საჭიროა მიწოდების მისამართი",
+    "cannotModifyOther": "სხვა მომხმარებლის ანგარიშის შეცვლა შეუძლებელია",
+    "emailExists": "ელფოსტა ან რეფერალური კოდი უკვე არსებობს"
+  },
+  "auth": {
+    "invalidLoginFormat": "შესვლის არასწორი ფორმატი",
+    "userNotFound": "მომხმარებელი ვერ მოიძებნა",
+    "renewSubscription": "გთხოვთ, განაახლოთ თქვენი გამოწერა",
+    "verifyBefore": "გთხოვთ, დაადასტუროთ თქვენი {{method}} შესვლამდე.",
+    "noPassword": "ამ ანგარიშს პაროლი არ აქვს. სცადეთ Google შესვლა.",
+    "invalidPassword": "არასწორი პაროლი",
+    "teamMemberNotFound": "გუნდის წევრი ვერ მოიძებნა",
+    "loginSuccessful": "შესვლა წარმატებულია",
+    "invalidCredentials": "არასწორი სერთიფიკატები",
+    "noRefreshToken": "განახლების ჟეტონი არ არის მოწოდებული",
+    "invalidRefreshToken": "არასწორი ან ვადაგასული განახლების ჟეტონი",
+    "invalidRefreshTokenPayload": "არასწორი განახლების ტოკენის დატვირთვა",
+    "teamMembershipNotFound": "გუნდის წევრობა ვერ მოიძებნა",
+    "accessTokenRefreshed": "წვდომის ჟეტონი განახლებულია",
+    "refreshTokenDeleted": "განახლების ჟეტონი წაიშალა",
+    "emailRequired": "საჭიროა ელ.ფოსტა",
+    "passwordAccountExists": "ეს ელფოსტა რეგისტრირებულია პაროლის გამოყენებით. გთხოვთ შეხვიდეთ ხელით.",
+    "emailRequiredFacebook": "ელექტრონული ფოსტა აუცილებელია, მაგრამ არ არის მოწოდებული Facebook-ის მიერ. გთხოვთ, დარწმუნდეთ, რომ თქვენს Facebook ანგარიშს აქვს დადასტურებული ელფოსტა.",
+    "authCodeRequired": "საჭიროა ავტორიზაციის კოდი",
+    "validEmailRequired": "საჭიროა მოქმედი ელფოსტა.",
+    "accountEmailExists": "ანგარიში ამ ელფოსტით უკვე არსებობს.",
+    "usernameTaken": "ეს მომხმარებლის სახელი უკვე აღებულია.",
+    "tooManyOtpRequests": "ძალიან ბევრი კოდის მოთხოვნა. სცადეთ მოგვიანებით.",
+    "failedSendCode": "კოდის გაგზავნა ვერ მოხერხდა.",
+    "registerFieldsRequired": "ელ. ფოსტა, სახელი, პაროლი და ოტპ ყველაფერი საჭიროა.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "პაროლი უნდა შეიცავდეს: {{requirements}}.",
+    "noVerificationCode": "დამადასტურებელი კოდი ვერ მოიძებნა. გთხოვთ მოითხოვოთ ახალი.",
+    "verificationExpired": "ვერიფიკაციის კოდს ვადა გაუვიდა. გთხოვთ მოითხოვოთ ახალი.",
+    "tooManyOtpAttempts": "ძალიან ბევრი არასწორი მცდელობა. გთხოვთ, მოითხოვოთ ახალი დამადასტურებელი კოდი.",
+    "invalidVerificationCode": "დამადასტურებელი კოდი არასწორია.",
+    "verificationFailed": "ვერიფიკაცია ვერ მოხერხდა.",
+    "tooManyRequests": "ძალიან ბევრი მოთხოვნა. გთხოვთ, სცადოთ მოგვიანებით.",
+    "resetFieldsRequired": "საჭიროა ელფოსტა, ახალი პაროლი და ჟეტონი.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "არასწორი ან ვადაგასული გადატვირთვის ბმული.",
+    "accountLocked": "ანგარიში დროებით დაბლოკილია. სცადეთ მოგვიანებით.",
+    "verificationCodeRequired": "დამადასტურებელი კოდია საჭირო.",
+    "invalidSession": "არასწორი სესია",
+    "passwordFieldsRequired": "საჭიროა მიმდინარე პაროლი და ახალი პაროლი"
+  },
+  "success": {
+    "deleted": "{{resource}} წარმატებით წაიშალა",
+    "created": "{{resource}} წარმატებით შეიქმნა",
+    "updated": "{{resource}} წარმატებით განახლდა"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: სარეკლამო ანგარიშის დაბალი ბალანსის გაფრთხილება",
+      "spend_alert_subject": "Strug Ads Alert: {{percentage}}% მიღწეულია დღიური ბიუჯეტი კამპანიისთვის #{{campaign_id}}",
+      "low_balance": {
+        "tag": "რეკლამის ანგარიშის გაფრთხილება",
+        "title": "დაბალი ბალანსის გაფრთხილება",
+        "instruction": "გამარჯობა {{name}}, თქვენი Ads Wallet ბალანსი იწურება. აქტიური კამპანიების ავტომატურად შეჩერების თავიდან ასაცილებლად, გთხოვთ, შეავსოთ თქვენი ანგარიშის ბალანსი.",
+        "balance_label": "მიმდინარე ბალანსი:",
+        "button": "შეავსეთ სარეკლამო საფულე"
+      },
+      "spend_alert": {
+        "tag": "მიღწეულია ბიუჯეტის მნიშვნელოვანი ეტაპი",
+        "title": "{{percentage}}% დახარჯული დღიური ბიუჯეტი",
+        "instruction": "გამარჯობა {{name}}, ეს არის თქვენი აქტიური სარეკლამო ნაკრების სტატუსის ავტომატური განახლება. თქვენმა კამპანიამ მიაღწია ყოველდღიური ხარჯვის ზღვარს.",
+        "campaign_label": "კამპანიის ID:",
+        "button": "კამპანიის მართვა"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: თქვენი კოდი აქ არის",
+      "welcome": "კეთილი იყოს თქვენი მობრძანება Strug-ის ოჯახში!",
+      "password_reset": "Strug: გადააყენეთ თქვენი პაროლი",
+      "login_alert": "Strug უსაფრთხოების გაფრთხილება: აღმოჩენილია ახალი შესვლა",
+      "ride_receipt": "Strug Ride რეზიუმე: გმადლობთ ტარებისთვის!"
+    },
+    "otp": {
+      "tag": "უსაფრთხოების შემოწმება",
+      "title": "დაადასტურეთ ანგარიში",
+      "instruction": "გამოიყენეთ ქვემოთ მოცემული უსაფრთხო კოდი თქვენი რეგისტრაციის დასასრულებლად. ძალაშია 10 წუთი.",
+      "ignore": "თუ თქვენ არ მოითხოვეთ ეს, გთხოვთ, უგულებელყოთ ეს ელფოსტა."
+    },
+    "common": {
+      "tagline": "შენი სამუშაო • შენი დრო • შენი ფული",
+      "rights_reserved": "ყველა უფლება დაცულია",
+      "need_help": "დახმარება გჭირდებათ? უპასუხეთ ამ ელფოსტას ან ეწვიეთ ჩვენს მხარდაჭერის ცენტრს."
+    },
+    "welcome": {
+      "tag": "კეთილი იყოს თქვენი მობრძანება STRUG-ში",
+      "title": "გამარჯობა, {{name}}!",
+      "instruction": "თქვენი ანგარიში დადასტურებულია. ახლა თქვენ ხართ პლატფორმის ნაწილი, რომელიც შექმნილია თქვენი სამუშაოს, დროისა და ფულის გასამარტივებლად.",
+      "button": "დაათვალიერეთ დაფა"
+    },
+    "password_reset": {
+      "tag": "უსაფრთხოება",
+      "title": "პაროლის აღდგენა",
+      "instruction": "გაკეთდა მოთხოვნა თქვენი Strug ანგარიშის პაროლის გადაყენების შესახებ. დააჭირეთ ქვემოთ მოცემულ ღილაკს ახლის ასარჩევად.",
+      "button": "გადააყენე ჩემი პაროლი",
+      "ignore": "თუ ეს არ მოგითხოვიათ, შეგიძლიათ უსაფრთხოდ უგულებელყოთ ეს ელფოსტა. ლინკი იწურება 1 საათში."
+    },
+    "login_alert": {
+      "tag": "უსაფრთხოების გაფრთხილება",
+      "title": "აღმოჩენილია ახალი შესვლა",
+      "instruction": "ჩვენ შევნიშნეთ ახალი შესვლა თქვენს Strug ანგარიშზე. თუ ეს თქვენ იყავით, შეგიძლიათ უგულებელყოთ ეს ელფოსტა.",
+      "device": "მოწყობილობა",
+      "time": "დრო",
+      "not_you": "თუ ეს თქვენ არ იყავით, გთხოვთ, დაუყოვნებლივ დაიცვათ თქვენი ანგარიში პაროლის შეცვლით."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "მგზავრობის რეზიუმე",
+      "tag": "მოგზაურობა დასრულებულია",
+      "total_fare": "სულ ტარიფი",
+      "distance": "მანძილი",
+      "duration": "ხანგრძლივობა",
+      "pickup": "პიკაპი",
+      "drop": "ჩამოშვება",
+      "driver": "მძღოლი",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "გმადლობთ Strug-თან ერთად ტარებისთვის!",
+      "support": "თუ რაიმე პრობლემა გაქვთ ამ მგზავრობასთან დაკავშირებით, დაუკავშირდით მხარდაჭერას."
+    },
+    "carpool_booking": {
+      "subject": "Carpool დადასტურებულია: თქვენი მგზავრობა დაჯავშნილია!",
+      "title": "დაჯავშნა დადასტურებულია",
+      "tag": "Carpool დაჯავშნილია",
+      "from": "დან",
+      "to": "რომ",
+      "seats": "ადგილები დაჯავშნილია",
+      "total_cost": "მთლიანი ღირებულება",
+      "status": "სტატუსი",
+      "thanks": "გმადლობთ Strug-თან ერთად მუშაობისთვის!",
+      "details_msg": "თქვენი ადგილი წარმატებით დაჯავშნილია. გთხოვთ დროულად იყოთ აყვანის ადგილზე."
+    },
+    "ghost_driver": {
+      "subject": "Ride Update: ჩვენ ხელახლა ვანიჭებთ ახალ დრაივერს თქვენთვის",
+      "title": "ახალი დრაივერის პოვნა",
+      "tag": "RIDE განახლება",
+      "instruction": "თქვენი წინა დრაივერი მიუწვდომელია ან არ პასუხობს. არ ინერვიულოთ, ჩვენ ავტომატურად ვეძებთ ახალ დრაივერს, რომ წაგიყვანოთ.",
+      "status": "ამჟამინდელი მდგომარეობა: მძღოლების ხელახლა ძიება...",
+      "hang_tight": "გთხოვ მაგრად დაკიდე! ჩვენ შეგატყობინებთ, როგორც კი ახალი მძღოლი მიიღებს თქვენს მოთხოვნას."
+    },
+    "password_changed": {
+      "subject": "Strug უსაფრთხოების გაფრთხილება: თქვენი პაროლი შეიცვალა",
+      "title": "პაროლი განახლებულია",
+      "tag": "უსაფრთხოების განახლება",
+      "instruction": "თქვენი Strug ანგარიშის პაროლი ახლახან შეიცვალა. თუ თქვენ განახორციელეთ ეს ცვლილება, შეგიძლიათ უსაფრთხოდ უგულებელყოთ ეს ელფოსტა.",
+      "warning": "თუ პაროლი არ შეგიცვლიათ, შესაძლოა თქვენი ანგარიში გატეხილი იყოს. გთხოვთ, დაუყოვნებლივ დაიცავით თქვენი ანგარიში.",
+      "button": "დაიცავი ჩემი ანგარიში",
+      "footer": "Strug პლატფორმის უსაფრთხოების გუნდი"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: შეკვეთა დადასტურებულია! #{{order_id}}",
+        "new_order_vendor": "საჭირო მოქმედება: მიღებულია ახალი შეკვეთა! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "შეკვეთის ქვითარი",
+        "tag": "შეუკვეთეთ წარმატება",
+        "vendor_tag": "საჭიროა მოქმედება",
+        "order_id": "შეკვეთის ID",
+        "item": "ელემენტი",
+        "qty": "რაოდენობა",
+        "price": "ფასი",
+        "subtotal": "სუბტოტალი",
+        "delivery_fee": "მიტანის საფასური",
+        "service_tax": "მომსახურების გადასახადი",
+        "platform_fee": "პლატფორმის საფასური",
+        "grand_total": "სულ თანხა",
+        "total": "მთლიანი თანხა",
+        "delivery_address": "მიწოდების მისამართი",
+        "thanks": "იმედია ისიამოვნებთ თქვენი კერძით!",
+        "vendor_title": "ახალი შეკვეთა თქვენთვის",
+        "vendor_msg": "თქვენ მიიღეთ ახალი შეკვეთა. გთხოვთ დაუყოვნებლივ დაიწყოთ მისი მომზადება."
+      }
+    },
+    "food_status": {
+      "tag": "განახლების შეკვეთა",
+      "subjects": {
+        "preparing": "Strug Food: თქვენი შეკვეთა მზადდება! 🍳",
+        "dispatched": "დიდი სიახლე! თქვენი შეკვეთა გზაშია 🛵",
+        "delivered": "ისიამოვნეთ თქვენი კერძით! შეკვეთა წარმატებით ჩაბარდა ✅",
+        "cancelled": "Strug შენიშვნა: თქვენი შეკვეთა გაუქმდა ❌"
+      },
+      "messages": {
+        "preparing": "რესტორანმა დაიწყო თქვენი გემრიელი კერძის მომზადება. ჩვენ შეგატყობინებთ, როდესაც ის გამოვა მიწოდებისთვის.",
+        "dispatched": "თქვენი შეკვეთა აღებულია და ჩვენი მიწოდების პარტნიორი თქვენი მდებარეობისკენ მიმავალ გზაზეა.",
+        "delivered": "თქვენი შეკვეთა გადაცემულია. გმადლობთ, რომ აირჩიეთ Strug!",
+        "cancelled": "სამწუხაროდ, გაცნობებთ, რომ თქვენი შეკვეთა გაუქმდა. თუ უკვე გადაიხადეთ, თანხის დაბრუნება მალე დაიწყება."
+      },
+      "labels": {
+        "order_id": "შეკვეთის ID",
+        "current_status": "მიმდინარე სტატუსი"
+      }
+    },
+    "digital": {
+      "subject": "თქვენი Strug ციფრული კონტენტი მზად არის!",
+      "title": "ჩამოტვირთეთ თქვენი პროდუქტი",
+      "instruction": "გმადლობთ შესყიდვისთვის! ახლა შეგიძლიათ თქვენი ციფრული შინაარსის წვდომა და ჩამოტვირთვა ქვემოთ მოცემული ღილაკის გამოყენებით.",
+      "button": "ჩამოტვირთეთ ახლა"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: თქვენი ხელფასი ამ თვისთვის მზად არის 📄",
+      "title": "ყოველთვიური ანაზღაურება",
+      "tag": "სახელფასო რეზიუმე",
+      "net_salary": "წმინდა ხელფასი",
+      "epf": "EPF (თანამშრომლები)",
+      "etf": "სახელფასო etf — ETF",
+      "ot": "OT გადახდა",
+      "bonus": "ბონუსი",
+      "status": "გადახდის სტატუსი",
+      "thanks": "თუ თქვენ გაქვთ რაიმე შეკითხვა თქვენს ხელფასთან დაკავშირებით, გთხოვთ, დაუკავშირდეთ HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: თქვენი შვებულების მოთხოვნა დამტკიცდა ✅",
+      "subject_rejected": "Strug HR: განახლება თქვენი შვებულების მოთხოვნის შესახებ ❌",
+      "title_approved": "დატოვე დამტკიცებული!",
+      "title_rejected": "დატოვე განახლება",
+      "tag": "დატოვე მოთხოვნა",
+      "status_approved": "თქვენი შვებულების მოთხოვნა შემდეგი პერიოდისთვის წარმატებით იქნა დამტკიცებული.",
+      "status_rejected": "მწუხარებით გაცნობებთ, რომ თქვენი შვებულების მოთხოვნა შემდეგი პერიოდისთვის უარყოფილია.",
+      "from_date": "თარიღიდან",
+      "to_date": "დღემდე",
+      "reason": "უარის მიზეზი",
+      "thanks": "დამატებითი კითხვებისთვის, გთხოვთ, დაუკავშირდეთ თქვენს HR დეპარტამენტს."
+    },
+    "job_alert": {
+      "subject": "Strug ვაკანსიები: ახალი აპლიკაცია მიღებულია {{job_title}} 💼",
+      "title": "ახალი კანდიდატი შევიდა",
+      "tag": "სამუშაო განაცხადი",
+      "instruction": "ახალმა კანდიდატმა მიმართა თქვენს ერთ-ერთ ვაკანსიას. აქ არის მოკლე დეტალები:",
+      "job_title": "სამუშაო როლი",
+      "candidate": "კანდიდატის სახელი",
+      "view_button": "აპლიკაციის ნახვა",
+      "thanks": "გთხოვთ შეხვიდეთ თქვენი აგენტის პორტალზე, რათა გადახედოთ სრულ დეტალებს და CV-ს."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: თქვენი სამუშაო ცვლა განახლდა 🕒",
+      "title": "Shift განახლებულია",
+      "tag": "განახლების განრიგი",
+      "instruction": "თქვენი სამუშაო განრიგი ახლახანს განახლდა HR დეპარტამენტის მიერ. გთხოვთ, შეამოწმოთ თქვენი ახალი ცვლის ვადები ქვემოთ.",
+      "start_time": "Shift იწყება",
+      "end_time": "Shift მთავრდება",
+      "thanks": "დარწმუნდით, რომ იმყოფებით ახალი განრიგის მიხედვით. ნებისმიერი შეშფოთებისთვის დაუკავშირდით HR."
+    },
+    "services": {
+      "tag": "სერვისის განახლება",
+      "subjects": {
+        "confirmed_customer": "Strug Services: თქვენი დანიშვნა დადასტურებულია! ✅",
+        "new_alert_provider": "ახალი შეხვედრა: თქვენ გაქვთ ახალი ჯავშანი! 📅",
+        "reminder": "შეხსენება: თქვენი დანიშვნა რამდენიმე საათშია ⏳",
+        "rental_expiry": "საჭიროა მოქმედება: თქვენი დაქირავება მალე იწურება! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "სერვისი",
+        "provider": "პროვაიდერი",
+        "customer": "დამკვეთი",
+        "date": "თარიღი",
+        "time": "დრო",
+        "location": "მდებარეობა",
+        "expiry": "ვადის გასვლის თარიღი"
+      },
+      "messages": {
+        "confirmed": "თქვენი შეხვედრა წარმატებით დაინიშნა. გთხოვთ დროულად იყოთ.",
+        "provider_alert": "ახალმა მომხმარებელმა დაჯავშნა თქვენი სერვისი. აქ არის დეტალები.",
+        "reminder": "ეს არის მეგობრული შეხსენება Strug-თან თქვენი მოახლოებული შეხვედრის შესახებ.",
+        "rental_expiry": "თქვენი გაქირავების პერიოდი დასასრულს უახლოვდება. გთხოვთ, დააბრუნოთ საქონელი ან გააგრძელოთ ვადა, რათა თავიდან აიცილოთ ჯარიმები.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "სასწრაფო: ვადის გასვლის შესახებ შეტყობინება",
+        "item_name": "საქონლის სახელი",
+        "due_date": "ვადა",
+        "order_id": "შეკვეთის ID",
+        "button": "გააფართოვეთ ან დააბრუნეთ საქონელი",
+        "footer": "მოერიდეთ დაგვიანებულ გადასახადს ნივთის ვადამდე დაბრუნებით.",
+        "thanks": "გმადლობთ Strug Rentals-ის გამოყენებისთვის."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: გმადლობთ თქვენი გულუხვი შემოწირულობისთვის! ❤️",
+        "loan_reminder": "გადახდის შეხსენება: თქვენი სესხის განვადება სრულდება 💳"
+      },
+      "donation": {
+        "title": "შემოწირულობა მიღებულია",
+        "tag": "უკან დაბრუნება",
+        "msg": "თქვენი მხარდაჭერა დიდ განსხვავებას ქმნის! ჩვენ წარმატებით მივიღეთ თქვენი წვლილი პროექტში.",
+        "amount": "შემოწირული თანხა",
+        "project": "პროექტი"
+      },
+      "loan": {
+        "title": "სესხის დაფარვა",
+        "tag": "გადასახდელი",
+        "msg": "ეს არის შეხსენება, რომ თქვენი სესხის დაფარვის თარიღი ახლოვდება. დარწმუნდით, რომ საკმარისი თანხები გაქვთ.",
+        "due_date": "ვადა",
+        "amount": "განვადების თანხა"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shop: შეკვეთა დადასტურებულია #{{order_id}}",
+        "new_order_seller": "Strug Shop: მიღებულია ახალი შეკვეთა #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "შეკვეთა დადასტურებულია",
+        "vendor_tag": "ახალი შეკვეთა",
+        "title": "თქვენი შეკვეთა დადასტურებულია",
+        "vendor_title": "თქვენ გაქვთ ახალი შეკვეთა",
+        "order_id": "შეკვეთა",
+        "product": "პროდუქტი",
+        "qty": "რაოდენობა",
+        "total": "სულ",
+        "thanks": "გმადლობთ Strug-ზე შოპინგისთვის!",
+        "vendor_msg": "გთხოვთ მოამზადოთ და გაგზავნოთ ეს შეკვეთა რაც შეიძლება მალე."
+      },
+      "status": {
+        "tag": "განახლების შეკვეთა",
+        "order_id": "შეკვეთის ID",
+        "tracking": "თვალთვალის ნომერი",
+        "track_button": "შეკვეთის ნახვა",
+        "subjects": {
+          "confirmed": "Strug Shop: თქვენი შეკვეთა დადასტურებულია",
+          "shipped": "Strug მაღაზია: თქვენი შეკვეთა გაიგზავნა",
+          "fulfilled": "Strug მაღაზია: თქვენი შეკვეთა მიწოდებულია"
+        },
+        "messages": {
+          "confirmed": "გამყიდველმა დაადასტურა თქვენი შეკვეთა და ამზადებს მას ტრანსპორტირებისთვის.",
+          "shipped": "თქვენი პაკეტი გზაშია. თვალყურის დევნება: {{tracking_number}}",
+          "fulfilled": "თქვენი შეკვეთა მოწოდებულია. ვიმედოვნებთ, რომ ისიამოვნებთ თქვენი შენაძენით!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug განათლება: თქვენი ყოველკვირეული სწავლის პროგრესი აქ არის 📚",
+        "unread_chat": "Strug: თქვენ გაქვთ წაუკითხავი შეტყობინებები თქვენს ინბოქსში 💬"
+      },
+      "lms": {
+        "title": "სასწავლო პროგრესი",
+        "tag": "დარჩი ჭკვიანი",
+        "msg": "მშვენივრად ხარ! აქ არის თქვენი ფლეშ ბარათის აქტივობის შეჯამება ამ კვირაში.",
+        "cards_reviewed": "ბარათები განხილულია",
+        "new_decks": "ახალი გემბანები შეუერთდა"
+      },
+      "chat": {
+        "title": "ახალი შეტყობინებები",
+        "tag": "საზოგადოება",
+        "msg": "ცოტა ხნით შორს იყავი. თქვენი მეგობრები და გუნდის წევრები ცდილობენ თქვენთან დაკავშირებას.",
+        "button": "ჩეთის ნახვა"
+      }
+    }
+  }
+}

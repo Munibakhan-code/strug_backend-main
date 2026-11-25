@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} heb ei ganfod",
+    "fetchFailed": "Wedi methu â nôl {{resource}}",
+    "createFailed": "Wedi methu creu {{resource}}",
+    "updateFailed": "Wedi methu diweddaru {{resource}}",
+    "deleteFailed": "Wedi methu dileu {{resource}}",
+    "invalidId": "Rhaid i {{field}} fod yn rhif",
+    "alreadyExists": "Mae {{field}} eisoes yn bodoli",
+    "invalidFormat": "Fformat {{field}} annilys",
+    "internalServer": "Gwall gweinydd mewnol",
+    "accessDenied": "Mynediad wedi'i wrthod",
+    "invalidToken": "Tocyn annilys",
+    "adminRequired": "Mae angen mynediad gweinyddol",
+    "forbidden": "Nid oes gennych ganiatâd i gyflawni'r weithred hon"
+  },
+  "food": {
+    "filterError": "Gwall hidlo",
+    "orderAlreadyTaken": "Cymerwyd yr archeb hon eisoes gan yrrwr arall.",
+    "orderAccepted": "Derbynnir archeb i'w danfon",
+    "orderDeclined": "Gwrthodwyd y gorchymyn.",
+    "orderRejected": "Gorchymyn wedi ei wrthod."
+  },
+  "user": {
+    "notFound": "Defnyddiwr heb ei ganfod",
+    "deleted": "Defnyddiwr wedi'i ddileu yn llwyddiannus",
+    "labelStreetRequired": "Mae angen label a stryd",
+    "addressNotFound": "Cyfeiriad heb ei ganfod",
+    "savedAddressRequired": "Mae angen cyfeiriad danfon",
+    "cannotModifyOther": "Methu addasu cyfrif defnyddiwr arall",
+    "emailExists": "Mae e-bost neu god cyfeirio eisoes yn bodoli"
+  },
+  "auth": {
+    "invalidLoginFormat": "Fformat mewngofnodi annilys",
+    "userNotFound": "Defnyddiwr heb ei ganfod",
+    "renewSubscription": "Adnewyddwch eich tanysgrifiad",
+    "verifyBefore": "Gwiriwch eich {{method}} cyn mewngofnodi.",
+    "noPassword": "Nid oes gan y cyfrif hwn unrhyw gyfrinair. Rhowch gynnig ar fewngofnodi Google.",
+    "invalidPassword": "Cyfrinair annilys",
+    "teamMemberNotFound": "Heb ganfod aelod o'r tîm",
+    "loginSuccessful": "Mewngofnodi yn llwyddiannus",
+    "invalidCredentials": "Manylion annilys",
+    "noRefreshToken": "Ni ddarparwyd tocyn adnewyddu",
+    "invalidRefreshToken": "Tocyn adnewyddu annilys neu wedi dod i ben",
+    "invalidRefreshTokenPayload": "Llwyth tâl tocyn adnewyddu annilys",
+    "teamMembershipNotFound": "Heb ganfod aelodaeth tîm",
+    "accessTokenRefreshed": "Tocyn mynediad wedi'i adnewyddu",
+    "refreshTokenDeleted": "Tocyn adnewyddu wedi'i ddileu",
+    "emailRequired": "Mae angen e-bost",
+    "passwordAccountExists": "Mae'r e-bost hwn wedi'i gofrestru gan ddefnyddio cyfrinair. Mewngofnodwch â llaw.",
+    "emailRequiredFacebook": "Mae angen e-bost ond nid yw'n cael ei ddarparu gan Facebook. Sicrhewch fod gan eich cyfrif Facebook e-bost wedi'i wirio.",
+    "authCodeRequired": "Mae angen cod awdurdod",
+    "validEmailRequired": "Mae angen e-bost dilys.",
+    "accountEmailExists": "Mae cyfrif gyda'r e-bost hwn eisoes yn bodoli.",
+    "usernameTaken": "Mae'r enw defnyddiwr hwnnw eisoes wedi'i gymryd.",
+    "tooManyOtpRequests": "Gormod o geisiadau cod. Ceisiwch eto yn nes ymlaen.",
+    "failedSendCode": "Wedi methu ag anfon y cod.",
+    "registerFieldsRequired": "e-bost, enw, cyfrinair, ac otp i gyd yn ofynnol.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Rhaid i'r cyfrinair gynnwys: {{requirements}}.",
+    "noVerificationCode": "Ni chanfuwyd cod dilysu. Gofynnwch am un newydd.",
+    "verificationExpired": "Mae'r cod dilysu wedi dod i ben. Gofynnwch am un newydd.",
+    "tooManyOtpAttempts": "Gormod o ymdrechion anghywir. Gofynnwch am god dilysu newydd.",
+    "invalidVerificationCode": "Cod dilysu annilys.",
+    "verificationFailed": "Methodd y dilysu.",
+    "tooManyRequests": "Gormod o geisiadau. Ceisiwch eto yn nes ymlaen.",
+    "resetFieldsRequired": "mae angen e-bost, newPassword, a thocyn.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Dolen ailosod annilys neu wedi dod i ben.",
+    "accountLocked": "Cyfrif wedi'i gloi dros dro. Ceisiwch eto yn nes ymlaen.",
+    "verificationCodeRequired": "Mae angen cod dilysu.",
+    "invalidSession": "Sesiwn annilys",
+    "passwordFieldsRequired": "mae angen CurrentPassword a newPassword"
+  },
+  "success": {
+    "deleted": "{{resource}} dileu yn llwyddiannus",
+    "created": "{{resource}} creu yn llwyddiannus",
+    "updated": "Diweddarwyd {{resource}} yn llwyddiannus"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Hysbysebion Strug: Rhybudd Balans Isel Cyfrif Ad",
+      "spend_alert_subject": "Rhybudd Hysbysebion Strug: {{percentage}}% Cyllideb Ddyddiol wedi'i Chyrraedd ar gyfer Ymgyrch #{{campaign_id}}",
+      "low_balance": {
+        "tag": "RHYBUDD CYFRIF ADS",
+        "title": "Rhybudd Balans Isel",
+        "instruction": "Helo {{name}}, mae balans eich Ads Wallet yn rhedeg yn isel. Er mwyn atal ymgyrchoedd gweithredol rhag cael eu seibio'n awtomatig, ategwch falans eich cyfrif.",
+        "balance_label": "Balans Presennol:",
+        "button": "Waled Hysbyseb Atodol"
+      },
+      "spend_alert": {
+        "tag": "CYRRAEDD FILLTIR Y GYLLIDEB",
+        "title": "{{percentage}}% Cyllideb Ddyddiol a Wariwyd",
+        "instruction": "Helo {{name}}, mae hwn yn ddiweddariad statws awtomataidd ar gyfer eich set hysbysebion gweithredol. Mae eich ymgyrch wedi cyrraedd trothwy gwariant dyddiol.",
+        "campaign_label": "ID yr ymgyrch:",
+        "button": "Rheoli Ymgyrch"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: Mae eich cod yma",
+      "welcome": "Croeso i Deulu Strug!",
+      "password_reset": "Strug: Ailosodwch eich cyfrinair",
+      "login_alert": "Rhybudd Diogelwch Strug: Wedi canfod mewngofnodi newydd",
+      "ride_receipt": "Crynodeb o Reid Strug: Diolch am reidio!"
+    },
+    "otp": {
+      "tag": "GWIRIAD DIOGELWCH",
+      "title": "Dilysu Cyfrif",
+      "instruction": "Defnyddiwch y cod diogel isod i gwblhau eich cofrestriad. Yn ddilys am 10 munud.",
+      "ignore": "Os na wnaethoch ofyn am hyn, anwybyddwch yr e-bost hwn."
+    },
+    "common": {
+      "tagline": "Eich Gwaith • Eich Amser • Eich Arian",
+      "rights_reserved": "Cedwir Pob Hawl",
+      "need_help": "Angen help? Ymatebwch i'r e-bost hwn neu ewch i'n canolfan gymorth."
+    },
+    "welcome": {
+      "tag": "CROESO I STRUG",
+      "title": "Helo, {{name}}!",
+      "instruction": "Mae eich cyfrif wedi'i wirio. Rydych chi nawr yn rhan o lwyfan a adeiladwyd i symleiddio'ch gwaith, amser ac arian.",
+      "button": "Archwilio Dangosfwrdd"
+    },
+    "password_reset": {
+      "tag": "DIOGELWCH",
+      "title": "Ailosod Cyfrinair",
+      "instruction": "Gwnaed cais i ailosod cyfrinair eich cyfrif Strug. Cliciwch ar y botwm isod i ddewis un newydd.",
+      "button": "Ailosod Fy Nghyfrinair",
+      "ignore": "Os na wnaethoch ofyn am hyn, gallwch anwybyddu'r e-bost hwn yn ddiogel. Cyswllt yn dod i ben mewn 1 awr."
+    },
+    "login_alert": {
+      "tag": "RHYBUDD DIOGELWCH",
+      "title": "Mewngofnodi Newydd Wedi'i Ganfod",
+      "instruction": "Gwelsom fewngofnodi newydd i'ch cyfrif Strug. Os mai chi oedd hwn, gallwch anwybyddu'r e-bost hwn.",
+      "device": "Dyfais",
+      "time": "Amser",
+      "not_you": "Os NAD chi oedd hwn, sicrhewch eich cyfrif ar unwaith trwy newid eich cyfrinair."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Crynodeb o Reid",
+      "tag": "TAITH WEDI'I GWBLHAU",
+      "total_fare": "Cyfanswm Pris",
+      "distance": "Pellter",
+      "duration": "Hyd",
+      "pickup": "pickup ride_receipt — Pickup",
+      "drop": "Gollwng",
+      "driver": "Gyrrwr",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Diolch am reidio gyda Strug!",
+      "support": "Os oes gennych unrhyw broblemau gyda'r daith hon, cysylltwch â'r tîm cymorth."
+    },
+    "carpool_booking": {
+      "subject": "Carpool Wedi'i Gadarnhau: Mae eich taith wedi'i harchebu!",
+      "title": "Archebu wedi'i Gadarnhau",
+      "tag": "CARPOOL ARCHEBU",
+      "from": "Oddiwrth",
+      "to": "I",
+      "seats": "Seddi wedi'u Archebu",
+      "total_cost": "Cyfanswm y Gost",
+      "status": "Statws",
+      "thanks": "Diolch am gronni car gyda Strug!",
+      "details_msg": "Mae eich sedd wedi'i chadw'n llwyddiannus. Byddwch yn y man codi ar amser os gwelwch yn dda."
+    },
+    "ghost_driver": {
+      "subject": "Diweddariad Reid: Rydym yn ailbennu gyrrwr newydd i chi",
+      "title": "Dod o Hyd i Yrrwr Newydd",
+      "tag": "DIWEDDARIAD RIDE",
+      "instruction": "Nid yw eich gyrrwr blaenorol ar gael neu ddim yn ymateb. Peidiwch â phoeni, rydym yn awtomatig yn chwilio am yrrwr newydd i'ch codi.",
+      "status": "Statws Presennol: Ail-chwilio am yrwyr...",
+      "hang_tight": "Os gwelwch yn dda hongian yn dynn! Byddwn yn eich hysbysu cyn gynted ag y bydd gyrrwr newydd yn derbyn eich cais."
+    },
+    "password_changed": {
+      "subject": "Rhybudd Diogelwch Strug: Cafodd eich cyfrinair ei newid",
+      "title": "Cyfrinair wedi'i ddiweddaru",
+      "tag": "DIWEDDARIAD DIOGELWCH",
+      "instruction": "Cafodd cyfrinair eich cyfrif Strug ei newid yn ddiweddar. Os gwnaethoch y newid hwn, gallwch anwybyddu'r e-bost hwn yn ddiogel.",
+      "warning": "Os NAD YDYNT wedi newid eich cyfrinair, mae'n bosibl y bydd eich cyfrif mewn perygl. Sicrhewch eich cyfrif ar unwaith.",
+      "button": "Diogelu Fy Nghyfrif",
+      "footer": "Tîm Diogelwch Llwyfan Strug"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Bwyd Strug: Gorchymyn wedi'i Gadarnhau! #{{order_id}}",
+        "new_order_vendor": "Camau i'w Cymryd: Derbyniwyd Archeb Newydd! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Derbynneb Archeb",
+        "tag": "LLWYDDIANT GORCHYMYN",
+        "vendor_tag": "GWEITHRED ANGENRHEIDIOL",
+        "order_id": "ID archeb",
+        "item": "Eitem",
+        "qty": "derbynneb qty—Qty",
+        "price": "Pris",
+        "subtotal": "Is-gyfanswm",
+        "delivery_fee": "Ffi Dosbarthu",
+        "service_tax": "Treth Gwasanaeth",
+        "platform_fee": "Ffi Llwyfan",
+        "grand_total": "CYFANSWM",
+        "total": "Cyfanswm",
+        "delivery_address": "Cyfeiriad Cyflwyno",
+        "thanks": "Gobeithio y gwnewch chi fwynhau eich pryd!",
+        "vendor_title": "Gorchymyn Newydd i Chi",
+        "vendor_msg": "Rydych chi wedi derbyn archeb newydd. Dechreuwch ei baratoi ar unwaith."
+      }
+    },
+    "food_status": {
+      "tag": "DIWEDDARIAD AR ORCHYMYN",
+      "subjects": {
+        "preparing": "Bwyd Strug: Mae eich archeb yn cael ei baratoi! 🍳",
+        "dispatched": "Newyddion gwych! Mae eich archeb ar y ffordd 🛵",
+        "delivered": "Mwynhewch eich pryd! Archeb wedi'i chyflwyno'n llwyddiannus ✅",
+        "cancelled": "Hysbysiad Strug: Mae eich archeb wedi'i ganslo ❌"
+      },
+      "messages": {
+        "preparing": "Mae'r bwyty wedi dechrau paratoi eich pryd blasus. Byddwn yn rhoi gwybod i chi pan fydd allan i'w ddosbarthu.",
+        "dispatched": "Mae'ch archeb wedi'i chasglu ac mae ein partner dosbarthu ar y ffordd i'ch lleoliad.",
+        "delivered": "Mae eich archeb wedi'i throsglwyddo. Diolch am ddewis Strug!",
+        "cancelled": "Mae'n ddrwg gennym eich hysbysu bod eich archeb wedi'i ganslo. Os ydych eisoes wedi talu, bydd ad-daliad yn cael ei gychwyn yn fuan."
+      },
+      "labels": {
+        "order_id": "ID archeb",
+        "current_status": "Statws Presennol"
+      }
+    },
+    "digital": {
+      "subject": "Mae Eich Cynnwys Digidol Strug yn Barod!",
+      "title": "Lawrlwythwch Eich Cynnyrch",
+      "instruction": "Diolch am eich pryniant! Gallwch nawr gyrchu a lawrlwytho eich cynnwys digidol gan ddefnyddio'r botwm isod.",
+      "button": "Lawrlwythwch Nawr"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Mae eich slip cyflog ar gyfer y mis hwn yn barod 📄",
+      "title": "Slip Cyflog Misol",
+      "tag": "CRYNODEB CYFLOG",
+      "net_salary": "Cyflog Net",
+      "epf": "EPF (Gweithiwr)",
+      "etf": "cyflogres etf—ETF",
+      "ot": "Tâl OT",
+      "bonus": "Bonws",
+      "status": "Statws Talu",
+      "thanks": "Os oes gennych unrhyw gwestiynau am eich cyflog, cysylltwch ag AD."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Mae eich Cais Absenoldeb wedi'i Gymeradwyo ✅",
+      "subject_rejected": "Strug AD: Diweddariad ar eich Cais Absenoldeb ❌",
+      "title_approved": "Gadael Cymeradwy!",
+      "title_rejected": "Gadael Diweddariad",
+      "tag": "GADAEL CAIS",
+      "status_approved": "Mae eich cais am wyliau ar gyfer y cyfnod canlynol wedi'i gymeradwyo'n llwyddiannus.",
+      "status_rejected": "Mae'n ddrwg gennym eich hysbysu bod eich cais am absenoldeb ar gyfer y cyfnod canlynol wedi'i wrthod.",
+      "from_date": "O Dyddiad",
+      "to_date": "Hyd Yma",
+      "reason": "Rheswm dros Wrthod",
+      "thanks": "Am unrhyw gwestiynau pellach, cysylltwch â'ch adran Adnoddau Dynol."
+    },
+    "job_alert": {
+      "subject": "Swyddi Strug: Cais Newydd Wedi'i Dderbyn am {{job_title}} 💼",
+      "title": "Ymgeisydd Newydd wedi'i Gymhwyso",
+      "tag": "CAIS SWYDD",
+      "instruction": "Mae ymgeisydd newydd wedi gwneud cais am un o'ch rhestrau swyddi. Dyma'r manylion cryno:",
+      "job_title": "Rôl Swydd",
+      "candidate": "Enw'r Ymgeisydd",
+      "view_button": "Gweld Cais",
+      "thanks": "Mewngofnodwch i'ch porth asiant i adolygu'r manylion llawn a'r CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Mae Eich Sifft Gwaith wedi'i Ddiweddaru 🕒",
+      "title": "Shift wedi'i ddiweddaru",
+      "tag": "DIWEDDARIAD YR ATODLEN",
+      "instruction": "Mae eich amserlen waith wedi'i diweddaru'n ddiweddar gan yr adran Adnoddau Dynol. Gwiriwch amseroedd eich sifft newydd isod.",
+      "start_time": "Mae Shift yn Dechrau",
+      "end_time": "Turn yn Diwedd",
+      "thanks": "Sicrhewch eich bod yn bresennol yn unol â'r amserlen newydd. Cysylltwch ag AD am unrhyw bryderon."
+    },
+    "services": {
+      "tag": "DIWEDDARIAD O'R GWASANAETH",
+      "subjects": {
+        "confirmed_customer": "Gwasanaethau Strug: Mae eich apwyntiad wedi'i gadarnhau! ✅",
+        "new_alert_provider": "Apwyntiad Newydd: Mae gennych chi archeb newydd! 📅",
+        "reminder": "Nodyn atgoffa: Mae eich apwyntiad ymhen ychydig oriau ⏳",
+        "rental_expiry": "Camau i'w cymryd: Mae eich rhent yn dod i ben yn fuan! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Gwasanaeth",
+        "provider": "Darparwr",
+        "customer": "Cwsmer",
+        "date": "Dyddiad",
+        "time": "Amser",
+        "location": "Lleoliad",
+        "expiry": "Dyddiad Dod i Ben"
+      },
+      "messages": {
+        "confirmed": "Mae eich apwyntiad wedi'i drefnu'n llwyddiannus. Byddwch ar amser os gwelwch yn dda.",
+        "provider_alert": "Mae cwsmer newydd wedi archebu eich gwasanaeth. Dyma'r manylion.",
+        "reminder": "Dyma atgof cyfeillgar o'ch apwyntiad sydd ar ddod gyda Strug.",
+        "rental_expiry": "Mae eich cyfnod rhentu ar fin dod i ben. Dychwelwch yr eitem neu ymestyn y cyfnod i osgoi cosbau.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "BRYS: HYSBYSIAD TERFYN",
+        "item_name": "Enw'r Eitem",
+        "due_date": "Dyddiad Cwblhau",
+        "order_id": "ID archeb",
+        "button": "Ymestyn neu Ddychwelyd Eitem",
+        "footer": "Osgoi ffioedd hwyr trwy ddychwelyd yr eitem cyn yr amser dyledus.",
+        "thanks": "Diolch am ddefnyddio Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Diolch am eich rhodd hael! ❤️",
+        "loan_reminder": "Nodyn Atgoffa Talu: Mae rhandaliad eich benthyciad yn ddyledus 💳"
+      },
+      "donation": {
+        "title": "Rhodd a Dderbyniwyd",
+        "tag": "RHOI YN ÔL",
+        "msg": "Mae eich cefnogaeth yn gwneud gwahaniaeth enfawr! Rydym wedi derbyn eich cyfraniad ar gyfer y prosiect yn llwyddiannus.",
+        "amount": "Swm a roddwyd",
+        "project": "Prosiect"
+      },
+      "loan": {
+        "title": "Ad-daliad Benthyciad",
+        "tag": "TALIAD DYLEDSWYDD",
+        "msg": "Mae hwn yn nodyn atgoffa bod dyddiad ad-dalu eich benthyciad yn agosáu. Sicrhewch fod digon o arian ar gael.",
+        "due_date": "Dyddiad Cwblhau",
+        "amount": "Swm Rhandaliad"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Siop Strug: Gorchymyn wedi'i gadarnhau #{{order_id}}",
+        "new_order_seller": "Siop Strug: Derbyniwyd archeb newydd #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "GORCHYMYN WEDI'I GADARNHAU",
+        "vendor_tag": "GORCHYMYN NEWYDD",
+        "title": "Mae eich archeb wedi'i gadarnhau",
+        "vendor_title": "Mae gennych chi archeb newydd",
+        "order_id": "Gorchymyn",
+        "product": "Cynnyrch",
+        "qty": "Nifer",
+        "total": "Cyfanswm",
+        "thanks": "Diolch am siopa ar Strug!",
+        "vendor_msg": "Paratowch a llongiwch yr archeb hon cyn gynted â phosibl."
+      },
+      "status": {
+        "tag": "DIWEDDARIAD AR ORCHYMYN",
+        "order_id": "ID archeb",
+        "tracking": "Rhif olrhain",
+        "track_button": "Gweld trefn",
+        "subjects": {
+          "confirmed": "Siop Strug: Mae eich archeb wedi'i chadarnhau",
+          "shipped": "Siop Strug: Mae eich archeb wedi'i gludo",
+          "fulfilled": "Siop Strug: Anfonwyd eich archeb"
+        },
+        "messages": {
+          "confirmed": "Cadarnhaodd y gwerthwr eich archeb ac mae'n ei baratoi i'w gludo.",
+          "shipped": "Mae eich pecyn ar y ffordd. Olrhain: {{tracking_number}}",
+          "fulfilled": "Mae eich archeb wedi'i danfon. Rydym yn gobeithio y byddwch yn mwynhau eich pryniant!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Addysg Strug: Mae eich cynnydd dysgu wythnosol yma 📚",
+        "unread_chat": "Strug: Mae gennych negeseuon heb eu darllen yn eich mewnflwch 💬"
+      },
+      "lms": {
+        "title": "Cynnydd Dysgu",
+        "tag": "AROS YN SMART",
+        "msg": "Rydych chi'n gwneud yn wych! Dyma grynodeb o'ch gweithgaredd cerdyn fflach yr wythnos hon.",
+        "cards_reviewed": "Cardiau wedi'u hadolygu",
+        "new_decks": "Deciau Newydd Wedi Ymuno"
+      },
+      "chat": {
+        "title": "Negeseuon Newydd",
+        "tag": "CYMUNEDOL",
+        "msg": "Rydych chi wedi bod i ffwrdd ers tro. Mae eich ffrindiau ac aelodau'r tîm yn ceisio eich cyrraedd.",
+        "button": "Gweld Sgwrs"
+      }
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} lama helin",
+    "fetchFailed": "Ku guuldareystay inuu keeno {{resource}}",
+    "createFailed": "Ku guuldareystay inuu abuuro {{resource}}",
+    "updateFailed": "Waa lagu guul daraystay in la cusboonaysiiyo {{resource}}",
+    "deleteFailed": "Waa lagu guul daraystay in la tirtiro {{resource}}",
+    "invalidId": "{{field}} waa inuu noqdaa lambar",
+    "alreadyExists": "{{field}} hore u jiray",
+    "invalidFormat": "Qaab {{field}} aan sax ahayn",
+    "internalServer": "Cilada serverka gudaha",
+    "accessDenied": "Waa la diiday gelitaanka",
+    "invalidToken": "Calaamad aan sax ahayn",
+    "adminRequired": "gelitaanka maamulka ayaa loo baahan yahay",
+    "forbidden": "Ma haysatid fasax aad ku sameyso falkan"
+  },
+  "food": {
+    "filterError": "Khaladka shaandhaynta",
+    "orderAlreadyTaken": "Dalabkan waxaa horey u qaatay darawal kale.",
+    "orderAccepted": "Dalabka waa la aqbalay",
+    "orderDeclined": "Dalabka waa diiday",
+    "orderRejected": "Amarka waa la diiday."
+  },
+  "user": {
+    "notFound": "Isticmaalaha lama helin",
+    "deleted": "Isticmaalaha si guul leh ayuu u tirtiray",
+    "labelStreetRequired": "Summada iyo waddada ayaa loo baahan yahay",
+    "addressNotFound": "Ciwaanka lama helin",
+    "savedAddressRequired": "Ciwaanka keenista ayaa loo baahan yahay",
+    "cannotModifyOther": "Ma beddeli karo koontada isticmaale kale",
+    "emailExists": "iimaylka ama koodka tixraaca ayaa horay u jiray"
+  },
+  "auth": {
+    "invalidLoginFormat": "Qaab gal aan sax ahayn",
+    "userNotFound": "Isticmaalaha lama helin",
+    "renewSubscription": "Fadlan cusboonaysii rukunkaaga",
+    "verifyBefore": "Fadlan xaqiiji {{method}}ga ka hor intaadan galin",
+    "noPassword": "Koontadan malaha wax sir ah Isku day galitaanka Google",
+    "invalidPassword": "Furaha sirta ah ee aan ansax ahayn",
+    "teamMemberNotFound": "Xubinta kooxda lama helin",
+    "loginSuccessful": "Soo gal guul ah",
+    "invalidCredentials": "Aqoonsi aan sax ahayn",
+    "noRefreshToken": "Wax calaamad cusub ah lama bixin",
+    "invalidRefreshToken": "Calaamad cusub oo aan sax ahayn ama dhacday",
+    "invalidRefreshTokenPayload": "Culayska calaamada dib u cusboonaysiinta ee aan sax ahayn",
+    "teamMembershipNotFound": "Xubinimada kooxda lama helin",
+    "accessTokenRefreshed": "Calaamada gelitaanka waa la cusbooneysiiyay",
+    "refreshTokenDeleted": "Calaamada dib u cusbooneesi waa la tirtiray",
+    "emailRequired": "Iimayl ayaa loo baahan yahay",
+    "passwordAccountExists": "Iimaylkan waxa uu ku diiwaan gashan yahay erayga sirta ah Fadlan gacanta ku gal",
+    "emailRequiredFacebook": "Iimayl ayaa loo baahan yahay laakiin ma bixiso Facebook. Fadlan hubi in akoonkaaga Facebook uu leeyahay iimayl la xaqiijiyay.",
+    "authCodeRequired": "Koodhka aqoonsiga ayaa loo baahan yahay",
+    "validEmailRequired": "iimayl sax ah ayaa loo baahan yahay",
+    "accountEmailExists": "Koontada iimaylkan ayaa horay u jirtay.",
+    "usernameTaken": "Magaca isticmaalaha waa la qaatay.",
+    "tooManyOtpRequests": "Codsiyo kood aad u badan. Isku day mar kale hadhow",
+    "failedSendCode": "Ku guuldareystay inuu soo diro koodka",
+    "registerFieldsRequired": "iimaylka, magaca, erayga sirta ah, iyo otp dhamaantood waa loo baahan yahay.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Erayga sirta ah waa inuu ku jiraa: {{requirements}}.",
+    "noVerificationCode": "Lama helin kood xaqiijin Fadlan codso mid cusub",
+    "verificationExpired": "Koodhka xaqiijinta wuu dhacay Fadlan codso mid cusub",
+    "tooManyOtpAttempts": "Isku dayo badan oo khaldan Fadlan codso kood xaqiijin cusub",
+    "invalidVerificationCode": "Koodhka xaqiijinta ee aan ansax ahayn",
+    "verificationFailed": "Xaqiijinta waa fashilantay",
+    "tooManyRequests": "Codsiyo badan Fadlan isku day mar kale hadhow",
+    "resetFieldsRequired": "email, newPassword, iyo calaamad ayaa loo baahan yahay.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Xiriirinta dib udajinta aan sax ahayn ama dhacay",
+    "accountLocked": "Akoonka ayaa si ku meel gaar ah u xiran Isku day mar kale hadhow",
+    "verificationCodeRequired": "Koodhka xaqiijinta ayaa loo baahan yahay",
+    "invalidSession": "Fadhi aan sax ahayn",
+    "passwordFieldsRequired": "hadda Password iyo newPassword ayaa loo baahan yahay"
+  },
+  "success": {
+    "deleted": "{{resource}} si guul leh ayaa loo tirtiray",
+    "created": "{{resource}} ayaa loo sameeyay si guul leh",
+    "updated": "{{resource}} si guul leh ayaa loo cusboonaysiiyay"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Xayeysiisyada: Digniinta Xisaabaadka Hoose ee Koontada",
+      "spend_alert_subject": "Strug Ogeysiinta Xayeysiiska: {{percentage}}% Miisaaniyad Maalinle ah Oo La Gaaray Ololaha #{{campaign_id}}",
+      "low_balance": {
+        "tag": "Oggolaanshaha Xayeysiiska Xisaabaadka",
+        "title": "Digniinta dheelitirka Hoose",
+        "instruction": "Hello {{name}}, hadhaaga boorsada xayaysiisyadaadu waa uu hooseeyaa. Si looga hortago ololayaasha firfircoon in si toos ah loo hakiyo, fadlan buuxi baaqigaaga akoonkaaga.",
+        "balance_label": "Hadhaaga Hadda:",
+        "button": "Kordhinta Lacagta Xayeysiiska"
+      },
+      "spend_alert": {
+        "tag": "HEERKA MIISAANIYADDA OO LA GAARAY",
+        "title": "{{percentage}}% Miisaaniyad Maalinle ah oo la kharash gareeyay",
+        "instruction": "Hello {{name}}, tani waa cusboonaysiinta heerka otomaatig ah ee set kaaga firfircoon Ololahaagu waxa uu gaadhay heerka kharashka maalinlaha ah.",
+        "campaign_label": "Aqoonsiga ololaha:",
+        "button": "Maamul Ololaha"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Xaqiijinta: Koodhkaagu waa halkan",
+      "welcome": "Ku soo dhawoow qoyska Strug!",
+      "password_reset": "Strug: Dib u deji eraygaaga sirta ah",
+      "login_alert": "Strug Digniin Amni: Gel cusub ayaa la helay",
+      "ride_receipt": "Strug Soo Koobid Kordhi: Waad ku mahadsan tahay fuulistaada!"
+    },
+    "otp": {
+      "tag": "Hubinta AMNIGA",
+      "title": "Xaqiiji Koontada",
+      "instruction": "Isticmaal koodka ammaansan ee hoose si aad u dhammaystirto diiwaangelintaada. Valid for 10 minutes.",
+      "ignore": "Haddii aadan codsan tan, fadlan iska dhaaf iimaylkan."
+    },
+    "common": {
+      "tagline": "Shaqadaada • Waqtigaaga • Lacagtaada",
+      "rights_reserved": "Dhammaan Xuquuqaha Way Dhawrsan Yihiin",
+      "need_help": "Ma u baahan tahay caawimo? Ka jawaab iimaylkan ama booqo xaruntayada taageerada."
+    },
+    "welcome": {
+      "tag": "Ku Soo Dhawoow STRUG",
+      "title": "cinwaanka soo dhawoow - Hello, {{name}}!",
+      "instruction": "Koontadaada waa la xaqiijiyay Hadda waxaad qayb ka tahay madal loo dhisay si loo fududeeyo shaqadaada, wakhtigaaga iyo lacagtaada.",
+      "button": "Sahami Dashboard-ka"
+    },
+    "password_reset": {
+      "tag": "AMNIGA",
+      "title": "Dib u deji erayga sirta ah",
+      "instruction": "Codsi ayaa la sameeyay si dib loogu habeeyo koontadaada sirta ah ee Strug Guji badhanka hoose si aad mid cusub u doorato.",
+      "button": "Dib u deji erayga sirta ah",
+      "ignore": "Haddii aadan codsan tan, si badbaado leh ayaad u iska indho tiri kartaa iimaylkan. Link expires in 1 hour."
+    },
+    "login_alert": {
+      "tag": "OGEYSIINTA AMNIGA",
+      "title": "Login Cusub Oo La Helay",
+      "instruction": "Waxaan ogaanay galitaanka cusub ee akoonkaaga Strug Haddii kanu adiga ahaa, waad iska indho tiri kartaa iimaylkan.",
+      "device": "Qalabka",
+      "time": "Waqtiga",
+      "not_you": "Haddii kanu aanu adiga ahayn, fadlan si degdeg ah u xafid akoonkaaga adiga oo beddelaya eraygaaga sirta ah."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Soo koobida raacitaanka",
+      "tag": "SAFARKII OO DHAMEYSTIRAY",
+      "total_fare": "Wadarta qiimaha",
+      "distance": "Fogaanta",
+      "duration": "Muddada",
+      "pickup": "Qaadista",
+      "drop": "Dejinta",
+      "driver": "Darawal",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Waad ku mahadsan tahay raacitaanka Strug!",
+      "support": "Haddii aad wax dhibaato ah kala kulanto raacitaankan, la xidhiidh taageerada."
+    },
+    "carpool_booking": {
+      "subject": "Carpool La Xaqiijiyay: Raacidaada waa la ballansan yahay!",
+      "title": "Boos dhigashadu waa la xaqiijiyay",
+      "tag": "KAABUUR LA XADAYSANAY",
+      "from": "Ka",
+      "to": "Ku",
+      "seats": "Kuraasta la ballansan yahay",
+      "total_cost": "Wadarta Qiimaha",
+      "status": "Xaalada",
+      "thanks": "Waad ku mahadsan tahay inaad la socoto Strug!",
+      "details_msg": "Kursigaaga si guul leh ayaa loo xafiday Fadlan joog goobta laga qaadayo waqtigii loogu talagalay."
+    },
+    "ghost_driver": {
+      "subject": "Cusboonaysiinta Raadista: Waxa aanu dib kuugu meelaynaynaa darawal cusub",
+      "title": "Helitaanka Darawal Cusub",
+      "tag": "WAR CUSUB",
+      "instruction": "Darawalkii hore lama heli karo ama kuma jawaabayo. Ha welwelin, waxaan si toos ah u raadineynaa darawal cusub oo ku qaada.",
+      "status": "Xaalada Hadda: Dib u raadinta darawaliinta...",
+      "hang_tight": "Please hang tight! Waanu ku soo wargelin doonaa isla marka uu darawal cusub aqbalo codsigaga."
+    },
+    "password_changed": {
+      "subject": "Strug Digniin Amni: Furahaga sirta ah waa la bedelay",
+      "title": "Furaha waa la cusboonaysiiyay",
+      "tag": "CUSBOONAYSIINTA AMNIGA",
+      "instruction": "Furaha akoonkaaga Strug ayaa dhawaan la bedelay. Haddii aad samaysay isbeddelkan, waxaad si badbaado leh u iska indho tiri kartaa iimaylkan.",
+      "warning": "Haddii aadan bedelin eraygaaga sirta ah, waxaa laga yaabaa in akoonkaaga la jabiyo. Fadlan si degdeg ah u xafid akoonkaaga",
+      "button": "Hubi Akoonkayga",
+      "footer": "Strug Kooxda Ammaanka Platform"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Cuntada: Dalabka waa la xaqiijiyay! #{{order_id}}",
+        "new_order_vendor": "Talaabo Loo Baahan Yahay: Dalabka Cusub Waa La Helay! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Rasiidka Dalbashada",
+        "tag": "GUUL dalbashada",
+        "vendor_tag": "TALLAABO LOO BAAHAN YAHAY",
+        "order_id": "Dalbashada aqoonsiga",
+        "item": "Shayga",
+        "qty": "rasiidka qty - Qty",
+        "price": "Qiimaha",
+        "subtotal": "Wadarta guud",
+        "delivery_fee": "Kharashka Bixinta",
+        "service_tax": "Canshuurta Adeegga",
+        "platform_fee": "Lacagta Platform",
+        "grand_total": "Wadarta tirada",
+        "total": "Wadarta tirada",
+        "delivery_address": "Cinwaanka gaarsiinta",
+        "thanks": "Waxaan rajeynayaa inaad ku raaxaysanayso cuntadaada!",
+        "vendor_title": "Dalabka Cusub Adiga",
+        "vendor_msg": "Waxaad heshay amar cusub Fadlan si degdeg ah u bilow inaad diyaariso."
+      }
+    },
+    "food_status": {
+      "tag": "WAR CUSUB",
+      "subjects": {
+        "preparing": "Strug Cuntada: Dalabkaaga waa la diyaarinayaa! 🍳",
+        "dispatched": "Great news! Dalabkaagii waa uu soo socdaa 🛵",
+        "delivered": "Ku raaxayso cuntadaada! Dalabka si guul leh ayaa loo keenay ✅",
+        "cancelled": "Strug Ogeysiis: Dalabkaagii waa la joojiyay ❌"
+      },
+      "messages": {
+        "preparing": "Makhaayada waxay bilowday diyaarinta cuntadaada macaan. Waan ku ogeysiin doonaa marka ay bannaanka u tahay dhalmada.",
+        "dispatched": "Dalabkaagii waa la qaaday, wehelkayaga wax-u-diyaarintayaduna wuxuu ku soo socdaa waddada goobtaada.",
+        "delivered": "Dalabkaagii waa la wareejiyay. Waad ku mahadsan tahay doorashada Strug!",
+        "cancelled": "Waan ka xunahay inaan ku ogeysiino in amarkaagii la joojiyay. Haddii aad hore u bixisay, lacag celin ayaa la bilaabi doonaa waqti dhow."
+      },
+      "labels": {
+        "order_id": "Dalbashada aqoonsiga",
+        "current_status": "Xaalada Hadda"
+      }
+    },
+    "digital": {
+      "subject": "Mawduucaaga dhijitaalka ah ee Strug waa diyaar!",
+      "title": "Soo deji badeecadaada",
+      "instruction": "Waad ku mahadsan tahay iibsashadaada! Waxaad hadda geli kartaa oo soo dejisan kartaa macluumaadkaaga dhijitaalka ah addoo isticmaalaya badhanka hoose.",
+      "button": "Download Hadda"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Kharashka lacag bixinta ee bishan waa diyaar 📄",
+      "title": "Warqadda Mushaharka ee bishii",
+      "tag": "KOOBAN EE MUSHAHARKA",
+      "net_salary": "Mushaharka saafiga ah",
+      "epf": "EPF (Shaqaale)",
+      "etf": "mushaharka etf - ETF",
+      "ot": "Bixinta OT",
+      "bonus": "Gunnada",
+      "status": "Heerka Lacag-bixinta",
+      "thanks": "Haddii aad qabto wax su'aalo ah oo ku saabsan mushaharkaaga, fadlan la xiriir HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: Codsigaaga Fasaxa waa la ansixiyay ✅",
+      "subject_rejected": "Strug HR: Cusbooneysii Codsigaga Fasaxa ❌",
+      "title_approved": "Katag la ansixiyay!",
+      "title_rejected": "Ka tag Cusboonaysiinta",
+      "tag": "CODSIGA BAXA",
+      "status_approved": "Codsigaaga fasaxa ee muddada soo socota si guul leh ayaa loo ansixiyay.",
+      "status_rejected": "Waxaan ka xunahay inaan ku ogeysiino in codsigaaga fasaxa ee muddada soo socota la diiday.",
+      "from_date": "Laga bilaabo Taariikhda",
+      "to_date": "Ilaa Taariikhda",
+      "reason": "Sababta Diidmada",
+      "thanks": "Wixii su'aalo dheeraad ah, fadlan la xiriir waaxdaada HR."
+    },
+    "job_alert": {
+      "subject": "Strug Shaqooyin: Codsi Cusub Oo La Helay {{job_title}} 💼",
+      "title": "Musharax Cusub Ayaa Codsaday",
+      "tag": "CODSIGA SHAQADA",
+      "instruction": "Musharax cusub ayaa codsaday mid ka mid ah liiskaaga shaqo. Waa kan tafaasiisha kooban:",
+      "job_title": "Doorka Shaqada",
+      "candidate": "Magaca musharaxa",
+      "view_button": "Daawo Codsiga",
+      "thanks": "Fadlan gal bogga wakiilkaaga si aad dib ugu eegto faahfaahinta buuxda iyo CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: Shaqadaada waa la cusboonaysiiyay 🕒",
+      "title": "Shift waa la cusbooneysiiyay",
+      "tag": "CUSBOONAYSIINTA JADWALKA",
+      "instruction": "Jadwalka shaqadaada waxaa dhawaan cusboonaysiiyay waaxda HR. Fadlan hoos ka hubi wakhtiyada shaqadaada cusub",
+      "start_time": "Shaqo Bilaabida",
+      "end_time": "Shiftku wuu dhamaanayaa",
+      "thanks": "Fadlan hubi inaad joogtid si waafaqsan jadwalka cusub. La xidhiidh HR wixii walaac ah"
+    },
+    "services": {
+      "tag": "CUSBOONAYSIINTA ADEEGA",
+      "subjects": {
+        "confirmed_customer": "Strug Adeegyada: Ballantaada waa la xaqiijiyay! ✅",
+        "new_alert_provider": "Ballan Cusub: Waxaad haysataa ballan cusub! 📅",
+        "reminder": "Xusuusin: Ballantaadu waa dhawr saacadood gudahood ⏳",
+        "rental_expiry": "Talaabada Loo Baahan Yahay: Kiradaadu waxay dhacaysaa dhawaan! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Adeegga",
+        "provider": "Bixiye",
+        "customer": "Macmiil",
+        "date": "Taariikhda",
+        "time": "Waqtiga",
+        "location": "Goobta",
+        "expiry": "Taariikhda dhicitaanka"
+      },
+      "messages": {
+        "confirmed": "Ballantaada si guul leh ayaa loo qorsheeyay. Fadlan waqtiga ku sug",
+        "provider_alert": "Macmiil cusub ayaa ballansaday adeeggaaga. Waa kan faahfaahinta",
+        "reminder": "Tani waa xasuusin saaxiibtinimo oo ku saabsan ballantaada soo socota ee Strug.",
+        "rental_expiry": "Muddada kiradaadu way dhammaanaysaa. Fadlan soo celi shayga ama kordhi muddada si aad uga fogaato ganaaxyada.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "DEG DEG: OGAYSIIS DHACDAY",
+        "item_name": "Magaca Shayga",
+        "due_date": "Taariikhda la filayo",
+        "order_id": "Dalbashada aqoonsiga",
+        "button": "Kordhi ama soo celi shayga",
+        "footer": "Ka fogow khidmadaha daahitaanka adiga oo soo celinaya shayga ka hor wakhtiga loo qabtay.",
+        "thanks": "Waad ku mahadsan tahay isticmaalka Strug Rentals."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Waad ku mahadsan tahay deeqdaada deeqsinimada leh! ❤️",
+        "loan_reminder": "Xusuusin Lacag-bixineed: Qayb-dayntaada waa la dhammaanayaa 💳"
+      },
+      "donation": {
+        "title": "Deeqdii La Helay",
+        "tag": "SOO CELIN",
+        "msg": "Taageeradaadu waxay samaysaa farqi wayn! Waxaan si guul leh ku helnay tabarucaadii mashruuca.",
+        "amount": "Qadarka Lagu Deeqay",
+        "project": "Mashruuca"
+      },
+      "loan": {
+        "title": "Bixinta Amaahda",
+        "tag": "LACAG BIXINTA",
+        "msg": "Tani waa xasuusin in ay soo dhowdahay taariikhda bixinta deyntaada. Fadlan hubi in lacag ku filan la heli karo.",
+        "due_date": "Taariikhda la filayo",
+        "amount": "Qadarka Lacagta"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Dukaan: Dalabka ayaa la xaqiijiyay #{{order_id}}",
+        "new_order_seller": "Dukaanka Strug: Dalabka cusub ayaa helay #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "Amarka waa la xaqiijiyay",
+        "vendor_tag": "AMAR CUSUB",
+        "title": "Dalabkaaga waa la xaqiijiyay",
+        "vendor_title": "Waxaad haysaa amar cusub",
+        "order_id": "Dalbo",
+        "product": "Alaabta",
+        "qty": "Tirada",
+        "total": "Wadarta",
+        "thanks": "Waad ku mahadsan tahay wax iibsiga on Strug!",
+        "vendor_msg": "Fadlan diyaari oo soo dir dalabkan sida ugu dhakhsaha badan."
+      },
+      "status": {
+        "tag": "WAR CUSUB",
+        "order_id": "Dalbashada aqoonsiga",
+        "tracking": "Lambarka raadraaca",
+        "track_button": "Eeg amarka",
+        "subjects": {
+          "confirmed": "Strug Dukaan: Dalabkaaga waa la xaqiijiyay",
+          "shipped": "Dukaanka Strug: Dalabkaagii waa la raray",
+          "fulfilled": "Strug Dukaan: Dalabkaagii waa la keenay"
+        },
+        "messages": {
+          "confirmed": "Iibiyuhu waxa uu xaqiijiyay dalabkaaga oo waxa uu u diyaarinayaa shixnad.",
+          "shipped": "Xirmadaada ayaa soo socota. Dabagalka: {{tracking_number}}",
+          "fulfilled": "Dalabkaagii waa la keenay Waxaan rajeyneynaa inaad ku raaxaysato iibsashadaada!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Waxbarashada: Horumarka waxbarashadaada toddobaadlaha ah waa halkan 📚",
+        "unread_chat": "Strug: Waxaad ku leedahay sanduuqaaga fariimo aan la akhriyin 💬"
+      },
+      "lms": {
+        "title": "Horumarka Barashada",
+        "tag": "XAQIIQDA",
+        "msg": "Wax fiican baad qabanaysaa! Halkan waxaa ah soo koobidda hawsha kaadhkaaga flash-ka todobaadkan.",
+        "cards_reviewed": "Kaararka dib loo eegay",
+        "new_decks": "Dabaqyo Cusub Oo Lagu Soo Biiray"
+      },
+      "chat": {
+        "title": "Fariimo Cusub",
+        "tag": "BULSHADA",
+        "msg": "Muddo ayaad maqnayd. Saaxiibbadaada iyo xubnaha kooxda ayaa isku dayaya inay ku soo gaaraan.",
+        "button": "Daawo Sheekada"
+      }
+    }
+  }
+}

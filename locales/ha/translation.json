@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} ba a samo shi ba",
+    "fetchFailed": "An kasa kawo {{resource}}",
+    "createFailed": "An kasa ƙirƙirar {{resource}}",
+    "updateFailed": "An kasa sabunta {{resource}}",
+    "deleteFailed": "An kasa share {{resource}}",
+    "invalidId": "{{field}} dole ne ya zama lamba",
+    "alreadyExists": "{{field}} ya riga ya wanzu",
+    "invalidFormat": "Tsarin {{field}} mara inganci",
+    "internalServer": "Kuskuren uwar garken ciki",
+    "accessDenied": "An hana shiga",
+    "invalidToken": "Alamar mara inganci",
+    "adminRequired": "Ana buƙatar samun damar mai gudanarwa",
+    "forbidden": "Ba ku da izinin yin wannan aikin"
+  },
+  "food": {
+    "filterError": "Kuskuren tace",
+    "orderAlreadyTaken": "Wani direban ya riga ya ɗauki wannan odar.",
+    "orderAccepted": "An karɓi oda don bayarwa",
+    "orderDeclined": "An ƙi odar",
+    "orderRejected": "An ƙi odar"
+  },
+  "user": {
+    "notFound": "Ba a samo mai amfani ba",
+    "deleted": "An yi nasarar share mai amfani",
+    "labelStreetRequired": "Ana buƙatar lakabi da titi",
+    "addressNotFound": "Ba a samo adireshin ba",
+    "savedAddressRequired": "Ana buƙatar adireshin bayarwa",
+    "cannotModifyOther": "Ba za a iya canza asusun wani mai amfani ba",
+    "emailExists": "An riga an sami imel ko lambar magana"
+  },
+  "auth": {
+    "invalidLoginFormat": "Tsarin shiga mara inganci",
+    "userNotFound": "Ba a samo mai amfani ba",
+    "renewSubscription": "Da fatan za a sabunta kuɗin ku",
+    "verifyBefore": "Da fatan za a tabbatar da {{method}} naku kafin shiga.",
+    "noPassword": "Wannan asusun bashi da kalmar sirri. Gwada shiga Google.",
+    "invalidPassword": "Kalmar sirri mara inganci",
+    "teamMemberNotFound": "Ba a sami memban ƙungiyar ba",
+    "loginSuccessful": "Shiga cikin nasara",
+    "invalidCredentials": "Takaddun shaida mara inganci",
+    "noRefreshToken": "Ba a bayar da alamar annashuwa ba",
+    "invalidRefreshToken": "Alamar wartsakewa mara inganci ko ƙarewa",
+    "invalidRefreshTokenPayload": "Load ɗin wartsake mara inganci",
+    "teamMembershipNotFound": "Ba a sami membobin ƙungiyar ba",
+    "accessTokenRefreshed": "Alamar shiga ta wartsake",
+    "refreshTokenDeleted": "An goge alamar sabunta",
+    "emailRequired": "Ana buƙatar imel",
+    "passwordAccountExists": "An yi rajistar wannan imel ta amfani da kalmar sirri. Da fatan za a shiga da hannu.",
+    "emailRequiredFacebook": "Ana buƙatar imel amma Facebook bai bayar da shi ba. Da fatan za a tabbatar da asusun ku na Facebook yana da tabbataccen imel.",
+    "authCodeRequired": "Ana buƙatar lambar tabbaci",
+    "validEmailRequired": "Ana buƙatar ingantaccen imel.",
+    "accountEmailExists": "Akwai asusu mai wannan imel ɗin.",
+    "usernameTaken": "An riga an ɗauki wannan sunan mai amfani.",
+    "tooManyOtpRequests": "Buƙatun lamba da yawa. A sake gwadawa daga baya.",
+    "failedSendCode": "An kasa aika lamba.",
+    "registerFieldsRequired": "imel, suna, kalmar sirri, da otp duk ana buƙata.",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "Dole ne kalmar wucewa ta ƙunshi: {{requirements}}.",
+    "noVerificationCode": "Ba a sami lambar tabbatarwa ba. Da fatan za a nemi sabon.",
+    "verificationExpired": "Lambar tabbatarwa ta ƙare. Da fatan za a nemi sabon.",
+    "tooManyOtpAttempts": "Ƙoƙarin kuskure da yawa. Da fatan za a nemi sabon lambar tabbatarwa.",
+    "invalidVerificationCode": "Lambar tabbatarwa mara inganci.",
+    "verificationFailed": "Tabbatarwa ya kasa.",
+    "tooManyRequests": "Bukatu da yawa. Da fatan za a sake gwadawa daga baya.",
+    "resetFieldsRequired": "email, newPassword, da alama ana buƙatar.",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "Hanyar sake saiti mara inganci ko ƙarewa.",
+    "accountLocked": "An kulle asusun na ɗan lokaci. A sake gwadawa daga baya.",
+    "verificationCodeRequired": "Ana buƙatar lambar tabbatarwa.",
+    "invalidSession": "Zaman mara aiki",
+    "passwordFieldsRequired": "Ana buƙatar kalmar sirri na yanzu da sabonPassword"
+  },
+  "success": {
+    "deleted": "An share {{resource}} cikin nasara",
+    "created": "An ƙirƙira {{resource}} cikin nasara",
+    "updated": "{{resource}} an sabunta shi cikin nasara"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Talla: Ƙarfin Ma'auni na Talla",
+      "spend_alert_subject": "Strug Faɗakarwar Talla: {{percentage}}% Ana Isar da Kasafin Kuɗi na Kullum don Kamfen #{{campaign_id}}",
+      "low_balance": {
+        "tag": "FADAKARWA ACCOUNT ADS",
+        "title": "Gargadin Ƙarƙashin Ma'auni",
+        "instruction": "Sannu {{name}}, Ma'auni na Wallet ɗin Talla yana yin ƙasa. Don hana dakatar da yakin neman zabe ta atomatik, da fatan za a cika ma'auni na asusunku.",
+        "balance_label": "Ma'auni na Yanzu:",
+        "button": "Mafi Girma Ad Wallet"
+      },
+      "spend_alert": {
+        "tag": "MATSALAR KASAFIN KUDI",
+        "title": "{{percentage}}% Kashe Kuɗi na Kullum",
+        "instruction": "Sannu {{name}}, wannan sabuntawa ce ta atomatik don saitin tallan ku mai aiki. Yaƙin neman zaɓe ya kai matakin kashe kuɗi na yau da kullun.",
+        "campaign_label": "ID na yakin neman zabe:",
+        "button": "Sarrafa Kamfen"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Tabbatarwa: Lambar ku tana nan",
+      "welcome": "Barka da zuwa Iyali Strug!",
+      "password_reset": "Strug: Sake saita kalmar wucewa",
+      "login_alert": "Strug Faɗakarwar Tsaro: An gano sabon shiga",
+      "ride_receipt": "Strug Takaitacciyar Tafiya: Na gode da hawan!"
+    },
+    "otp": {
+      "tag": "BINCIKEN TSARO",
+      "title": "Tabbatar da Asusu",
+      "instruction": "Yi amfani da amintaccen lambar da ke ƙasa don kammala rajistar ku. Yana aiki na mintuna 10.",
+      "ignore": "Idan baku nemi wannan ba, da fatan za a yi watsi da wannan imel ɗin."
+    },
+    "common": {
+      "tagline": "Aikinku • Lokacinku • Kuɗin ku",
+      "rights_reserved": "Duka Hakkoki",
+      "need_help": "Kuna buƙatar taimako? Amsa ga wannan imel ko ziyarci cibiyar tallafin mu."
+    },
+    "welcome": {
+      "tag": "Barka da zuwa STRUG",
+      "title": "Sannu, {{name}}!",
+      "instruction": "An tabbatar da asusun ku. Yanzu kun kasance wani ɓangare na dandalin da aka gina don sauƙaƙe aikinku, lokaci, da kuɗin ku.",
+      "button": "Bincika Dashboard"
+    },
+    "password_reset": {
+      "tag": "TSARO",
+      "title": "Sake saita kalmar wucewa",
+      "instruction": "An nemi a sake saita kalmar wucewa ta asusun Strug. Danna maɓallin da ke ƙasa don zaɓar wani sabo.",
+      "button": "Sake saita kalmar wucewa ta",
+      "ignore": "Idan baku nemi wannan ba, kuna iya yin watsi da wannan imel ɗin cikin aminci. Hanyar haɗi zai ƙare a cikin awa 1."
+    },
+    "login_alert": {
+      "tag": "SANARWA TSARO",
+      "title": "An Gano Sabon Shiga",
+      "instruction": "Mun lura da sabon shiga cikin asusun Strug ɗin ku. Idan wannan shine ku, kuna iya watsi da wannan imel ɗin.",
+      "device": "Na'ura",
+      "time": "Lokaci",
+      "not_you": "Idan wannan ba kai ba ne, da fatan za a kiyaye asusunka nan da nan ta hanyar canza kalmar wucewa."
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "Takaitacciyar Tafiya",
+      "tag": "AN KAMMALA TAFIYA",
+      "total_fare": "Jimlar Fashi",
+      "distance": "Nisa",
+      "duration": "Tsawon lokaci",
+      "pickup": "Daukewa",
+      "drop": "Saukowa",
+      "driver": "Direba",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Na gode don hawa tare da Strug!",
+      "support": "Idan kuna da wata matsala game da wannan hawan, tuntuɓi tallafi."
+    },
+    "carpool_booking": {
+      "subject": "An Tabbatar da Motar Mota: An yi rajistar hawan ku!",
+      "title": "An tabbatar da yin ajiya",
+      "tag": "CARPOOL A KEJI",
+      "from": "Daga",
+      "to": "Zuwa",
+      "seats": "An Buɗe Kujeru",
+      "total_cost": "Jimlar Kudin",
+      "status": "Matsayi",
+      "thanks": "Na gode don yin tafiya tare da Strug!",
+      "details_msg": "An yi nasarar adana wurin zama. Da fatan za a kasance a wurin ɗauka akan lokaci."
+    },
+    "ghost_driver": {
+      "subject": "Sabunta Tafiya: Muna sake sanya muku sabon direba",
+      "title": "Neman Sabon Direba",
+      "tag": "SANARWA TA HAUWA",
+      "instruction": "Babu direbanka na baya ko baya amsawa. Kada ku damu, muna neman sabon direba ta atomatik don ɗaukar ku.",
+      "status": "Matsayin Yanzu: Sake neman direbobi...",
+      "hang_tight": "Da fatan za a rataya sosai! Za mu sanar da ku da zarar sabon direba ya karɓi buƙatarku."
+    },
+    "password_changed": {
+      "subject": "Strug Faɗakarwar Tsaro: An canza kalmar sirrinku",
+      "title": "An sabunta kalmar wucewa",
+      "tag": "SABBIN TSARO",
+      "instruction": "An canza kalmar sirrin asusun Strug kwanan nan. Idan kun yi wannan canjin, zaku iya yin watsi da wannan imel ɗin cikin aminci.",
+      "warning": "Idan BA KA canza kalmar sirrinka ba, ana iya lalata asusunka. Da fatan za a kiyaye asusunku nan da nan.",
+      "button": "Amintaccen Asusu Na",
+      "footer": "Strug Ƙungiyar Tsaro ta Platform"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Abinci: An Tabbatar da Oda! #{{order_id}}",
+        "new_order_vendor": "Ana Bukatar Aiki: An karɓi Sabon oda! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "Samuwar oda",
+        "tag": "NASARA BAYANI",
+        "vendor_tag": "ANA BUKATAR MATAKI",
+        "order_id": "Oda ID",
+        "item": "Abu",
+        "qty": "rasidin qty - Qty",
+        "price": "Farashin",
+        "subtotal": "Ƙarfafawa",
+        "delivery_fee": "Kudin bayarwa",
+        "service_tax": "Harajin Sabis",
+        "platform_fee": "Kuɗin Platform",
+        "grand_total": "JAM'IYYAR ADADI",
+        "total": "Jimlar Adadi",
+        "delivery_address": "Adireshin Bayarwa",
+        "thanks": "Da fatan za ku ji daɗin abincinku!",
+        "vendor_title": "Sabon oda a gare ku",
+        "vendor_msg": "Kun karɓi sabon oda. Da fatan za a fara shirya shi nan da nan."
+      }
+    },
+    "food_status": {
+      "tag": "LABARI DA DUMINSA",
+      "subjects": {
+        "preparing": "Strug Food: Ana shirya odar ku! 🍳",
+        "dispatched": "Babban labari! Odar ku yana kan hanya 🛵",
+        "delivered": "Ji daɗin abincin ku! An isar da oda cikin nasara ✅",
+        "cancelled": "Strug Sanarwa: An soke odar ku ❌"
+      },
+      "messages": {
+        "preparing": "Gidan cin abinci ya fara shirya abincinku mai dadi. Za mu sanar da ku lokacin da ya fito bayarwa.",
+        "dispatched": "An karɓi odar ku kuma abokin aikinmu yana kan hanyar zuwa wurin ku.",
+        "delivered": "An mika odar ku. Na gode da zabar Strug!",
+        "cancelled": "Muna baƙin cikin sanar da ku cewa an soke odar ku. Idan kun riga kun biya, za a fara mayar da kuɗi ba da daɗewa ba."
+      },
+      "labels": {
+        "order_id": "Oda ID",
+        "current_status": "Matsayin Yanzu"
+      }
+    },
+    "digital": {
+      "subject": "Abun Dijital naku Strug Shirye ne!",
+      "title": "Zazzage Samfurin ku",
+      "instruction": "Na gode da siyan ku! Yanzu zaku iya samun dama da zazzage abun ciki na dijital ta amfani da maɓallin da ke ƙasa.",
+      "button": "Sauke Yanzu"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: Likitan Biyan ku na wannan watan ya shirya 📄",
+      "title": "Biyan kuɗi na wata-wata",
+      "tag": "TAKAITACCEN RUWAN BAYA",
+      "net_salary": "Net Albashi",
+      "epf": "EPF (Ma'aikaci)",
+      "etf": "biya etf - ETF",
+      "ot": "Biyan OT",
+      "bonus": "bonus albashi - Bonus",
+      "status": "Matsayin Biyan Kuɗi",
+      "thanks": "Idan kuna da wasu tambayoyi game da albashin ku, tuntuɓi HR."
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: An Amince da Buƙatar ku ✅",
+      "subject_rejected": "Strug HR: Sabuntawa akan Buƙatun ku ❌",
+      "title_approved": "Bar Amincewa!",
+      "title_rejected": "Bar Sabuntawa",
+      "tag": "BUKATAR BAR",
+      "status_approved": "An yi nasarar amincewa da buƙatar izinin ku na tsawon lokaci mai zuwa.",
+      "status_rejected": "Muna baƙin cikin sanar da ku cewa an ƙi buƙatar izinin ku na tsawon lokaci mai zuwa.",
+      "from_date": "Daga Kwanan Wata",
+      "to_date": "Zuwa Kwanan Wata",
+      "reason": "Dalilin kin amincewa",
+      "thanks": "Don ƙarin tambayoyi, da fatan za a tuntuɓi sashen HR na ku."
+    },
+    "job_alert": {
+      "subject": "Strug Ayyuka: An Karɓi Sabon Aikace-aikacen don {{job_title}} 💼",
+      "title": "An Nemi Sabon Dan Takara",
+      "tag": "APPLICATION AIKI",
+      "instruction": "Wani sabon dan takara ya nemi daya daga cikin jerin ayyukanku. Ga taƙaitaccen bayani:",
+      "job_title": "Matsayin Aiki",
+      "candidate": "Sunan Dan takara",
+      "view_button": "Duba Application",
+      "thanks": "Da fatan za a shiga cikin tashar wakilin ku don duba cikakkun bayanai da CV."
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: An sabunta canjin Aikin ku 🕒",
+      "title": "An sabunta Shift",
+      "tag": "LABARI DA DUMINSA",
+      "instruction": "Sashen HR ya sabunta jadawalin aikin ku kwanan nan. Da fatan za a duba sabbin lokutan canjin ku a ƙasa.",
+      "start_time": "Shift yana farawa",
+      "end_time": "Shift Yana Ƙare",
+      "thanks": "Da fatan za a tabbatar cewa kun kasance bisa ga sabon jadawalin. Tuntuɓi HR don kowane damuwa."
+    },
+    "services": {
+      "tag": "GABATARWA HIDIMAR",
+      "subjects": {
+        "confirmed_customer": "Sabis Strug: An tabbatar da alƙawarinku! ✅",
+        "new_alert_provider": "Sabon Alƙawari: Kuna da sabon booking! 📅",
+        "reminder": "Tunatarwa: Alƙawarinku yana cikin sa'o'i kaɗan ⏳",
+        "rental_expiry": "Aiki da ake buƙata: Hayar ku zai ƙare nan ba da jimawa ba! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "Sabis",
+        "provider": "Mai bayarwa",
+        "customer": "Abokin ciniki",
+        "date": "Kwanan wata",
+        "time": "Lokaci",
+        "location": "Wuri",
+        "expiry": "Ranar Karewa"
+      },
+      "messages": {
+        "confirmed": "An yi nasarar shirya alƙawarinku. Da fatan za a kasance a kan lokaci.",
+        "provider_alert": "Wani sabon abokin ciniki ya yi ajiyar sabis ɗin ku. Ga cikakken bayani.",
+        "reminder": "Wannan tunatarwa ce ta abokantaka game da alƙawarku mai zuwa tare da Strug.",
+        "rental_expiry": "Lokacin hayar ku ya kusa ƙarewa. Da fatan za a dawo da abun ko ƙara tsawon lokacin don guje wa hukunci.",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "GAGGAWA: SANARWA MAI TSARKI",
+        "item_name": "Sunan Abu",
+        "due_date": "Ranar Karewa",
+        "order_id": "Oda ID",
+        "button": "Ƙara ko Mayar da Abun",
+        "footer": "Guji jinkirin kuɗi ta hanyar mayar da abu kafin lokacin da ya dace.",
+        "thanks": "Na gode don amfani da Rentals Strug."
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: Na gode da gudummawar da kuka bayar! ❤️",
+        "loan_reminder": "Tunatarwa Biyan Kuɗi: Kuɗin ku ya ƙare 💳"
+      },
+      "donation": {
+        "title": "An Karɓi Kyauta",
+        "tag": "BAYARWA",
+        "msg": "Taimakon ku yana yin babban bambanci! Mun samu nasarar karbar gudunmawar ku don aikin.",
+        "amount": "Adadin da aka bayar",
+        "project": "Aikin"
+      },
+      "loan": {
+        "title": "Biyan Lamuni",
+        "tag": "RANAR BIYA",
+        "msg": "Wannan tunatarwa ce cewa kwanan watan biyan lamunin ku na gabatowa. Da fatan za a tabbatar da isassun kuɗi.",
+        "due_date": "Ranar Karewa",
+        "amount": "Adadin Kudi"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Shago: An tabbatar da oda #{{order_id}}",
+        "new_order_seller": "Shagon Strug: An karɓi sabon oda #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "TAMBAYA TABBAS",
+        "vendor_tag": "SABON oda",
+        "title": "An tabbatar da odar ku",
+        "vendor_title": "Kuna da sabon tsari",
+        "order_id": "Oda",
+        "product": "Samfura",
+        "qty": "Yawan",
+        "total": "Jimlar",
+        "thanks": "Na gode don siyayya akan Strug!",
+        "vendor_msg": "Da fatan za a shirya kuma aika wannan odar da wuri-wuri."
+      },
+      "status": {
+        "tag": "LABARI DA DUMINSA",
+        "order_id": "Oda ID",
+        "tracking": "Lambar bin diddigi",
+        "track_button": "Duba oda",
+        "subjects": {
+          "confirmed": "Strug Shago: An tabbatar da odar ku",
+          "shipped": "Shagon Strug: An aika odar ku",
+          "fulfilled": "Shagon Strug: An isar da odar ku"
+        },
+        "messages": {
+          "confirmed": "Mai siyar ya tabbatar da odar ku kuma yana shirya shi don jigilar kaya.",
+          "shipped": "Kunshin ku yana kan hanya. Bibiya: {{tracking_number}}",
+          "fulfilled": "An isar da odar ku. Muna fatan kun ji daɗin siyan ku!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Ilimi: Ci gaban karatun ku na mako-mako yana nan 📚",
+        "unread_chat": "Strug: Kuna da saƙonnin da ba a karanta ba a cikin akwatin saƙon saƙo na ku 💬"
+      },
+      "lms": {
+        "title": "Ci gaban Koyo",
+        "tag": "KA TSAYA MAI KYAU",
+        "msg": "Kuna da kyau! Anan ga taƙaitaccen aikin katin walƙiya na wannan makon.",
+        "cards_reviewed": "An duba katunan",
+        "new_decks": "An Haɗa Sabbin Wuta"
+      },
+      "chat": {
+        "title": "Sabbin Saƙonni",
+        "tag": "AL'UMMA",
+        "msg": "Kun yi tafiya na ɗan lokaci. Abokan ku da membobin ƙungiyar suna ƙoƙarin samun ku.",
+        "button": "Duba Taɗi"
+      }
+    }
+  }
+}

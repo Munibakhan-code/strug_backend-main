@@ -1,0 +1,494 @@
+{
+  "comment": "Exhaustive Verticals & Domains Mapping for Granular Selective CI Execution",
+  "testGlobs": [
+    "test/**/*.test.js"
+  ],
+  "fullSuiteTriggers": [
+    "package.json",
+    "package-lock.json",
+    "prisma/schema.prisma",
+    "app.js",
+    "index.js",
+    "vitest.config.js",
+    "scripts/guard-*.js",
+    ".github/workflows/test.yml",
+    "scripts/select-tests.js",
+    "scripts/verify-test-manifest.js",
+    "test/verticals.manifest.json",
+    "test/setup.js",
+    ".github/workflows/nightly.yml"
+  ],
+  "verticals": {
+    "core": {
+      "always": true,
+      "watch": [
+        "middleware/**",
+        "utils/cors*",
+        "utils/sanitizer*",
+        "utils/startup-secrets.js",
+        "routes/ai-chat-routes.js",
+        "auth-routes/**",
+        "utils/observability.js",
+        "utils/console-bridge.js",
+        "utils/request-context.js",
+        "utils/cron-lock.js",
+        "utils/pagination.js",
+        "routes/health-routes.js",
+        "eslint.config.js"
+      ],
+      "tests": [
+        "test/unit/ai-chat-auth.test.js",
+        "test/unit/authentication.test.js",
+        "test/unit/cors-origins.test.js",
+        "test/unit/startup-secrets.test.js",
+        "test/unit/console-bridge.test.js",
+        "test/unit/cron-lock.test.js",
+        "test/unit/error-handler-zod.test.js",
+        "test/unit/health-probes.test.js",
+        "test/unit/latency-monitor-reporting.test.js",
+        "test/unit/observability.test.js",
+        "test/unit/pagination.test.js",
+        "test/unit/unbounded-queries.test.js",
+        "test/unit/soc-auth.test.js"
+      ]
+    },
+    "food": {
+      "tests": [
+        "test/integration/food-analytics.test.js",
+        "test/integration/food-order-visibility.test.js",
+        "test/unit/customer-analytics.test.js",
+        "test/unit/food-courier-dispatch.test.js",
+        "test/unit/food-delivery-range.test.js",
+        "test/unit/food-fulfillment.test.js",
+        "test/unit/food-modifier-pricing.test.js",
+        "test/unit/food-order-create.test.js",
+        "test/unit/food-payout.test.js",
+        "test/unit/food-public-vendor-secrets.test.js",
+        "test/unit/food-pickup-routes.test.js",
+        "test/unit/food-socket.test.js",
+        "test/unit/food-vendor-net.test.js",
+        "test/unit/reservation-listing-config.test.js",
+        "test/unit/vendor-type.test.js"
+      ],
+      "watch": [
+        "routes/food-routes.js",
+        "utils/delivery-dispatch.js",
+        "utils/delivery-location.js",
+        "utils/food-delivery-pricing.js",
+        "utils/food-fulfillment.js",
+        "utils/food-socket.js",
+        "routes/delivery-driver-routes.js",
+        "routes/courier-*.js",
+        "routes/vendor-type-routes.js"
+      ]
+    },
+    "shop": {
+      "tests": [
+        "test/integration/shop-public-browse.test.js",
+        "test/integration/shop-shipping-quote.test.js",
+        "test/unit/product-cart-access.test.js",
+        "test/unit/product-order-create.test.js",
+        "test/unit/shop-availability.test.js",
+        "test/unit/shop-constants.test.js",
+        "test/unit/shop-geo.test.js",
+        "test/unit/shop-order-socket.test.js",
+        "test/unit/shop-order-update.test.js",
+        "test/unit/shop-rating.test.js",
+        "test/unit/shop-shipping-zones.test.js",
+        "test/unit/shop-store-profile.test.js",
+        "test/unit/shop-vertical-types.test.js"
+      ],
+      "watch": [
+        "routes/product-*.js",
+        "routes/checkout-routes.js",
+        "routes/cloth*.js",
+        "routes/dg-*.js",
+        "routes/cs-*.js",
+        "routes/shipping-zone-routes.js",
+        "routes/seller-portals-routes.js"
+      ]
+    },
+    "rideshare": {
+      "tests": [
+        "test/unit/courier-socket.test.js",
+        "test/unit/driver-safety-sos.test.js",
+        "test/unit/ride-cancellation.test.js",
+        "test/unit/ride-dispatch-driver-notice.test.js",
+        "test/unit/ride-dispatch-retry.test.js",
+        "test/unit/ride-fare.test.js",
+        "test/unit/ride-receipt.test.js",
+        "test/unit/ride-refund.test.js",
+        "test/unit/ride-request-analytics.test.js",
+        "test/unit/ride-rider-notify.test.js",
+        "test/unit/ride-state-machine.test.js",
+        "test/unit/ride-status-email.test.js",
+        "test/unit/rider-analytics-guard.test.js"
+      ],
+      "watch": [
+        "routes/active_trip-routes.js",
+        "routes/ride-*.js",
+        "routes/rider-*.js",
+        "routes/driver-*.js",
+        "routes/carpool_*.js",
+        "routes/carpool-*.js",
+        "routes/emergency-contact-routes.js",
+        "utils/ride-*.js",
+        "utils/trip-socket.js"
+      ]
+    },
+    "jobs": {
+      "tests": [
+        "test/integration/jobs-vertical.test.js",
+        "test/unit/job-analytics.test.js",
+        "test/unit/job-chat-email.test.js",
+        "test/unit/job-filters.test.js",
+        "test/unit/job-moderation.test.js",
+        "test/unit/job-recommend.test.js",
+        "test/unit/candidate-resume-json.test.js",
+        "test/unit/candidate-portfolio.test.js",
+        "test/unit/candidate-talent-pool.test.js",
+        "test/unit/candidate-talent-pool-route.test.js",
+        "test/unit/chat-message-origin.test.js",
+        "test/unit/resume-pdf.test.js",
+        "test/unit/talent-pool-boost.test.js",
+        "test/unit/candidate-resume-versions.test.js",
+        "test/unit/work-wallet-debit.test.js"
+      ],
+      "watch": [
+        "routes/job-routes.js",
+        "routes/candidate-routes.js",
+        "routes/work-*.js",
+        "routes/agents-routes.js",
+        "routes/shift-routes.js",
+        "routes/payrolls-routes.js",
+        "routes/employee-*.js",
+        "routes/leave-routes.js",
+        "utils/candidate-*.js",
+        "utils/chat-message-origin.js",
+        "utils/work-dispatch.js",
+        "utils/job-saved-search-cron.js",
+        "utils/resume-pdf.js",
+        "utils/talent-pool-boost.js"
+      ]
+    },
+    "property": {
+      "tests": [
+        "test/integration/property-create.test.js",
+        "test/unit/property-authenticity.test.js",
+        "test/unit/property-enrichment-contract.test.js",
+        "test/unit/property-filters.test.js",
+        "test/unit/property-livabl-analytics.test.js",
+        "test/unit/property-saved-search-email.test.js"
+      ],
+      "watch": [
+        "routes/property-routes.js",
+        "routes/projects-routes.js",
+        "routes/rental-*.js",
+        "utils/property-saved-search-cron.js"
+      ]
+    },
+    "video": {
+      "tests": [
+        "test/integration/subscription-uploads.test.js",
+        "test/integration/video-feed-channel.test.js",
+        "test/integration/video-friend-activity.test.js",
+        "test/integration/video-stall-predicate.test.js",
+        "test/unit/video-categories.test.js",
+        "test/unit/video-comments.test.js",
+        "test/unit/video-engagement.test.js",
+        "test/unit/video-pagination.test.js",
+        "test/unit/recommendation-engine.test.js",
+        "test/unit/response-cache.test.js",
+        "test/unit/subscription-uploads.test.js",
+        "test/unit/video-home-feed.test.js",
+        "test/unit/video-discovery-search-log.test.js",
+        "test/unit/video-pipeline-monitor.test.js",
+        "test/unit/video-pipeline-panel.test.js",
+        "test/unit/video-queue-lanes.test.js",
+        "test/unit/video-upload-capacity.test.js",
+        "test/unit/video-upload-status.test.js",
+        "test/unit/video-visibility.test.js",
+        "test/unit/creator-analytics-ranges.test.js",
+        "test/unit/creator-audience-intelligence.test.js",
+        "test/unit/creator-choice-picks.test.js"
+      ],
+      "watch": [
+        "routes/video-*.js",
+        "routes/channel-routes.js",
+        "routes/creator-studio-routes.js",
+        "routes/playlist-routes.js",
+        "routes/voiceai-routes.js",
+        "services/video-*.js",
+        "workers/video-*.js",
+        "utils/video-*.js",
+        "utils/recommendation-*.js",
+        "utils/creator-analytics-ranges.js",
+        "utils/creator-audience-intelligence.js",
+        "utils/creator-choice-picks.js",
+        "utils/response-cache.js",
+        "utils/video-cache.js",
+        "utils/subscription-uploads.js"
+      ]
+    },
+    "medical": {
+      "tests": [
+        "test/integration/seller-doctors-portal-status.test.js",
+        "test/unit/booking-listing-geo.test.js",
+        "test/unit/medical-search.test.js",
+        "test/unit/vertical-model-map-medical.test.js"
+      ],
+      "watch": [
+        "routes/appointment*.js",
+        "routes/calm_*.js",
+        "routes/cam_post*.js",
+        "routes/symptom-*.js",
+        "routes/period-routes.js",
+        "routes/cycle-prediction-routes.js",
+        "routes/flo-user-routes.js"
+      ]
+    },
+    "wedding": {
+      "tests": [
+        "test/unit/artist-booking-settlement.test.js",
+        "test/unit/wedding-concierge-bridge.test.js",
+        "test/unit/event-plan-link.test.js",
+        "test/unit/event-payment-plan.test.js"
+      ],
+      "watch": [
+        "routes/wedding-routes.js",
+        "routes/book-artist-routes.js",
+        "routes/decor-routes.js",
+        "routes/celebrity*.js",
+        "routes/event-*.js"
+      ]
+    },
+    "tempstay": {
+      "tests": [
+        "test/integration/booking-occupancy-analytics.test.js",
+        "test/integration/booking-webhook.test.js",
+        "test/integration/tempstay-double-booking.test.js",
+        "test/unit/booking-cancel.test.js",
+        "test/unit/booking-capacity.test.js",
+        "test/unit/booking-listing-filters.test.js",
+        "test/unit/booking-reservation-date-range.test.js",
+        "test/unit/booking-reservation-slots.test.js",
+        "test/unit/booking-vehicle-capacity.test.js",
+        "test/unit/booking-vertical.test.js",
+        "test/unit/booking-host-visibility.test.js",
+        "test/unit/booking-host-payout.test.js",
+        "test/unit/hotel-room-availability.test.js"
+      ],
+      "watch": [
+        "routes/reservation-routes.js",
+        "routes/booking-*.js",
+        "routes/place*.js",
+        "routes/experiences-routes.js"
+      ]
+    },
+    "automotive": {
+      "tests": [
+        "test/integration/seller-automotive-portal-status.test.js",
+        "test/integration/seller-automotive-test-drive.test.js",
+        "test/integration/seller-automotive-vehicle.test.js",
+        "test/unit/mechanic-booking-settlement.test.js"
+      ],
+      "watch": [
+        "routes/vehicle-*.js",
+        "routes/test-drive-routes.js",
+        "routes/seller-automotive*.js",
+        "utils/mechanic-booking-settlement.js"
+      ]
+    },
+    "raise": {
+      "tests": [
+        "test/unit/raise-payout.test.js"
+      ],
+      "watch": [
+        "routes/donation-routes.js",
+        "routes/kickstarter-routes.js",
+        "routes/campaign-*.js",
+        "routes/reward-tier-routes.js",
+        "routes/loan-routes.js"
+      ]
+    },
+    "discounts": {
+      "tests": [
+        "test/unit/discount-feed.test.js",
+        "test/unit/discount.test.js"
+      ],
+      "watch": [
+        "routes/discounts-routes.js"
+      ]
+    },
+    "recruiter": {
+      "tests": [
+        "test/unit/recruit-visibility.test.js",
+        "test/unit/recruiter-settlement.test.js",
+        "test/unit/recruiter-share.test.js",
+        "test/unit/referral-routes-phase1.test.js",
+        "test/unit/referral-settlement.test.js"
+      ],
+      "watch": [
+        "routes/referral-*.js",
+        "routes/recruit-*.js",
+        "routes/shared-ref-code-routes.js",
+        "routes/provider-opportunities-routes.js",
+        "utils/recruiter-*.js",
+        "utils/recruit-*.js",
+        "utils/referral-*.js"
+      ]
+    },
+    "platform": {
+      "watch": [
+        "utils/**",
+        "services/**",
+        "sockets/**",
+        "workers/**",
+        "middleware/authentication.js",
+        "middleware/authenticate-board.js",
+        "routes/user-*.js",
+        "routes/location-routes.js",
+        "routes/locale-routes.js",
+        "routes/payment-routes.js",
+        "routes/platform-public-routes.js",
+        "routes/status-routes.js",
+        "routes/bug-reports-routes.js",
+        "routes/chat-*.js",
+        "routes/space-routes.js",
+        "routes/push-routes.js",
+        "routes/notification-routes.js",
+        "routes/social-*.js",
+        "routes/vertical-profile-routes.js",
+        "routes/town-hall*.js",
+        "routes/community*.js",
+        "routes/saves-routes.js",
+        "routes/pin-routes.js",
+        "routes/live-*.js",
+        "routes/stream*.js",
+        "routes/discord-*.js",
+        "routes/ads-*.js",
+        "routes/ad-engine-routes.js",
+        "routes/freelance-*.js",
+        "routes/freelancer-*.js",
+        "routes/board-*.js",
+        "routes/admin_routes.js",
+        "routes/quote-*.js",
+        "routes/server-*.js",
+        "routes/flashcard*.js",
+        "routes/flash-card-routes.js",
+        "routes/language-routes.js",
+        "routes/lesson-routes.js",
+        "routes/meetup*.js",
+        "routes/wishlist-routes.js",
+        "routes/event-concierge-routes.js"
+      ],
+      "tests": [
+        "test/integration/security-authz.test.js",
+        "test/integration/auth-provider-flags.test.js",
+        "test/integration/board-pr-review-access.test.js",
+        "test/integration/bug-report-thread.test.js",
+        "test/integration/channels-audit.test.js",
+        "test/integration/confirm-payment.test.js",
+        "test/integration/fare-estimate.test.js",
+        "test/integration/freelance-webhook.test.js",
+        "test/integration/notification-deeplink.test.js",
+        "test/integration/notification-dismiss.test.js",
+        "test/integration/ondemand-analytics.test.js",
+        "test/integration/push-preferences.test.js",
+        "test/integration/social-post-robustness.test.js",
+        "test/integration/social-profile-setup.test.js",
+        "test/integration/staff-chat.test.js",
+        "test/integration/storefront-cover.test.js",
+        "test/integration/townhall-stall-predicate.test.js",
+        "test/integration/user-addresses.test.js",
+        "test/integration/wallet-atomicity.test.js",
+        "test/unit/account-session.test.js",
+        "test/unit/authz-1282-1285.test.js",
+        "test/unit/authz-leave-shift-cycle.test.js",
+        "test/unit/security-1286-1288.test.js",
+        "test/unit/security-1290-1292.test.js",
+        "test/unit/dg-cart-authz-1290.test.js",
+        "test/unit/dg-order-paid-lock.test.js",
+        "test/unit/background-removal.test.js",
+        "test/unit/analytics-metrics.test.js",
+        "test/unit/board-admin-analytics-routes.test.js",
+        "test/unit/board-analytics-overview.test.js",
+        "test/unit/board-transitions.test.js",
+        "test/unit/bug-report-context.test.js",
+        "test/unit/business-time.test.js",
+        "test/unit/catalog-offer-expiry.test.js",
+        "test/unit/categories-routes.test.js",
+        "test/unit/channel-routes.test.js",
+        "test/unit/chat-context-vertical.test.js",
+        "test/unit/chat-notification-service.test.js",
+        "test/unit/chat-media-metadata.test.js",
+        "test/unit/chat-media-normalize.test.js",
+        "test/unit/scheduled-chat-messages.test.js",
+        "test/unit/dm-source-vertical.test.js",
+        "test/unit/commerce-pricing.test.js",
+        "test/unit/dating-routes.test.js",
+        "test/unit/driver-presence.test.js",
+        "test/unit/guard-sprint2.test.js",
+        "test/unit/select-tests.test.js",
+        "test/unit/handle-availability.test.js",
+        "test/unit/social-follow.test.js",
+        "test/unit/social-follow-requests-routes.test.js",
+        "test/unit/social-privacy-close-friends.test.js",
+        "test/unit/live-redis-degradation.test.js",
+        "test/unit/live-payout.test.js",
+        "test/unit/live-subscription-lifecycle.test.js",
+        "test/unit/live-subscription.test.js",
+        "test/unit/live-whip-url.test.js",
+        "test/unit/location-routes.test.js",
+        "test/unit/notify-push-category.test.js",
+        "test/unit/playlist-routes.test.js",
+        "test/unit/platform-public-routes.test.js",
+        "test/unit/platform-profile-content.test.js",
+        "test/unit/platform-today-tips.test.js",
+        "test/unit/pr-review-source.test.js",
+        "test/unit/prisma-security-1292.test.js",
+        "test/unit/security-1295-1296.test.js",
+        "test/unit/promotion-badge.test.js",
+        "test/unit/quote-form-validate.test.js",
+        "test/unit/reconciliation-duplicate-guard.test.js",
+        "test/unit/reconciliation-timeout.test.js",
+        "test/unit/townhall-queue-container.test.js",
+        "test/unit/redis-client-degraded.test.js",
+        "test/unit/seed-engagement.test.js",
+        "test/unit/sanitizer-ratelimit.test.js",
+        "test/unit/shift-time-format.test.js",
+        "test/unit/socket-auth.test.js",
+        "test/unit/ssrf-guard.test.js",
+        "test/unit/staff-chat-access.test.js",
+        "test/unit/status-summary.test.js",
+        "test/unit/support-email-service.test.js",
+        "test/unit/tax-config.test.js",
+        "test/unit/townhall-parent-visibility.test.js",
+        "test/unit/user-auth-hardening.test.js",
+        "test/unit/mailer-otp-plaintext.test.js",
+        "test/unit/mail-facade.test.js",
+        "test/unit/mail-send-log.test.js",
+        "test/unit/mail-phase5-hardening.test.js",
+        "test/unit/mail-phase5-cutover.test.js",
+        "test/unit/vertical-mail-templates.test.js",
+        "test/unit/emit-user-mail.test.js",
+        "test/unit/admin-mail-health.test.js",
+        "test/unit/email-template-registry.test.js",
+        "test/unit/phase4-mail-templates.test.js",
+        "test/unit/session-handoff.test.js",
+        "test/unit/auth-security-1263.test.js",
+        "test/unit/user-routes.test.js",
+        "test/unit/vertical-identity-public-select.test.js",
+        "test/unit/web-push-service.test.js",
+        "test/unit/work-dispatch-timeout-refund.test.js",
+        "test/unit/work-job-cancel-refund.test.js",
+        "test/unit/work-nearby-catalog.test.js",
+        "test/unit/work-offer-accept.test.js",
+        "test/unit/work-pricing.test.js",
+        "test/unit/twitter-source.test.js",
+        "test/unit/youtube-import-job.test.js",
+        "test/unit/youtube-source.test.js"
+      ]
+    }
+  }
+}

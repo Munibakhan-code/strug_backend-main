@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}} نہیں ملا",
+    "fetchFailed": "{{resource}} لانے میں ناکام",
+    "createFailed": "{{resource}} بنانے میں ناکام",
+    "updateFailed": "اپ ڈیٹ کرنے میں ناکام {{resource}}",
+    "deleteFailed": "حذف کرنے میں ناکام {{resource}}",
+    "invalidId": "{{field}} ایک نمبر ہونا چاہیے۔",
+    "alreadyExists": "{{field}} پہلے سے موجود ہے۔",
+    "invalidFormat": "غلط {{field}} فارمیٹ",
+    "internalServer": "اندرونی سرور کی خرابی۔",
+    "accessDenied": "رسائی سے انکار کر دیا گیا۔",
+    "invalidToken": "غلط ٹوکن",
+    "adminRequired": "ایڈمن تک رسائی درکار ہے۔",
+    "forbidden": "آپ کو یہ کارروائی کرنے کی اجازت نہیں ہے۔"
+  },
+  "food": {
+    "filterError": "فلٹر کی خرابی۔",
+    "orderAlreadyTaken": "یہ آرڈر پہلے ہی کسی اور ڈرائیور نے لیا تھا۔",
+    "orderAccepted": "ترسیل کے لیے آرڈر قبول کر لیا گیا۔",
+    "orderDeclined": "آرڈر مسترد کر دیا گیا۔",
+    "orderRejected": "آرڈر مسترد کر دیا گیا۔"
+  },
+  "user": {
+    "notFound": "صارف نہیں ملا",
+    "deleted": "صارف کو کامیابی سے حذف کر دیا گیا۔",
+    "labelStreetRequired": "لیبل اور گلی کی ضرورت ہے۔",
+    "addressNotFound": "پتہ نہیں ملا",
+    "savedAddressRequired": "ڈیلیوری کا پتہ درکار ہے۔",
+    "cannotModifyOther": "دوسرے صارف کے اکاؤنٹ میں ترمیم نہیں کی جا سکتی",
+    "emailExists": "ای میل یا ریفرل کوڈ پہلے سے موجود ہے۔"
+  },
+  "auth": {
+    "invalidLoginFormat": "غلط لاگ ان فارمیٹ",
+    "userNotFound": "صارف نہیں ملا",
+    "renewSubscription": "براہ کرم اپنی رکنیت کی تجدید کریں۔",
+    "verifyBefore": "لاگ ان کرنے سے پہلے براہ کرم اپنے {{method}} کی تصدیق کریں۔",
+    "noPassword": "اس اکاؤنٹ کا کوئی پاس ورڈ نہیں ہے۔ گوگل لاگ ان کی کوشش کریں۔",
+    "invalidPassword": "غلط پاس ورڈ",
+    "teamMemberNotFound": "ٹیم ممبر نہیں ملا",
+    "loginSuccessful": "لاگ ان کامیاب",
+    "invalidCredentials": "غلط اسناد",
+    "noRefreshToken": "کوئی ریفریش ٹوکن فراہم نہیں کیا گیا۔",
+    "invalidRefreshToken": "ریفریش ٹوکن غلط یا ختم ہو چکا ہے۔",
+    "invalidRefreshTokenPayload": "غلط ریفریش ٹوکن پے لوڈ",
+    "teamMembershipNotFound": "ٹیم کی رکنیت نہیں ملی",
+    "accessTokenRefreshed": "رسائی ٹوکن کو تازہ کر دیا گیا۔",
+    "refreshTokenDeleted": "ریفریش ٹوکن حذف کر دیا گیا۔",
+    "emailRequired": "ای میل درکار ہے۔",
+    "passwordAccountExists": "یہ ای میل پاس ورڈ کے ذریعے رجسٹرڈ ہے۔ براہ کرم دستی طور پر لاگ ان کریں۔",
+    "emailRequiredFacebook": "ای میل درکار ہے لیکن فیس بک کی طرف سے فراہم نہیں کی گئی ہے۔ براہ کرم یقینی بنائیں کہ آپ کے فیس بک اکاؤنٹ میں تصدیق شدہ ای میل ہے۔",
+    "authCodeRequired": "تصدیقی کوڈ درکار ہے۔",
+    "validEmailRequired": "ایک درست ای میل درکار ہے۔",
+    "accountEmailExists": "اس ای میل کے ساتھ ایک اکاؤنٹ پہلے سے موجود ہے۔",
+    "usernameTaken": "وہ صارف نام پہلے ہی لے لیا گیا ہے۔",
+    "tooManyOtpRequests": "کوڈ کی بہت زیادہ درخواستیں۔ بعد میں دوبارہ کوشش کریں۔",
+    "failedSendCode": "کوڈ بھیجنے میں ناکام۔",
+    "registerFieldsRequired": "ای میل، نام، پاس ورڈ، اور او ٹی پی سب کی ضرورت ہے۔",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "پاس ورڈ میں شامل ہونا چاہیے: {{requirements}}۔",
+    "noVerificationCode": "کوئی تصدیقی کوڈ نہیں ملا۔ براہ کرم ایک نئی درخواست کریں۔",
+    "verificationExpired": "تصدیقی کوڈ کی میعاد ختم ہو گئی ہے۔ براہ کرم ایک نئی درخواست کریں۔",
+    "tooManyOtpAttempts": "بہت ساری غلط کوششیں۔ براہ کرم ایک نئے تصدیقی کوڈ کی درخواست کریں۔",
+    "invalidVerificationCode": "غلط توثیقی کوڈ۔",
+    "verificationFailed": "تصدیق ناکام ہوگئی۔",
+    "tooManyRequests": "بہت زیادہ درخواستیں براہ کرم بعد میں دوبارہ کوشش کریں۔",
+    "resetFieldsRequired": "ای میل، نیا پاس ورڈ، اور ٹوکن درکار ہے۔",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "ری سیٹ لنک غلط یا میعاد ختم ہو گیا ہے۔",
+    "accountLocked": "اکاؤنٹ عارضی طور پر مقفل ہے۔ بعد میں دوبارہ کوشش کریں۔",
+    "verificationCodeRequired": "تصدیقی کوڈ درکار ہے۔",
+    "invalidSession": "غلط سیشن",
+    "passwordFieldsRequired": "موجودہ پاس ورڈ اور نیا پاس ورڈ درکار ہے۔"
+  },
+  "success": {
+    "deleted": "{{resource}} کامیابی کے ساتھ حذف ہو گیا۔",
+    "created": "{{resource}} کامیابی کے ساتھ بنایا گیا۔",
+    "updated": "{{resource}} کامیابی سے اپ ڈیٹ ہو گیا۔"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug اشتہارات: اشتھاراتی اکاؤنٹ میں کم بیلنس کی وارننگ",
+      "spend_alert_subject": "Strug اشتہارات کا انتباہ: {{percentage}}% یومیہ بجٹ مہم #{{campaign_id}} کے لئے پہنچ گیا",
+      "low_balance": {
+        "tag": "ADS اکاؤنٹ الرٹ",
+        "title": "کم بیلنس وارننگ",
+        "instruction": "ہیلو {{name}}، آپ کے اشتہارات والیٹ کا بیلنس کم ہو رہا ہے۔ فعال مہمات کو خود بخود موقوف ہونے سے روکنے کے لیے، براہ کرم اپنے اکاؤنٹ کا بیلنس اوپر کریں۔",
+        "balance_label": "موجودہ بیلنس:",
+        "button": "ٹاپ اپ اشتہار والیٹ"
+      },
+      "spend_alert": {
+        "tag": "بجٹ سنگ میل تک پہنچ گیا۔",
+        "title": "{{percentage}}% یومیہ بجٹ خرچ ہوا۔",
+        "instruction": "ہیلو {{name}}، یہ آپ کے فعال اشتھاراتی سیٹ کے لیے ایک خودکار اسٹیٹس اپ ڈیٹ ہے۔ آپ کی مہم روزانہ اخراجات کی حد تک پہنچ گئی ہے۔",
+        "campaign_label": "مہم ID:",
+        "button": "مہم کا انتظام کریں۔"
+      }
+    },
+    "subjects": {
+      "otp": "Strug Verification: آپ کا کوڈ یہاں ہے۔",
+      "welcome": "Strug خاندان میں خوش آمدید!",
+      "password_reset": "Strug: اپنا پاس ورڈ دوبارہ ترتیب دیں۔",
+      "login_alert": "Strug سیکورٹی الرٹ: نئے لاگ ان کا پتہ چلا",
+      "ride_receipt": "Strug سواری کا خلاصہ: سواری کے لیے شکریہ!"
+    },
+    "otp": {
+      "tag": "سیکیورٹی چیک",
+      "title": "اکاؤنٹ کی تصدیق کریں۔",
+      "instruction": "اپنی رجسٹریشن مکمل کرنے کے لیے نیچے دیا گیا محفوظ کوڈ استعمال کریں۔ 10 منٹ کے لیے درست۔",
+      "ignore": "اگر آپ نے اس کی درخواست نہیں کی ہے تو براہ کرم اس ای میل کو نظر انداز کریں۔"
+    },
+    "common": {
+      "tagline": "آپ کا کام • آپ کا وقت • آپ کا پیسہ",
+      "rights_reserved": "جملہ حقوق محفوظ ہیں۔",
+      "need_help": "مدد کی ضرورت ہے؟ اس ای میل کا جواب دیں یا ہمارے سپورٹ سینٹر پر جائیں۔"
+    },
+    "welcome": {
+      "tag": "Strug میں خوش آمدید",
+      "title": "ہیلو، {{name}}!",
+      "instruction": "آپ کا اکاؤنٹ تصدیق شدہ ہے۔ اب آپ اپنے کام، وقت اور پیسے کو آسان بنانے کے لیے بنائے گئے پلیٹ فارم کا حصہ ہیں۔",
+      "button": "ڈیش بورڈ کو دریافت کریں۔"
+    },
+    "password_reset": {
+      "tag": "سیکورٹی",
+      "title": "پاس ورڈ ری سیٹ کریں۔",
+      "instruction": "آپ کے Strug اکاؤنٹ کا پاس ورڈ دوبارہ ترتیب دینے کی درخواست کی گئی تھی۔ ایک نیا منتخب کرنے کے لیے نیچے دیئے گئے بٹن پر کلک کریں۔",
+      "button": "میرا پاس ورڈ ری سیٹ کریں۔",
+      "ignore": "اگر آپ نے اس کی درخواست نہیں کی ہے، تو آپ محفوظ طریقے سے اس ای میل کو نظر انداز کر سکتے ہیں۔ لنک کی میعاد 1 گھنٹے میں ختم ہو جائے گی۔"
+    },
+    "login_alert": {
+      "tag": "سیکیورٹی الرٹ",
+      "title": "نئے لاگ ان کا پتہ چلا",
+      "instruction": "ہم نے آپ کے Strug اکاؤنٹ میں ایک نیا لاگ ان دیکھا ہے۔ اگر یہ آپ تھے تو آپ اس ای میل کو نظر انداز کر سکتے ہیں۔",
+      "device": "ڈیوائس",
+      "time": "وقت",
+      "not_you": "اگر یہ آپ نہیں تھے، تو براہ کرم فوری طور پر اپنا پاس ورڈ تبدیل کرکے اپنے اکاؤنٹ کو محفوظ کریں۔"
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "سواری کا خلاصہ",
+      "tag": "سفر مکمل ہو گیا۔",
+      "total_fare": "کل کرایہ",
+      "distance": "فاصلہ",
+      "duration": "دورانیہ",
+      "pickup": "اٹھاؤ",
+      "drop": "ڈراپ آف",
+      "driver": "ڈرائیور",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Strug کے ساتھ سواری کے لیے آپ کا شکریہ!",
+      "support": "اگر آپ کو اس سواری کے ساتھ کوئی مسئلہ ہے، تو سپورٹ سے رابطہ کریں۔"
+    },
+    "carpool_booking": {
+      "subject": "کارپول کی تصدیق: آپ کی سواری بک گئی ہے!",
+      "title": "بکنگ کی تصدیق ہوگئی",
+      "tag": "کارپول محفوظ",
+      "from": "سے",
+      "to": "کو",
+      "seats": "سیٹیں بک ہوئیں",
+      "total_cost": "کل لاگت",
+      "status": "حیثیت",
+      "thanks": "Strug کے ساتھ کارپولنگ کے لیے آپ کا شکریہ!",
+      "details_msg": "آپ کی نشست کامیابی کے ساتھ محفوظ کر دی گئی ہے۔ براہ کرم وقت پر پک اپ پوائنٹ پر ہوں۔"
+    },
+    "ghost_driver": {
+      "subject": "سواری کی تازہ کاری: ہم آپ کے لیے ایک نیا ڈرائیور دوبارہ تفویض کر رہے ہیں۔",
+      "title": "نیا ڈرائیور تلاش کرنا",
+      "tag": "سواری کی تازہ کاری",
+      "instruction": "آپ کا پچھلا ڈرائیور دستیاب نہیں ہے یا جواب نہیں دے رہا ہے۔ پریشان نہ ہوں، ہم خود بخود آپ کو لینے کے لیے ایک نئے ڈرائیور کی تلاش میں ہیں۔",
+      "status": "موجودہ صورتحال: ڈرائیوروں کی دوبارہ تلاش جاری ہے...",
+      "hang_tight": "براہ کرم مضبوطی سے لٹک جاؤ! جیسے ہی کوئی نیا ڈرائیور آپ کی درخواست قبول کرے گا ہم آپ کو مطلع کریں گے۔"
+    },
+    "password_changed": {
+      "subject": "Strug Security Alert: آپ کا پاس ورڈ تبدیل کر دیا گیا تھا۔",
+      "title": "پاس ورڈ اپ ڈیٹ ہو گیا۔",
+      "tag": "سیکیورٹی اپ ڈیٹ",
+      "instruction": "آپ کے Strug اکاؤنٹ کا پاس ورڈ حال ہی میں تبدیل کیا گیا تھا۔ اگر آپ نے یہ تبدیلی کی ہے، تو آپ محفوظ طریقے سے اس ای میل کو نظر انداز کر سکتے ہیں۔",
+      "warning": "اگر آپ نے اپنا پاس ورڈ تبدیل نہیں کیا تو آپ کے اکاؤنٹ سے سمجھوتہ کیا جا سکتا ہے۔ براہ کرم اپنے اکاؤنٹ کو فوری طور پر محفوظ کریں۔",
+      "button": "میرا اکاؤنٹ محفوظ کریں۔",
+      "footer": "Strug پلیٹ فارم سیکورٹی ٹیم"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug کھانا: آرڈر کی تصدیق ہوگئی! #{{order_id}}",
+        "new_order_vendor": "کارروائی کی ضرورت ہے: نیا آرڈر موصول ہوا! #{{order_id}}"
+      },
+      "receipt": {
+        "title": "آرڈر کی رسید",
+        "tag": "آرڈر کی کامیابی",
+        "vendor_tag": "کارروائی کی ضرورت ہے۔",
+        "order_id": "آرڈر کی شناخت",
+        "item": "آئٹم",
+        "qty": "مقدار",
+        "price": "قیمت",
+        "subtotal": "ذیلی ٹوٹل",
+        "delivery_fee": "ڈیلیوری فیس",
+        "service_tax": "سروس ٹیکس",
+        "platform_fee": "پلیٹ فارم فیس",
+        "grand_total": "رسید گرینڈ_ٹوٹل — TOTAL AMOUNT",
+        "total": "کل رقم",
+        "delivery_address": "ڈیلیوری کا پتہ",
+        "thanks": "امید ہے کہ آپ اپنے کھانے سے لطف اندوز ہوں گے!",
+        "vendor_title": "آپ کے لیے نیا آرڈر",
+        "vendor_msg": "آپ کو ایک نیا آرڈر موصول ہوا ہے۔ براہ کرم فوراً اس کی تیاری شروع کر دیں۔"
+      }
+    },
+    "food_status": {
+      "tag": "آرڈر کی تازہ کاری",
+      "subjects": {
+        "preparing": "Strug کھانا: آپ کا آرڈر تیار کیا جا رہا ہے! 🍳",
+        "dispatched": "بڑی خبر! آپ کا آرڈر آنے والا ہے 🛵",
+        "delivered": "اپنے کھانے کا لطف اٹھائیں! آرڈر کامیابی سے پہنچا دیا گیا ✅",
+        "cancelled": "Strug نوٹس: آپ کا آرڈر منسوخ کر دیا گیا ہے ❌"
+      },
+      "messages": {
+        "preparing": "ریستوراں نے آپ کے مزیدار کھانے کی تیاری شروع کردی ہے۔ جب یہ ڈیلیوری کے لیے ختم ہو جائے گا تو ہم آپ کو بتائیں گے۔",
+        "dispatched": "آپ کا آرڈر پک کر لیا گیا ہے اور ہمارا ڈیلیوری پارٹنر آپ کے مقام کے راستے پر ہے۔",
+        "delivered": "آپ کا آرڈر دے دیا گیا ہے۔ Strug کو منتخب کرنے کے لیے آپ کا شکریہ!",
+        "cancelled": "ہمیں آپ کو یہ بتاتے ہوئے افسوس ہے کہ آپ کا آرڈر منسوخ کر دیا گیا ہے۔ اگر آپ پہلے ہی ادائیگی کر چکے ہیں تو جلد ہی رقم کی واپسی شروع کر دی جائے گی۔"
+      },
+      "labels": {
+        "order_id": "آرڈر کی شناخت",
+        "current_status": "موجودہ صورتحال"
+      }
+    },
+    "digital": {
+      "subject": "آپ کا Strug ڈیجیٹل مواد تیار ہے!",
+      "title": "اپنی پروڈکٹ ڈاؤن لوڈ کریں۔",
+      "instruction": "آپ کی خریداری کے لئے آپ کا شکریہ! اب آپ نیچے دیئے گئے بٹن کا استعمال کرکے اپنے ڈیجیٹل مواد تک رسائی اور ڈاؤن لوڈ کرسکتے ہیں۔",
+      "button": "ابھی ڈاؤن لوڈ کریں۔"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: اس مہینے کے لیے آپ کی پے سلپ تیار ہے 📄",
+      "title": "ماہانہ پے سلپ",
+      "tag": "پے رول کا خلاصہ",
+      "net_salary": "خالص تنخواہ",
+      "epf": "EPF (ملازم)",
+      "etf": "ای ٹی ایف",
+      "ot": "OT ادائیگی",
+      "bonus": "بونس",
+      "status": "ادائیگی کی حیثیت",
+      "thanks": "اگر آپ کو اپنی تنخواہ سے متعلق کوئی سوال ہے تو براہ کرم HR سے رابطہ کریں۔"
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: آپ کی چھٹی کی درخواست منظور کر لی گئی ہے ✅",
+      "subject_rejected": "Strug HR: آپ کی چھٹی کی درخواست پر اپ ڈیٹ ❌",
+      "title_approved": "رخصت منظور!",
+      "title_rejected": "اپ ڈیٹ چھوڑیں۔",
+      "tag": "چھوڑنے کی درخواست",
+      "status_approved": "درج ذیل مدت کے لیے آپ کی چھٹی کی درخواست کامیابی کے ساتھ منظور کر لی گئی ہے۔",
+      "status_rejected": "ہمیں آپ کو یہ بتاتے ہوئے افسوس ہے کہ درج ذیل مدت کے لیے آپ کی چھٹی کی درخواست مسترد کر دی گئی ہے۔",
+      "from_date": "تاریخ سے",
+      "to_date": "آج تک",
+      "reason": "رد کرنے کی وجہ",
+      "thanks": "مزید سوالات کے لیے، براہ کرم اپنے HR ڈیپارٹمنٹ سے رابطہ کریں۔"
+    },
+    "job_alert": {
+      "subject": "Strug نوکریاں: {{job_title}} 💼 کے لیے نئی درخواست موصول ہوئی۔",
+      "title": "نئے امیدوار نے اپلائی کیا۔",
+      "tag": "ملازمت کی درخواست",
+      "instruction": "ایک نئے امیدوار نے آپ کی ملازمت کی فہرستوں میں سے ایک کے لیے درخواست دی ہے۔ یہاں مختصر تفصیلات ہیں:",
+      "job_title": "ملازمت کا کردار",
+      "candidate": "امیدوار کا نام",
+      "view_button": "درخواست دیکھیں",
+      "thanks": "مکمل تفصیلات اور CV کا جائزہ لینے کے لیے براہ کرم اپنے ایجنٹ پورٹل میں لاگ ان کریں۔"
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: آپ کے کام کی شفٹ کو اپ ڈیٹ کر دیا گیا ہے 🕒",
+      "title": "شفٹ اپ ڈیٹ ہو گیا۔",
+      "tag": "شیڈول اپ ڈیٹ",
+      "instruction": "آپ کے کام کا شیڈول حال ہی میں محکمہ HR نے اپ ڈیٹ کیا ہے۔ براہ کرم ذیل میں اپنے نئے شفٹ کے اوقات چیک کریں۔",
+      "start_time": "شفٹ شروع",
+      "end_time": "شفٹ ختم",
+      "thanks": "براہ کرم یقینی بنائیں کہ آپ نئے شیڈول کے مطابق موجود ہیں۔ کسی بھی تشویش کے لیے HR سے رابطہ کریں۔"
+    },
+    "services": {
+      "tag": "سروس اپ ڈیٹ",
+      "subjects": {
+        "confirmed_customer": "Strug Services: آپ کی ملاقات کی تصدیق ہو گئی ہے! ✅",
+        "new_alert_provider": "نئی ملاقات: آپ کے پاس ایک نئی بکنگ ہے! 📅",
+        "reminder": "یاد دہانی: آپ کی ملاقات چند گھنٹوں میں ہے ⏳",
+        "rental_expiry": "کارروائی درکار ہے: آپ کا کرایہ جلد ہی ختم ہو رہا ہے! 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "سروس",
+        "provider": "فراہم کرنے والا",
+        "customer": "گاہک",
+        "date": "تاریخ",
+        "time": "وقت",
+        "location": "مقام",
+        "expiry": "میعاد ختم ہونے کی تاریخ"
+      },
+      "messages": {
+        "confirmed": "آپ کی ملاقات کا وقت کامیابی سے طے پا گیا ہے۔ براہ کرم وقت پر ہوں۔",
+        "provider_alert": "ایک نئے کسٹمر نے آپ کی سروس بک کرائی ہے۔ تفصیلات یہ ہیں۔",
+        "reminder": "یہ Strug کے ساتھ آپ کی آنے والی ملاقات کی ایک دوستانہ یاد دہانی ہے۔",
+        "rental_expiry": "آپ کے کرایے کی مدت ختم ہونے والی ہے۔ براہ کرم آئٹم واپس کریں یا جرمانے سے بچنے کے لیے مدت میں توسیع کریں۔",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "فوری: میعاد ختم ہونے کا نوٹس",
+        "item_name": "آئٹم کا نام",
+        "due_date": "مقررہ تاریخ",
+        "order_id": "آرڈر کی شناخت",
+        "button": "آئٹم کو بڑھانا یا واپس کرنا",
+        "footer": "مقررہ وقت سے پہلے آئٹم واپس کرکے لیٹ فیس سے بچیں۔",
+        "thanks": "Strug Rentals استعمال کرنے کا شکریہ۔"
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: آپ کے فراخدلانہ عطیہ کے لئے آپ کا شکریہ! ❤️",
+        "loan_reminder": "ادائیگی کی یاد دہانی: آپ کے قرض کی قسط واجب الادا ہے۔"
+      },
+      "donation": {
+        "title": "عطیہ موصول ہوا۔",
+        "tag": "واپس دینا",
+        "msg": "آپ کے تعاون سے بہت فرق پڑتا ہے! ہم نے اس منصوبے کے لیے آپ کا تعاون کامیابی سے حاصل کر لیا ہے۔",
+        "amount": "عطیہ کی گئی رقم",
+        "project": "پروجیکٹ"
+      },
+      "loan": {
+        "title": "قرض کی ادائیگی",
+        "tag": "ادائیگی واجب الادا",
+        "msg": "یہ ایک یاد دہانی ہے کہ آپ کے قرض کی ادائیگی کی تاریخ قریب آ رہی ہے۔ براہ کرم یقینی بنائیں کہ کافی فنڈز دستیاب ہیں۔",
+        "due_date": "مقررہ تاریخ",
+        "amount": "قسط کی رقم"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug دکان: آرڈر کی تصدیق #{{order_id}}",
+        "new_order_seller": "Strug دکان: نیا آرڈر موصول ہوا #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "آرڈر کی تصدیق ہو گئی۔",
+        "vendor_tag": "نیا آرڈر",
+        "title": "آپ کے آرڈر کی تصدیق ہو گئی ہے۔",
+        "vendor_title": "آپ کے پاس نیا آرڈر ہے۔",
+        "order_id": "آرڈر",
+        "product": "پروڈکٹ",
+        "qty": "مقدار",
+        "total": "کل",
+        "thanks": "Strug پر خریداری کے لیے آپ کا شکریہ!",
+        "vendor_msg": "براہ کرم جلد از جلد اس آرڈر کو تیار کریں اور بھیج دیں۔"
+      },
+      "status": {
+        "tag": "آرڈر کی تازہ کاری",
+        "order_id": "آرڈر کی شناخت",
+        "tracking": "ٹریکنگ نمبر",
+        "track_button": "آرڈر دیکھیں",
+        "subjects": {
+          "confirmed": "Strug دکان: آپ کے آرڈر کی تصدیق ہو گئی ہے۔",
+          "shipped": "Strug دکان: آپ کا آرڈر بھیج دیا گیا ہے۔",
+          "fulfilled": "Strug دکان: آپ کا آرڈر پہنچا دیا گیا تھا۔"
+        },
+        "messages": {
+          "confirmed": "بیچنے والے نے آپ کے آرڈر کی تصدیق کی ہے اور اسے شپمنٹ کے لیے تیار کر رہا ہے۔",
+          "shipped": "آپ کا پیکیج راستے میں ہے۔ ٹریکنگ: {{tracking_number}}",
+          "fulfilled": "آپ کا آرڈر پہنچا دیا گیا ہے۔ ہمیں امید ہے کہ آپ اپنی خریداری سے لطف اندوز ہوں گے!"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug تعلیم: آپ کی ہفتہ وار سیکھنے کی پیشرفت یہاں ہے 📚",
+        "unread_chat": "Strug: آپ کے ان باکس میں بغیر پڑھے ہوئے پیغامات ہیں 💬"
+      },
+      "lms": {
+        "title": "سیکھنے کی پیشرفت",
+        "tag": "اسمارٹ رہیں",
+        "msg": "آپ بہت اچھا کر رہے ہیں! اس ہفتے آپ کے فلیش کارڈ کی سرگرمی کا خلاصہ یہ ہے۔",
+        "cards_reviewed": "کارڈز کا جائزہ لیا گیا۔",
+        "new_decks": "نئے ڈیکس شامل ہوئے۔"
+      },
+      "chat": {
+        "title": "نئے پیغامات",
+        "tag": "کمیونٹی",
+        "msg": "آپ تھوڑی دیر کے لیے دور ہیں۔ آپ کے دوست اور ٹیم کے اراکین آپ تک پہنچنے کی کوشش کر رہے ہیں۔",
+        "button": "چیٹ دیکھیں"
+      }
+    }
+  }
+}

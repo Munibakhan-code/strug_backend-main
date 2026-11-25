@@ -1,0 +1,525 @@
+{
+  "errors": {
+    "notFound": "{{resource}}が見つかりません",
+    "fetchFailed": "{{resource}}の取得に失敗しました",
+    "createFailed": "{{resource}}の作成に失敗しました",
+    "updateFailed": "{{resource}}の更新に失敗しました",
+    "deleteFailed": "{{resource}}の削除に失敗しました",
+    "invalidId": "{{field}}は数字である必要があります",
+    "alreadyExists": "{{field}}は既に存在します",
+    "invalidFormat": "無効な{{field}}形式です",
+    "internalServer": "内部サーバーエラーが発生しました",
+    "accessDenied": "アクセスが拒否されました",
+    "invalidToken": "無効なトークンです",
+    "adminRequired": "管理者アクセスが必要です",
+    "forbidden": "このアクションを実行する権限がありません"
+  },
+  "food": {
+    "filterError": "フィルターエラー",
+    "orderAlreadyTaken": "この注文はすでに別のドライバーによって行われています。",
+    "orderAccepted": "配送の注文を受け付けました",
+    "orderDeclined": "注文は拒否されました。",
+    "orderRejected": "注文が拒否されました。"
+  },
+  "user": {
+    "notFound": "ユーザーが見つかりません",
+    "deleted": "ユーザーは正常に削除されました",
+    "labelStreetRequired": "ラベルと番地は必須です",
+    "addressNotFound": "住所が見つかりません",
+    "savedAddressRequired": "配送先住所は必須です",
+    "cannotModifyOther": "他のユーザーのアカウントは変更できません",
+    "emailExists": "メールアドレスまたは紹介コードがすでに存在します"
+  },
+  "auth": {
+    "invalidLoginFormat": "無効なログイン形式です",
+    "userNotFound": "ユーザーが見つかりません",
+    "renewSubscription": "サブスクリプションを更新してください",
+    "verifyBefore": "ログインする前に{{method}}を確認してください。",
+    "noPassword": "このアカウントにはパスワードがありません。Googleログインをお試しください。",
+    "invalidPassword": "パスワードが無効です",
+    "teamMemberNotFound": "チームメンバーが見つかりません",
+    "loginSuccessful": "ログインに成功しました",
+    "invalidCredentials": "無効な資格情報です",
+    "noRefreshToken": "リフレッシュトークンが提供されていません",
+    "invalidRefreshToken": "無効または期限切れのリフレッシュトークンです",
+    "invalidRefreshTokenPayload": "無効なリフレッシュトークンペイロードです",
+    "teamMembershipNotFound": "チームメンバーシップが見つかりません",
+    "accessTokenRefreshed": "アクセストークンが更新されました",
+    "refreshTokenDeleted": "リフレッシュトークンが削除されました",
+    "emailRequired": "メールアドレスは必須です",
+    "passwordAccountExists": "このメールアドレスはパスワードで登録されています。手動でログインしてください。",
+    "emailRequiredFacebook": "メールアドレスは必須ですが、Facebookから提供されませんでした。",
+    "authCodeRequired": "認証コードは必須です",
+    "validEmailRequired": "有効な電子メールが必要です。",
+    "accountEmailExists": "このメールアドレスを持つアカウントはすでに存在します。",
+    "usernameTaken": "そのユーザー名はすでに使用されています。",
+    "tooManyOtpRequests": "コードリクエストが多すぎます。後でもう一度試してください。",
+    "failedSendCode": "コードの送信に失敗しました。",
+    "registerFieldsRequired": "電子メール、名前、パスワード、OTP はすべて必須です。",
+    "termsRequired": "You must accept the Terms of Service and Privacy Policy to create an account.",
+    "passwordRequirements": "パスワードには {{requirements}} を含める必要があります。",
+    "noVerificationCode": "確認コードが見つかりませんでした。新しいものをリクエストしてください。",
+    "verificationExpired": "認証コードの有効期限が切れています。新しいものをリクエストしてください。",
+    "tooManyOtpAttempts": "間違った試行が多すぎます。新しい確認コードをリクエストしてください。",
+    "invalidVerificationCode": "無効な確認コードです。",
+    "verificationFailed": "検証に失敗しました。",
+    "tooManyRequests": "リクエストが多すぎます。後でもう一度試してください。",
+    "resetFieldsRequired": "電子メール、newPassword、およびトークンは必須です。",
+    "loginFieldsRequired": "login and password are required.",
+    "invalidResetLink": "リセット リンクが無効または期限切れです。",
+    "accountLocked": "アカウントが一時的にロックされました。後でもう一度試してください。",
+    "verificationCodeRequired": "確認コードが必要です。",
+    "invalidSession": "無効なセッション",
+    "passwordFieldsRequired": "currentPassword と newPassword は必須です"
+  },
+  "success": {
+    "deleted": "{{resource}}が正常に削除されました",
+    "created": "{{resource}}が正常に作成されました",
+    "updated": "{{resource}}が正常に更新されました"
+  },
+  "emails": {
+    "ads": {
+      "low_balance_subject": "Strug Ads: 広告アカウント残高不足の警告",
+      "spend_alert_subject": "Strug Ads アラート: キャンペーン #{{campaign_id}} の 1 日の予算 {{percentage}}% に達しました",
+      "low_balance": {
+        "tag": "広告アカウントのアラート",
+        "title": "残高不足警告",
+        "instruction": "こんにちは {{name}} さん。広告ウォレットの残高が少なくなってきています。アクティブなキャンペーンが自動的に一時停止されないようにするには、アカウント残高を補充してください。",
+        "balance_label": "現在の残高:",
+        "button": "広告ウォレットを補充する"
+      },
+      "spend_alert": {
+        "tag": "予算マイルストーンに到達",
+        "title": "{{percentage}}% の 1 日の予算が費やされました",
+        "instruction": "{{name}} 様、これはアクティブな広告セットの自動ステータス更新です。キャンペーンが 1 日あたりの支出のしきい値に達しました。",
+        "campaign_label": "キャンペーンID:",
+        "button": "キャンペーンの管理"
+      }
+    },
+    "subjects": {
+      "otp": "Strug 認証: 確認コードはこちらです",
+      "welcome": "Strugファミリーへようこそ！",
+      "password_reset": "Strug: パスワードの再設定",
+      "login_alert": "Strug セキュリティアラート: 新しいログインが検出されました",
+      "ride_receipt": "Strug 乗車概要: ご利用ありがとうございました！"
+    },
+    "otp": {
+      "tag": "セキュリティチェック",
+      "title": "アカウントの確認",
+      "instruction": "登録を完了するには、以下の安全なコードを使用してください。このコードは10分間有効です。",
+      "ignore": "このリクエストに覚えがない場合は、このメールを無視してください。"
+    },
+    "common": {
+      "tagline": "あなたの仕事 • あなたの時間 • あなたのお金",
+      "rights_reserved": "全著作権所有",
+      "need_help": "助けが必要ですか?このメールに返信するか、サポート センターにアクセスしてください。"
+    },
+    "welcome": {
+      "tag": "STRUGへようこそ",
+      "title": "こんにちは、{{name}} さん!",
+      "instruction": "あなたのアカウントは認証されました。あなたは今、仕事、時間、お金を簡素化するために構築されたプラットフォームの一員です。",
+      "button": "ダッシュボードを探索する"
+    },
+    "password_reset": {
+      "tag": "セキュリティ",
+      "title": "パスワードの再設定",
+      "instruction": "Strugアカウントのパスワード再設定のリクエストを受け付けました。下のボタンをクリックして新しいパスワードを設定してください。",
+      "button": "パスワードを再設定する",
+      "ignore": "このリクエストに覚えがない場合は、このメールを無視していただいて構いません。リンクは1時間で期限切れになります。"
+    },
+    "login_alert": {
+      "tag": "セキュリティ警告",
+      "title": "新しいログインが検出されました",
+      "instruction": "Strugアカウントへの新しいログインが検出されました。これがお客様自身によるものである場合、このメールは無視して構いません。",
+      "device": "デバイス",
+      "time": "時間",
+      "not_you": "もしお客様自身ではない場合、パスワードを変更してただちにアカウントを保護してください。"
+    },
+    "ride_status": {
+      "tag": "RIDE UPDATE",
+      "subjects": {
+        "assigned": "Strug Ride: Your driver is on the way",
+        "arrived": "Strug Ride: Your driver has arrived",
+        "reminder": "Strug Ride: Your scheduled ride is coming up"
+      },
+      "titles": {
+        "assigned": "Driver Assigned",
+        "arrived": "Driver Arrived",
+        "reminder": "Upcoming Ride Reminder"
+      },
+      "messages": {
+        "assigned": "A driver has accepted your ride and is heading to your pickup location.",
+        "arrived": "Your driver is at the pickup point. Head outside when you're ready.",
+        "reminder": "Your scheduled ride is coming up soon. Please be ready at your pickup location."
+      },
+      "labels": {
+        "ride_id": "Ride ID",
+        "driver": "Driver",
+        "vehicle": "Vehicle",
+        "plate": "Plate",
+        "eta": "ETA",
+        "pickup": "Pickup",
+        "drop": "Drop-off"
+      },
+      "button": "Track Your Ride"
+    },
+    "ride_receipt": {
+      "title": "乗車概要",
+      "tag": "乗車完了",
+      "total_fare": "合計運賃",
+      "distance": "距離",
+      "duration": "所要時間",
+      "pickup": "乗車場所",
+      "drop": "降車場所",
+      "driver": "ドライバー",
+      "vehicle": "Vehicle",
+      "payment_method": "Payment Method",
+      "ride_id": "Ride ID",
+      "trip_id": "Trip ID",
+      "completed_at": "Completed",
+      "thanks": "Strugをご利用いただき、誠にありがとうございます！",
+      "support": "この乗車に関して問題がある場合は、サポートにご連絡ください。"
+    },
+    "carpool_booking": {
+      "subject": "相乗り確認: 乗車が予約されました！",
+      "title": "予約完了",
+      "tag": "相乗り予約済み",
+      "from": "出発地",
+      "to": "目的地",
+      "seats": "予約席数",
+      "total_cost": "合計金額",
+      "status": "ステータス",
+      "thanks": "Strugでの相乗りをご利用いただきありがとうございます！",
+      "details_msg": "座席の予約が正常に完了しました。時間通りに乗車場所にお越しください。"
+    },
+    "ghost_driver": {
+      "subject": "乗車アップデート: 新しいドライバーを手配中です",
+      "title": "新しいドライバーを検索中",
+      "tag": "乗車アップデート",
+      "instruction": "以前のドライバーが利用できないか、応答していません。ご心配なく、自動的に新しいドライバーを検索しています。",
+      "status": "現在のステータス: ドライバーを再検索中...",
+      "hang_tight": "しばらくお待ちください！新しいドライバーがリクエストを承認し次第、お知らせします。"
+    },
+    "password_changed": {
+      "subject": "Strug セキュリティアラート: パスワードが変更されました",
+      "title": "パスワード更新完了",
+      "tag": "セキュリティアップデート",
+      "instruction": "Strugアカウントのパスワードが最近変更されました。お客様ご自身で変更された場合は、このメールを無視して構いません。",
+      "warning": "パスワードを変更していない場合、アカウントが危険にさらされている可能性があります。直ちにアカウントを保護してください。",
+      "button": "アカウントを保護する",
+      "footer": "Strug プラットフォーム セキュリティ チーム"
+    },
+    "food": {
+      "subjects": {
+        "order_confirm_buyer": "Strug Food: ご注文が確認されました！ #{{order_id}}",
+        "new_order_vendor": "対応が必要です: 新しい注文が入りました！ #{{order_id}}"
+      },
+      "receipt": {
+        "title": "ご注文の領収書",
+        "tag": "注文成功",
+        "vendor_tag": "必要なアクション",
+        "order_id": "注文ID",
+        "item": "商品名",
+        "qty": "数量",
+        "price": "価格",
+        "subtotal": "小計",
+        "delivery_fee": "配送料",
+        "service_tax": "サービス税",
+        "platform_fee": "プラットフォーム料金",
+        "grand_total": "合計金額",
+        "total": "合計金額",
+        "delivery_address": "配送先住所",
+        "thanks": "お食事をお楽しみください！",
+        "vendor_title": "新しい注文が入りました",
+        "vendor_msg": "新しい注文を受信しました。すぐに準備を開始してください。"
+      }
+    },
+    "food_status": {
+      "tag": "注文の更新",
+      "subjects": {
+        "preparing": "Strug Food: ご注文を準備中です！ 🍳",
+        "dispatched": "朗報です！ご注文の商品が配達中です 🛵",
+        "delivered": "お食事をお楽しみください！ご注文の商品が無事配達されました ✅",
+        "cancelled": "Strugからのお知らせ: ご注文がキャンセルされました ❌"
+      },
+      "messages": {
+        "preparing": "レストランが美味しいお食事の準備を始めました。配達に出発した際にお知らせします。",
+        "dispatched": "ご注文の商品を受け取り、配達パートナーがお客様の元へ向かっています。",
+        "delivered": "ご注文の商品をお渡ししました。Strugをご利用いただきありがとうございます！",
+        "cancelled": "誠に申し訳ありませんが、ご注文はキャンセルされました。既にお支払い済みの場合は、まもなく返金処理が開始されます。"
+      },
+      "labels": {
+        "order_id": "注文ID",
+        "current_status": "現在のステータス"
+      }
+    },
+    "digital": {
+      "subject": "Strugのデジタルコンテンツの準備ができました！",
+      "title": "製品のダウンロード",
+      "instruction": "ご購入いただきありがとうございます！下のボタンを使用して、デジタルコンテンツにアクセスしてダウンロードできます。",
+      "button": "今すぐダウンロード"
+    },
+    "community": {
+      "donation_subject": "Strug Community: New donation received",
+      "donation_title": "New Donation Received",
+      "donation_message": "Someone donated {{amount}} to {{project}}. Thank you for building with Strug!",
+      "donation_button": "View Campaign"
+    },
+    "payroll": {
+      "subject": "Strug HR: 今月の給与明細の準備ができました 📄",
+      "title": "月次給与明細",
+      "tag": "給与の概要",
+      "net_salary": "差引支給額",
+      "epf": "従業員積立基金 (EPF)",
+      "etf": "従業員信託基金 (ETF)",
+      "ot": "時間外手当",
+      "bonus": "ボーナス",
+      "status": "支払いステータス",
+      "thanks": "給与に関するご質問は、人事部までお問い合わせください。"
+    },
+    "leave_status": {
+      "subject_approved": "Strug HR: 休暇申請が承認されました ✅",
+      "subject_rejected": "Strug HR: 休暇申請に関するお知らせ ❌",
+      "title_approved": "休暇が承認されました！",
+      "title_rejected": "休暇の状況",
+      "tag": "休暇申請",
+      "status_approved": "以下の期間の休暇申請が正常に承認されました。",
+      "status_rejected": "誠に申し訳ありませんが、以下の期間の休暇申請は却下されました。",
+      "from_date": "開始日",
+      "to_date": "終了日",
+      "reason": "却下の理由",
+      "thanks": "ご不明な点がありましたら、人事部までお問い合わせください。"
+    },
+    "job_alert": {
+      "subject": "Strug Jobs: {{job_title}} への新しい応募がありました 💼",
+      "title": "新しい候補者が応募しました",
+      "tag": "求人応募",
+      "instruction": "求人に新しい候補者が応募しました。簡単な詳細は以下の通りです：",
+      "job_title": "役職",
+      "candidate": "候補者名",
+      "view_button": "応募を確認する",
+      "thanks": "エージェントポータルにログインして、詳細と履歴書を確認してください。"
+    },
+    "job_status": {
+      "subject": "Strug Jobs: An update on your application 💼",
+      "tag": "APPLICATION UPDATE",
+      "title_update": "Your Application Has an Update",
+      "title_hired": "Congratulations — You're Hired! 🎉",
+      "title_closed": "Update on Your Application",
+      "greeting": "Hi",
+      "body_update": "The hiring team has updated the status of your application. See the details below.",
+      "body_hired": "Great news — the employer would like to move forward with you. They'll be in touch with next steps.",
+      "body_rejected": "Thank you for applying. The employer has decided not to move forward at this time. We wish you the best in your search.",
+      "role": "Role",
+      "current_status": "Current Status",
+      "thanks": "Log in to Strug Jobs to view all of your applications."
+    },
+    "shift_update": {
+      "subject": "Strug HR: シフトが更新されました 🕒",
+      "title": "シフト更新",
+      "tag": "スケジュールの更新",
+      "instruction": "人事部によって勤務スケジュールが最近更新されました。以下の新しいシフト時間を確認してください。",
+      "start_time": "シフト開始",
+      "end_time": "シフト終了",
+      "thanks": "新しいスケジュールに従って出勤してください。ご不明な点は人事部にお問い合わせください。"
+    },
+    "services": {
+      "tag": "サービスのアップデート",
+      "subjects": {
+        "confirmed_customer": "Strug サービス: 予約が確定しました！ ✅",
+        "new_alert_provider": "新しい予約: 新規の予約が入りました！ 📅",
+        "reminder": "リマインダー: 予約の時間が数時間後に迫っています ⏳",
+        "rental_expiry": "対応が必要です: レンタルの期限が間もなく切れます！ 📦",
+        "order_placed_customer": "Strug Services: Your service order was received",
+        "order_accepted_customer": "Strug Services: A provider accepted your order!",
+        "order_cancelled_customer": "Strug Services: Your service order was cancelled"
+      },
+      "labels": {
+        "service": "サービス",
+        "provider": "提供者",
+        "customer": "お客様",
+        "date": "日付",
+        "time": "時間",
+        "location": "場所",
+        "expiry": "有効期限"
+      },
+      "messages": {
+        "confirmed": "予約が正常に完了しました。お時間通りにお越しください。",
+        "provider_alert": "新しいお客様があなたのサービスを予約しました。詳細はこちらです。",
+        "reminder": "これはStrugでの次回予約に関するフレンドリーなリマインダーです。",
+        "rental_expiry": "レンタル期間が間もなく終了します。ペナルティを避けるため、アイテムを返却するか期間を延長してください。",
+        "order_placed": "We received your request and are matching you with nearby providers.",
+        "order_accepted": "A provider has accepted your order and will begin work soon.",
+        "order_cancelled": "No provider was available in time. Your order was cancelled — please try again."
+      },
+      "rental": {
+        "tag": "緊急: 有効期限の通知",
+        "item_name": "項目名",
+        "due_date": "期限",
+        "order_id": "注文ID",
+        "button": "アイテムの延長または返品",
+        "footer": "期限内に商品を返却することで延滞料金を回避できます。",
+        "thanks": "Strug レンタルをご利用いただきありがとうございます。"
+      }
+    },
+    "fintech": {
+      "subjects": {
+        "donation": "Strug: 寛大なご寄付に感謝いたします！ ❤️",
+        "loan_reminder": "支払いリマインダー: ローンの支払期日が近づいています 💳"
+      },
+      "donation": {
+        "title": "ご寄付を受領しました",
+        "tag": "社会貢献",
+        "msg": "皆様のサポートが大きな力となります！プロジェクトへの貢献を無事に受領いたしました。",
+        "amount": "寄付金額",
+        "project": "プロジェクト"
+      },
+      "loan": {
+        "title": "ローンの返済",
+        "tag": "支払い期日",
+        "msg": "ローンの返済期日が近づいていることをお知らせします。十分な資金があることを確認してください。",
+        "due_date": "期日",
+        "amount": "割賦金額"
+      }
+    },
+    "shop": {
+      "subjects": {
+        "order_confirm_buyer": "Strug ショップ: 注文が確認されました #{{order_id}}",
+        "new_order_seller": "Strug Shop: 新しい注文を受け取りました #{{order_id}}"
+      },
+      "receipt": {
+        "tag": "注文が確認されました",
+        "vendor_tag": "新しい注文",
+        "title": "ご注文が確認されました",
+        "vendor_title": "新しい注文があります",
+        "order_id": "注文",
+        "product": "製品",
+        "qty": "数量",
+        "total": "合計",
+        "thanks": "Strug でお買い物いただきありがとうございます。",
+        "vendor_msg": "この注文をできるだけ早く準備して発送してください。"
+      },
+      "status": {
+        "tag": "注文の更新",
+        "order_id": "注文ID",
+        "tracking": "追跡番号",
+        "track_button": "注文を見る",
+        "subjects": {
+          "confirmed": "Strug Shop: ご注文が確認されました",
+          "shipped": "Strug Shop: ご注文は発送されました",
+          "fulfilled": "Strug Shop: ご注文は配達されました"
+        },
+        "messages": {
+          "confirmed": "販売者はあなたの注文を確認し、発送の準備をしています。",
+          "shipped": "荷物は配達中です。追跡: {{tracking_number}}",
+          "fulfilled": "ご注文は配達されました。ぜひご購入をお楽しみください。"
+        }
+      }
+    },
+    "event_invite": {
+      "subject": "You're invited: {{event_title}}",
+      "tag": "EVENT INVITE",
+      "title": "You're Invited",
+      "instruction": "Hi {{name}}, you're invited to {{event_title}}.",
+      "when": "When",
+      "where": "Where",
+      "button": "RSVP here",
+      "thanks": "See you there! Strug Event Concierge"
+    },
+    "board_invite": {
+      "subject": "You're invited to the Strug Board",
+      "tag": "BOARD ACCESS",
+      "title": "Welcome to the Board",
+      "instruction": "Hi {{name}}, an administrator created your Strug Board account. Sign in with the temporary password below, then change it.",
+      "email_label": "Email",
+      "temp_password": "Temporary password",
+      "role": "Role",
+      "button": "Open Board",
+      "change_password": "After you sign in, open your profile and change your password."
+    },
+    "property_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "SAVED SEARCH",
+      "greeting": "Hi {{name}},",
+      "button": "Browse listings"
+    },
+    "job_saved_search": {
+      "subject": "{{headline}}",
+      "tag": "JOB ALERT",
+      "greeting": "Hi {{name}},",
+      "button": "Browse jobs"
+    },
+    "dating_match": {
+      "subject": "You have a new match on Strug Dating",
+      "tag": "DATING",
+      "title": "It's a match",
+      "instruction": "Hi {{name}}, you and someone else both liked each other. Open Dating to say hello.",
+      "button": "Open Dating"
+    },
+    "dating_worth_it_invite": {
+      "subject": "You're invited to a Worth It date",
+      "tag": "WORTH IT",
+      "title": "Date invite",
+      "instruction": "Hi {{name}}, you were invited to a Worth It date.",
+      "button": "View invite"
+    },
+    "medical_booking_confirmed": {
+      "subject": "Your medical appointment is confirmed",
+      "tag": "MEDICAL",
+      "title": "Appointment confirmed",
+      "instruction": "Hi {{name}}, your appointment is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View appointment"
+    },
+    "medical_booking_request": {
+      "subject": "New medical appointment request",
+      "tag": "MEDICAL",
+      "title": "New appointment request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested an appointment.",
+      "button": "Review request"
+    },
+    "venue_booking_confirmed": {
+      "subject": "Your venue booking is confirmed",
+      "tag": "VENUES",
+      "title": "Booking confirmed",
+      "instruction": "Hi {{name}}, your venue booking is confirmed.",
+      "when": "When",
+      "ref": "Booking",
+      "button": "View booking"
+    },
+    "venue_booking_request": {
+      "subject": "New venue booking request",
+      "tag": "VENUES",
+      "title": "New booking request",
+      "instruction": "Hi {{name}}, {{guest_name}} requested a booking.",
+      "button": "Review request"
+    },
+    "social_new_follower": {
+      "subject": "{{follower_name}} started following you on Strug",
+      "tag": "SOCIAL",
+      "title": "New follower",
+      "instruction": "Hi {{name}}, {{follower_name}} started following you.",
+      "button": "Open feed"
+    },
+    "lms_community": {
+      "subjects": {
+        "lms_report": "Strug Education: 今週の学習の進捗状況はこちらです 📚",
+        "unread_chat": "Strug: 受信トレイに未読メッセージがあります 💬"
+      },
+      "lms": {
+        "title": "学習の進捗",
+        "tag": "賢く学ぼう",
+        "msg": "素晴らしい調子です！今週のフラッシュカード活動の概要はこちらです。",
+        "cards_reviewed": "復習したカード",
+        "new_decks": "参加した新しいデッキ"
+      },
+      "chat": {
+        "title": "新しいメッセージ",
+        "tag": "コミュニティ",
+        "msg": "しばらくログインされていませんでした。お友達やチームメンバーがあなたに連絡を取ろうとしています。",
+        "button": "チャットを見る"
+      }
+    }
+  }
+}

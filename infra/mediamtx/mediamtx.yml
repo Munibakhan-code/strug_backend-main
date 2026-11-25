@@ -1,0 +1,76 @@
+# MediaMTX config for Strug Live — self-hosted RTMP -> HLS egress.
+# OBS publishes RTMP to :1935 using the session stream_key as the path; viewers play HLS
+# via the backend/CDN proxy (/live-session/play/:playback_id) — never expose stream_key publicly.
+# Tested against mediamtx v1.9.x (pin the image tag).
+#
+# PRODUCTION: deploy this file on the live media VM.
+# Hook secret is sent by notify.sh via x-live-hook-secret header — do NOT put ?secret= on authURL.
+# LOCAL DEV: use mediamtx.dev.yml via infra/mediamtx/docker-compose.yml.
+
+logLevel: info
+
+###############################################
+# Auth — delegate publish/read decisions to the backend.
+# LIVE flips come from runOnReady notify.sh (header secret), not from this URL.
+authMethod: http
+authHTTPAddress: https://api.strug.ca/live-session/rtmp/auth
+authHTTPExclude:
+  - action: api
+  - action: metrics
+  - action: pprof
+  # playback is authenticated when LIVE_VOD_AUTH_ENFORCE=true on the backend
+
+###############################################
+# Protocols. RTMP in, HLS out.
+# Single-bitrate today; put CDN (LIVE_CDN_HLS_BASE / LIVE_PUBLIC_PLAYBACK_BASE) in front for scale.
+# Future ABR: run a transcoder ladder and publish variant playlists, or OBS multi-encode.
+rtmp: yes
+rtmpAddress: :1935
+
+hls: yes
+hlsAddress: :8888
+hlsAllowOrigin: '*'
+# LL-HLS-friendly segment settings (sub-3s needs CDN + player lowLatencyMode).
+hlsVariant: mpegts
+hlsSegmentCount: 7
+hlsSegmentDuration: 1s
+hlsPartDuration: 0.2s
+hlsSegmentMaxSize: 50M
+hlsAlwaysRemux: no
+
+###############################################
+# Browser / phone go-live (WHIP). Replace additionalHosts with the public media IP in prod.
+webrtc: yes
+webrtcAddress: :8889
+webrtcAllowOrigin: '*'
+webrtcIPsFromInterfaces: yes
+webrtcAdditionalHosts: []
+webrtcLocalUDPAddress: :8189
+
+###############################################
+# Playback server — VOD recording playback API (auth via /rtmp/auth action=playback).
+playback: yes
+playbackAddress: :9996
+
+###############################################
+# Metrics / pprof for observability (Prometheus scrape on :9998 when enabled upstream).
+metrics: yes
+metricsAddress: :9998
+pprof: yes
+pprofAddress: :9999
+
+###############################################
+# Lifecycle hooks — backend session status + VOD archive.
+pathDefaults:
+  record: yes
+  recordPath: /recordings/%path/%Y-%m-%d_%H-%M-%S-%f
+  recordFormat: fmp4
+  recordSegmentDuration: 1h
+  # Retain local DVR longer; production should also copy to Azure on end (archiveSessionVod).
+  recordDeleteAfter: 720h
+  runOnReady: /scripts/notify.sh ready $MTX_PATH
+  runOnReadyRestart: no
+  runOnNotReady: /scripts/notify.sh notReady $MTX_PATH
+
+paths:
+  all_others:
